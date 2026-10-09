@@ -1,0 +1,724 @@
+{
+ "updated": "2026-10-09",
+ "count": 38,
+ "cases": [
+  {
+   "id": "asahi-dodecamin-roblox",
+   "title_zh": "朝日饮料《ドデカ・ドデカミン》：在 Roblox 街头搞破坏攒能量，喝下 Dodecamin 就变巨人",
+   "brand": "朝日饮料 Dodecamin（ドデカミン）",
+   "agency": "未公开（朝日饮料官方发布）",
+   "region": "日本（Roblox 全球上线）",
+   "format": "Roblox 原创游戏（3–5 分钟一局的多人对战）",
+   "date": "2026-10-09",
+   "why_zh": "把产品功效直接写成游戏机制：在方块城市里搞破坏收集“能量”填满瓶子，喝下 Dodecamin 就变大一圈，3–5 分钟一局，结束时公布“体型排行榜”；6 张地图由玩家投票选择，可中途加入。“喝了就变强”这句广告语变成了玩家自己操作的爽点，比在 Roblox 里摆一个品牌展厅更有记忆点。",
+   "style_zh": "Roblox 方块城市，饮料瓶能量槽 UI，巨大化后的夸张比例对比",
+   "live_url": "https://www.roblox.com/games/104830168642838/Drink-and-Grow-Dodeca-Dodecamin",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000001085.000039153.html",
+   "image": "images/asahi-dodecamin-roblox.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "游戏平台植入"
+   ]
+  },
+  {
+   "id": "poled-airlovewarm-game",
+   "title_zh": "폴레드 airluv「에어러브웜3」：护着宝宝体温往上跳，躲雪花、吃爱心，维持 36.5℃",
+   "brand": "폴레드 POLED（airluv 에어러브）",
+   "agency": "未公开",
+   "region": "韩国",
+   "format": "手机网页小游戏 + 排行榜 + Instagram 快拍分享参赛",
+   "date": "2026-10-07",
+   "why_zh": "推婴儿推车座椅加热垫，游戏就是“保住宝宝体温”：拖动左右让小角色 Warmy 踩着云往上跳，碰到雪花掉温、吃到爱心回温，屏幕上一直显示 36.5℃ 体温条，掉下去就是“没把宝宝暖到终点”。产品卖点（保暖）直接变成血条，比抽奖页更贴合；分享快拍并 @ 品牌即算参赛，还能继承跨 App 的游戏记录。",
+   "style_zh": "红底像素风，白色小熊吉祥物，简洁 8-bit UI",
+   "live_url": "https://airlovewarm-game.vercel.app/",
+   "source_url": "https://airlovewarm-game.vercel.app/",
+   "image": "images/poled-airlovewarm-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "puyo-hiroshima-collab",
+   "title_zh": "「ぷよと広島」：《噗哟噗哟》回老家，和 9 家广岛企业各做一款品牌版网页噗哟",
+   "brand": "SEGA ぷよぷよ × 广岛 9 家企业（八天堂、广岛鲤鱼队、三箭队、广岛燃气、田中食品等）",
+   "agency": "SEGA（官方发布，制作方未公开）",
+   "region": "日本（广岛）",
+   "format": "多家企业官网内嵌手机网页益智游戏",
+   "date": "2026-09-30",
+   "why_zh": "噗哟系列 35 周年，回“诞生地”广岛做地方联动：9 家本地企业（面包店、球队、燃气公司、大学、电视台……）各在自家官网放一款换皮噗哟，比如八天堂版用招牌奶油面包做背景。一个游戏 IP 串起一座城市的品牌，比单个品牌找 IP 授权更有意思。注意：9 款是同一套引擎换皮，玩法本身没有改动。",
+   "style_zh": "经典噗哟方块，按企业换背景和配色，屏幕下方大号虚拟按键",
+   "live_url": "https://hattendo.co.jp/puyopuyo/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000007713.000005397.html",
+   "image": "images/puyo-hiroshima-collab.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "共创"
+   ]
+  },
+  {
+   "id": "jojo-sbr-horse-run",
+   "title_zh": "《JoJo 飙马野郎》动画「GO!GO! HORSE RUN!」：左右键狂按骑马冲刺，全球玩家累计里程实时滚动",
+   "brand": "JoJo 的奇妙冒险 Steel Ball Run（动画）",
+   "agency": "未公开（JOJO The Animation Project 官方发布）",
+   "region": "日本（全球多语言）",
+   "format": "手机网页小游戏（成绩可分享 + 全球累计里程）",
+   "date": "2026-09-18",
+   "why_zh": "动画宣传没做测验或抽卡，而是做了一个“横穿美洲大陆赛马”的极简小游戏：左右按钮交替狂按提速，用拴着钢球的道具撞开对手和仙人掌、接住飞来的泰迪熊，按距离排名。首页实时显示全世界玩家累计跑了多少英里（截图时约 1.1 亿英里），把原作的“横贯大陆赛跑”变成全球一起跑。",
+   "style_zh": "美式西部荒野插画，复古彩色像素标题，大按钮手机操作",
+   "live_url": "https://sbr-gogo.jojo-portal-anime.com/",
+   "source_url": "https://jojo-portal.com/en/news/info/641/",
+   "image": "images/jojo-sbr-horse-run.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "keebler-spookie-safari",
+   "title_zh": "Keebler「Spookie Stripes Safari」：扫包装进手绘动物园，在斑马老虎的条纹里找条纹饼干",
+   "brand": "Keebler Spookie Fudge Stripes（Ferrero 北美）",
+   "agency": "未公开",
+   "region": "美国",
+   "format": "包装二维码 → 手机网页找物游戏 + 抽奖；同期线下动物园活动",
+   "date": "2026-09-01",
+   "why_zh": "产品是带橙色条纹的万圣节饼干，游戏就利用“条纹伪装”：在手绘动物园里斑马、老虎等条纹动物中间找出藏着的条纹饼干，属于视觉双关的找物游戏，从包装二维码直达。线下动物园同步活动可不看，线上部分就能玩。缺点是挂着抽奖，且入口有 13 岁年龄门槛。",
+   "style_zh": "紫色万圣夜色调，童书风手绘动物园，Keebler 精灵角色",
+   "live_url": "https://spookiefts.com/",
+   "source_url": "https://www.ferrero.com/us/en/news-stories/news/keebler-spookie-fudge-stripes-return-for-halloween-2026-with-nationwide-zoo-safari",
+   "image": "images/keebler-spookie-safari.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "包装互动"
+   ]
+  },
+  {
+   "id": "beams-steal-the-clothes",
+   "title_zh": "BEAMS《Steal The Clothes》：在 Roblox 上“从假人身上偷衣服”，把潮店做成 Steal-a-X 类爆款玩法",
+   "brand": "BEAMS",
+   "agency": "株式会社WAKA（Roblox 内容工作室，共同制作）",
+   "region": "日本（Roblox 全球上线）",
+   "format": "Roblox 原创游戏（手机/PC/主机均可玩）",
+   "date": "2026-08-07",
+   "why_zh": "日本老牌买手店 50 周年第一次做游戏，没做“虚拟门店”，而是直接套用 Roblox 小学生最火的“Steal a ○○”偷东西类玩法：在 BEAMS 城市里从假人身上扒下整套穿搭，搬回自己的基地堆成收藏。“偷衣服＝挑衣服”的设定很贴买手店，也是借平台原生热梗做品牌游戏，而不是让玩家逛一个 3D 展厅。",
+   "style_zh": "Roblox 卡通方块风，橙色潮店街景＋假人橱窗，日式综艺大字标题",
+   "live_url": "https://www.roblox.com/games/71731164602278/Steal-The-Clothes-Produced-by-BEAMS",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000988.000012471.html",
+   "image": "images/beams-steal-the-clothes.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "游戏平台植入"
+   ]
+  },
+  {
+   "id": "jxj-dreamscape-site",
+   "title_zh": "SEVENTEEN 净汉×Joshua《DREAMSCAPE》预热站：白天和夜晚打开是两个不同的游戏",
+   "brand": "SEVENTEEN JEONGHAN X JOSHUA（Pledis Entertainment）",
+   "agency": "未公开",
+   "region": "韩国",
+   "format": "按访问时间切换内容的手机横屏互动网页",
+   "date": "2026-10-08",
+   "why_zh": "网页内容取决于你打开它的时间。夜晚版「DREAMCHASERS」先让你输入自己的梦想，然后在漆黑的草原上限时点击，接住飘落的羽毛；白天版「DAYDREAMERS」先输入自己的压力，再在列车车厢里点击，把羽毛吹散。只有在午夜 0 点和正午 12 点会出现一个持续 2 分钟的隐藏页面，车窗风景无限循环，正好呼应主打歌《12 o'clock》。追梦和放下压力这两个专辑主题，被拆成了昼夜两套玩法，「几点打开」本身成了入口机关，粉丝得在特定时刻回来才能看全。点击本身比较基础，入选主要是因为时间机关的创意；另外这是偶像专辑宣传而不是消费品牌，可以帮你校准这类案例算不算。",
+   "style_zh": "电影感暗调实景，夜色森林草原和列车车窗，柔光白羽毛，极简留白",
+   "live_url": "https://jxjdreamscape.com/",
+   "source_url": "https://www.bntnews.co.kr/article/view/bnt202610080216",
+   "image": "images/jxj-dreamscape-site.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "叙事"
+   ]
+  },
+  {
+   "id": "resident-evil-berlin-ar",
+   "title_zh": "《Resident Evil》柏林影院 AR 怪物破楼",
+   "brand": "Constantin Film",
+   "agency": "The Forge（创意）× Jung von Matt NERD（AR 技术）",
+   "region": "德国",
+   "format": "建筑尺度 WebAR + 线下真人演绎",
+   "date": "2026-10-07",
+   "why_zh": "在影院门口扫码后把手机对准大楼，手机变成“探测仪”：玻璃和墙体在屏幕里碎开，巨大触手从楼里钻出。现场还有防护服人员和警戒线，整栋影院成了电影的一部分。",
+   "style_zh": "写实惊悚，生化灾难风",
+   "live_url": "",
+   "source_url": "https://lbbonline.com/news/resident-evil-uci-berlin-cinema-the-forge-ar-experience",
+   "image": "images/resident-evil-berlin-ar.webp",
+   "mobile": "no",
+   "tags": [
+    "AR",
+    "装置"
+   ]
+  },
+  {
+   "id": "dg-velvet-installation",
+   "title_zh": "Dolce&Gabbana Beauty《Velvet Collection》香氛叠调装置",
+   "brand": "Dolce&Gabbana Beauty",
+   "agency": "AQuest（WPP / Ogilvy）",
+   "region": "意大利代理商 / 线下",
+   "format": "线下互动装置（传感器 + AI）",
+   "date": "2026-10-06",
+   "why_zh": "借用“管风琴音栓对应香调”的概念：访客把香水瓶放上感应台，组合叠加不同香调，屏幕实时生成个人“嗅觉签名”，闻香变成像演奏一样的过程。",
+   "style_zh": "金色镜面高台，奢华陈列，暗调影像屏",
+   "live_url": "",
+   "source_url": "https://thefwa.com/cases/dg-velvet-collection",
+   "image": "images/dg-velvet-installation.webp",
+   "mobile": "no",
+   "tags": [
+    "装置",
+    "AI"
+   ]
+  },
+  {
+   "id": "hakonese-game",
+   "title_zh": "创味食品「ハコネーゼdeヒマじゃネーゼ」：推着购物车跑酷，左右滑选出符合题目的那款意面酱",
+   "brand": "创味食品 ハコネーゼ（即食意面酱）",
+   "agency": "游戏创作者 白玉ユキト（PR 稿署名开发者）",
+   "region": "日本",
+   "format": "手机网页小游戏（免下载）+ 分数排行榜",
+   "date": "2026-10-05",
+   "why_zh": "品牌痛点是 18 种口味“大家总买同一款、分不清差别”，于是把选购动作做成跑酷：角色推着购物车往前冲，画面给出题目（比如某种风味/特征），玩家左右滑把车开进对的那款货架。18 款全部会被出题，玩着玩着就把全线产品记住了——“货架选购”本身就是游戏规则，不是贴品牌皮的通用跑酷。",
+   "style_zh": "日式综艺感的黄红放射背景+手写粗体大字，3D 跑道上的真实产品包装，带点恶搞的“食品厂认真做游戏”气质",
+   "live_url": "https://www.somi.co.jp/special/haconese-game/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000026.000055925.html",
+   "image": "images/hakonese-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "电商玩法"
+   ]
+  },
+  {
+   "id": "kayac-kururin-pet",
+   "title_zh": "面白法人カヤック「くるりんペット」：在 LINE 里养一只蜗牛，靠你现实中的垃圾分类和光盘行动喂大它",
+   "brand": "くるりんペット（庆应义塾大学 COI-NEXT × 镰仓市 × カヤック）",
+   "agency": "面白法人カヤック",
+   "region": "日本",
+   "format": "LINE 小程序（LINEミニアプリ）养成游戏",
+   "date": "2026-10-03",
+   "why_zh": "把“资源循环”包装成像追星一样的「じゅん活」：吃光早饭、正确分类垃圾、读科普、去回收设施打卡，这些现实行动就是宠物的饲料。宠物是一只螺旋壳代表“循环”的蜗牛，正式版加了起名、昼夜和四季变化、声音反馈。入口就是 LINE，不用另装 App。注意：也有登录奖励这类留存设计，算边缘案例，请你判断。",
+   "style_zh": "手绘感的柔和插画，米黄+草绿，圆滚滚的蜗牛角色，治愈系",
+   "live_url": "https://qp.junkansha.jp/lp/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000985.000014685.html",
+   "image": "images/kayac-kururin-pet.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "社交/IM玩法"
+   ]
+  },
+  {
+   "id": "coolshirtz-shoplifting",
+   "title_zh": "Cool Shirtz《Shoplifting in Progress》结账“偷”衣服跑酷",
+   "brand": "Cool Shirtz（墨尔本 T 恤品牌）",
+   "agency": "品牌自制（VERY VERY COOL PTY LTD）",
+   "region": "澳大利亚",
+   "format": "电商商品页内嵌的跑酷小游戏",
+   "date": "2026-09-30",
+   "why_zh": "商品页上选“偷”而不是“买”，就会进入商场逃跑跑酷，躲开保安成功逃出就送一件实物 T 恤（前 1000 件），送完后改送折扣码。把购物流程的最后一步“结账”变成了游戏入口。",
+   "style_zh": "复古等距卡通商场，高饱和糖果色",
+   "live_url": "https://shirtz.cool/products/the-shoplifting-tee",
+   "source_url": "https://www.dexerto.com/gaming/cool-shirtz-lets-you-steal-a-real-t-shirt-if-you-beat-its-new-game-3413523/",
+   "image": "images/coolshirtz-shoplifting.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "电商玩法"
+   ]
+  },
+  {
+   "id": "mentholatum-monster-mansion",
+   "title_zh": "曼秀雷敦《怪物公馆》Roblox 合作冒险游戏：背包里的「小护士」只提醒、不代劳",
+   "brand": "Mentholatum（ロート製薬）",
+   "agency": "ロート製薬／株式会社WAKA（企划·制作）",
+   "region": "日本（Roblox 全球上线）",
+   "format": "Roblox 多人合作冒险游戏",
+   "date": "2026-09-30",
+   "why_zh": "最多 6 人一起爬一座每次进入楼层都会变的神秘公馆，里面游荡的怪物叫「ガサガサ」「ヒリヒリ」「ジンジン」，名字就是日语里皮肤干痒、刺痛、发麻的拟声词，皮肤困扰被做成了要躲的怪；场景里收集的是曼秀雷敦标志形状的金币。每位玩家背包里背着品牌经典形象「小护士（リトルナース）」：敌人接近时她会提醒，还会悄悄指出方向和道具，但从不替你通关。关卡设计让一人做小游戏时另一人得去引开敌人，队友被困要用救援道具拉起，只有互相帮忙才能前进。品牌主张「やさしいおせっかい（温柔的多管闲事）」直接写成了游戏规则：小护士是那个点到为止的帮手，玩家之间也被迫学会照顾彼此，玩的过程就是品牌信息本身。",
+   "style_zh": "Roblox 卡通 3D，昏暗紫色调的鬼屋走廊和吊灯，Q 版怪物，小护士化身背包挂件",
+   "live_url": "https://www.roblox.com/ja/games/110321370061098/MONSTER-MANSION-by-MENTHOLATUM",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000607.000044879.html",
+   "image": "images/mentholatum-monster-mansion.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "游戏平台植入"
+   ]
+  },
+  {
+   "id": "cyera-ai-guardian",
+   "title_zh": "Cyera《AI Guardian: Secure the Unknown》星球小游戏",
+   "brand": "Cyera",
+   "agency": "Active Theory",
+   "region": "美国（B2B SaaS）",
+   "format": "B2B 品牌小游戏微站",
+   "date": "2026-09-29",
+   "why_zh": "把数据安全公司的三项能力（发现、治理、防护）做成三颗星球，驾驶飞船依次登陆，每颗星球玩一个小游戏。把枯燥的 SaaS 卖点做成了轻量太空游戏。",
+   "style_zh": "紫色扁平插画太空，水晶碎石，荧光绿点缀",
+   "live_url": "https://secure-the-unknown.cyera.com/",
+   "source_url": "https://thefwa.com/cases/cyera-ai-guardian",
+   "image": "images/cyera-ai-guardian.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "3D/WebGL"
+   ]
+  },
+  {
+   "id": "snickers-hungry-panic",
+   "title_zh": "Snickers 日本《HUNGRY PANIC》First Person Snickers",
+   "brand": "Snickers（Mars Japan）",
+   "agency": "未公开（新闻稿未署名）",
+   "region": "日本",
+   "format": "扫包装解锁的手机网页 FPS 小游戏",
+   "date": "2026-09-28",
+   "why_zh": "买到士力架后要在网页上扫包装才能开玩，玩法是“不拿武器的 FPS”：把士力架瞄准投进饿疯了的“へんディー”（关口メンディー）嘴里，让他变回自己。把“饿了就不是你”这句口号直接做成了游戏规则。",
+   "style_zh": "迷幻漩涡背景，3D 黏土风夸张头像，日式综艺字效",
+   "live_url": "https://snickers-hungry-panic.com",
+   "source_url": "https://www.mars.com/ja-jp/news-and-stories/press-releases-statements/snickers-campaign-20260928",
+   "image": "images/snickers-hungry-panic.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "包装互动"
+   ]
+  },
+  {
+   "id": "tenten-malatang-game",
+   "title_zh": "転転麻辣湯官方网页小游戏：鱼卵丸子滚下汤坡，「微辣/中辣/麻辣」就是难度",
+   "brand": "転転麻辣湯（东京代官山麻辣烫店）",
+   "agency": "僕と私と株式会社（店铺经营方兼策划，自制）",
+   "region": "日本",
+   "format": "浏览器 H5 小游戏（手机横屏／PC 键盘）+ LINE 排行榜",
+   "date": "2026-09-25",
+   "why_zh": "主角是一颗麻辣烫里的鱼卵丸子，沿着汤面般起伏的坡道往下滚比谁滚得远。操作只有跳跃（可二段跳）和加速/刹车，收集鲑鱼籽能攒加速槽。最妙的是难度直接用店里的辣度：「微辣」是基础，「中辣」路上会出现辣椒，要加速撞过去；「麻辣」时空中会伸下来一双筷子，被它夹走就 game over，等于亲身体验食材被夹起来吃掉。路上碰到 9 种食材伙伴可获得 5 秒免费加速，并收进图鉴；每个辣度各 7 个、共 21 个称号，成绩可带 #転転麻辣湯 分享到 X。用 LINE 登录后能存分、看各辣度排行榜；在官方 LINE 发「ころころ」还会收到密码，解锁隐藏角色「てんてん」，把游戏流量导回店铺的私域。选辣度这个点单动作被直接做成了游戏规则，筷子来夹的设定让人一玩就记住这是家麻辣烫店。",
+   "style_zh": "扁平矢量插画，深紫夜空配米白汤坡，Q 版拟人鱼卵丸子和长着脸的筷子，可爱又带点恶搞",
+   "live_url": "https://tentenmala-games.vercel.app",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000254.000071963.html",
+   "image": "images/tenten-malatang-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "社交/IM玩法"
+   ]
+  },
+  {
+   "id": "unko-bukkyo-rhythm",
+   "title_zh": "仏教伝道協会×うんこドリル「ぽくぽくチーン！リズム修行」：跟着便便老师敲木鱼、摇铃的节奏游戏",
+   "brand": "公益财团法人 仏教伝道協会 × うんこドリル（文響社）",
+   "agency": "文響社（うんこドリル 团队制作）",
+   "region": "日本",
+   "format": "浏览器节奏游戏（手机/平板横屏点按，PC 键盘）",
+   "date": "2026-09-25",
+   "why_zh": "想让小学生亲近寺庙文化，不讲道理，直接让你“听一遍、敲一遍”：便便老师扮和尚先示范节奏，玩家用木鱼（ぽく）、铃（チーン）和一个「ぷりっ」按钮跟打。连续打准时，背景里的庭院会被扫干净、蜡烛点亮、花瓶插上花，修行进度=画面逐渐庄严；难度分「小僧/和尚/大僧正」三段。把法器的声音本身变成游戏输入，是很聪明的文化入口。",
+   "style_zh": "明亮卡通的寺院本堂场景，Q 版便便老师穿袈裟，配色温暖，恶搞但不失礼",
+   "live_url": "https://world.unkogakuen.com/bukkyou/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000457.000003336.html",
+   "image": "images/unko-bukkyo-rhythm.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "blink182-pacman",
+   "title_zh": "blink-182 × PAC-MAN：把乐队 2001 年的官网复刻出来，菜单里藏着一款乐队版吃豆人",
+   "brand": "blink-182（《Take Off Your Pants and Jacket》25 周年）× 万代南梦宫 PAC-MAN",
+   "agency": "未公开（游戏托管在 Universal Music 的 umgapps 域名下）",
+   "region": "美国",
+   "format": "复古官网 + 浏览器小游戏 + 排行榜",
+   "date": "2026-09-24",
+   "why_zh": "周年纪念没做常规专题页，而是把整个网站做回 2001 年的样子（YEARBOOK、CHAT、SIGN UP 等老式菜单），在其中一个「PAC-MAN」标签里放了乐队版吃豆人：乐队面包车、主题道具，还可以边玩边听乐队的歌。“回到那一年上网的感觉”和街机怀旧叠在一起，网站本身就是情绪载体。",
+   "style_zh": "Y2K 早期网页风+8-bit 街机像素，黑底霓虹迷宫，橙黄 logo",
+   "live_url": "https://2001.blink182.com/#pac-man",
+   "source_url": "https://www.nme.com/news/gaming-news/blink-182-pac-man-game-free-to-play-merch-collab-anniversary-3970767",
+   "image": "images/blink182-pacman.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "samsung-level-with-knox",
+   "title_zh": "Samsung「Level with Knox」：60 秒三消，消掉的是“数字威胁”，连 7 个以上召唤福袋清屏",
+   "brand": "Samsung Knox（三星荷兰发布）",
+   "agency": "未公开",
+   "region": "荷兰 / 欧洲",
+   "format": "网页三消小游戏 + 高分排行榜（前 10 名得奖品）",
+   "date": "2026-09-24",
+   "why_zh": "把一个很难讲清的 B2B 概念（Knox 设备安全与 Knox Matrix 互联保护）塞进人人会玩的三消：滑动连接同色图标，连 7 个以上触发韩国福袋“복주머니”道具清掉周边，象征安全防护把一片设备都护住。每局 60 秒，按分数排名发三星家电。玩法本身偏常规，亮点在“用三消把安全可视化”。",
+   "style_zh": "明亮的三星蓝白配色，3D 奖杯与盾牌徽章，干净的科技卡通风",
+   "live_url": "https://www.levelwithknox.com/",
+   "source_url": "https://www.universmartphone.com/2026/09/24/play-samsungs-new-match-3-web-game-for-a-chance-to-win-real-prizes/",
+   "image": "images/samsung-level-with-knox.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "twst-evolve-racer",
+   "title_zh": "《迪士尼 扭曲仙境》「EVOLVE RACER」：三车道躲障碍，收集零件让破车一路进化成赛车",
+   "brand": "Disney Twisted-Wonderland（Aniplex）",
+   "agency": "Aniplex（官方发布，制作方未公开）",
+   "region": "日本",
+   "format": "限时手机网页小游戏（结果图可分享）",
+   "date": "2026-09-24",
+   "why_zh": "手游为新活动预热，没发 PV 而是做了一个网页小游戏：三车道跑酷躲障碍，捡到轮胎/尾翼/涡轮/引擎零件，车的外观就从破车一步步升级成跑车、赛车；集满能量槽进入“Energy Fever”无敌加倍。8 个关卡对应不同背景和 BGM，通关结果图可以分享。跑酷本身常规，亮点是“车辆进化”的可视化成长，以及用小游戏做活动剧透。",
+   "style_zh": "哥特迪士尼反派风，暗色舞台+粉红霓虹标题字，日系手游 UI",
+   "live_url": "https://evolveracer.twisted-wonderland.aniplex.co.jp/",
+   "source_url": "https://www.anemo.co.jp/pressrelease/439037-20260924/",
+   "image": "images/twst-evolve-racer.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "santioni-notturno",
+   "title_zh": "Santioni Spirits《The Notturno Experience》",
+   "brand": "Santioni Spirits",
+   "agency": "Active Theory（配乐 Plan8）",
+   "region": "美国（Active Theory）",
+   "format": "WebGL 漫画叙事品牌站",
+   "date": "2026-09-17",
+   "why_zh": "把新烈酒品牌的起源神话做成能滚动的漫画分格：按住拖动推着苦行圣徒穿过瓶塞形液态传送门，倒酒、饮下、穹顶碎裂露出血红夜空，这几个关键镜头都能交互，配乐随滚动叠加。",
+   "style_zh": "粗粝墨线排线、比利时漫画风，从灰调突然转成浓烈红色，Art Deco 字体",
+   "live_url": "https://santionispirits.com/",
+   "source_url": "https://www.awwwards.com/sites/santioni-spirits",
+   "image": "images/santioni-notturno.webp",
+   "mobile": "partial",
+   "tags": [
+    "3D/WebGL",
+    "叙事"
+   ]
+  },
+  {
+   "id": "carrefour-fortnite-jobs",
+   "title_zh": "Carrefour「Jobs to Play」Fortnite 职业小游戏",
+   "brand": "Carrefour",
+   "agency": "Publicis Conseil × BEM",
+   "region": "法国",
+   "format": "Fortnite 定制地图（4 个小游戏）",
+   "date": "2026-09-16",
+   "why_zh": "不发招聘帖，而是把四种岗位（种植者、配送员、货架主管、新品经理）各做成一个 Fortnite 小游戏，让 Z 世代在游戏里先“上一天班”。",
+   "style_zh": "Fortnite 卡通，超市与农场场景",
+   "live_url": "https://fortnite.gg/island/5243-5882-1122/info",
+   "source_url": "https://www.marketingminute.co.uk/post/carrefour-fortnite-publicis-conseil-2026",
+   "image": "images/carrefour-fortnite-jobs.webp",
+   "mobile": "partial",
+   "tags": [
+    "游戏平台植入",
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "traitors-anywhere",
+   "title_zh": "《The Traitors: Anywhere》：把热门真人秀《叛徒》搬进 WhatsApp 群聊，朋友之间玩一周的狼人杀",
+   "brand": "The Traitors（All3Media 授权）",
+   "agency": "CityDays（游戏开发）；官网 The Misfit Agency",
+   "region": "英国 / 爱尔兰",
+   "format": "WhatsApp 群聊社交推理游戏（多日进行，付费）",
+   "date": "2026-09-16",
+   "why_zh": "不做 App，直接把你的 WhatsApp 群变成节目现场：最多 30 人，一局约一周，每天有任务、圆桌投票，夜里叛徒在秘密小群里“谋杀”一人；和主持人的私聊、可以抢的护盾都在聊天界面完成。群聊里的互相猜疑本来就是节目最好看的部分，这里让它在真实的朋友/同事关系里发生。注意：这是收费的授权游戏产品（£8.99/人起），不是免费营销活动。",
+   "style_zh": "暗黑电视剧质感，兜帽人物+橙色火焰 logo，电影海报式",
+   "live_url": "https://thetraitorsanywhere.com/",
+   "source_url": "https://onin.london/faithful-or-traitor-the-traitors-anywhere-is-now-playable-on-whatsapp/",
+   "image": "images/traitors-anywhere.webp",
+   "mobile": "yes",
+   "tags": [
+    "社交/IM玩法"
+   ]
+  },
+  {
+   "id": "cartier-choeur-des-pierres",
+   "title_zh": "Cartier「Le Chœur des Pierres」高珠宝石之旅",
+   "brand": "Cartier",
+   "agency": "makemepulse",
+   "region": "法国",
+   "format": "实时 3D 高珠体验（嵌入 cartier.com）",
+   "date": "2026-09-13",
+   "why_zh": "先选一颗宝石进入它的世界，再看由它启发的珠宝；一个手势让成品褪去，露出底下的手绘水粉设计稿，把“从宝石到珠宝”的工艺过程变成揭示式交互。",
+   "style_zh": "克制奢华，层叠光影，暗底宝石特写",
+   "live_url": "https://www.cartier.com/en-fr/lechoeurdespierres",
+   "source_url": "https://www.makemepulse.com/case-study/cartier-le-choeur-des-pierres",
+   "image": "images/cartier-choeur-des-pierres.webp",
+   "mobile": "partial",
+   "tags": [
+    "3D/WebGL",
+    "叙事"
+   ]
+  },
+  {
+   "id": "weekend-maxmara-italian-roots",
+   "title_zh": "Weekend Max Mara「Pasticcino Bag · Italian Roots / The Tuscan Journey」",
+   "brand": "Weekend Max Mara",
+   "agency": "MONOGRID",
+   "region": "意大利",
+   "format": "3D 交互手作之旅",
+   "date": "2026-09-13",
+   "why_zh": "为 Pasticcino 包十周年做的托斯卡纳之旅：用户化身数字工匠，亲手凿大理石、翻面料档案、最后组装出那只包，配空间音效。",
+   "style_zh": "托斯卡纳插画风 3D 场景，暖色手作质感",
+   "live_url": "https://weekend-mm-2026-pasticcino-bag-master.monogrid.io/en/",
+   "source_url": "https://www.awwwards.com/sites/the-tuscan-journey-begins",
+   "image": "images/weekend-maxmara-italian-roots.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "轻游戏",
+    "叙事"
+   ]
+  },
+  {
+   "id": "clevo-hardest-farming",
+   "title_zh": "CLEVO《The Hardest Farming Game》Roblox 地狱难度种田",
+   "brand": "CLEVO（GarudaFood）",
+   "agency": "Publicis Indonesia × KARIS Studio",
+   "region": "印度尼西亚",
+   "format": "Roblox 游戏",
+   "date": "2026-09-10",
+   "why_zh": "反其道做了个“难度 100/10”的种田游戏：虫害、换季、暴风雨，浇水施肥时机错一点作物就死，让玩家体会真实农民的难处。同时把“花钱变强”的付费习惯转成给印尼农民买农具的捐款。",
+   "style_zh": "Roblox 低多边形田园风",
+   "live_url": "",
+   "source_url": "https://lbbonline.com/news/clevo-turns-roblox-s-pay-to-win-economy-into-real-world-support-for-indonesian-farmers",
+   "image": "images/clevo-hardest-farming.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "游戏平台植入"
+   ]
+  },
+  {
+   "id": "zepto-matki-phod",
+   "title_zh": "Zepto × Milky Mist「Matki Phod」：在买菜 App 里搜一个词，点屏幕帮小黑天叠罗汉够到酸奶罐",
+   "brand": "Zepto（印度即时零售 App）× Milky Mist（乳品品牌）",
+   "agency": "未公开",
+   "region": "印度",
+   "format": "电商 App 内嵌小游戏（搜索触发）",
+   "date": "2026-09-06",
+   "why_zh": "把节日习俗 Dahi Handi（众人叠罗汉去砸高处的酸奶罐）直接搬进买菜 App：在 Zepto 里搜「Matki Phod」，就会进入一个点按小游戏，帮 Kanha（小黑天）一层层往上够到酸奶罐，通关后给惊喜优惠。乳品品牌的“酸奶”刚好就是习俗里的那罐酸奶，搜索框成了彩蛋入口，节日、游戏和下单在同一个流程里。",
+   "style_zh": "印度节庆插画风，明黄底色，Q 版人塔与陶罐，手机竖屏 UI",
+   "live_url": "",
+   "source_url": "https://madaboutmarketing.com/advertising/zepto-x-milky-mist-puts-dahi-handi-in-the-app-matki-phod-for-janmashtami/",
+   "image": "images/zepto-matki-phod.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "电商玩法"
+   ]
+  },
+  {
+   "id": "miumiu-house-we-shaped",
+   "title_zh": "Miu Miu「A House that we shaped」可探索的包袋之家",
+   "brand": "Miu Miu",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "three.js 可探索 3D 房屋",
+   "date": "2026-08-25",
+   "why_zh": "把包袋广告大片变成一栋能逛的房子：在房间里和物件互动，就能发现新款 Miu Miu 包，用探索代替商品列表。",
+   "style_zh": "高饱和复古家居，胶片感光影",
+   "live_url": "https://immersivebags.miumiu.com/",
+   "source_url": "https://www.awwwards.com/sites/miu-miu-a-house-that-we-shaped",
+   "image": "images/miumiu-house-we-shaped.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事",
+    "电商玩法"
+   ]
+  },
+  {
+   "id": "miumiu-nb-tiebreak",
+   "title_zh": "Miu Miu × New Balance《The Tie-break!》双人网球",
+   "brand": "Miu Miu × New Balance",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "实时双人网球网页游戏（three.js）",
+   "date": "2026-06-23",
+   "why_zh": "从 Miu Miu 官网点网球进入，和另一位真人实时对打，每赢一分就解锁一套系列造型，看新品变成一场抢七对决。",
+   "style_zh": "模糊胶片颗粒人像底图，网球场白线框，衬线斜体标题",
+   "live_url": "https://miumiu-wimbledon.web.app/eu/en/",
+   "source_url": "https://www.awwwards.com/sites/the-tie-break",
+   "image": "images/miumiu-nb-tiebreak.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "3D/WebGL"
+   ]
+  },
+  {
+   "id": "lacoste-ace-breaker",
+   "title_zh": "Lacoste《Ace Breaker》红土打砖块",
+   "brand": "Lacoste",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "会员 3D 网页游戏（打砖块）+ 球场 QR 屏",
+   "date": "2026-06-03",
+   "why_zh": "把经典打砖块搬到夜间红土球场，有多球、激光、巨球等道具；会员可以在网页或法网场内扫屏幕二维码开玩，冲分赢 2027 法网门票和签名 Polo。",
+   "style_zh": "复古法网配色，夜间红土场 3D",
+   "live_url": "https://members-play.lacoste.com/ace-breaker-rg/gb/en/",
+   "source_url": "https://www.awwwards.com/sites/lacoste-ace-breaker",
+   "image": "images/lacoste-ace-breaker.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "3D/WebGL"
+   ]
+  },
+  {
+   "id": "gateway-galaxy",
+   "title_zh": "《超级马力欧银河电影》Gateway Galaxy 星际中转站",
+   "brand": "Universal Pictures × Illumination（Nintendo）",
+   "agency": "POWSTER",
+   "region": "美国 / 全球 17 个市场",
+   "format": "互动电影宣传站 + 聊天机器人 + 短信热线 + 钱包徽章",
+   "date": "2026-03-10",
+   "why_zh": "宣传站做成星际中转站，点水管传送到各个星球；有 R.O.B. 聊天机器人导航、隐藏符文码、老虎机和“负世界”彩蛋，还能发短信给站内号码收更新，看电影可以在手机钱包里集徽章。",
+   "style_zh": "任天堂官方 3D 卡通，太空站 UI",
+   "live_url": "https://www.gatewaygalaxy.com/",
+   "source_url": "https://powster.com/case-study/gateway-galaxy/",
+   "image": "images/gateway-galaxy.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "社交/IM玩法",
+    "叙事"
+   ]
+  },
+  {
+   "id": "maxmara-untamed-heroine",
+   "title_zh": "Max Mara「Untamed Heroine」FW25 叙事游戏",
+   "brand": "Max Mara",
+   "agency": "Adoratorio Studio",
+   "region": "意大利",
+   "format": "3D WebGL 叙事游戏",
+   "date": "2026-01-12",
+   "why_zh": "以勃朗特笔下的女主人公为灵感，玩家作为“不羁女主角”穿过撕裂的书页走完一段成长故事，用游戏的方式讲系列灵感。",
+   "style_zh": "古典油画质感 3D，羊皮纸与暖金色调",
+   "live_url": "https://untamedheroinegame.maxmara.com/",
+   "source_url": "https://www.awwwards.com/sites/max-mara-untamed-heroine",
+   "image": "images/maxmara-untamed-heroine.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事",
+    "轻游戏"
+   ]
+  },
+  {
+   "id": "vogue-business-archrival",
+   "title_zh": "Vogue Business × Archrival《Gen Z Broke the Marketing Funnel Part II》",
+   "brand": "Vogue Business × Archrival",
+   "agency": "Noomo",
+   "region": "美国",
+   "format": "3D 交互报告长文",
+   "date": "2026-01-04",
+   "why_zh": "把一份关于 Z 世代营销漏斗的研究报告做成可滚动的 3D 交互长文，数据可视化和微交互随滚动展开，让报告本身成为体验。",
+   "style_zh": "编辑感排版 + three.js 数据可视化",
+   "live_url": "https://www.vogue.com/article/gen-z-broke-the-marketing-funnel-part-ii-what-now",
+   "source_url": "https://www.awwwards.com/sites/vogue-business-archrival",
+   "image": "images/vogue-business-archrival.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事"
+   ]
+  },
+  {
+   "id": "kokuyo-curiosity-is-life",
+   "title_zh": "KOKUYO「Curiosity is Life」立体书 3D 站",
+   "brand": "KOKUYO（Campus 笔记本）",
+   "agency": "mount inc.",
+   "region": "日本",
+   "format": "3D WebGL 立体书式品牌站",
+   "date": "2025-12-14",
+   "why_zh": "以 Campus 笔记本为舞台做成立体书，100 多个由插画转成的 3D 模型和动画沿书页曲面排布，可点击探索，每一节配一段音乐，翻页即翻阅品牌 120 年的创造力。",
+   "style_zh": "扁平插画转 3D，明快文具色，立体书折页",
+   "live_url": "https://www.kokuyo.com/en/special/curiosity-is-life/",
+   "source_url": "https://www.awwwards.com/sites/kokuyo",
+   "image": "images/kokuyo-curiosity-is-life.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事"
+   ]
+  },
+  {
+   "id": "symphony-of-vines",
+   "title_zh": "Château Oublié「The Symphony of Vines」",
+   "brand": "Château Oublié",
+   "agency": "Unseen Studio",
+   "region": "法国",
+   "format": "WebGL 交互电影叙事",
+   "date": "2025-08-15",
+   "why_zh": "用鼠标塑造地形，在交互式电影旅程里亲手推动酒庄风土跨越千年的形成史，讲故事和交互融为一体。",
+   "style_zh": "电影级 3D 地景，柔和自然光，配乐驱动",
+   "live_url": "https://symphonyofvines.com/",
+   "source_url": "https://www.awwwards.com/sites/the-symphony-of-vines",
+   "image": "images/symphony-of-vines.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事"
+   ]
+  },
+  {
+   "id": "lacoste-members-experience",
+   "title_zh": "Lacoste Members Experience 会员 360° 共创",
+   "brand": "Lacoste",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "360° 共创设计网页",
+   "date": "2025-02-15",
+   "why_zh": "会员可以在 360° 场景里重新设计 Lacoste 的经典单品，获胜设计会真的生产出来，只供会员购买，把会员权益做成了共创游戏。",
+   "style_zh": "360° 全景空间，品牌绿与白",
+   "live_url": "https://membersexperience-create.lacoste.com/gb/en/",
+   "source_url": "https://www.awwwards.com/sites/lacoste-members-experience",
+   "image": "images/lacoste-members-experience.webp",
+   "mobile": "yes",
+   "tags": [
+    "共创",
+    "3D/WebGL"
+   ]
+  },
+  {
+   "id": "ikea-better-sleep-webar",
+   "title_zh": "IKEA 意大利「Better Sleep」广告牌 WebAR 梦境雾",
+   "brand": "IKEA Italia",
+   "agency": "MONOGRID（主创意 DDB Group）",
+   "region": "意大利",
+   "format": "户外广告牌扫码 WebAR + FOOH",
+   "date": "2024-09-13",
+   "why_zh": "意大利 9 座城市 15 块广告牌上扫码，IKEA 睡眠产品就从梦幻的雾里以 3D 形式“冲进”现实街景，可录屏分享，让户外广告延伸到社交平台。",
+   "style_zh": "梦幻紫雾，写实 3D 家居产品",
+   "live_url": "",
+   "source_url": "https://monogrid.com/en/project/ikea-better-sleep-campaign/",
+   "image": "images/ikea-better-sleep-webar.webp",
+   "mobile": "no",
+   "tags": [
+    "AR",
+    "户外"
+   ]
+  },
+  {
+   "id": "hermes-horse-jump",
+   "title_zh": "Hermès「跃启新橙」马年跳跃小游戏",
+   "brand": "Hermès 爱马仕",
+   "agency": "未知",
+   "region": "中国",
+   "format": "微信小程序节奏/跳跃小游戏",
+   "date": "unknown",
+   "why_zh": "长按蓄力，让手绘小马在彩绘山野里跨越栅栏，计时闯关。玩 3 次解锁新春壁纸，把品牌图腾“马”变成了可操控的角色。",
+   "style_zh": "复古手绘插画风，粉橙天空与橄榄绿山野",
+   "live_url": "微信内搜索「爱马仕跃启新橙」",
+   "source_url": "https://www.xiaohongshu.com/explore/697c2720000000000a02e648?xsec_token=AByyGSC7GqZIN192-hE-KZpbGj008jK5ssNAEdI6-4Va0=&xsec_source=pc_search",
+   "image": "images/hermes-horse-jump.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏"
+   ]
+  }
+ ]
+}

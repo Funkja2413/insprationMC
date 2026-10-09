@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>互动营销灵感库</title>
+<style>
+:root{--bg:#f5f5f2;--card:#fff;--ink:#1d1d1f;--sub:#6b6b70;--line:#e6e6e2;--acc:#ff5a36;--red:#d93025}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:10;background:rgba(245,245,242,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:12px 14px 8px;border-bottom:1px solid var(--line)}
+h1{font-size:19px;margin:0 0 8px;display:flex;align-items:baseline;gap:8px}
+h1 small{font-size:12px;color:var(--sub);font-weight:400}
+#q{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink);cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{max-width:1100px;margin:0 auto;padding:12px;display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:720px){main{grid-template-columns:1fr 1fr}}
+@media(min-width:1060px){main{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:opacity .25s,transform .25s}
+.card.gone{opacity:0;transform:scale(.97)}
+.imgw{position:relative;aspect-ratio:16/10;background:#e9e9e6}
+.imgw img{width:100%;height:100%;object-fit:cover;display:block}
+.mb{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.t{font-size:16px;font-weight:600;line-height:1.4;margin:0}
+.meta{font-size:12.5px;color:var(--sub)}
+.why{font-size:14px;margin:0;color:#333}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11.5px;background:#f0f0ec;color:#555;padding:1px 7px;border-radius:6px}
+.acts{display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:4px;flex-wrap:wrap}
+.acts a{font-size:13.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 11px;border-radius:9px;background:#fafaf8}
+.acts a.play{background:var(--ink);color:#fff;border-color:var(--ink)}
+.del{margin-left:auto;font-size:13.5px;border:1px solid #f1c9c4;color:var(--red);background:#fff;padding:6px 12px;border-radius:9px;cursor:pointer}
+.confirm{margin-left:auto;display:flex;gap:6px}
+.confirm button{font-size:13.5px;padding:6px 11px;border-radius:9px;cursor:pointer;border:1px solid var(--line);background:#fff}
+.confirm .yes{background:var(--red);color:#fff;border-color:var(--red)}
+#empty{display:none;text-align:center;color:var(--sub);padding:40px 0;grid-column:1/-1}
+footer{text-align:center;font-size:12px;color:var(--sub);padding:20px 0 90px}
+footer a{color:var(--sub)}
+#toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(150%);background:#222;color:#fff;border-radius:12px;padding:10px 12px 10px 16px;display:flex;gap:14px;align-items:center;font-size:14px;transition:transform .25s;z-index:30;max-width:92vw}
+#toast.show{transform:translateX(-50%) translateY(0)}
+#toast button{background:none;border:0;color:#ffb199;font-size:14px;font-weight:600;cursor:pointer;padding:4px 6px}
+#sync{position:fixed;right:12px;bottom:calc(70px + env(safe-area-inset-bottom));font-size:12px;background:#fff3cd;color:#7a5b00;border:1px solid #f0dc8a;border-radius:999px;padding:4px 10px;display:none;z-index:20;cursor:pointer}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:flex-end;justify-content:center;z-index:40}
+.modal.show{display:flex}
+@media(min-width:600px){.modal{align-items:center}}
+.sheet{background:#fff;width:100%;max-width:440px;border-radius:16px 16px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+@media(min-width:600px){.sheet{border-radius:16px}}
+.sheet h3{margin:0 0 6px;font-size:17px}
+.sheet p{margin:0 0 10px;font-size:13px;color:var(--sub)}
+.sheet input{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;font-size:14px;font-family:ui-monospace,Menlo,monospace}
+.sheet .row{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+.sheet button{padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;font-size:14px;cursor:pointer}
+.sheet button.pri{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sheet button.warn{color:var(--red);margin-right:auto}
+#tokErr{color:var(--red);font-size:12.5px;min-height:1em;margin-top:6px}
+</style>
+</head>
+<body>
+<header>
+  <h1>互动营销灵感库 <small id="count"></small></h1>
+  <input id="q" type="search" placeholder="搜索品牌 / 关键词" autocomplete="off">
+  <div class="chips" id="chips"></div>
+</header>
+<main id="list"><div id="empty">没有匹配的案例</div></main>
+<footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a></footer>
+<div id="sync"></div>
+<div id="toast"><span id="toastMsg">已删除</span><button id="undo">撤销</button></div>
+<div class="modal" id="tokModal"><div class="sheet">
+  <h3>需要 GitHub 令牌</h3>
+  <p>删除会写入仓库。请在 GitHub → Settings → Developer settings → Fine-grained tokens 新建令牌：只选 <b>insprationMC</b> 仓库，权限 Contents 设为 Read and write，粘贴到下面（只保存在本机浏览器）。</p>
+  <input id="tokIn" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+  <div id="tokErr"></div>
+  <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
+</div></div>
+<script>
+(function(){
+"use strict";
+var OWNER="Funkja2413", REPO="insprationMC", BRANCH="main", PATH="data/removed.json";
+var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
+var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
+var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
+var UNDO_MS=5000;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false;
+
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
+function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
+function savePending(){ls(K_PEND,JSON.stringify(pending.map(function(p){return {id:p.id,at:p.at}})))}
+function token(){return ls(K_TOK)||""}
+function hidden(id){return remote.has(id)||pending.some(function(p){return p.id===id})}
+function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e}
+function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:""}
+
+function b64enc(s){return btoa(unescape(encodeURIComponent(s)))}
+function b64dec(s){return decodeURIComponent(escape(atob(s.replace(/\s/g,""))))}
+
+/* ---------- remote removed.json ---------- */
+function fetchRemoved(){
+  var h={"Accept":"application/vnd.github+json"}; var t=token(); if(t)h.Authorization="Bearer "+t;
+  return fetch(API+"?ref="+BRANCH+"&t="+Date.now(),{headers:h,cache:"no-store"}).then(function(r){
+    if(r.status===404)return [];
+    if(!r.ok)throw new Error("api "+r.status);
+    return r.json().then(function(j){return JSON.parse(b64dec(j.content||"")||"[]")});
+  }).catch(function(){
+    return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0; return r.json()})
+  }).catch(function(){
+    return fetch("data/removed.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():[]}).catch(function(){return null})
+  });
+}
+function applyRemoved(arr){
+  if(!Array.isArray(arr))return;
+  arr.forEach(function(x){if(x&&x.id)remote.add(x.id)});
+  ls(K_SEEN,JSON.stringify(Array.from(remote)));
+  var before=pending.length; pending=pending.filter(function(p){return !remote.has(p.id)}); if(pending.length!==before)savePending();
+}
+
+/* ---------- commit (GitHub Contents API) ---------- */
+function commitOnce(items){
+  var t=token();
+  var h={"Accept":"application/vnd.github+json","Authorization":"Bearer "+t};
+  return fetch(API+"?ref="+BRANCH+"&t="+Date.now(),{headers:h,cache:"no-store"}).then(function(r){
+    if(r.status===404)return {sha:null,list:[]};
+    if(r.status===401||r.status===403)throw {auth:true,status:r.status};
+    if(!r.ok)throw {status:r.status};
+    return r.json().then(function(j){var l=[];try{l=JSON.parse(b64dec(j.content||"")||"[]")}catch(e){} return {sha:j.sha,list:Array.isArray(l)?l:[]}});
+  }).then(function(cur){
+    var have=new Set(cur.list.map(function(x){return x.id}));
+    var add=items.filter(function(p){return !have.has(p.id)});
+    var list=cur.list.concat(add.map(function(p){return {id:p.id,at:p.at}}));
+    if(!add.length)return list;
+    var body={message:"remove: "+add.map(function(p){return p.id}).join(", "),content:b64enc(JSON.stringify(list,null,1)+"\n"),branch:BRANCH};
+    if(cur.sha)body.sha=cur.sha;
+    return fetch(API,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},h),body:JSON.stringify(body)}).then(function(r){
+      if(r.ok)return list;
+      if(r.status===409||r.status===422)throw {conflict:true,status:r.status};
+      if(r.status===401||r.status===403||r.status===404)throw {auth:true,status:r.status};
+      throw {status:r.status};
+    });
+  });
+}
+function flush(){
+  if(flushing)return; var ready=pending.filter(function(p){return p.ready}); if(!ready.length){showSync();return}
+  if(!token()){openModal("");return}
+  flushing=true; showSync("同步中…");
+  var tries=0;
+  (function go(){
+    commitOnce(ready).then(function(list){
+      flushing=false; applyRemoved(list); showSync(); flush();
+    },function(e){
+      e=e||{};
+      if(e.conflict&&tries<5){tries++; setTimeout(go,300*tries+Math.random()*300); return}
+      flushing=false;
+      if(e.auth){openModal("令牌无效或没有写权限（HTTP "+e.status+"），请更换。");}
+      showSync();
+    });
+  })();
+}
+function showSync(msg){
+  var s=document.getElementById("sync"), n=pending.filter(function(p){return p.ready}).length;
+  if(msg){s.textContent=msg;s.style.display="block";return}
+  if(n){s.textContent=n+" 条删除待同步 · 点此重试";s.style.display="block"} else s.style.display="none";
+}
+
+/* ---------- delete / undo ---------- */
+var lastId=null, toastTimer=null;
+function doDelete(id,cardEl){
+  if(hidden(id))return;
+  pending.push({id:id,at:new Date().toISOString(),ready:false}); savePending();
+  cardEl.classList.add("gone"); setTimeout(function(){render()},250);
+  lastId=id; toast("已删除");
+  timers[id]=setTimeout(function(){
+    delete timers[id];
+    var p=pending.find(function(x){return x.id===id}); if(p){p.ready=true; flush()}
+  },UNDO_MS);
+}
+function undo(){
+  if(!lastId)return; var id=lastId; lastId=null;
+  if(timers[id]){clearTimeout(timers[id]);delete timers[id]}
+  pending=pending.filter(function(p){return !(p.id===id&&!p.ready)}); savePending();
+  hideToast(); render();
+}
+function toast(m){
+  var t=document.getElementById("toast"); document.getElementById("toastMsg").textContent=m; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer=setTimeout(hideToast,UNDO_MS);
+}
+function hideToast(){document.getElementById("toast").classList.remove("show")}
+
+/* ---------- token modal ---------- */
+function openModal(err){
+  document.getElementById("tokErr").textContent=err||"";
+  document.getElementById("tokIn").value="";
+  document.getElementById("tokClear").style.display=token()?"":"none";
+  document.getElementById("tokModal").classList.add("show");
+}
+function closeModal(){document.getElementById("tokModal").classList.remove("show")}
+
+/* ---------- render ---------- */
+function card(c){
+  var a=el("article","card"); a.dataset.id=c.id;
+  var iw=el("div","imgw");
+  if(c.image){var im=el("img"); im.loading="lazy"; im.decoding="async"; im.alt=""; im.src=c.image; iw.appendChild(im)}
+  if(c.mobile==="yes")iw.appendChild(el("span","mb","📱 手机可玩"));
+  a.appendChild(iw);
+  var b=el("div","body");
+  b.appendChild(el("h2","t",c.title_zh));
+  b.appendChild(el("div","meta",[c.brand,c.region,c.date&&c.date!=="unknown"?c.date:""].filter(Boolean).join(" · ")));
+  if(c.format)b.appendChild(el("div","meta",c.format));
+  b.appendChild(el("p","why",c.why_zh));
+  if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
+  var ac=el("div","acts");
+  var lu=safeUrl(c.live_url), su=safeUrl(c.source_url);
+  if(lu){var l=el("a","play","体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
+  if(su&&su!==lu){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
+  var d=el("button","del","删除"); d.type="button";
+  d.onclick=function(){
+    var cf=el("span","confirm"), y=el("button","yes","确认删除"), n=el("button","","取消");
+    y.type=n.type="button"; cf.appendChild(n); cf.appendChild(y); d.replaceWith(cf);
+    n.onclick=function(){cf.replaceWith(d)};
+    y.onclick=function(){doDelete(c.id,a)};
+  };
+  ac.appendChild(d); b.appendChild(ac); a.appendChild(b);
+  return a;
+}
+function matches(c,q){
+  if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
+  if(mobileOnly&&c.mobile!=="yes")return false;
+  if(!q)return true;
+  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
+}
+function render(){
+  var list=document.getElementById("list"), empty=document.getElementById("empty");
+  Array.prototype.slice.call(list.querySelectorAll(".card")).forEach(function(n){n.remove()});
+  var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), n=0;
+  vis.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
+  empty.style.display=n?"none":"block";
+  document.getElementById("count").textContent=(n===vis.length?vis.length:n+" / "+vis.length)+" 个案例";
+  renderChips(vis);
+}
+function renderChips(vis){
+  var box=document.getElementById("chips"), counts={}; box.innerHTML="";
+  vis.forEach(function(c){(c.tags||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
+  function chip(label,on,fn){var b=el("button","chip"+(on?" on":""),label); b.type="button"; b.onclick=fn; box.appendChild(b)}
+  chip("全部",!activeTag&&!mobileOnly,function(){activeTag="";mobileOnly=false;render()});
+  chip("📱 手机可玩",mobileOnly,function(){mobileOnly=!mobileOnly;render()});
+  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(t){
+    chip(t+" "+counts[t],activeTag===t,function(){activeTag=activeTag===t?"":t;render()});
+  });
+}
+
+/* ---------- init ---------- */
+document.getElementById("undo").onclick=undo;
+document.getElementById("q").addEventListener("input",render);
+document.getElementById("sync").onclick=function(){flush()};
+document.getElementById("setLink").onclick=function(e){e.preventDefault();openModal("")};
+document.getElementById("tokCancel").onclick=function(){closeModal();showSync()};
+document.getElementById("tokClear").onclick=function(){ls(K_TOK,null);closeModal();showSync()};
+document.getElementById("tokSave").onclick=function(){
+  var v=document.getElementById("tokIn").value.trim();
+  if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)){document.getElementById("tokErr").textContent="格式不对，应以 github_pat_ 开头";return}
+  ls(K_TOK,v); closeModal(); flush();
+};
+window.addEventListener("online",flush);
+loadPending();
+try{JSON.parse(ls(K_SEEN)||"[]").forEach(function(id){remote.add(id)})}catch(e){}
+fetch("data/cases.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  cases=d.cases||d; if(d.updated)document.getElementById("upd").textContent="更新于 "+d.updated;
+  render();
+  return fetchRemoved().then(function(arr){applyRemoved(arr);render();showSync();if(pending.length&&token())flush()});
+}).catch(function(e){document.getElementById("empty").textContent="加载失败："+e;document.getElementById("empty").style.display="block"});
+})();
+</script>
+</body>
+</html>
