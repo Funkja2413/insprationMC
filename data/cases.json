@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-09",
- "count": 38,
+ "count": 37,
  "cases": [
   {
    "id": "asahi-dodecamin-roblox",
@@ -19,6 +19,26 @@
    "tags": [
     "轻游戏",
     "游戏平台植入"
+   ]
+  },
+  {
+   "id": "arknights-jp-footprints",
+   "title_zh": "《明日方舟》日服「足跡」：开着越野车在地图上找回记忆，全服一起点亮图鉴",
+   "brand": "明日方舟 Arknights（日服，Yostar / Hypergryph）",
+   "agency": "Hypergryph / Yostar（官方，未单独署名制作方）",
+   "region": "日本",
+   "format": "手机 H5 网页小游戏（横屏地图探索 + 图鉴收集）",
+   "date": "2026-10-08",
+   "why_zh": "不是常规的抽奖页：玩家开着罗德岛的越野车在一张手绘地图上跑点，每到一个地点解锁一张插画，攒成一本「足迹」图鉴；全服点亮进度到 50%/100% 时，再一起解锁一封凯尔希留给博士的信。个人收集叠加全服共同解锁，用来讲周年剧情很合适。玩家还发现最后的罗德岛区域随机出两种地图版本，有隐藏内容可挖。",
+   "style_zh": "米黄手绘地图 + Q 版干员，横屏布局（竖持手机时整页旋转显示）",
+   "live_url": "https://footprints.arknights.jp/",
+   "source_url": "https://x.com/ArknightsStaff/status/2108090208902389946",
+   "image": "images/arknights-jp-footprints.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "收集",
+    "游戏IP"
    ]
   },
   {
@@ -131,25 +151,6 @@
    "tags": [
     "轻游戏",
     "叙事"
-   ]
-  },
-  {
-   "id": "resident-evil-berlin-ar",
-   "title_zh": "《Resident Evil》柏林影院 AR 怪物破楼",
-   "brand": "Constantin Film",
-   "agency": "The Forge（创意）× Jung von Matt NERD（AR 技术）",
-   "region": "德国",
-   "format": "建筑尺度 WebAR + 线下真人演绎",
-   "date": "2026-10-07",
-   "why_zh": "在影院门口扫码后把手机对准大楼，手机变成“探测仪”：玻璃和墙体在屏幕里碎开，巨大触手从楼里钻出。现场还有防护服人员和警戒线，整栋影院成了电影的一部分。",
-   "style_zh": "写实惊悚，生化灾难风",
-   "live_url": "",
-   "source_url": "https://lbbonline.com/news/resident-evil-uci-berlin-cinema-the-forge-ar-experience",
-   "image": "images/resident-evil-berlin-ar.webp",
-   "mobile": "no",
-   "tags": [
-    "AR",
-    "装置"
    ]
   },
   {
@@ -681,25 +682,6 @@
    "tags": [
     "共创",
     "3D/WebGL"
-   ]
-  },
-  {
-   "id": "ikea-better-sleep-webar",
-   "title_zh": "IKEA 意大利「Better Sleep」广告牌 WebAR 梦境雾",
-   "brand": "IKEA Italia",
-   "agency": "MONOGRID（主创意 DDB Group）",
-   "region": "意大利",
-   "format": "户外广告牌扫码 WebAR + FOOH",
-   "date": "2024-09-13",
-   "why_zh": "意大利 9 座城市 15 块广告牌上扫码，IKEA 睡眠产品就从梦幻的雾里以 3D 形式“冲进”现实街景，可录屏分享，让户外广告延伸到社交平台。",
-   "style_zh": "梦幻紫雾，写实 3D 家居产品",
-   "live_url": "",
-   "source_url": "https://monogrid.com/en/project/ikea-better-sleep-campaign/",
-   "image": "images/ikea-better-sleep-webar.webp",
-   "mobile": "no",
-   "tags": [
-    "AR",
-    "户外"
    ]
   },
   {
