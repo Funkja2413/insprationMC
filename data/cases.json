@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-09",
- "count": 37,
+ "count": 45,
  "cases": [
   {
    "id": "asahi-dodecamin-roblox",
@@ -132,6 +132,173 @@
    "tags": [
     "轻游戏",
     "游戏平台植入"
+   ]
+  },
+  {
+   "id": "philips-oneblade-body-royale",
+   "title_zh": "飞利浦 OneBlade「Body Royale」：在巨型人体上打吃鸡，剃毛才能回血",
+   "brand": "飞利浦 Philips OneBlade",
+   "agency": "Golin Ketchum",
+   "region": "欧洲",
+   "format": "Fortnite（UEFN）品牌地图 + 社区选拔赛",
+   "date": "2026-05",
+   "why_zh": "剃须刀不当植入，而是做成核心玩法：整张地图是一具毛发浓密的巨大人体，玩家要剃毛才能回血、找出道具，剃须刀还变成了武器。今年继续用这张图做社区选拔赛，组建品牌战队，从一次性植入变成了持续的玩家社区。",
+   "style_zh": "写实人体地形 + 毛发丛林，Fortnite 卡通渲染",
+   "live_url": "https://playbodyroyale.com/",
+   "source_url": "https://golinketchum.com/case-studies/body-royale/",
+   "image": "images/philips-oneblade-body-royale.webp",
+   "mobile": "partial",
+   "tags": [
+    "Fortnite",
+    "产品即玩法",
+    "电竞社区"
+   ]
+  },
+  {
+   "id": "haas-f1-godzilla-lava-racer",
+   "title_zh": "Haas F1 × 哥斯拉：开着哥斯拉涂装赛车在熔岩赛道刷圈速",
+   "brand": "Haas F1 Team × 东宝（Toho）哥斯拉",
+   "agency": "Wave（wecreatewaves）",
+   "region": "全球",
+   "format": "手机浏览器 3D 赛车小游戏（免下载，全球排行榜）",
+   "date": "2026-03",
+   "why_zh": "把赛季联名涂装做成手机上一点就开的 3D 赛车：玩家驾驶哥斯拉涂装的 Haas 赛车在火山熔岩赛道里躲岩浆刷最快圈，背景里哥斯拉压阵；每圈成绩进全球榜，车手亲自下场晒成绩挑战粉丝，整个赛季都有理由再玩。",
+   "style_zh": "暗红熔岩 + 怪兽剪影，写实 3D 赛车，竖屏移动优先",
+   "live_url": "https://wave-haasf1.lwprod.nl/",
+   "source_url": "https://www.wecreatewaves.com/work/haas-f1-godzilla/",
+   "image": "images/haas-f1-godzilla-lava-racer.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "赛车",
+    "排行榜",
+    "联名"
+   ]
+  },
+  {
+   "id": "heineken-fans-have-more-friends",
+   "title_zh": "喜力「Fans Have More Friends」：Y2K 跑酷，一路击掌拉朋友入队，人越多分越高",
+   "brand": "喜力 Heineken",
+   "agency": "Wave（游戏）；LePub（Campaign 平台）",
+   "region": "全球（南非首发，分市场上线）",
+   "format": "手机浏览器无尽跑酷 + 组队排行榜",
+   "date": "2026-03",
+   "why_zh": "把口号直接变成玩法：跑向球场/赛道/音乐节的路上，和路人击掌，他们就跟着一起跑，朋友越多分数越高。三张主题地图对应欧冠、F1 和音乐节，玩完可以加入战队、上共享排行榜，找到彩蛋还能送队友加速道具。",
+   "style_zh": "Y2K 千禧风配色，卡通 3D 跑酷，竖屏",
+   "live_url": "https://fans.heineken.com/",
+   "source_url": "https://www.wecreatewaves.com/work/fans-have-more-friends/",
+   "image": "images/heineken-fans-have-more-friends.webp",
+   "mobile": "yes",
+   "tags": [
+    "跑酷",
+    "社交组队",
+    "排行榜",
+    "体育赞助"
+   ]
+  },
+  {
+   "id": "gucci-la-famiglia-mystery",
+   "title_zh": "Gucci「La Famiglia: Mystery Unfolds」：在别墅里审问 9 个角色，用对话破解珠宝失窃案",
+   "brand": "Gucci",
+   "agency": "MONOGRID",
+   "region": "全球",
+   "format": "手机网页推理游戏（AI 对话驱动，Google Gemini）",
+   "date": "2026-03",
+   "why_zh": "系列大片里的 9 个家族角色变成可以对话的 NPC：女伯爵的珠宝在派对上失窃，玩家扮侦探在别墅里一个个盘问，每个人都有秘密，每段对话掉一条线索，最后推理出真相。把时装叙事做成了生成式 AI 的剧情游戏，不是常见的问答测试。",
+   "style_zh": "暗调电影感别墅 + 角色肖像，奢牌编辑风",
+   "live_url": "https://www.gucci.com/us/en/nst/la-famiglia-mystery-unfolds",
+   "source_url": "https://monogrid.com/fr/project/la-famiglia-mystery-unfolds",
+   "image": "images/gucci-la-famiglia-mystery.webp",
+   "mobile": "yes",
+   "tags": [
+    "AI对话",
+    "推理",
+    "叙事游戏",
+    "奢侈品"
+   ]
+  },
+  {
+   "id": "miumiu-manifeste-wardrobe",
+   "title_zh": "Miu Miu「Manifeste Wardrobe」：把单品做成贴纸，在手机上自由拼贴、旋转、搭出自己的造型板",
+   "brand": "Miu Miu",
+   "agency": "MONOGRID",
+   "region": "全球",
+   "format": "手机竖屏网页拼贴/搭配互动（可购物）",
+   "date": "2026-02",
+   "why_zh": "不做商品陈列，而是给你一块编辑风情绪板：把系列单品当贴纸，在大片背景上拖动、旋转、叠放，搭出自己的造型，每件单品同时可以直达购买。把\"穿搭即态度\"的系列主题变成了亲手创作。",
+   "style_zh": "粉色网格 + 剪贴拼贴，杂志编辑风",
+   "live_url": "https://miu-miu-wardrobe-collection-2026-master.monogrid.io/",
+   "source_url": "https://monogrid.com/en/project/miu-miu-manifeste-wardrobe",
+   "image": "images/miumiu-manifeste-wardrobe.webp",
+   "mobile": "yes",
+   "tags": [
+    "拼贴创作",
+    "穿搭",
+    "奢侈品",
+    "可购物"
+   ]
+  },
+  {
+   "id": "samsung-galaxy-store-catch-the-drop",
+   "title_zh": "三星 Galaxy Store × Roblox「Catch the Drop! Win the Runway」：在潮流城里抢限量掉落、走上 T 台",
+   "brand": "三星 Galaxy Store",
+   "agency": "METAMATE（韩国）",
+   "region": "韩国/全球（Roblox）",
+   "format": "Roblox 品牌体验游戏（手机可玩）",
+   "date": "2026-01",
+   "why_zh": "不硬推下载 App，而是把 Galaxy Store 做成一座霓虹潮流城：玩家在城里跑任务、蹲限时掉落，攒到奖励后走上 T 台展示；限量 UGC 道具上线 2 小时被抢光 3000 件。用\"掉落 + 走秀\"让 Roblox 玩家愿意反复上线。",
+   "style_zh": "粉青霓虹未来城 + 时装 T 台",
+   "live_url": "https://www.roblox.com/games/88780810160953",
+   "source_url": "https://metamatekr.com/blog/catch-the-drop-roblox-case-study",
+   "image": "images/samsung-galaxy-store-catch-the-drop.webp",
+   "mobile": "partial",
+   "tags": [
+    "Roblox",
+    "限量掉落",
+    "UGC",
+    "走秀"
+   ]
+  },
+  {
+   "id": "wwf-gotchies-whatsapp",
+   "title_zh": "WWF「Gotchies」：在 WhatsApp 里养一只濒危动物电子宠物，长大放归时才发现栖息地已被破坏",
+   "brand": "WWF 德国",
+   "agency": "charles（WhatsApp 对话平台）",
+   "region": "德国",
+   "format": "WhatsApp 聊天内的电子宠物游戏",
+   "date": "2025-12-19",
+   "why_zh": "把拓麻歌子搬进 WhatsApp：从 5 只动物里领养一只，靠每天聊天喂养、陪它长大；等到要放归野外，才发现栖息地被破坏、食物不够，玩家得想办法帮忙。养出感情的时候再把行动入口抛出来，不用下载 App，手机上原生就能玩。",
+   "style_zh": "Q 版大头动物 + 米色复古电子宠物感",
+   "live_url": "https://www.wwf.de/gotchies",
+   "source_url": "https://www.hello-charles.com/wwf-gotchies",
+   "image": "images/wwf-gotchies-whatsapp.webp",
+   "mobile": "yes",
+   "tags": [
+    "聊天游戏",
+    "养成",
+    "公益",
+    "WhatsApp"
+   ]
+  },
+  {
+   "id": "cartier-follow-baby-panther",
+   "title_zh": "卡地亚「Follow the Baby Panther」：节日广告里的小豹子跑进了官网，点任意链接就能跟着它逛",
+   "brand": "卡地亚 Cartier",
+   "agency": "Merci-Michel",
+   "region": "全球",
+   "format": "嵌入电商官网的互动网页体验",
+   "date": "2025-12",
+   "why_zh": "第一次把节日 campaign 直接做进电商站：广告里的小豹子\"溜\"进了卡地亚官网，在活动页点任何链接都会唤出小豹子，跟着它穿梭页面、发现礼物。不是另做一个 microsite，而是让购物页面本身变得好玩。",
+   "style_zh": "红色礼盒 + 写实小豹子，卡地亚节日红金调",
+   "live_url": "https://www.cartier.com/en-gb/followthebabypanther",
+   "source_url": "https://thefwa.com/cases/follow-the-baby-panther",
+   "image": "images/cartier-follow-baby-panther.webp",
+   "mobile": "partial",
+   "tags": [
+    "电商互动",
+    "节日",
+    "奢侈品",
+    "角色"
    ]
   },
   {
