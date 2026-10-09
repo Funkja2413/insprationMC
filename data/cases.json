@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-09",
- "count": 45,
+ "count": 48,
  "cases": [
   {
    "id": "asahi-dodecamin-roblox",
@@ -57,6 +57,27 @@
    "mobile": "yes",
    "tags": [
     "轻游戏"
+   ]
+  },
+  {
+   "id": "morinaga-ototo-hunter",
+   "title_zh": "森永「めざせ！最强おっとっとハンター！」：把零食摆在桌上让手机认形状，认出哪种动物就开哪关捕获小游戏",
+   "brand": "森永製菓 おっとっと（海洋/动物造型膨化零食）",
+   "agency": "未公开",
+   "region": "日本",
+   "format": "手机网页小游戏（摄像头识别零食造型 → 解锁捕获关卡 + 生物图鉴）",
+   "date": "2026-10",
+   "why_zh": "零食本身就是钥匙：おっとっと每颗都是鱼、企鹅、熊猫、大象之类的造型，玩家把零食放在桌上、对准画面里的轮廓框，形状对上就解锁那只动物的捕获小游戏（钓鱼、撒网等点按玩法）。更妙的是「组合型」——把 2～3 颗零食拼在一起（比如『イルカ2個形』『パンダ3個型』）才能解锁更稀有的生物，并点亮由动物专家パンク町田监修的图鉴。吃之前先玩、拼形状、集图鉴，购买→开袋→玩这条链路非常顺。",
+   "style_zh": "儿童向明亮插画，海洋与草原左右对切，零食造型 Q 版化",
+   "live_url": "https://www.morinaga.co.jp/ototo/game2026/",
+   "source_url": "https://www.morinaga.co.jp/ototo/game2026/",
+   "image": "images/morinaga-ototo-hunter.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "包装/产品入口",
+    "收集图鉴",
+    "零食"
    ]
   },
   {
@@ -215,6 +236,48 @@
     "推理",
     "叙事游戏",
     "奢侈品"
+   ]
+  },
+  {
+   "id": "gq-ap-extraordinary-lab",
+   "title_zh": "GQ × 爱彼 Audemars Piguet「The Extraordinary Lab」：像拖播放器进度条一样拖动整段 WebGL 实时渲染的制表实验室",
+   "brand": "Audemars Piguet 爱彼（与 GQ / Condé Nast 合作的品牌内容）",
+   "agency": "Immersive Garden（法国）",
+   "region": "美国/全球（GQ）",
+   "format": "手机端 3D WebGL 叙事页（滚动/拖动时间轴 + 播客对谈音频同步）",
+   "date": "2026-02-26",
+   "why_zh": "不是常规奢侈品产品页：整站是一条连续的电影时间轴，用户上下滑/拖动就像拖播放器进度条，镜头、场景、J Balvin 和 GQ 腕表编辑的播客对谈同步前进后退，快速拖动时音频会智能淡入淡出而不是变速乱叫。RD#5 腕表在浏览器里实时渲染，透明蓝宝石、陀飞轮厚度都按真实比例做，团队把 iPhone 11/12 跑满 60 帧当作硬指标。适合参考『把长内容做成可拖动的 3D 播放器』这种交互。",
+   "style_zh": "暗场工业实验室 + 冷灰金属与蓝宝石反光，电影级打光，极简白字 UI",
+   "live_url": "https://www.gq.com/sponsored/story/the-extraordinary-lab",
+   "source_url": "https://www.awwwards.com/gq-audemars-piguet-the-extraordinary-lab.html",
+   "image": "images/gq-ap-extraordinary-lab.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D/WebGL",
+    "叙事",
+    "奢侈品",
+    "音频交互"
+   ]
+  },
+  {
+   "id": "mcdonalds-course-givree",
+   "title_zh": "麦当劳法国「Course Givrée 冰雪赛道」：开着雪地摩托的奶昔怪 Grimace，用会员积分换游戏次数",
+   "brand": "McDonald's France 麦当劳法国（McDo+ App）",
+   "agency": "Razorfish France（创意）+ makemepulse / makemeplay（设计开发）",
+   "region": "法国",
+   "format": "App 内 3D 跑酷小游戏（会员积分换游戏代币 + 每周排行奖励）",
+   "date": "2026-02-09",
+   "why_zh": "游戏被做成会员体系的一部分，而不是一次性活动：McDo+ 会员积分可以换成额外游戏代币，跑得好每周能换 App 专属奖励，游戏数据后台实时调难度。玩法是 Grimace 骑雪地摩托冲下麦当劳乐园雪坡，收集蓝莓奶昔延长时间、触发「Mega Jump」奖励段。核心机制是常见跑酷，亮点在于复古 McDonaldland 吉祥物美术和『积分→游戏→奖励』的留存闭环。",
+   "style_zh": "70 年代 McDonaldland 复古卡通 + 现代 3D，粉橙紫配色的糖果雪山",
+   "live_url": "",
+   "source_url": "https://lbbonline.com/news/McDonalds-France-Course-Givree",
+   "image": "images/mcdonalds-course-givree.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "IP 吉祥物",
+    "会员积分",
+    "App 内游戏化"
    ]
   },
   {
