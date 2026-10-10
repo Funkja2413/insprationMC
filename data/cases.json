@@ -1,7 +1,154 @@
 {
- "updated": "2026-10-09",
- "count": 48,
+ "updated": "2026-10-10",
+ "count": 55,
  "cases": [
+  {
+   "id": "yoshimoto-uchinoko-card-legend",
+   "title_zh": "吉本 ×Gemini「うちの子カード伝説」：上传宠物照片，AI 生成独一无二的稀有卡，再组队打 Raid",
+   "brand": "吉本兴业（技术协力 Google Gemini）",
+   "agency": "吉本兴业企划运营；マヂカルラブリー野田クリスタル 构想",
+   "region": "日本",
+   "format": "手机网页 AI 生成卡牌 + 图鉴 + 团队 Raid 战",
+   "date": "2026-07-15",
+   "why_zh": "卡就是你家宠物：拍照上传，Gemini 把它画成异世界传说角色，自动配稀有度和必杀技；收进图鉴后还能和别人的\"自家孩子\"组队打 Boss。AI 生成卡 + 收集 + 对战全在手机网页里，情感钩子很强（发布会上有人给去世的猫做了卡）。",
+   "style_zh": "奇幻 TCG 卡面，森林水晶背景，日式 RPG 感",
+   "live_url": "https://uchinoko-card.com/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000005180.000029501.html",
+   "image": "images/yoshimoto-uchinoko-card-legend.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "AI生成",
+    "收集",
+    "对战"
+   ]
+  },
+  {
+   "id": "samyang-buldak-peppo-world",
+   "title_zh": "三养火鸡面新角色 PEPPO 的「Peppo World」：每天抽一张角色卡集图鉴，还能用 AI 画板改造 PEPPO",
+   "brand": "三养食品 火鸡面 Buldak（三养 Ani 运营）",
+   "agency": "三养 Ani（官方）",
+   "region": "韩国/全球",
+   "format": "手机网页集卡 + AI 画板 + 聊天谜题",
+   "date": "2026-06-23",
+   "why_zh": "用新角色 IP 撬动零食包装：扫火鸡面包装上的码进入一个 Win98 风格的\"PEPPO 桌面\"，每天翻一张 PEPPO 卡，分享给朋友多抽几次，慢慢集满图鉴；另有 AI 画板改造角色、表情包组合猜谜。复古操作系统界面本身就很好玩。",
+   "style_zh": "Windows 98 复古桌面 + 蓝天草地 + 红色辣椒小鸡",
+   "live_url": "https://peppoworld.com/ko/card-collection/",
+   "source_url": "https://buldak.com/kr/news/peppo-world-open/",
+   "image": "images/samyang-buldak-peppo-world.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "集卡",
+    "角色IP",
+    "包装扫码"
+   ]
+  },
+  {
+   "id": "bandai-chousenshi-wafer-kaifu",
+   "title_zh": "万代「超战士贴纸威化饼 10 周年超开封体验」：在手机上撕开 10 年 35 弹的包装，一张张开出贴纸",
+   "brand": "万代 Bandai Candy（龙珠超战士贴纸威化饼）",
+   "agency": "万代 Candy 事业部（官方）",
+   "region": "日本",
+   "format": "手机网页模拟开包 + 收藏图鉴",
+   "date": "2026-05-15",
+   "why_zh": "产品本身就是玩法：把实体零食的\"撕包装开贴纸\"做成网页开包体验，35 弹历代包装随便选，每天能开 10 包（登录后 20 包），开出来的贴纸存进收藏册，可以集齐或冲稀有。附带的抽奖只是外挂，核心是开包的手感。",
+   "style_zh": "金色闪卡 + 龙珠超战士包装，日式卡包特效",
+   "live_url": "https://kaifutaiken.bandai.co.jp/db/",
+   "source_url": "https://www.atpress.ne.jp/news/580419",
+   "image": "images/bandai-chousenshi-wafer-kaifu.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "开包",
+    "收集",
+    "产品即玩法"
+   ]
+  },
+  {
+   "id": "mcdonalds-uk-cards",
+   "title_zh": "麦当劳英国「CARDS」：套餐附送卡包，24 张怀旧收藏卡在 App 里集套解锁动画和奖励",
+   "brand": "麦当劳英国",
+   "agency": "Leo UK（创意）；tms（App 数字体验）",
+   "region": "英国",
+   "format": "实体卡包 + 麦当劳 App 内数字收藏册",
+   "date": "2026-03-17",
+   "why_zh": "把麦当劳几十年的吉祥物、菜单梗和粉丝回忆画成一套正经 TCG：分普通/复古/传奇稀有度，传奇卡做镭射；卡背的码输进 App 后，卡片会在数字图鉴里带动画\"活过来\"，集齐一套解锁奖励，另有全英只有 10 张的金色麦当劳叔叔卡。",
+   "style_zh": "复古手绘 + CGI 卡面，镭射闪卡",
+   "live_url": "https://cards.mcdonalds.co.uk/",
+   "source_url": "https://leoburnett.co.uk/mcdonalds-cards/",
+   "image": "images/mcdonalds-uk-cards.webp",
+   "mobile": "partial",
+   "tags": [
+    "卡牌",
+    "集卡",
+    "App内",
+    "快餐"
+   ]
+  },
+  {
+   "id": "jleague-fantasy-card",
+   "title_zh": "J 联赛「J.League Fantasy Card」：收集球员数字卡组阵，按真实比赛表现计分",
+   "brand": "J 联赛（日本职业足球联赛）",
+   "agency": "Mynet（マイネット）运营",
+   "region": "日本",
+   "format": "手机网页数字球星卡 + 梦幻足球",
+   "date": "2026-01-14",
+   "why_zh": "球星卡和梦幻足球合在一起：开包收集 J1-J3 球员的数字卡，用手里的卡组首发阵容，分数跟着周末真实比赛表现走。\"集\"和\"玩\"互相拉动，球迷每轮都有理由回来调整卡组。",
+   "style_zh": "白底 + J 联赛 Logo，实拍球员卡面",
+   "live_url": "https://fantasy-fc.com/",
+   "source_url": "https://www.jleague.jp/news/article/33133/",
+   "image": "images/jleague-fantasy-card.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "开包",
+    "体育",
+    "梦幻游戏"
+   ]
+  },
+  {
+   "id": "netflix-tudum-tarot-2026",
+   "title_zh": "Netflix「Discover Your Future」：抽三张塔罗牌，每张牌对应一部 2026 新片",
+   "brand": "Netflix",
+   "agency": "Wieden+Kennedy Portland",
+   "region": "全球（34 个市场）",
+   "format": "手机网页塔罗翻牌",
+   "date": "2026-01",
+   "why_zh": "把年度片单发布做成塔罗占卜：选一套牌、选今年想投入的方向，翻开三张牌，每张写一个运势，配一部情节对应的 Netflix 新作，再给你一个年度原型（寻宝者、鬼牌……）。卡面左上角是剧集图标、右上角是大阿卡纳符号。Tudum 因此迎来史上流量最高的一天（250 万访问）。",
+   "style_zh": "黑红神秘风 + 插画塔罗卡面",
+   "live_url": "https://www.netflix.com/tudum/next-on-netflix",
+   "source_url": "https://www.netflix.com/tudum/articles/next-on-netflix-2026-tarot-cards",
+   "image": "images/netflix-tudum-tarot-2026.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "翻牌",
+    "片单",
+    "塔罗"
+   ]
+  },
+  {
+   "id": "hulu-omitb-playing-card-war",
+   "title_zh": "Hulu《大楼里只有谋杀》S5：把自己做成剧中风格的扑克牌，再和角色牌比大小",
+   "brand": "Hulu《Only Murders in the Building》",
+   "agency": "未在获奖资料中具名（Shorty / Little Big Awards 参赛）",
+   "region": "美国",
+   "format": "手机网页头像卡牌生成 + 卡牌对战 War",
+   "date": "2025-09-25",
+   "why_zh": "剧里有一副定制扑克，Hulu 把它变成可玩的：选点数和花色，捏一个剧中画风的自己，生成你的专属牌，然后拿这张牌和剧中角色牌玩\"比大小\"。分享到 IG 还能抽实体牌组。卡面就是剧情彩蛋。",
+   "style_zh": "赌场绿绒 + 筹码 + 手绘角色扑克",
+   "live_url": "https://omitb.hulu.com/",
+   "source_url": "https://shortyawards.com/18th/only-murders-in-the-building",
+   "image": "images/hulu-omitb-playing-card-war.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "头像生成",
+    "对战",
+    "剧集"
+   ]
+  },
   {
    "id": "asahi-dodecamin-roblox",
    "title_zh": "朝日饮料《ドデカ・ドデカミン》：在 Roblox 街头搞破坏攒能量，喝下 Dodecamin 就变巨人",
