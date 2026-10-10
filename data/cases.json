@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-10",
- "count": 55,
+ "count": 62,
  "cases": [
   {
    "id": "yoshimoto-uchinoko-card-legend",
@@ -66,6 +66,90 @@
    ]
   },
   {
+   "id": "mcdonalds-fr-rosti-fall",
+   "title_zh": "麦当劳法国「Rösti Fall」：选一只薯条小伙伴，在麦当劳世界里无尽下坠闯关",
+   "brand": "麦当劳法国",
+   "agency": "makemepulse（with Razorfish）",
+   "region": "法国",
+   "format": "McDo+ App 内手机街机游戏",
+   "date": "2026-05-05",
+   "why_zh": "把新品 280 Rösti 做成游戏入口：买新品或用会员积分换代币，每局一枚；选一只 70 年代吉祥物 Fry Friend（各有技能），在程序生成的竖向关卡里一路下坠，躲障碍、吃金币。消费、积分和游戏连成一个循环。",
+   "style_zh": "明亮卡通 3D + 复古 Fry Friends 吉祥物",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/mcdonalds-france-rosti-fall-loyalty-mobile-game",
+   "image": "images/mcdonalds-fr-rosti-fall.webp",
+   "mobile": "partial",
+   "tags": [
+    "下落跑酷",
+    "会员",
+    "App内",
+    "快餐"
+   ]
+  },
+  {
+   "id": "smartwater-cerulean-challenge",
+   "title_zh": "smartwater ×《穿普拉达的女王 2》：两分钟里从一堆蓝色色块中找出真正的「天蓝色」",
+   "brand": "smartwater（可口可乐）× 20 世纪影业",
+   "agency": "The Barbarian Group",
+   "region": "美国",
+   "format": "扫瓶身二维码的手机网页找色游戏",
+   "date": "2026-04-16",
+   "why_zh": "一句电影台词变成一个产品机制：瓶身从招牌蓝改成限定\"天蓝色\"，扫码进入后要在 2 分钟内从深蓝到青色的色块里点出唯一正确的天蓝，旁边还有 Miranda 的毒舌点评，过关后得到一个电影梗称号。把\"讲究\"这个品牌主张变成了考眼力。",
+   "style_zh": "渐变蓝色块网格 + 极简杂志排版",
+   "live_url": "https://cokeurl.com/smartwater-cerulean-sweeps",
+   "source_url": "https://www.coca-colacompany.com/media-center/smartwater-goes-cerulean-with-the-devil-wears-prada-2",
+   "image": "images/smartwater-cerulean-challenge.webp",
+   "mobile": "partial",
+   "tags": [
+    "产品即玩法",
+    "找色",
+    "电影联名",
+    "包装扫码"
+   ]
+  },
+  {
+   "id": "lacoste-polo-factory",
+   "title_zh": "Lacoste「Polo Factory」：在一座 3D 玩具工厂里乱按，每个机关都会吐出不一样的 Polo 衫特效",
+   "brand": "Lacoste",
+   "agency": "Merci-Michel（线下装置 aimko）",
+   "region": "美国（会员向，英/西语）",
+   "format": "手机网页 3D 玩具式互动（WebGL）",
+   "date": "2026-04-01",
+   "why_zh": "不是闯关，而是\"好按\"：把 Polo 的诞生做成一座彩色工厂，按任何一个机关都会触发强烈的视觉反馈，同一个按钮每次效果都不一样。用玩具式的即时反馈把产品讲出来，配合 Pierre Gasly 的广告和线下装置。",
+   "style_zh": "粉彩 3D 工厂 + 一排排彩色 Polo，Lacoste 鳄鱼细节",
+   "live_url": "https://members-play.lacoste.com/polo-factory-experience/us/en/",
+   "source_url": "https://www.linkedin.com/posts/merci-michel_lacoste-polo-factory-welcome-to-the-lacoste-activity-7457822392397049856-z3Lr",
+   "image": "images/lacoste-polo-factory.webp",
+   "mobile": "yes",
+   "tags": [
+    "玩具感",
+    "3D/WebGL",
+    "即时反馈",
+    "时尚"
+   ]
+  },
+  {
+   "id": "qoo-aiko-kanpai-janken",
+   "title_zh": "Qoo「あいこでカンパイじゃんけん」：和 Qoo 猜拳，出平局就比谁先把果汁倒完",
+   "brand": "Qoo（日本可口可乐）",
+   "agency": "未公开",
+   "region": "日本",
+   "format": "手机专用网页小游戏（配合新瓶型）",
+   "date": "2026-03-23",
+   "why_zh": "产品就是玩法：Qoo 新瓶倒出后插画会变透明，能看出倒了多少，于是发明了一个亲子游戏\"猜到平局就干杯\"。网页版里先和 Qoo 猜拳，打成平局后比谁先把杯子倒满，赢了就升级、Qoo 会倒得更快。把\"倒饮料\"本身变成了比赛。",
+   "style_zh": "橙绿配色 + 圆滚滚的 Qoo 角色，儿童向",
+   "live_url": "https://c.cocacola.co.jp/spn/qoo/janken-game/",
+   "source_url": "https://www.coca-cola.com/jp/ja/media-center/news-20260203-11",
+   "image": "images/qoo-aiko-kanpai-janken.webp",
+   "mobile": "yes",
+   "tags": [
+    "产品即玩法",
+    "猜拳",
+    "亲子",
+    "饮料"
+   ]
+  },
+  {
    "id": "mcdonalds-uk-cards",
    "title_zh": "麦当劳英国「CARDS」：套餐附送卡包，24 张怀旧收藏卡在 App 里集套解锁动画和奖励",
    "brand": "麦当劳英国",
@@ -126,6 +210,68 @@
     "翻牌",
     "片单",
     "塔罗"
+   ]
+  },
+  {
+   "id": "cdiscount-jumping-max",
+   "title_zh": "Cdiscount「Jumping Max」：举着喇叭的吉祥物在电商仓库里跑跳，沿途吃到\"免运费/分 4 期\"图标加分",
+   "brand": "Cdiscount",
+   "agency": "Merci-Michel（with Socialy）",
+   "region": "法国",
+   "format": "手机/桌面网页跑酷",
+   "date": "2026",
+   "why_zh": "把电商卖点做成道具：吉祥物 Max 在 Cdiscount 仓库里自动奔跑，点按跳过纸箱、托盘和叉车，快递、分期、大牌、低价这些图标都是加分道具；20 关难度递增，分数达到门槛就解锁对应奖品。品牌第一款游戏。",
+   "style_zh": "亮蓝仓库 + 卡通 3D 吉祥物",
+   "live_url": "https://jumpingmax.cdiscount.com/",
+   "source_url": "https://wellplayedawards.com/games/jumping-max-for-cdiscount",
+   "image": "images/cdiscount-jumping-max.webp",
+   "mobile": "partial",
+   "tags": [
+    "跑酷",
+    "卖点道具",
+    "电商"
+   ]
+  },
+  {
+   "id": "monst-santa-jack-reindeer-interview",
+   "title_zh": "《怪物弹珠》「サンタジャック的驯鹿招聘面试」：用自由输入接受 AI 面试官拷问，合格率仅 1%",
+   "brand": "怪物弹珠 Monster Strike（MIXI）",
+   "agency": "KAYAC 面白法人",
+   "region": "日本",
+   "format": "手机网页生成式 AI 对话游戏",
+   "date": "2025-12-01",
+   "why_zh": "不是选项式测试，而是真正的自由对话：扭蛋限定角色\"圣诞杰克\"当 AI 面试官，你扮演想当驯鹿的求职者，回答必须足够积极才能过关，判定严到合格率约 1%；落选会收到前辈驯鹿的毒舌\"祝福信\"。两周约 95 万次游玩，玩家在 X 上互相分享攻略。",
+   "style_zh": "圣诞红 + 动漫角色立绘，聊天界面",
+   "live_url": "",
+   "source_url": "https://www.kayac.com/service/client/2103",
+   "image": "images/monst-santa-jack-reindeer-interview.webp",
+   "mobile": "partial",
+   "tags": [
+    "AI对话",
+    "生成式",
+    "游戏IP",
+    "节日"
+   ]
+  },
+  {
+   "id": "mora-snack-catching",
+   "title_zh": "Mora「Snack Catching」：在比利时炸物店点 Viandel 拿到二维码，用炸篮接住天上掉下的零食",
+   "brand": "Mora（比利时冷冻零食）",
+   "agency": "Tool Belgium / Nøcomputer",
+   "region": "比利时",
+   "format": "扫码即玩的手机网页像素小游戏",
+   "date": "2025-12",
+   "why_zh": "产品就是掉落物，玩家就是炸物店店员：左右移动炸篮接零食，漏三个就结束，成绩上月度排行榜，第一名送 Switch 2。每个二维码只能玩一局，想再挑战就得再点一份 Viandel，让一次去炸物店变成了一场比赛。",
+   "style_zh": "Mora 橙色像素风炸物店",
+   "live_url": "",
+   "source_url": "https://www.nocomputer.be/project/snack-catching-game-mora",
+   "image": "images/mora-snack-catching.webp",
+   "mobile": "partial",
+   "tags": [
+    "产品即玩法",
+    "接物",
+    "像素",
+    "包装扫码"
    ]
   },
   {
