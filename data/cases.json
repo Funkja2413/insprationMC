@@ -1,7 +1,525 @@
 {
- "updated": "2026-10-10",
- "count": 62,
+ "updated": "2026-10-12",
+ "count": 88,
  "cases": [
+  {
+   "id": "redbull-racing-full-send",
+   "title_zh": "Red Bull Racing《FULL SEND》挑战维斯塔潘的网页赛车",
+   "brand": "Oracle Red Bull Racing",
+   "agency": "Merci-Michel",
+   "region": "法国/全球",
+   "format": "品牌官网内嵌的网页赛车游戏（含排行榜/奖品）",
+   "date": "2026-09-21",
+   "why_zh": "“这既是游戏也是网站”：在车队官方 Paddock 站里直接开车，和 Max Verstappen 的圈速比快慢，成绩够好能赢只有红牛才拿得出的奖品。粉丝账号体系和赛车游戏绑在一起。",
+   "style_zh": "Merci-Michel 招牌的 three.js 卡通赛车，红牛车队深蓝/红配色",
+   "live_url": "https://paddock.redbullracing.com/int-en/gaming/full-send",
+   "source_url": "https://www.linkedin.com/posts/merci-michel_this-is-a-game-and-a-website-activity-7507788732947750913-achI",
+   "image": "images/redbull-racing-full-send.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "赛车",
+    "排行榜"
+   ]
+  },
+  {
+   "id": "la-revoltosa-burbuja-iberica",
+   "title_zh": "La Revoltosa「La Burbuja Ibérica」1953 年西班牙汽水复刻 3D 站",
+   "brand": "La Revoltosa（西班牙复刻汽水品牌）",
+   "agency": "未公开（FWA 收录）",
+   "region": "西班牙",
+   "format": "手机可浏览的 Three.js 3D 滚动叙事站",
+   "date": "2026-09-18",
+   "why_zh": "让一个 1953 年的老汽水品牌在网页上“重生”：滚动时 3D 汽水瓶跟着翻转、冒泡，串起 GL6RIA 的纹身风插画讲品牌故事。偏展示型，用来校准 3D 叙事站。",
+   "style_zh": "大红底色，复古西班牙字体，纹身风插画与透明玻璃瓶 3D 渲染",
+   "live_url": "https://larevoltosa.es/",
+   "source_url": "https://thefwa.com/cases/la-revoltosa-p2",
+   "image": "images/la-revoltosa-burbuja-iberica.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D",
+    "叙事站"
+   ]
+  },
+  {
+   "id": "street-fighter-youtube-combo-challenge",
+   "title_zh": "电影《街头霸王》YouTube 可玩预告片「Combo Challenge」",
+   "brand": "Paramount / Legendary《Street Fighter》电影",
+   "agency": "未公开（YouTube Playables 发布）",
+   "region": "全球",
+   "format": "YouTube Playables 可玩完整预告片（节奏按键）",
+   "date": "2026-09-01",
+   "why_zh": "整支预告片放在一台虚拟街机里播放，镜头里出招时屏幕弹出按键提示，玩家要按节奏打出连段和必杀才能让剧情继续，最后得分进排行榜。把“看预告”直接换成“打一局街霸”，让格斗游戏 IP 的精髓（搓招连段）就是观看方式。",
+   "style_zh": "街机框体包着真人电影画面，复古像素按键提示，连击数字特效",
+   "live_url": "https://www.youtube.com/playables/UgkxGF7ES_oNTQGaOOKydm_B80zczREKGCRB",
+   "source_url": "https://www.creativebloq.com/entertainment/movies-tv-shows/street-fighters-playable-trailer-is-a-hadouken-to-traditional-movie-advertising",
+   "image": "images/street-fighter-youtube-combo-challenge.webp",
+   "mobile": "yes",
+   "tags": [
+    "节奏",
+    "可玩预告",
+    "电影宣传"
+   ]
+  },
+  {
+   "id": "heinz-zero-crush-the-sugar",
+   "title_zh": "Heinz Zero《Crush the Sugar》消掉糖的三消游戏",
+   "brand": "Heinz（Kraft Heinz Brasil）",
+   "agency": "DAVID",
+   "region": "巴西",
+   "format": "三消小游戏 + 手游内可玩广告 + Meta/YouTube/TikTok 可玩版",
+   "date": "2026-08-24",
+   "why_zh": "给零添加糖番茄酱做的“糖果消消乐”：100 秒内三连消掉棋盘上的糖，10 秒内连消会召唤一瓶 Heinz Zero 冲出来一口气清掉大片糖。“零糖”卖点就是通关条件，广告还直接投进同类三消手游里当可玩广告。",
+   "style_zh": "番茄红配糖果色方块，Heinz 瓶身作为大招道具",
+   "live_url": "",
+   "source_url": "https://clubedecriacao.com.br/ultimas/crush-the-sugar/",
+   "image": "images/heinz-zero-crush-the-sugar.webp",
+   "mobile": "partial",
+   "tags": [
+    "三消",
+    "可玩广告",
+    "产品即玩法"
+   ]
+  },
+  {
+   "id": "jomalone-fortnite-sea-salt",
+   "title_zh": "Jo Malone London 进 Fortnite：在英国海岸收集海盐与佛手柑香气",
+   "brand": "Jo Malone London（雅诗兰黛集团）",
+   "agency": "未公开（合作岛屿 Minigame Box PvP）",
+   "region": "全球",
+   "format": "Fortnite 岛屿内限时探索玩法",
+   "date": "2026-08-10",
+   "why_zh": "香水没法在屏幕上闻到，于是把“收集香调”做成玩法：在热门 PvP 岛屿里加入英国海岸主题区，玩家探索收集海盐、佛手柑等香气元素，换取局内优势。用来校准“香氛类品牌进游戏平台”能不能接受。",
+   "style_zh": "英伦海岸蓝白色调、海崖与沙滩，Fortnite 卡通渲染",
+   "live_url": "",
+   "source_url": "https://www.marketingdive.com/news/estee-lauders-jo-malone-turns-to-fortnite-for-first-gaming-activation/828061/",
+   "image": "images/jomalone-fortnite-sea-salt.webp",
+   "mobile": "partial",
+   "tags": [
+    "Fortnite",
+    "香氛",
+    "游戏平台"
+   ]
+  },
+  {
+   "id": "chagee-honor-of-kings-tea-farm",
+   "title_zh": "霸王茶姬 × 王者荣耀「种茶得茶」",
+   "brand": "霸王茶姬 CHAGEE × 《王者荣耀》《王者荣耀世界》",
+   "agency": "未公开",
+   "region": "中国大陆",
+   "format": "手游内种植玩法 + 线下核销",
+   "date": "2026-07-24",
+   "why_zh": "在王者农场 / 家园系统里限时开放“铁观音”种植：每天登录、打几局领种子，种下收成后可换联名新品“青沫观音”0.01 元尝鲜券或买一赠一券。虚拟种的茶就是现实里喝到的那杯茶，原料成了玩法。",
+   "style_zh": "国风游戏美术，联名英雄（庄周、孙尚香、王昭君等）",
+   "live_url": "",
+   "source_url": "https://tidenews.com.cn/news.html?id=3514563",
+   "image": "images/chagee-honor-of-kings-tea-farm.webp",
+   "mobile": "partial",
+   "tags": [
+    "游戏平台植入",
+    "App内",
+    "联名"
+   ]
+  },
+  {
+   "id": "basicfit-ride-to-glory",
+   "title_zh": "Basic-Fit × 环法《Ride to Glory》骑行跑酷",
+   "brand": "Basic-Fit（欧洲连锁健身房）",
+   "agency": "Wave（wecreatewaves）/ Livewall",
+   "region": "欧洲（荷比法西等）",
+   "format": "手机网页无尽骑行跑酷",
+   "date": "2026-07-04",
+   "why_zh": "把环法赞助变成手机上能骑的比赛：左右滑动在车群里穿行，躲摔车和路障，吃道具、捡环法硬币，经过葡萄园、山口和城市终点。玩法偏常规跑酷，用来校准“体育赞助类跑酷”能不能接受。",
+   "style_zh": "环法黄配 Basic-Fit 橙，卡通 3D 车群和法国风景",
+   "live_url": "https://play.basic-fit.com",
+   "source_url": "https://www.wecreatewaves.com/work/basic-fit-ride-to-glory/",
+   "image": "images/basicfit-ride-to-glory.webp",
+   "mobile": "yes",
+   "tags": [
+    "跑酷",
+    "体育赞助"
+   ]
+  },
+  {
+   "id": "earth-gokilove-dating-sim",
+   "title_zh": "アース製薬《ごきげんラブリーデイズ》蟑螂美男恋爱模拟",
+   "brand": "アース製薬（アースゴキッシュ スッ、スゴい！）",
+   "agency": "未公开",
+   "region": "日本",
+   "format": "手机/PC 浏览器恋爱模拟游戏",
+   "date": "2026-06-04",
+   "why_zh": "杀虫剂品牌做乙女游戏：4 位梶裕贵配音的美男其实是 4 种蟑螂（クロ/チャバ/ヤマト/ワモン），“好き/嫌い”就是蟑螂的真实习性（喜欢潮湿暗处、讨厌薄荷柑橘），按习性行动才能涨好感。攻略对象＝要消灭的害虫，反差本身就是产品信息。",
+   "style_zh": "正统乙女游戏立绘，暗色系 UI，声优全语音彩蛋",
+   "live_url": "https://gokilove.jp/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000629.000023444.html",
+   "image": "images/earth-gokilove-dating-sim.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "恋爱模拟",
+    "反差"
+   ]
+  },
+  {
+   "id": "redbull-india-klear-it-with-kl",
+   "title_zh": "Red Bull 印度「KLear It with KL」板球三消",
+   "brand": "Red Bull India（KL Rahul）",
+   "agency": "未公开",
+   "region": "印度",
+   "format": "网页三消（羊了个羊式槽位消除）",
+   "date": "2026-05-20",
+   "why_zh": "60 秒内把手套、球棒、板球等物件三个一组收进底部 6 格托盘，托盘满了就输，类似羊了个羊。用来比喻 KL Rahul 在压力下冷静、精准的打法；累计分最高的人可以见到 KL Rahul 本人。物件是板球装备，不是 Red Bull 产品本身。",
+   "style_zh": "板球装备 3D 物件，Red Bull 蓝银配色",
+   "live_url": "",
+   "source_url": "https://mediabrief.com/red-bull-leverages-gamification/",
+   "image": "images/redbull-india-klear-it-with-kl.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "三消",
+    "运动员"
+   ]
+  },
+  {
+   "id": "marrybrown-roblox-playland",
+   "title_zh": "Marrybrown《MB Playland》Roblox 收集换汉堡",
+   "brand": "Marrybrown（马来西亚快餐）",
+   "agency": "未公开",
+   "region": "马来西亚",
+   "format": "Roblox 体验（手机 App 可玩）",
+   "date": "2026-05-08",
+   "why_zh": "在 Roblox 的 Marrybrown 乐园里完成任务、收集金币，达到条件后到门店免费兑换鸡肉汉堡套餐，把游戏内收集直接接到真实餐点。玩法本身偏常规，属于 Roblox 植入类的参照样本。",
+   "style_zh": "Roblox 标准方块风，品牌红门店场景",
+   "live_url": "https://www.roblox.com/games/93518615658477/Marrybrown",
+   "source_url": "https://www.everydayonsales.com/912857/8-may-2026-onwards-marrybrown-x-roblox-mb-playland-giveaway-campaign-free-chicken-burger-combo-redemption-promotion-gamified-fast-food-experience-in-malaysia/",
+   "image": "images/marrybrown-roblox-playland.webp",
+   "mobile": "partial",
+   "tags": [
+    "Roblox",
+    "收集"
+   ]
+  },
+  {
+   "id": "lotus-biscoff-cookie-factory",
+   "title_zh": "Lotus Biscoff「Inside the Cookie Factory」蒸汽朋克饼干工厂 3D 网页游戏",
+   "brand": "Lotus Biscoff（Biscoff Sandwich 浓缩咖啡味 · Tomorrowland 限定）",
+   "agency": "iO",
+   "region": "欧洲 14 国（另有泰国站）",
+   "format": "手机网页实时 3D 360° 探索游戏",
+   "date": "2026-05",
+   "why_zh": "玩家走进一座蒸汽朋克风的 Biscoff 饼干工厂，在 360° 实时 3D 场景里转动手机或拖动视角完成任务、攒积分，换 Tomorrowland 名额。整体做到符合欧盟无障碍法案，手机和电脑体验一致。",
+   "style_zh": "暖焦糖色蒸汽朋克工厂，带一点音乐节霓虹光效",
+   "live_url": "https://tml.biscoff.com/",
+   "source_url": "https://www.iodigital.com/en-se/cases/lotus-biscoff",
+   "image": "images/lotus-biscoff-cookie-factory.webp",
+   "mobile": "yes",
+   "tags": [
+    "3D 世界",
+    "WebGL",
+    "零食"
+   ]
+  },
+  {
+   "id": "lotte-coolish-chariso-run",
+   "title_zh": "乐天 Coolish × 《チャリ走》像素骑行跑酷",
+   "brand": "ロッテ クーリッシュ（飲むアイス）",
+   "agency": "未公开（チャリ走官方协力）",
+   "region": "日本",
+   "format": "手机专用网页跑酷游戏",
+   "date": "2026-04-27",
+   "why_zh": "和经典手游《チャリ走》正式联名，从城市骑到南极；吃到路上的 Coolish 就弹出“飲んでキモティィィ～！”进入大跳跃模式，把“瞬间爽快感”做成加速道具，BGM 直接用 TVCM 音源。属于跑酷类，玩法不算新，但产品＝能力道具。",
+   "style_zh": "チャリ走 经典像素点阵风，冰蓝清凉配色",
+   "live_url": "https://www.coolish-jesse-sou.com/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000084.000086324.html",
+   "image": "images/lotte-coolish-chariso-run.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "跑酷",
+    "IP联名"
+   ]
+  },
+  {
+   "id": "talksport-project-cheltenham",
+   "title_zh": "talkSPORT《Project: Cheltenham》帮主持人 Alan Brazil 赶上直播",
+   "brand": "talkSPORT（英国体育电台）",
+   "agency": "T&P × MOSAIC；托管 TOAST；媒介 Hello Yellow",
+   "region": "英国",
+   "format": "手机网页像素横版闯关游戏",
+   "date": "2026-03-05",
+   "why_zh": "把听众都知道的老梗（主持人 Alan Brazil 每年金杯日都会“错过”早餐节目）做成三关像素游戏：躲开各种诱惑和意外，捡同事和老婆 Jill 给的道具，准时把他送进直播间。品牌的“圈内笑话”就是关卡设计。",
+   "style_zh": "16-bit 像素风，chiptune 配乐，电台主持人漫画头像，赛马场草地配色",
+   "live_url": "https://projectcheltenham.talksport.com",
+   "source_url": "https://creative.salon/articles/work/talksport-project-cheltenham-t-p-and-mosaic",
+   "image": "images/talksport-project-cheltenham.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "像素",
+    "媒体品牌"
+   ]
+  },
+  {
+   "id": "swiggy-dineout-burger-blaze",
+   "title_zh": "Swiggy Dineout × Good Flippin’ Burgers《Burger Blaze》颠汉堡",
+   "brand": "Swiggy Dineout × Good Flippin’ Burgers",
+   "agency": "未公开",
+   "region": "印度",
+   "format": "App 内颠球式小游戏",
+   "date": "2026-02-27",
+   "why_zh": "在 Swiggy Dineout App 里像颠球一样颠虚拟汉堡，坚持越久奖励越多（免费汉堡、用餐优惠），3 天约 2 万人玩，最高纪录连续颠了 17 分钟。品牌名 Flippin’ 直接变成“翻/颠”的操作。",
+   "style_zh": "品牌橙紫配色，简洁休闲 UI",
+   "live_url": "",
+   "source_url": "https://mediabrief.com/swiggy-dineout-partners-good-flippin-burgers-for-gamified-girf-2026-campaign/",
+   "image": "images/swiggy-dineout-burger-blaze.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "App内"
+   ]
+  },
+  {
+   "id": "uno-bridge-clash-roblox",
+   "title_zh": "UNO《Bridge Clash》Roblox：用 UNO 出牌规则搭桥",
+   "brand": "Mattel UNO",
+   "agency": "PRELOADED（Mattel Digital Studios）",
+   "region": "全球",
+   "format": "Roblox 团队竞速搭桥游戏",
+   "date": "2026-02-26",
+   "why_zh": "各队在障碍场里收集 UNO 牌当建材，往中央深渊搭桥时必须按 UNO 规则“同色或同数字”接牌，而且是实时同时进行；WILD 牌变成炸桥、挡人的道具。卡牌游戏本身的出牌逻辑被直接改成了建造机制。",
+   "style_zh": "UNO 四色高饱和卡牌，Roblox 卡通场景，拳套火箭等夸张道具",
+   "live_url": "https://www.roblox.com/games/138570113586666/UNO-Bridge-Clash",
+   "source_url": "https://preloaded.com/blog/announcing-mattels-uno-bridge-clash/",
+   "image": "images/uno-bridge-clash-roblox.webp",
+   "mobile": "partial",
+   "tags": [
+    "卡牌",
+    "Roblox",
+    "产品即玩法",
+    "多人"
+   ]
+  },
+  {
+   "id": "kao-soji-soai-love",
+   "title_zh": "花王《掃除相愛LOVE》清洁用品偶像养成",
+   "brand": "花王（キュキュット／マジックリン／クイックル）",
+   "agency": "未公开",
+   "region": "日本",
+   "format": "手机/PC 网页偶像养成 ADV",
+   "date": "2026-02-18",
+   "why_zh": "把 4 款清洁剂拟人成男团 Shining4（中岛ヨシキ等配音），玩家当新人制作人，培养偶像的过程就是学习清洁技巧与小妙招；配套 MV 和购买晒单抽奖。产品＝角色，养成＝使用教学。",
+   "style_zh": "男性偶像养成风立绘，明亮薄荷色，偶像舞台演出",
+   "live_url": "https://www.kao.co.jp/osouji/game/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000001795.000009276.html",
+   "image": "images/kao-soji-soai-love.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "养成",
+    "拟人"
+   ]
+  },
+  {
+   "id": "salesforce-mrbeast-million-dollar-puzzle",
+   "title_zh": "Salesforce × MrBeast《百万美元谜题》超级碗解谜",
+   "brand": "Salesforce（Slack / Slackbot）",
+   "agency": "Salesforce 内部团队",
+   "region": "美国",
+   "format": "超级碗广告 + 网页解谜寻宝（ARG）",
+   "date": "2026-02-08",
+   "why_zh": "30 秒超级碗广告本身就是谜面：背景里藏着线索，最后一镜金库俯拍成二维码，扫码进入解谜站争夺 100 万美元。冠军用自建 Slackbot 组织团队推理，正好演示了产品。",
+   "style_zh": "金库/保险柜主题，暗色解谜界面，电视广告与网页线索互相嵌套",
+   "live_url": "https://mrbeast.salesforce.com/",
+   "source_url": "https://www.salesforce.com/news/stories/how-colin-sanders-solved-mr-beast-puzzle/",
+   "image": "images/salesforce-mrbeast-million-dollar-puzzle.webp",
+   "mobile": "partial",
+   "tags": [
+    "解谜",
+    "ARG",
+    "超级碗"
+   ]
+  },
+  {
+   "id": "lexus-rz-rally-of-the-day",
+   "title_zh": "Lexus 新西兰「Rally of the Day」把网球回合变成陀螺仪试驾",
+   "brand": "Lexus 新西兰（RZ 电动车）",
+   "agency": "Saatchi & Saatchi NZ；制作 PXP Studios；媒介 Spark Foundry",
+   "region": "新西兰",
+   "format": "手机网页 3D 陀螺仪驾驶游戏",
+   "date": "2026-01-17",
+   "why_zh": "每天把赛事里最精彩的一个回合（击球次数、球路、球速）转成一条赛道，玩家把手机当方向盘、靠陀螺仪在 200° 范围内转动驾驶，模拟 RZ 的 yoke 方向盘和线控转向。网球的 rally 和赛车的 rally 是同一个词，产品卖点就是操作方式本身。",
+   "style_zh": "深蓝夜色加霓虹蓝描边，座舱 HUD 风格的转角、速度、精准度读数，网球场俯视赛道",
+   "live_url": "https://lexusrally.co.nz",
+   "source_url": "https://lbbonline.com/news/saatchi-and-saatchi-new-zealand-lexus-rally-of-the-day",
+   "image": "images/lexus-rz-rally-of-the-day.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "陀螺仪",
+    "产品即玩法",
+    "体育赞助"
+   ]
+  },
+  {
+   "id": "zeiss-tw-find-moment",
+   "title_zh": "蔡司台湾「寻找谢盈萱的瞬间」对焦找人",
+   "brand": "ZEISS 蔡司光学（智锐个人化镜片）",
+   "agency": "未公开",
+   "region": "台湾",
+   "format": "手机网页找物小游戏",
+   "date": "2026-01-01",
+   "why_zh": "每关 20 秒，用“视线对焦框”在画面里找出 5 个代言人谢盈萱或蔡司 Logo，共两关，把镜片“看得清、对得准”做成找物操作；完成后填资料参加抽奖（抽奖是附带）。",
+   "style_zh": "明亮科技感品牌视觉，真人代言照片拼场景",
+   "live_url": "https://zeissvision-smartlife.com.tw/game",
+   "source_url": "https://www.sachiko.mobi/blog/posts/zeiss-202601",
+   "image": "images/zeiss-tw-find-moment.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "找物"
+   ]
+  },
+  {
+   "id": "spotify-wrapped-party-multiplayer",
+   "title_zh": "Spotify《Wrapped Party》多人实时年度歌单派对",
+   "brand": "Spotify",
+   "agency": "Active Theory × Spotify 内部创意团队",
+   "region": "美国/全球",
+   "format": "Spotify App 内嵌的实时多人 WebGL 对战式年度回顾",
+   "date": "2025-12-03",
+   "why_zh": "Wrapped 第一次从“自己看数据”变成“和朋友比数据”：最多 10 人进同一个房间，实时揭晓谁听得最多、谁最小众，还有排行榜和颁奖环节。产品数据本身就是对战的筹码，做成了一场派对游戏。",
+   "style_zh": "荧光绿/粉撞色、粗黑描边的 Wrapped 视觉，大字号数据卡片配实时 WebGL 动效",
+   "live_url": "https://wrapped-party.activetheory.dev/",
+   "source_url": "https://newsroom.spotify.com/2025-12-03/wrapped-party-how-to/",
+   "image": "images/spotify-wrapped-party-multiplayer.webp",
+   "mobile": "partial",
+   "tags": [
+    "App内",
+    "多人",
+    "数据对战"
+   ]
+  },
+  {
+   "id": "firefox-data-war-card-game",
+   "title_zh": "Firefox《Data War》把亿万富翁送上太空的卡牌对战",
+   "brand": "Firefox（Mozilla）",
+   "agency": "Mondo Robot",
+   "region": "美国",
+   "format": "网页卡牌对战游戏（实体卡牌的数字版）",
+   "date": "2025-12-02",
+   "why_zh": "规则像“比大小 + 爆炸猫”：数据就是货币，玩家用卡牌互抢数据，凑齐发射堆就能把一个吃数据的亿万富翁一次性送上太空。用荒诞的方式讲隐私，Firefox 卡牌提醒“你才是掌控者”。",
+   "style_zh": "太空霓虹配色，卡通亿万富翁头像卡面，火箭发射动画",
+   "live_url": "https://billionaireblastoff.firefox.com/datawar",
+   "source_url": "https://blog.mozilla.org/en/firefox/bbo-data-war-digital-game/",
+   "image": "images/firefox-data-war-card-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "对战",
+    "隐私"
+   ]
+  },
+  {
+   "id": "2degrees-data-pinata-battle",
+   "title_zh": "2degrees《Data Piñata Battle》流量皮纳塔对战",
+   "brand": "2degrees（新西兰电信运营商）",
+   "agency": "TBWA\\New Zealand",
+   "region": "新西兰",
+   "format": "手机网页养成 + 对战小游戏（打皮纳塔掉流量）",
+   "date": "2025-11-18",
+   "why_zh": "不打价格战，而是把“免费流量”做成游戏战利品：玩家自定义一只皮纳塔（颜色、护甲、武器），派它去和朋友对战，每次敲碎都掉流量。谁都能玩，但只有 2degrees 用户能领到流量，直接拉新。",
+   "style_zh": "夏日海滩与彩色纸扎皮纳塔，糖果色卡通 3D",
+   "live_url": "https://datapinata.nz/",
+   "source_url": "https://campaignbrief.co.nz/2025/11/18/2degrees-turns-summer-into-a-smash-hit-with-data-pinata-season-4-launch-via-tbwa-nz/",
+   "image": "images/2degrees-data-pinata-battle.webp",
+   "mobile": "partial",
+   "tags": [
+    "轻游戏",
+    "对战",
+    "养成"
+   ]
+  },
+  {
+   "id": "capmetiers-odyssee-bot-b",
+   "title_zh": "Cap Métiers《L'Odyssée de Bot-B》电池机器人密室逃脱",
+   "brand": "Cap Métiers Nouvelle-Aquitaine（法国新阿基坦职业指导机构）",
+   "agency": "Lost Mechanics 等",
+   "region": "法国",
+   "format": "网页 3D 密室逃脱（可单人/组队）",
+   "date": "2025-11-17",
+   "why_zh": "机器人 Bot-B 的电池芯过时了，玩家要在倒计时里帮它造一块新电池：研发、生产、回收每一关都对应电池产业的一个岗位。把职业介绍变成一场逃脱游戏。",
+   "style_zh": "复古科幻插画风，黄色小机器人，像素字体菜单",
+   "live_url": "https://www.odyssee-de-bot-b.fr/",
+   "source_url": "https://thefwa.com/cases/lodysee-de-bot-b",
+   "image": "images/capmetiers-odyssee-bot-b.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "密室逃脱",
+    "3D"
+   ]
+  },
+  {
+   "id": "maxmara-camel-fabric-game",
+   "title_zh": "Max Mara《The Camel Fabric Game》驼绒面料飞行棋",
+   "brand": "Max Mara",
+   "agency": "Adoratorio Studio",
+   "region": "意大利/全球",
+   "format": "掷骰子的网页 3D 桌游（飞行棋式）",
+   "date": "2025-11",
+   "why_zh": "把“一件驼绒大衣从骆驼毛到意大利工坊”的工艺链做成一盘飞行棋：掷骰子前进，每一格都是一道产地或工序，走到终点就是成衣。品牌的工艺叙事就是棋盘本身。",
+   "style_zh": "暖驼色纸面质感，粘土风骆驼和骰子小物，复古桌游排版",
+   "live_url": "https://thecamelfabricgame.maxmara.com/",
+   "source_url": "https://thefwa.com/cases/the-camel-fabric-game",
+   "image": "images/maxmara-camel-fabric-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "桌游",
+    "3D"
+   ]
+  },
+  {
+   "id": "jackinthebox-dealquest-ai",
+   "title_zh": "Jack in the Box「DealQuest」AI 文字冒险，打败菜单怪兽换优惠",
+   "brand": "Jack in the Box（美国快餐）",
+   "agency": "TBWA\\Chiat\\Day LA（内部创新组）× DGX",
+   "region": "美国",
+   "format": "App 内 AI 生成式文字冒险",
+   "date": "2025-09-30",
+   "why_zh": "在 Jack App 里玩一个由 AI 实时生成的“选择你的冒险”：玩家打字下指令，和 Jack 一起打败变成邪恶 AI 的 Monster Munchie 套餐，角色、背景图和支线全部即时生成，走得越深解锁的真实套餐码越好。菜单本身就是关卡里的怪物。",
+   "style_zh": "万圣节恐怖喜剧风，AI 生成插画背景，快餐吉祥物 Jack 反派化",
+   "live_url": "",
+   "source_url": "https://lbbonline.com/news/Jack-in-the-Box-Launches-First-AI-Game-You-Can-Actually-Eat",
+   "image": "images/jackinthebox-dealquest-ai.webp",
+   "mobile": "partial",
+   "tags": [
+    "AI 生成",
+    "文字冒险",
+    "App 内",
+    "快餐"
+   ]
+  },
+  {
+   "id": "ecover-tetris-fully-loaded",
+   "title_zh": "Ecover × 俄罗斯方块《Tetris: Fully Loaded》装洗碗机",
+   "brand": "Ecover（环保清洁品牌）× The Tetris Company",
+   "agency": "未公开",
+   "region": "英国",
+   "format": "网页俄罗斯方块式装碗益智游戏",
+   "date": "2025-09-17",
+   "why_zh": "用俄罗斯方块的玩法装洗碗机：碗盘就是方块，要在虚拟洗碗机格子里装满、不留空，“控制狂建筑师”对上“乱塞的浣熊”两种风格，还有排行榜。“没装满就开机＝浪费水电”这个产品主张，直接变成了游戏规则。",
+   "style_zh": "复古方块配色加家居厨房插画，配合 Larry Lamb 父子出演的 TVC",
+   "live_url": "https://uk.ecover.com/tetris/",
+   "source_url": "https://www.marketing-beat.co.uk/2025/09/17/ecover-partners-with-tetris/",
+   "image": "images/ecover-tetris-fully-loaded.webp",
+   "mobile": "yes",
+   "tags": [
+    "休闲益智",
+    "俄罗斯方块",
+    "产品即玩法"
+   ]
+  },
   {
    "id": "yoshimoto-uchinoko-card-legend",
    "title_zh": "吉本 ×Gemini「うちの子カード伝説」：上传宠物照片，AI 生成独一无二的稀有卡，再组队打 Raid",
