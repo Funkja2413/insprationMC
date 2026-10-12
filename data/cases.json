@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-12",
- "count": 88,
+ "count": 92,
  "cases": [
   {
    "id": "redbull-racing-full-send",
@@ -161,6 +161,27 @@
    ]
   },
   {
+   "id": "danigame-dani-escape",
+   "title_zh": "ダニ捕りラボ「ダ逃ゲーム」：你扮演地毯上的螨虫，拼命躲开从上往下砸来的捕螨片",
+   "brand": "ダニ捕りラボ（E-Surf）",
+   "agency": "自研（E-Surf）",
+   "region": "日本",
+   "format": "手机网页动作小游戏（Canvas）",
+   "date": "2026-05-21",
+   "why_zh": "产品本身就是障碍物：玩家以螨虫视角在地毯上繁殖求生，捕螨片从上往下砸，碰到就减员；螨虫超过 20 只还会出「金捕螨片」升级威胁。把「捕螨片怎么工作」做成 60 秒动作循环，而不是说明书或答题。",
+   "style_zh": "竖屏像素风地毯 + 大号方向键，短局闲暇动作",
+   "live_url": "https://www.danigame.com",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000016.000145486.html",
+   "image": "images/danigame-dani-escape.webp",
+   "mobile": "yes",
+   "tags": [
+    "产品即玩法",
+    "动作",
+    "手机网页",
+    "日用品"
+   ]
+  },
+  {
    "id": "redbull-india-klear-it-with-kl",
    "title_zh": "Red Bull 印度「KLear It with KL」板球三消",
    "brand": "Red Bull India（KL Rahul）",
@@ -178,6 +199,27 @@
     "轻游戏",
     "三消",
     "运动员"
+   ]
+  },
+  {
+   "id": "ikea-taking-apart-the-30",
+   "title_zh": "宜家西班牙「Taking Apart the 30」：把你的 IKEA Family 会员岁月拆成一部手机版年终回顾",
+   "brand": "IKEA España",
+   "agency": "MRM Spain + nk.studio + Mach Studio",
+   "region": "西班牙",
+   "format": "手机网页个性化叙事体验（需 Family 卡号）",
+   "date": "2026-05-18",
+   "why_zh": "不做周年片，而是「拆」开你跟宜家的三十年关系：用 Family 数据驱动的 Spotify Wrapped 式分镜，混视频序列和 3D 产品动画，讲你加入会员之后一起「搭」过什么。沉浸叙事站，不是闯关小游戏。",
+   "style_zh": "宜家黄蓝调 + Wrapped 分镜，产品 PNG 序列与 3D 动画",
+   "live_url": "https://www.ikea.com/es/es/campaigns/30-aniversario-pub4d070670/",
+   "source_url": "https://thefwa.com/cases/ikea-taking-apart-the-30-30-anniversary-mobile",
+   "image": "images/ikea-taking-apart-the-30.webp",
+   "mobile": "partial",
+   "tags": [
+    "个性化",
+    "周年叙事",
+    "手机优先",
+    "零售"
    ]
   },
   {
@@ -518,6 +560,48 @@
     "休闲益智",
     "俄罗斯方块",
     "产品即玩法"
+   ]
+  },
+  {
+   "id": "sparkasse-schwein-gehabt",
+   "title_zh": "Sparkasse《Schwein gehabt》：在 Fortnite 里当小猪存钱罐，躲锤子、解谜逃出恐怖屋",
+   "brand": "Sparkasse（德国储蓄银行）",
+   "agency": "Jung von Matt Sports + Beyond Creative（动画 Passion Pictures）",
+   "region": "德国",
+   "format": "Fortnite Creative 恐怖解谜（需 App）",
+   "date": "2025-08-14",
+   "why_zh": "银行不做理财测验，而是把红色存钱罐 Berta 做成恐怖游戏主角：第一人称躲房主 Tilda 的锤子，解连锁谜题逃出鬼屋。用 GTA/CoD 级预告片和本地顶级主播当教程 NPC，把「存钱」做成让年轻人愿意主动打开的恐怖体验。",
+   "style_zh": "红色小猪存钱罐 + 德式恐怖屋，USK 16",
+   "live_url": "https://www.sparkasse-karlsruhe.de/de/home/aktionen/gaming.html",
+   "source_url": "https://www.gameswirtschaft.de/marketing-pr/schwein-gehabt-fortnite-sparkasse-140825/",
+   "image": "images/sparkasse-schwein-gehabt.webp",
+   "mobile": "partial",
+   "tags": [
+    "Fortnite",
+    "恐怖解谜",
+    "金融",
+    "年轻向"
+   ]
+  },
+  {
+   "id": "hajime-ken-setsu-battle",
+   "title_zh": "一建设《ハジメとケンとセツ 游戏版》：社名拆成三人冒险，魔王招式里都在刷「一建设」",
+   "brand": "一建设",
+   "agency": "制作团队（安永贵等；漫画监修 高橋陽一）",
+   "region": "日本",
+   "format": "手机/网页 Phaser 横版战斗小游戏",
+   "date": "2025-02-03",
+   "why_zh": "把难记的社名「一建设」写成三人冒险 IP，再做成可玩的战斗：抽传说之剑、横版躲魔王弹幕、猜拳/相扑/点球三连决。魔王攻击本身就是社名梗，玩一遍比硬记广告 slogan 更难忘掉。",
+   "style_zh": "少年漫横版战斗 + 社名认知梗弹幕",
+   "live_url": "https://www.hajime-kensetsu.co.jp/hajimetokentosetsu/game/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000118.000103915.html",
+   "image": "images/hajime-ken-setsu-battle.webp",
+   "mobile": "yes",
+   "tags": [
+    "社名梗",
+    "横版战斗",
+    "品牌 IP",
+    "房产"
    ]
   },
   {
