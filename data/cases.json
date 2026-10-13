@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-13",
- "count": 93,
+ "count": 98,
  "cases": [
   {
    "id": "malasada-midnight-halloween-box",
@@ -22,6 +22,115 @@
     "包装/产品入口",
     "万圣节",
     "甜品"
+   ]
+  },
+  {
+   "id": "google-pacman-halloween-2025",
+   "title_zh": "Google Doodle「PAC-MAN 2025 万圣节版」：四只幽灵各有一座性格化鬼屋迷宫",
+   "brand": "Google × 万代南梦宫（PAC-MAN 45 周年）",
+   "agency": "Google Doodle 团队",
+   "region": "全球（含日本）",
+   "format": "浏览器可玩 Doodle 小游戏（手机滑动 / PC 方向键）",
+   "date": "2025-10-30",
+   "why_zh": "经典吃豆人共 8 关，其中 4 关是鬼屋迷宫，迷宫按 Blinky、Pinky、Inky、Clyde 四只幽灵原有的 AI 性格来设计，吃到能量豆就反过来追鬼。IP 本身就是玩法，靠周年怀旧加节日换装；社媒用「你是哪只鬼」和分享高分的玩法配合。拿来参考「老 IP 怎么做节日版」。",
+   "style_zh": "复古像素 + 万圣节装扮（PAC-MAN 扮木乃伊、青蛙等）",
+   "live_url": "https://searchplayground.google/pacman/halloween/",
+   "source_url": "https://doodles.google/doodle/pac-man-halloween-2025-edition/",
+   "image": "images/google-pacman-halloween-2025.webp",
+   "mobile": "yes",
+   "tags": [
+    "万圣节",
+    "像素",
+    "IP 周年",
+    "经典玩法改编"
+   ]
+  },
+  {
+   "id": "raising-canes-haunted-canes",
+   "title_zh": "Raising Cane's「Haunted Cane's」：发光杯扫码进闹鬼 3D 餐厅，找蝙蝠、打街机换薯条",
+   "brand": "Raising Cane's（美国鸡柳快餐）",
+   "agency": "Emperia（虚拟空间技术方）",
+   "region": "美国",
+   "format": "限定杯二维码进入的手机网页 3D 虚拟餐厅 + 小游戏",
+   "date": "2025-10-15",
+   "why_zh": "首款万圣节夜光杯印了二维码，扫进去是一家闹鬼版的 Cane's 3D 餐厅：店里藏了 4 只蝙蝠，全部找到就把奖励发到邮箱；店里还有一台复古街机「Cryptic Combos」，打过第一关就解锁薯条、吐司、酱料这类奖励；菜单板就摆在虚拟店里，可以直接下单。把产品（杯子）、门店空间和菜单都做进了玩法。",
+   "style_zh": "夜光绿闹鬼餐厅，3D 可漫游空间 + 像素风街机",
+   "live_url": "",
+   "source_url": "https://retailtechinnovationhub.com/home/2025/10/14/raising-canes-taps-emperia-technology-for-halloween-themed-virtual-restaurant-experience",
+   "image": "images/raising-canes-haunted-canes.webp",
+   "mobile": "no",
+   "tags": [
+    "万圣节",
+    "包装/产品入口",
+    "3D 空间",
+    "找物",
+    "快餐"
+   ]
+  },
+  {
+   "id": "fanta-haunted-fanta-factory",
+   "title_zh": "Fanta「Haunted Fanta Factory」：扫罐上二维码进闹鬼汽水厂，躲开恐怖片反派守住你的芬达",
+   "brand": "Fanta（可口可乐）× Universal Pictures / Blumhouse",
+   "agency": "WPP Open X（Ogilvy 牵头），VML / Hogarth 等",
+   "region": "全球（50+ 市场）",
+   "format": "罐身二维码进入的手机网页小游戏（另有纽约线下快闪，不计）",
+   "date": "2025-10",
+   "why_zh": "限定罐身印了 Chucky、Freddy Fazbear、M3GAN、The Grabber、Michael Myers 五个恐怖片反派，扫罐上二维码就能进线上闹鬼汽水厂：研发室、灌装线、质检室各被一个反派占了，玩家一间间探索，躲开反派、守住自己的芬达库存。和广告片「They Wanta Fanta」的设定（反派都想抢你的芬达）是同一套，罐子既是入口也是要守的道具，IP 联名和产品绑得紧。",
+   "style_zh": "恐怖片 IP 实拍/3D 场景，芬达橙配暗绿荧光的闹鬼工厂",
+   "live_url": "",
+   "source_url": "https://www.coca-colacompany.com/media-center/haunted-fanta-factory-experience-thrills-nyc-and-online-fans",
+   "image": "images/fanta-haunted-fanta-factory.webp",
+   "mobile": "no",
+   "tags": [
+    "万圣节",
+    "IP 联名",
+    "包装/产品入口",
+    "饮料",
+    "探索闯关"
+   ]
+  },
+  {
+   "id": "fanta-edeka-geisterjagd",
+   "title_zh": "Fanta × EDEKA「Die Geisterjagd」：陀螺仪转身在闹鬼超市货架间抓鬼，60 秒赢免费芬达",
+   "brand": "Fanta（CCEP 德国）× EDEKA 超市",
+   "agency": "AND Innovation（科隆）",
+   "region": "德国",
+   "format": "手机网页 3D 小游戏（EDEKA App 内导流，免下载免注册）",
+   "date": "2024-10",
+   "why_zh": "开局随机分到 8 款万圣节限定口味中的一款，这款罐子的设计决定接下来场景的视觉；然后进入闹鬼的超市货架通道，举着手机 180° 转身（陀螺仪）找飘着的幽灵，60 秒内点中抓到就开一扇发光门，拿到能在 EDEKA App 兑换的芬达券。零售商 App 当唯一的投放渠道：7 小时 15,000+ 人玩，10,000 张券全部领完。抓鬼本身是常见玩法，亮点在每款口味罐有自己的场景，加上超市货架这个设定。",
+   "style_zh": "3D 闹鬼超市货架通道，南瓜、闪烁灯光，按口味罐换配色",
+   "live_url": "",
+   "source_url": "https://www.andinnovation.de/cases/fanta-edeka-halloween-3d-game",
+   "image": "images/fanta-edeka-geisterjagd.webp",
+   "mobile": "no",
+   "tags": [
+    "万圣节",
+    "陀螺仪",
+    "3D",
+    "零售媒体",
+    "饮料"
+   ]
+  },
+  {
+   "id": "fanta-haunted-mansion-2023",
+   "title_zh": "Fanta「Haunted Mansion」：Coca-Cola App 里的无文字 3D 鬼屋，四个房间找芬达瓶、触发 jump scare",
+   "brand": "Fanta（可口可乐）",
+   "agency": "UNIT9 × Studio X EU",
+   "region": "全球",
+   "format": "App 内 3D 360° 探索小游戏（PlayCanvas）+ Snapchat 滤镜（滤镜不计）",
+   "date": "2023-10-23",
+   "why_zh": "Coca-Cola App 里的一座虚拟鬼屋，有门厅、厨房、餐厅、温室四个相连的房间：玩家 360° 环顾、解谜、收集芬达瓶，还会被设计好的 jump scare 吓到。全程一个字都没有，只靠声音和画面引导，所以全球各市场直接通用，不用翻译。目的是给 App 拉活跃。这是 2025 年 Haunted Fanta Factory 的前作，可以看出芬达这几年万圣节玩法怎么演进。",
+   "style_zh": "电影级预渲染 3D 鬼屋，昏暗灯光，配沉浸音效",
+   "live_url": "",
+   "source_url": "https://unit9.com/project/fanta-haunted-mansion",
+   "image": "images/fanta-haunted-mansion-2023.webp",
+   "mobile": "no",
+   "tags": [
+    "万圣节",
+    "3D",
+    "App 拉活",
+    "无文字设计",
+    "饮料"
    ]
   },
   {
