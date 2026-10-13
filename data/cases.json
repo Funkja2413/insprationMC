@@ -1,7 +1,29 @@
 {
- "updated": "2026-10-12",
- "count": 92,
+ "updated": "2026-10-13",
+ "count": 93,
  "cases": [
+  {
+   "id": "malasada-midnight-halloween-box",
+   "title_zh": "マラサダドーナツのお店「MIDNIGHT HALLOWEEN BOX」：6 个甜甜圈只有 5 条记录，先用手机解谜再开吃",
+   "brand": "マラサダドーナツのお店（冈山／山口／冲绳读谷的夏威夷甜甜圈店，运营方 Fcreate）",
+   "agency": "未公开（官网自营页面）",
+   "region": "日本",
+   "format": "实体限定礼盒 + 手机网页解谜（盒内 START CARD 进入，免安装）",
+   "date": "2026-09",
+   "why_zh": "把产品本身做成谜题道具：盒里有 6 个不同造型的万圣节甜甜圈，手机上却只「记录」了 5 个。玩家要拿实物和屏幕上的描述逐个比对（眼球、南瓜脸、蜘蛛网、幽灵、紫薯），再把每个甜甜圈底下铝箔杯背面的字母按顺序读出来，一步步查出多出来的第 6 个是什么；页面顶部一直在倒数「离午夜还有 X 分钟」，规则是解完才能吃。玩法偏文字解谜、画面比较朴素，但「吃之前先解谜」把产品和玩法绑得很紧，用来校准「产品即谜题」这类小店玩法。",
+   "style_zh": "暗紫黑底 + 南瓜橙的万圣节夜色，倒计时 UI，BGM/音效推荐开声",
+   "live_url": "https://www.malasadadoughnut.jp/midnight-halloween-box/game/",
+   "source_url": "https://www.malasadadoughnut.jp/midnight-halloween-box/",
+   "image": "images/malasada-midnight-halloween-box.webp",
+   "mobile": "yes",
+   "tags": [
+    "产品即玩法",
+    "解谜",
+    "包装/产品入口",
+    "万圣节",
+    "甜品"
+   ]
+  },
   {
    "id": "redbull-racing-full-send",
    "title_zh": "Red Bull Racing《FULL SEND》挑战维斯塔潘的网页赛车",
