@@ -21,8 +21,8 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 @media(max-width:599px){header{padding:12px 12px 8px}main{padding:12px;gap:14px;grid-template-columns:1fr}footer{padding:20px 12px 90px}}
 .card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:opacity .25s,transform .25s;min-width:0}
 .card.gone{opacity:0;transform:scale(.97)}
-.imgw{position:relative;aspect-ratio:4/3;background:#e9e9e6}
-.imgw img{width:100%;height:100%;object-fit:cover;display:block}
+.imgw{position:relative;aspect-ratio:4/3;background:#e9e9e6;flex-shrink:0;overflow:hidden}
+.imgw img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .mb{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
 .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
 .t{font-size:16px;font-weight:600;line-height:1.4;margin:0}
@@ -84,7 +84,7 @@ var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
 var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
-var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false, demoOnly=false;
 
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
 function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
@@ -203,17 +203,20 @@ function card(c){
   var iw=el("div","imgw");
   if(c.image){var im=el("img"); im.loading="lazy"; im.decoding="async"; im.alt=""; im.src=c.image; iw.appendChild(im)}
   if(c.mobile==="yes")iw.appendChild(el("span","mb","📱 手机可玩"));
+  if(c.mobile==="historical")iw.appendChild(el("span","mb","📱 手机互动案例"));
   a.appendChild(iw);
   var b=el("div","body");
   b.appendChild(el("h2","t",c.title_zh));
   b.appendChild(el("div","meta",[c.brand,c.region,c.date&&c.date!=="unknown"?c.date:""].filter(Boolean).join(" · ")));
   if(c.format)b.appendChild(el("div","meta",c.format));
   b.appendChild(el("p","why",c.why_zh));
+  if(c.availability_zh)b.appendChild(el("div","meta",c.availability_zh));
   if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
   var ac=el("div","acts");
-  var lu=safeUrl(c.live_url), su=safeUrl(c.source_url);
-  if(lu){var l=el("a","play","体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
-  if(su&&su!==lu){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
+  var lu=safeUrl(c.live_url), du=safeUrl(c.demo_url), su=safeUrl(c.source_url);
+  if(lu){var l=el("a","play",c.live_label||"体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
+  if(du){var v=el("a","","实机演示"); v.href=du; v.target="_blank"; v.rel="noopener noreferrer"; ac.appendChild(v)}
+  if(su&&su!==lu&&su!==du){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
   var d=el("button","del","删除"); d.type="button";
   d.onclick=function(){
     var cf=el("span","confirm"), y=el("button","yes","确认删除"), n=el("button","","取消");
@@ -227,8 +230,9 @@ function card(c){
 function matches(c,q){
   if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
   if(mobileOnly&&c.mobile!=="yes")return false;
+  if(demoOnly&&!safeUrl(c.demo_url))return false;
   if(!q)return true;
-  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
+  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
 }
 function render(){
   var list=document.getElementById("list"), empty=document.getElementById("empty");
@@ -243,8 +247,9 @@ function renderChips(vis){
   var box=document.getElementById("chips"), counts={}; box.innerHTML="";
   vis.forEach(function(c){(c.tags||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
   function chip(label,on,fn){var b=el("button","chip"+(on?" on":""),label); b.type="button"; b.onclick=fn; box.appendChild(b)}
-  chip("全部",!activeTag&&!mobileOnly,function(){activeTag="";mobileOnly=false;render()});
+  chip("全部",!activeTag&&!mobileOnly&&!demoOnly,function(){activeTag="";mobileOnly=false;demoOnly=false;render()});
   chip("📱 手机可玩",mobileOnly,function(){mobileOnly=!mobileOnly;render()});
+  chip("实机演示",demoOnly,function(){demoOnly=!demoOnly;render()});
   Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(t){
     chip(t+" "+counts[t],activeTag===t,function(){activeTag=activeTag===t?"":t;render()});
   });
