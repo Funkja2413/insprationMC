@@ -1,7 +1,53 @@
 {
- "updated": "2026-10-15",
- "count": 103,
+ "updated": "2026-10-16",
+ "count": 104,
  "cases": [
+  {
+   "id": "gentle-monster-the-room",
+   "title_zh": "Gentle Monster「THE ROOM: ESCAPE THE HUNT」：秋冬大片做成限时恐怖密室逃脱网页游戏",
+   "brand": "Gentle Monster",
+   "agency": "未公开（品牌自宣；配合 THE HUNT / Hunter Schafer × Nadia Lee Cohen 影像）",
+   "region": "韩国 / 全球",
+   "format": "品牌官网 Unity WebGL 恐怖解谜逃脱（竖屏画布 1080×1920）",
+   "date": "2025-11",
+   "why_zh": "把时装 lookbook 换成可玩的限时密室：在昏暗房间找线索、躲威胁、拼出 THE HUNT 叙事。眼镜作为叙事道具嵌进关卡，而不是问卷或抽奖。时尚品牌少见的「真·可玩恐怖游戏」形态，用来校准奢侈/潮牌是否愿意做重互动。",
+   "style_zh": "阴冷压迫光影、电影级恐怖美学、密闭室内探索",
+   "live_url": "https://www.gentlemonster.com/us/en/stories/2025-fall-collection-the-room",
+   "source_url": "https://socialbeta.com/campaign/26446",
+   "image": "images/gentle-monster-the-room.webp",
+   "mobile": "partial",
+   "tags": [
+    "恐怖",
+    "密室逃脱",
+    "时尚",
+    "Unity-WebGL",
+    "2025秋冬",
+    "韩国"
+   ]
+  },
+  {
+   "id": "durex-pull-out-game-game",
+   "title_zh": "杜蕾斯「The Pull Out Game Game」：把“体外射精不安全”做成几乎打不赢的复古街机，输了才懂该戴套",
+   "brand": "Durex 杜蕾斯（Reckitt）",
+   "agency": "BLKJ Havas（新加坡）；制作 AliveNow（据 LinkedIn 制作方署名）",
+   "region": "新加坡 / APAC",
+   "format": "手机浏览器复古街机小游戏（竖屏优先，免安装）",
+   "date": "2025-10",
+   "why_zh": "创意点是把品牌主张直接做成游戏规则：玩家要在一堆干扰里拦住精子别碰到卵子，还可用“爱评判的奶奶”“呆萌狗”当心理障碍道具，但关卡设计成几乎必输——每一次 Game Over 都在提醒体外射精不是避孕方案。产品（安全套）不是贴皮皮肤，而是“输掉之后的正解”，输局还能解锁部分地区的杜蕾斯折扣。好在把尴尬的性教育话题做成可玩、可分享的街机幽默，规则一看就懂。缺点是内容尺度偏大，不适合所有品牌调性；折扣收口仍是常规转化。",
+   "style_zh": "复古街机像素风、高饱和蓝底、夸张搞笑道具",
+   "live_url": "https://pulloutgamegame.com/",
+   "source_url": "https://www.prnewswire.com/apac/news-releases/durex-launches-the-pull-out-game-game-to-prove-why-pulling-out-is-a-game-over-strategy-302595050.html",
+   "image": "images/durex-pull-out-game-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "街机",
+    "产品即主张",
+    "性健康",
+    "复古像素",
+    "幽默",
+    "APAC"
+   ]
+  },
   {
    "id": "mini-finance-ni-mini-beat",
    "title_zh": "MINI 金融《NI 和 MINI，一拍即合》：MINI 小车当唱针在黑胶上跑，四款车型变成四首歌的节奏游戏",
@@ -345,26 +391,6 @@
     "Fortnite",
     "香氛",
     "游戏平台"
-   ]
-  },
-  {
-   "id": "chagee-honor-of-kings-tea-farm",
-   "title_zh": "霸王茶姬 × 王者荣耀「种茶得茶」",
-   "brand": "霸王茶姬 CHAGEE × 《王者荣耀》《王者荣耀世界》",
-   "agency": "未公开",
-   "region": "中国大陆",
-   "format": "手游内种植玩法 + 线下核销",
-   "date": "2026-07-24",
-   "why_zh": "在王者农场 / 家园系统里限时开放“铁观音”种植：每天登录、打几局领种子，种下收成后可换联名新品“青沫观音”0.01 元尝鲜券或买一赠一券。虚拟种的茶就是现实里喝到的那杯茶，原料成了玩法。",
-   "style_zh": "国风游戏美术，联名英雄（庄周、孙尚香、王昭君等）",
-   "live_url": "",
-   "source_url": "https://tidenews.com.cn/news.html?id=3514563",
-   "image": "images/chagee-honor-of-kings-tea-farm.webp",
-   "mobile": "partial",
-   "tags": [
-    "游戏平台植入",
-    "App内",
-    "联名"
    ]
   },
   {
