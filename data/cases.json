@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-17",
- "count": 276,
+ "count": 279,
  "cases": [
   {
    "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,117 @@
     "户外",
     "帐篷"
    ]
+  },
+  {
+   "id": "ediya-cup-bingsu-tycoon-2026",
+   "title_zh": "EDIYA COFFEE《杯刨冰大亨》：按真实配方逐层制作三杯刨冰",
+   "brand": "EDIYA COFFEE",
+   "agency": "XVIVE",
+   "region": "韩国",
+   "format": "网页配方点击游戏 / 计时制作",
+   "date": "2026",
+   "date_evidence": "制作方明确标注项目年度为 2026；2026-07-16 是作品集发表日期，不作为上线日。第三方活动 listing 的 4 月 30 日不作为已经确认的首发日期。",
+   "why_zh": "玩家扮演店员，按照真实配方的先后顺序快速点击原料，逐层完成红豆年糕、芒果椰子、迪拜巧克力三款杯刨冰。每关展示成品与制作步骤，高亮提示下一种原料；完成一杯后进入下一杯，最终以总制作时间结算。新品的原料层次和制作顺序直接构成操作规则，让三杯产品成为需要逐一学会的配方，将产品介绍转成有时间反馈的制作挑战。",
+   "style_zh": "以杯中原料逐层叠加呈现制作进度，配方步骤、下一原料高亮与计时反馈共同组织界面；完成画面展示成品与最终用时。",
+   "live_url": "",
+   "source_url": "https://xvive.xyz/en/portfolios/3332432944619681687",
+   "demo_url": "https://xvive.xyz/en/portfolios/3332432944619681687",
+   "demo_label": "官方玩法影片（文内）",
+   "image": "images/ediya-cup-bingsu-tycoon-2026.webp",
+   "image_source_url": "https://dsr-cdn.diskette.studio/xvive/portfolio/media/20260716/jhuyv31p_s1fs.mp4",
+   "image_source_note": "官方玩法影片 17.5 秒处的真实游戏画面，经 Library 提供。",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：研究者通过公开制作方案例页正常下载 64.917 秒官方影片，解码并核对起始界面、三种配方、杯中原料层叠加、下一原料高亮、计时、成功画面及最终 Mission Clear 00:42.65；另对 8–14 秒按每秒两帧连续检查，并对全片每 5 秒取样。封面取自官方演示 17.5 秒处的实际游戏画面，可见第 7 步配方、杯中层次、计时与原料。影片呈现实际玩法，但不是本次亲自试玩，00:42.65 是官方演示中的结果。制作方没有提供公开体验入口，当前可玩性未确认，因此 live_url 留空；不承诺任何历史活动权益仍有效。",
+   "verification_notes": "官方玩法片由父研究任务下载、解码与核对，未亲自试玩。作品集发表日与第三方 listing 日期均不当作确切上线日；官方演示的结算时间不作为本次操作成绩。",
+   "tags": [
+    "配方记忆",
+    "原料顺序",
+    "计时制作",
+    "点击操作",
+    "新品推广",
+    "食品饮料",
+    "三关挑战"
+   ],
+   "evidence_urls": [
+    "https://xvive.xyz/en/portfolios/3332432944619681687",
+    "https://www.eventhouse.kr/site/view.php?no=303408",
+    "https://dsr-cdn.diskette.studio/xvive/portfolio/media/20260716/jhuyv31p_s1fs.mp4"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "just-eat-eliminate-2024",
+   "title_zh": "Just Eat ×《鱿鱼游戏》「EliminATE」：绿灯吃、红灯停的面部追踪挑战",
+   "brand": "Just Eat / Netflix Squid Game 2",
+   "agency": "DEPT®",
+   "region": "英国 / 爱尔兰",
+   "format": "手机网页摄像头游戏 / 嘴部动作追踪 / 两分钟生存挑战",
+   "date": "2024-12-26",
+   "date_evidence": "Just Eat 2024-12-18 官方公告明确活动于 Boxing Day 上线，即 2024-12-26。案例影片的较晚上传时间不是首发日期。",
+   "why_zh": "手机摄像头识别嘴唇相对面部的动作：英熙转身、绿灯亮时，玩家张嘴吃东西推进进度；红灯亮、英熙回头时必须停嘴，仍在吃喝便遭淘汰，可以重试。玩家要在两分钟内抵达终点，转头时机不固定，追踪灵敏度逐渐提高。活动从外卖订单邀请玩家加入游戏，让真实用餐动作成为影视 IP 的游戏输入；当时的现金奖励把下单、吃饭和反复挑战连接起来。",
+   "style_zh": "Just Eat 橙色与《鱿鱼游戏》粉绿配色，玩偶、两分钟倒计时、红绿状态、人脸框和前进进度组成手机界面。",
+   "live_url": "",
+   "source_url": "https://www.dept.global/case/green-lighting-the-squid-game-partnership/",
+   "demo_url": "https://www.dept.global/wp-content/uploads/2026/05/Jetflix-Vertical-Asset-1.mp4",
+   "demo_label": "官方手机演示",
+   "image": "images/just-eat-eliminate-2024.webp",
+   "image_source_url": "https://d21buns5ku92am.cloudfront.net/69463/images/568754-JET_UK_SG2_Press_KV_16-9-a66630-large-1734516088.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：Just Eat 于 2024-12-18 公告 Boxing Day 上线，采用 2024-12-26，未将案例影片的较晚上传日期当作首发日。研究者已下载并目视核对 38 秒手机 Safari 正式游戏录屏，可见 play-eliminate.com、2:00 倒计时、张嘴／停嘴及淘汰重试；另有动作追踪原型，不能替代正式计时规则。原游戏域名本次返回 502，未完成当前试玩，live_url 留空；历史手机支持由正式录屏确认。现金奖励与订单参与属于历史活动，未核实现仍有效。封面为官方联名主视觉，非游戏截图。本次未启用摄像头或上传人脸。",
+   "verification_notes": "正式手机录屏用于核对两分钟倒计时、动作规则与淘汰重试；追踪原型仅作技术过程参考。不将影片仍可查看推定为游戏当前可玩，未启用摄像头或上传人脸。",
+   "tags": [
+    "面部追踪",
+    "真实用餐动作",
+    "红灯绿灯",
+    "两分钟挑战",
+    "影视联名",
+    "外卖订单转化"
+   ],
+   "evidence_urls": [
+    "https://www.dept.global/case/green-lighting-the-squid-game-partnership/",
+    "https://www.dept.global/wp-content/uploads/2026/05/Jetflix-Vertical-Asset-1.mp4",
+    "https://newsroom.justeattakeaway.com/en-GB/245470-the-next-game-is-served-with-just-eat/",
+    "https://www.dept.global/wp-content/uploads/2026/05/Jetflix-Vertical-Asset-2.mp4"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "pg-bold-iitokodori-tiktok-2026",
+   "title_zh": "Bold 超いいとこ鳥：洗衣小鸟跳跃挑战",
+   "brand": "P&G Japan / Bold",
+   "agency": "未确认",
+   "region": "日本",
+   "format": "TikTok AR特效小游戏 / 平台跳跃",
+   "date": "2026-09-17",
+   "date_evidence": "P&G于2026年9月8日发布的官方新闻稿明确写明TikTok游戏于9月17日开始配信；10月16日的官方实玩影片是后续演示，不是上线日期。",
+   "why_zh": "穿着“洗濯大名”服装的粉红小鸟跨越屋顶空隙，把广告角色所在的日式世界变成跳跃关卡。晾晒衣物、泡泡和洗衣凝珠进入场景，小鸟穿过落下的凝珠时会把它们变成花，OXI BOOST模式则提高游戏难度。到达终点后，玩家自拍画面戴上鸟头AR头套，并出现纸花与庆祝文字，让玩家的脸成为可分享的通关反馈。产品包装与广告世界观贯穿操作和结果呈现。",
+   "style_zh": "自拍影像叠加粉色日式屋檐平台、品牌吉祥物与洗衣凝珠，配有计时器；终点以鸟头滤镜和纸花庆祝。",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000315.000006237.html",
+   "live_url": "https://www.tiktok.com/@boldofficial01",
+   "live_label": "官方账号（搜索特效名）",
+   "demo_url": "https://x.com/BoldJapan/status/2111026869269090541",
+   "demo_label": "官方实玩演示",
+   "image": "images/pg-bold-iitokodori-tiktok-2026.webp",
+   "image_source_url": "https://pbs.twimg.com/amplify_video_thumb/2111025112795500544/img/BdeLjqCUcBqsrIk2?format=webp&name=large",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：上游研究已取得品牌官方80.3秒双人实玩影片并抽帧目视，约12秒可见小鸟跳跃、32秒出现终点鸟头滤镜、62秒为第二位参与者。TikTok专用特效名为“超いいとこ鳥ゲーム”；保留的体验链接是官方账号，需在TikTok内搜索特效名，并非直接启动链接。本次未验证特效能否启动，未授权摄像头或亲自试玩。官方新闻稿称以脸部动作操作，但实玩画面也有麦克风与“ピヨ”提示；未亲测前不判断为纯脸控或纯声控。产品购买抽奖另于2026年10月19日开始，和小游戏规则分开，不把购买或中奖作为通关条件。",
+   "verification_notes": "发布准备重新读取P&G官方新闻稿，核对9月17日上线、凝珠变花、OXI BOOST增难与终点头套反馈。80.3秒影片的取得与视觉核验由上游研究完成，本批未重新播放。官方关于洗涤或除臭性能的文字未作为独立验证结论。制作方尚未确认。",
+   "tags": [
+    "TikTok特效",
+    "AR小游戏",
+    "平台跳跃",
+    "洗衣场景",
+    "品牌吉祥物",
+    "产品更新",
+    "自拍通关反馈"
+   ],
+   "evidence_urls": [
+    "https://prtimes.jp/main/html/rd/p/000000315.000006237.html",
+    "https://x.com/BoldJapan/status/2111026869269090541",
+    "https://www.myrepi.com/brands/bold/",
+    "https://video.twimg.com/amplify_video/2111025112795500544/vid/avc1/480x852/4UHMB_NaBxOS2xgU.mp4?tag=16"
+   ],
+   "verified_at": "2026-10-17"
   },
   {
    "id": "asahi-dodecamin-rockman-big-2023",
