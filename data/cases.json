@@ -1,7 +1,187 @@
 {
  "updated": "2026-10-17",
- "count": 135,
+ "count": 141,
  "cases": [
+  {
+   "id": "howl-magic-doors-taiwan-2024",
+   "title_zh": "《霍尔的移动城堡》台湾重映：吹气救活卡西法、转动手机驾飞艇，四扇门把名场面变成小游戏",
+   "brand": "《霍爾的移動城堡》 / 甲上娛樂 / Studio Ghibli",
+   "agency": "BORING Design Lab",
+   "region": "中国台湾",
+   "format": "手机网页多关卡互动 + 影院实体卡二次解锁",
+   "date": "2024-08-09",
+   "why_zh": "转动电影中的四色门盘，分别进入吹气唤醒卡西法、倾斜手机驾驶飞艇、跟音乐点按空中共舞的小游戏。完成后可解锁黑门，得到写有自己名字的女巫诅咒；观影拿到实体魔法门卡，再扫码完成第二段体验解除诅咒。电影道具同时承担导航、操作规则和线上线下的通行凭证，让观众亲自经历剧情，而非只看预告。",
+   "style_zh": "吉卜力原作画面、竖屏魔法门转盘、暖色童话与夜空飞行场景",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/howls-moving-castle",
+   "demo_url": "https://player.vimeo.com/video/1006845714",
+   "image": "images/howl-magic-doors-taiwan-2024.webp",
+   "mobile": "historical",
+   "availability_zh": "2024 年台湾重映历史活动。2026-10-17 已读取制作方两段实机视频并核对飞艇操作、魔法门与解除诅咒画面；原活动域名已变成无关新闻内容，因此不提供试玩入口。",
+   "tags": [
+    "电影宣传",
+    "多关卡",
+    "手机传感器",
+    "节奏",
+    "线上线下"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/66dbecafdd607b08df966571_%E9%9C%8D%E7%88%BEstudycase0.png",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/howls-moving-castle",
+    "https://www.shoppingdesign.com.tw/post/view/10691",
+    "https://player.vimeo.com/video/1006845740"
+   ]
+  },
+  {
+   "id": "spirited-away-stolen-name-taiwan-2022",
+   "title_zh": "《神隐少女》「与汤婆婆签约」：自己的名字真的从契约上飞走，再拿电影票书签找回来",
+   "brand": "《神隱少女》 / 甲上娛樂 / Studio Ghibli",
+   "agency": "BORING Design Lab",
+   "region": "中国台湾",
+   "format": "个性化网页叙事 + 影院实体乘车券解锁第二幕",
+   "date": "2022-08-24",
+   "why_zh": "把自己的名字写进汤婆婆的契约，电影中夺走姓名的动画就带入这份真实输入，名字消失后只留下契约。去影院观影获得海原电铁乘车券书签，再扫描背面的二维码进入第二幕找回名字。没有复杂闯关，却把影片最核心的身份命题变成观众自己的事；实体票券承担故事续篇的钥匙，形成清楚的到店理由。",
+   "style_zh": "吉卜力原作画面、油屋与契约书、姓名融入动画、蓝天与海上电车",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/spirited-away",
+   "demo_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/63314626d50e5c1c60eadd0e_%E5%8D%83%E5%B0%8B%2002-transcode.mp4",
+   "image": "images/spirited-away-stolen-name-taiwan-2022.webp",
+   "mobile": "historical",
+   "availability_zh": "2022 年台湾数位纪念版历史活动，并非 2026 新项目。2026-10-17 已解码查看制作方五段网页实机短视频，核对签约、名字被夺与找回名字画面；当前体验入口未确认。此例偏互动叙事而非计分游戏。",
+   "tags": [
+    "电影宣传",
+    "个性化叙事",
+    "线上线下",
+    "实体凭证"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/63313e1aa9082d73348b839a_studycase-website-cover.jpg",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/spirited-away",
+    "https://www.wowlavie.com/article/ae2201383",
+    "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/633146502ffcde658e5b444f_%E5%8D%83%E5%B0%8B03-transcode.mp4"
+   ]
+  },
+  {
+   "id": "demon-slayer-squad-assembly-taiwan-2025",
+   "title_zh": "《鬼灭之刃》「队士结集会」：网上找神队友，现场用记忆、找人和喊招式测鬼杀队等级",
+   "brand": "《鬼滅之刃 無限城篇》 / Muse 木棉花",
+   "agency": "BORING Design Lab",
+   "region": "中国台湾",
+   "format": "手机角色测验 + 线下触屏、声音互动游戏装置",
+   "date": "2025-08-08",
+   "why_zh": "先在网页回答成长、战斗和情感情境，找到与自己相契合的鬼杀队角色，取得角色牌和二维码。到现场后，卡牌配对考记忆，寻找藏身门后的猗窝座考感知，再喊出队友招式考信念，结果生成带等级认证的角色牌。人物能力被拆成可操作的技能挑战，线上测出的身份也成为线下游戏的连续角色。",
+   "style_zh": "动画角色牌、无限城木门与日式纹样、触屏卡牌与等级认证",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/demon-slayer-kimetsu-noyaibathemovie-infinity-castle",
+   "demo_url": "https://player.vimeo.com/video/1113122107",
+   "image": "images/demon-slayer-squad-assembly-taiwan-2025.webp",
+   "mobile": "historical",
+   "availability_zh": "2025 年台湾电影宣发历史活动。2026-10-17 已解码查看制作方视频，确认翻牌记忆、门后找人等实机画面；手机网页负责测验与凭证，主要技能游戏在实体装置上进行，不标为当前网页可玩。",
+   "tags": [
+    "电影宣传",
+    "记忆配对",
+    "声音互动",
+    "角色身份",
+    "线上线下"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/68b01f17c1609d571c1e5001_cover.png",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/demon-slayer-kimetsu-noyaibathemovie-infinity-castle",
+    "https://gnn.gamer.com.tw/detail.php?sn=290215",
+    "https://player.vimeo.com/video/1113122097",
+    "https://player.vimeo.com/video/1113122078"
+   ]
+  },
+  {
+   "id": "measure-in-love-telegraph-2025",
+   "title_zh": "《他年她日》「时光密语」：网页电报突然中断，带着电码到现场接收角色留给你的话",
+   "brand": "《他年她日》 / 甲上娛樂",
+   "agency": "BORING Design Lab",
+   "region": "中国台湾",
+   "format": "网页道具操作与解码叙事 + 实体电报装置",
+   "date": "2025-09",
+   "why_zh": "在网页里转动纸卷、接好电线并操作电报机，两个时钟呈现电影中一年与一天的时间差。信息突然中断，只留下专属电码；观众到实体装置敲击输入，接收一张解码纸条与主角语音。用一个故意未完成的互动推动线下续篇，让电影的等待与错过变成实际操作体验。制作方也记录了线上解码渠道。",
+   "style_zh": "复古电报机、纸卷与怀表、海蓝光影、双时钟与角色语音",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/ta-nian-ta-ri",
+   "demo_url": "https://player.vimeo.com/video/1131244636",
+   "image": "images/measure-in-love-telegraph-2025.webp",
+   "mobile": "historical",
+   "availability_zh": "2025 年电影宣发历史活动。2026-10-17 已解码查看制作方网页和现场实机视频，确认电报操作、输入与语音结果；原活动站当前访问未成功，未列作试玩。此例偏道具操作与叙事体验。",
+   "tags": [
+    "电影宣传",
+    "解码",
+    "互动叙事",
+    "实体装置",
+    "线上线下"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/69009216cb5a3a8331ba9a13_%E4%BB%96%E5%B9%B4%E4%BB%96%E6%97%A51.png",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/ta-nian-ta-ri",
+    "https://news.tvbs.com.tw/entertainment/2988750",
+    "https://player.vimeo.com/video/1131243623"
+   ]
+  },
+  {
+   "id": "intertrend-building-snake-2025",
+   "title_zh": "Intertrend「蛇年贪食蛇」：整栋历史建筑变游戏盘，手机操控蛇在窗户与柱子之间吃元宝",
+   "brand": "Intertrend Communications",
+   "agency": "BORING Design Lab × Intertrend",
+   "region": "美国长滩（台湾制作团队）",
+   "format": "手机扫码控制 + 建筑光雕投影游戏",
+   "date": "2025-01",
+   "why_zh": "路人扫码后，手机成为贪食蛇控制器，蛇在总部历史建筑外墙上吃金币和元宝；二楼窗带实时显示分数、倒计时与排名，Bonus Time 改变光效并加入连击。把建筑结构纳入棋盘，而非仅投放一块广告画面。机构的跨文化与创意能力通过公共游戏被直接体验，蛇年主题也成为玩法本体。",
+   "style_zh": "建筑投影、圆润卡通蛇、金色元宝与红色春节灯光、巨型排行榜",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/intertrend",
+   "demo_url": "https://player.vimeo.com/video/1062295134",
+   "image": "images/intertrend-building-snake-2025.webp",
+   "mobile": "partial",
+   "availability_zh": "2025 年长滩线下新年装置历史案例。2026-10-17 已解码查看制作方视频，确认建筑上实时蛇形与排行榜画面。手机只是现场控制器，没有独立在线试玩；品牌是创意机构自身。",
+   "tags": [
+    "光雕投影",
+    "双屏互动",
+    "贪食蛇",
+    "公共空间",
+    "春节"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/67c69ec9d8dabeb75c8a7960_yearofthesnack9.png",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/intertrend",
+    "https://longbeachize.com/articles/this-lunar-new-year-snake-game-is-projected-onto-a-long-beach-buildingand-yes-you-can-play-it/",
+    "https://www.intertrend.com/about?section=lab"
+   ]
+  },
+  {
+   "id": "intertrend-horse-racing-2026",
+   "title_zh": "Intertrend「马到成功」：手机变水枪，瞄准橱窗上的移动靶，打得越准木马跑得越快",
+   "brand": "Intertrend Communications",
+   "agency": "BORING Design Lab × Intertrend",
+   "region": "美国长滩（台湾制作团队）",
+   "format": "多人手机陀螺仪控制 + 橱窗 LED 赛马游戏",
+   "date": "2026-02",
+   "why_zh": "把游乐园的喷水赛马搬进公司临街橱窗：路人扫码配对，手机变成虚拟水枪，倾斜瞄准大屏上的移动标靶并射击，命中率决定自己木马前进的速度。大屏实时呈现赛道、排名和完赛时间，让玩家与围观者共享同一场比赛。用熟悉的嘉年华操作承载马年祝福，把静态节庆门面改成能聚人的公共游戏。",
+   "style_zh": "红色牌楼、木马赛道、灯笼祥云、嘉年华靶标与实体橱窗",
+   "live_url": "",
+   "source_url": "https://www.boring-lab.com/work/year-of-the-house",
+   "demo_url": "https://player.vimeo.com/video/1195272503",
+   "image": "images/intertrend-horse-racing-2026.webp",
+   "mobile": "partial",
+   "availability_zh": "2026 年长滩线下新年装置。2026-10-17 已解码查看制作方 72 秒视频，包含手机教程及现场操作。手机需配合现场大屏，没有独立在线试玩；官网 2026-02-09 活动记录佐证年份月份，当前展期未确认。",
+   "tags": [
+    "多人竞赛",
+    "双屏互动",
+    "手机传感器",
+    "公共空间",
+    "春节"
+   ],
+   "image_source_url": "https://cdn.prod.website-files.com/5ff79f85dd0f71258ab50478/6a1414acab3ec83c04b64d84_year-of-the-house2.jpg",
+   "evidence_urls": [
+    "https://www.boring-lab.com/work/year-of-the-house",
+    "https://www.intertrend.com/newsroom/filter:Events",
+    "https://icitynews.com/?p=462415"
+   ]
+  },
   {
    "id": "msi-egg-hunt-2023",
    "title_zh": "MSI「The Egg Hunt」：机械兔跳过方块障碍，收集彩蛋兑换会员积分",
