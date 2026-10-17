@@ -1,7 +1,286 @@
 {
  "updated": "2026-10-17",
- "count": 182,
+ "count": 191,
  "cases": [
+  {
+   "id": "a24-smashing-machine-2000",
+   "title_zh": "A24「Smashing Machine 2000」：只用一个按钮，完成举重、打靶与呼吸训练",
+   "brand": "A24 / The Smashing Machine",
+   "agency": "Bughouse；游戏设计 Stefan Cohen、Blake Andrews、Maria Vorobjova；网站 Zombectro",
+   "region": "美国 / 全球网页入口",
+   "format": "手机与桌面网页反应小游戏 + 线下双人街机",
+   "date": "2025-09（线上已发布）；2025-10-02 至 10-03（纽约街机活动）",
+   "why_zh": "用同一个按钮切换五种训练逻辑：连按举杠铃、瞄准收缩靶心出拳、按住并在圆环相交时释放完成呼吸、快速搅拌奶昔换额外生命、按节奏跳绳。玩家替电影主角 Mark Kerr 备战 Pride 2000，把人物训练的强度与节奏变成手上的动作。网页和纽约双人街机共用游戏，让电影的年代感不止停在视觉包装。",
+   "style_zh": "2000 年代网页金属框、低多边形人物、录像噪点、老式运动游戏计时与生命 UI",
+   "live_url": "https://www.smashingmachine2000.com/",
+   "source_url": "https://www.smashingmachine2000.com/",
+   "demo_url": "https://www.youtube.com/watch?v=Lqly103hY1I",
+   "image": "images/a24-smashing-machine-2000.webp",
+   "image_source_url": "https://www.smashingmachine2000.com/card/1200x630.png",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 云端桌面浏览器实测：启动游戏并进入举重回合，查看倒计时与分数，测试了空格输入；未完整通关五项训练。五种操作由官网控制说明确认，手机支持由制作人说明确认，未另做手机实测。A24 官方预告链接可定位，但本轮不把视频元数据当作完整播放证明。纽约线下活动及当时的高分奖励均已结束。",
+   "tags": [
+    "单按钮",
+    "节奏反应",
+    "电影营销",
+    "复古网页",
+    "线下街机"
+   ],
+   "evidence_urls": [
+    "https://www.smashingmachine2000.com/",
+    "https://www.smashingmachine2000.com/credits/index.html",
+    "https://www.linkedin.com/posts/stefancohen1_smashingmachine2000-a24-indiegames-activity-7375880535065206785-GWFz",
+    "https://www.youtube.com/watch?v=Lqly103hY1I"
+   ]
+  },
+  {
+   "id": "cash-app-cash-apples",
+   "title_zh": "Cash App「Cash Apples」：在多人像素果园摇树，把金苹果接到真实收款",
+   "brand": "Cash App / Block",
+   "agency": "Applied MSCHF（游戏设计与开发）× Bughouse（角色、道具与标志）；Niek Dekker（UI / 美术指导）",
+   "region": "美国（原奖励活动有账户、年龄及地区条件）",
+   "format": "多人手机 / 桌面浏览器探索与摇树收集",
+   "date": "2026-03-09；原活动于 03-10 后暂停，03-23 至 03-25 再开放",
+   "why_zh": "玩家自定义像素角色，在每天固定时段进入同一果园，走近树木反复摇动，找金苹果及隐藏道具。历史活动通过 $Cashtag 把游戏收获与 Cash App 收款连接；它让「钱长在树上」成为可执行的动作，再用多人同场与限时开放制造约定时间回访。现金奖励是当时的促销机制，不是长期收益承诺。",
+   "style_zh": "柔和像素果园、钱币形树冠、个性头像、简洁摇树按钮与背包 UI",
+   "live_url": "https://cashapples.com/",
+   "live_label": "走访活动存档",
+   "source_url": "https://chads.site/Cash-Apples-Game",
+   "demo_url": "https://www.youtube.com/watch?v=EzU-abmb8vo",
+   "image": "images/cash-app-cash-apples.webp",
+   "image_source_url": "https://freight.cargo.site/w/1800/q/75/i/0c602715e3a79d7ba78d3785c67fd9d24fd6ba6a2cc925aed1c003ba5daec79f/cash-apples-slide-1.jpg",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 云端桌面浏览器实测：官网显示 Game over，点击 Walk the empty Orchard 后进入存档，方向键移动角色得到可见反馈；原多人摇树与现金领取已结束，未测试。品牌官方 34 秒预告的标题、发布日和说明已核对，视频在本轮云端浏览器停在缓冲，未声称完整播放。原规则列出 2026-03-09/10 与 03-23/24/25 每日 16–20 时 ET；仅当时符合条件的 Cash App 账户可获奖。不同资料的发放总额口径不一，未采用金额或成效数据。",
+   "tags": [
+    "多人游戏",
+    "收集",
+    "限时开放",
+    "金融品牌",
+    "复古像素"
+   ],
+   "evidence_urls": [
+    "https://chads.site/Cash-Apples-Game",
+    "https://cash.app/us/en/legal/cashappxcashapples",
+    "https://cashapples.com/",
+    "https://www.youtube.com/watch?v=EzU-abmb8vo",
+    "https://www.linkedin.com/posts/stefancohen1_cashapples-cashapp-gamedesign-activity-7444428947469262848-NW3j"
+   ]
+  },
+  {
+   "id": "audible-twitch-1984-truthhq",
+   "title_zh": "Audible × Twitch《1984》：观众解码、主播潜入，一起夺回被 AI 控制的广播中心",
+   "brand": "Audible × Twitch",
+   "agency": "Twitch Brand Partnership Studio × UNIT9 × Le Polish Bureau",
+   "region": "英国主播 / 全球 Twitch 观众",
+   "format": "Twitch 聊天室协作解谜 + 主播端 Unity 定制游戏 + 线索网站",
+   "date": "2024（UNIT9 案例标注 2024-05-07）",
+   "why_zh": "三个主播分别扮演工程师、操作员和艺术家，依靠聊天室观众破解电台信息、操控机器人寻找数据，最后接管宣传广播。电路棋盘小游戏要求改接供电路径，AI 对手会切断连接、设置防火墙。胜利解锁有声书开头十分钟，把新书试听变成集体闯关奖赏；观众提供的是通关必需线索，参与感与作品的监控、反抗主题一致。",
+   "style_zh": "复古终端、CRT 监控墙、冷蓝电路棋盘与红色宣传画、直播聊天室叠层",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/audible-twitch-1984/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/audible-twitch-1984-game-4.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/final-header-1984-1400x788.jpg",
+   "mobile": "unknown",
+   "availability_zh": "2026-10-17 核验：官方多段 GIF 已解码，确认直播电台、机器人界面和电路对抗画面；演示链接为官方动图。这是一场历史三段式直播活动，未发现可独立重玩的公开版本。观众通过 Twitch 聊天协作，主游戏由主播操作，不能写成人人可下载的手机游戏。有声书 2024-04-04 上市日期另有品牌证据，但不等于互动游戏首发日。",
+   "tags": [
+    "直播共玩",
+    "协作解谜",
+    "AI对手",
+    "剧情驱动",
+    "内容解锁"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/audible-twitch-1984/",
+    "https://lepolishbureau.com/projects/1984",
+    "https://advertising.amazon.com/library/expert-advice/captain-puffy-twitch"
+   ],
+   "image": "images/audible-twitch-1984-truthhq.webp"
+  },
+  {
+   "id": "coke-zero-hide-n-take",
+   "title_zh": "Coke Zero「Hide n’ Take」：左手跳、右手藏，在冰箱里闯三关偷喝一口",
+   "brand": "Coca-Cola Zero Sugar",
+   "agency": "AKQA × UNIT9",
+   "region": "未注明具体开放市场",
+   "format": "手机浏览器潜行 / 跳跃小游戏",
+   "date": "2023-04-26（制作方标注）",
+   "why_zh": "点屏幕左侧跳跃，按住右侧藏到食物后，趁冰箱主人没发现时向最上层的零糖可乐前进。三层冰箱对应三关，心形生命与计时器给出风险反馈；关卡组件重新排列，支持重复挑战。把「好喝到想偷一口」直接写进操作规则，结尾再接分享、重玩及当时的试饮券入口。",
+   "style_zh": "Jack Teagle 复古插画、红黑白冰箱世界、食物障碍与拟人化馋嘴角色",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/coke-zero-sugar-take-a-taste/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/6-4-5.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/1-32.jpg",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方截图清楚显示「Tap left to jump / Hold right to hide」、生命、计时及通关页；官方演示动图可解码，演示链接为官方动图。截图里的 cokezerosugar.com/gameplay 现虽返回 HTTP 200，内容实际是 Hostinger 停放域名页，已排除为可玩入口。未进行游戏实测；旧通关页面上的试饮券不可视为现行权益。",
+   "tags": [
+    "潜行",
+    "跳跃",
+    "双区触控",
+    "产品即目标",
+    "重复挑战"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/coke-zero-sugar-take-a-taste/",
+    "https://archive.unit9.com/wp-content/uploads/1-32.jpg",
+    "https://archive.unit9.com/wp-content/uploads/2-25.jpg"
+   ],
+   "image": "images/coke-zero-hide-n-take.webp"
+  },
+  {
+   "id": "coke-studio-real-magic-record-store",
+   "title_zh": "Coke Studio「Real Magic Record Store」：找唱片、拨唱针，闯进四位音乐人的专属关卡",
+   "brand": "Coke Studio / Coca-Cola",
+   "agency": "VMLY&R × UNIT9",
+   "region": "全球",
+   "format": "手机优先的 3D 浏览器探索 + 音乐小游戏",
+   "date": "2023-07-04（制作方标注；品牌 5 月已预告）",
+   "why_zh": "在唱片店找到四位合作艺人的专辑，把唱片放上唱机并移动唱针，就能进入对应的 3D 世界。玩家完成赛车、舞蹈或限时收集等挑战，拿到各自的音乐元素；四份集齐后才开放 Jon Batiste 的最终任务，揭晓合唱单曲。把听歌拆成可探索、可收集的合作过程，每位艺人的视觉与声音都是通关内容。",
+   "style_zh": "复古唱片店连向海岸、霓虹舞台、黏土建筑和可乐瓶内部，多种 3D 风格拼接",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/coke-studio-real-magic-virtual-record-store/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/jakubnew_gif.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/new-visual-all-1-1400x787.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方手机游戏 GIF 已解码，确认歌词收集、音符/舞蹈互动与赛车计分，不只是被动 3D 场景；演示链接为官方动图。制作方原体验链接 coca-cola.com/cokestudio-recordstore 当前返回 404，未找到可重玩的公开入口。品牌全球 Coke Studio 平台在 2023-05-31 发布并预告唱片店，不能把该平台日期直接当成小游戏上线日。",
+   "tags": [
+    "音乐营销",
+    "唱片收集",
+    "多关卡",
+    "3D探索",
+    "内容解锁"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/coke-studio-real-magic-virtual-record-store/",
+    "https://www.coca-colacompany.com/media-center/coke-studio-2023-showcases-power-of-creative-collisions",
+    "https://www.coca-cola.com/xe/en/media-center/coke-studio-second-season-jon-batiste-new-anthem"
+   ],
+   "image": "images/coke-studio-real-magic-record-store.webp"
+  },
+  {
+   "id": "heineken-good-time-quest",
+   "title_zh": "Heineken「Good Time Quest」：沿城市地图收 AR 标记，和好友合积分解锁小游戏",
+   "brand": "Heineken",
+   "agency": "UNIT9",
+   "region": "全球多市场",
+   "format": "地理定位 WebAR 寻宝 + 拼图等小游戏",
+   "date": "2023-09-08（制作方标注）",
+   "why_zh": "在手机地图上寻找附近地标的喜力标记，靠近后用 AR 收集并赚取积分；最多可与三名好友合并积分。特殊金色标记会开启瓶子对战或图片拼图，官方演示可见拆散照片逐格复原的任务。把 150 周年品牌符号分布到日常城市路线，再用小队进度与支线挑战推动一起出门和重复访问。",
+   "style_zh": "喜力绿与紫色渐变、发光 3D 瓶标、城市地图和相机视野中的 AR 拼图",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/heineken-good-time-quest/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/002_40MB.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/heroimage002-1400x788.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方 GIF 已解码并查看地图、AR 标记收集及照片拼图；演示链接为官方动图。未进行定位或相机实测。阿尔巴尼亚品牌活动页明确写有促销结束，其他地区是否仍保留纯游戏入口未确认。各市场有独立配置与奖励，不能将案例中的旧奖品当作当前全球权益。与另一活动 Fans Have More Friends 不同。",
+   "tags": [
+    "地理定位",
+    "AR寻宝",
+    "好友组队",
+    "拼图",
+    "周年营销"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/heineken-good-time-quest/",
+    "https://www.heineken.com/al/sq/quest"
+   ],
+   "image": "images/heineken-good-time-quest.webp"
+  },
+  {
+   "id": "google-taito-space-invaders-world-defense",
+   "title_zh": "Google × TAITO「Space Invaders: World Defense」：瞄准自家街区的外星人，在现实与线框城市之间穿梭",
+   "brand": "Google × TAITO / Space Invaders",
+   "agency": "UNIT9",
+   "region": "全球（受支持设备与地理覆盖限制）",
+   "format": "Android / iOS 原生 AR 射击 App",
+   "date": "2023-07-18（品牌公开上线日）",
+   "why_zh": "举起并转动手机，在周围建筑和天空中寻找入侵者，瞄准射击积累分数、解锁强化道具；传送门把视野切换成由附近街区生成的线框世界，飞船沿路线继续迎敌。地区排行榜和飞行员 AR 自拍承接重复游玩与分享。用可得分、可升级的经典射击规则庆祝 IP 45 周年，同时让用户直接体验 Google 地理空间 AR 能力。",
+   "style_zh": "经典像素外星人立体化、真实街景叠加瞄准 UI、霓虹线框城市、科幻传送门",
+   "live_url": "",
+   "source_url": "https://unit9.com/interactive/google-space-invaders",
+   "demo_url": "https://www.youtube.com/watch?v=mcs5vTCDvXQ",
+   "image": "images/google-taito-space-invaders-world-defense.webp",
+   "image_source_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/resize=fit:max,width:1200/quality=value:65/output=format:webp/cmkgzf9x38sl708lawnjswpkw",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方游戏首页明确公告服务已于 2024-10-30 终止；这是曾需下载的手机 App，不是当前浏览器游戏。官方游戏图片已下载并视觉核对；TAITO 官方预告的标题、发布者及品牌链接已确认，但未实际流播或试玩。Google 与 TAITO 均给出 2023-07-18 上线日期，UNIT9 标注 07-17，采用品牌公开日期并保留差异。",
+   "tags": [
+    "AR射击",
+    "地理定位",
+    "动态场景",
+    "排行榜",
+    "周年营销"
+   ],
+   "evidence_urls": [
+    "https://unit9.com/interactive/google-space-invaders",
+    "https://blog.google/products-and-platforms/products/google-ar-vr/space-invaders/",
+    "https://developers.googleblog.com/how-we-made-space-invaders-world-defense-an-ar-game-powered-by-arcore/",
+    "https://www.taito.co.jp/Content/images/zone/0/news/201407/582bf906-21c3-41fd-a619-71d5650dc019_p_01_en.pdf",
+    "https://spaceinvaders-wd.com/index.html"
+   ]
+  },
+  {
+   "id": "sharp-plasmacluster-shooting",
+   "title_zh": "SHARP 等离子簇射击：把净化技术变成升级弹幕",
+   "brand": "SHARP / Plasmacluster",
+   "agency": "1→10（ワントゥーテン）",
+   "region": "日本",
+   "format": "浏览器纵向弹幕射击",
+   "date": "2021-08-02",
+   "date_evidence": "2021年8月2日品牌官方X公告由PC Watch当日报道嵌入；品牌访谈发表于2021年8月31日，不是上线日。",
+   "why_zh": "拖动搭载净化技术的喷射机闪避病毒、霉菌、异味菌与弹幕，按住画面发射离子；拾取品牌标志，火力按7000→25000→NEXT升级，S道具让离子包覆机体进入短暂无敌。把技术型号直接变成武器等级，把家庭使用场景变成关卡背景；高难度促使重试，画面下方拟人化离子角色随等级变化。",
+   "style_zh": "统一像素尺度的复古街机，青绿室内场景、霓虹洋红界面与可爱微生物敌人。",
+   "source_url": "https://game.creators-guild.com/g4c/interview-indiegames-2020831/",
+   "live_url": "https://jp.sharp/plasmacluster/game/",
+   "live_label": "体验游戏",
+   "demo_url": "",
+   "image": "images/sharp-plasmacluster-shooting.webp",
+   "image_source_url": "https://jp.sharp/plasmacluster/game/ogp.png",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17云端Chrome实际进入教程、开始游戏、拖动机体、按住射击，看到离子弹、敌群和碰撞后剩余机体5→4→3；不是仅HTTP可达。未手机单独测试，未通关或亲自完成NEXT升级；升级及无敌规则来自当前官方教程与品牌访谈。此处仅分析营销机制，不验证现实净化功效。未使用社交分享。",
+   "tags": [
+    "弹幕射击",
+    "产品即玩法",
+    "升级",
+    "家电",
+    "像素"
+   ],
+   "evidence_urls": [
+    "https://pc.watch.impress.co.jp/docs/news/yajiuma/1341662.html",
+    "https://news.denfaminicogamer.jp/news/210803t"
+   ],
+   "verified_at": "2026-10-17T07:36:00Z"
+  },
+  {
+   "id": "nike-jordan-ajxi-cosmic-climb",
+   "title_zh": "Jordan「AJXI Cosmic Climb」：穿上 Air Jordan 11 Low，从城市一路跳到外星飞船",
+   "brand": "Nike / Jordan Brand / SNKRS",
+   "agency": "Krool Toys（游戏）；plai、Thesis、Recess（品牌方致谢的活动伙伴）",
+   "region": "美国 / 全球网页入口",
+   "format": "手机与桌面网页 Game Boy Color 风格平台跳跃",
+   "date": "2024-05-15（开发者发布介绍时已可玩）",
+   "why_zh": "选择创作者 Stef 或 Tia，借 AJ11 Low 的宇宙能量向上跳跃，用篮球击退机器人，收集散落的 JUMPMAN 字母。踩空或被敌人撞中会跌落、损失攀爬进度，集齐收藏还可解锁计时挑战。鞋子的弹跳能力成为推进关卡的理由，复古宇宙叙事又呼应这款配色与篮球文化，让新品上市从观看宣传变成亲手掌握鞋子的能力。",
+   "style_zh": "Game Boy Color 像素角色、蓝白球鞋特写、90 年代科幻封面与逐格漫画过场",
+   "live_url": "https://eric-mack.itch.io/ajxi-cosmic-climb",
+   "live_label": "试玩创作者存档",
+   "source_url": "https://gbstudiocentral.com/news/nike-promotes-an-air-jordan-release-with-cosmic-climb/",
+   "demo_url": "",
+   "image": "images/nike-jordan-ajxi-cosmic-climb.webp",
+   "image_source_url": "https://img.itch.zone/aW1hZ2UvMjczOTM2OS8xNjQ1MzExMi5qcGc=/original/jR8ARG.jpg",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 云端桌面浏览器实测：在制作人 ERIC MACK 的 itch.io 版本点击 Run game，推进序章、选择 Stef，进入城市关卡并测试方向键移动及 Z 键跳跃，角色与场景产生可见变化；未完整通关或解锁计时模式。原 cosmicclimb.nike.com 当前未成功取回，因此入口明确为创作者存档，不声称 SNKRS 活动仍在。手机支持由品牌发布说明及启动界面确认，未另做手机实测。",
+   "tags": [
+    "平台跳跃",
+    "产品即能力",
+    "篮球",
+    "复古像素",
+    "计时挑战"
+   ],
+   "evidence_urls": [
+    "https://eric-mack.itch.io/ajxi-cosmic-climb",
+    "https://gbstudiocentral.com/news/nike-promotes-an-air-jordan-release-with-cosmic-climb/",
+    "https://www.linkedin.com/posts/andrewjschwartz_ajxi-cosmic-climb-activity-7196551972521472001-D1ed",
+    "https://itch.io/profile/krooltoys"
+   ]
+  },
   {
    "id": "goodwe-solar-pinball-2024",
    "title_zh": "GoodWe「Solar Pinball」：把光伏逆變器、電池和充電樁做成彈珠台的能量機關",
