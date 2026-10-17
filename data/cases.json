@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-17",
- "count": 305,
+ "count": 307,
  "cases": [
   {
    "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,81 @@
     "户外",
     "帐篷"
    ]
+  },
+  {
+   "id": "big-brother-3d-house-cooking-2025",
+   "title_zh": "Big Brother 3D House：给室友煮一锅汤，五次点选决定晚餐还是绿色灾难",
+   "brand": "Big Brother Australia / Network 10 / Endemol Shine Australia",
+   "agency": "Drawbridge Labs × Future Perfect Digital",
+   "region": "澳大利亚",
+   "format": "手机 3D 网页 / 配料选择 / 节目伴随游戏",
+   "date": "2025",
+   "date_evidence": "项目对应澳大利亚 Big Brother 2025 节目季，未确认精确开放日期，因此仅标 2025 年。",
+   "why_zh": "观众扫码进入录影棚的 3D 复刻空间，在七个固定站点之间点选移动，并用手机环顾。烹饪点要求先揭开锅盖，再选五样物品投入沸水：番茄、胡萝卜、洋葱等可以做出蔬菜汤，厕纸、牙膏、盆栽则可能煮成绿色污汤，并配上 Big Brother 原声反馈。一次可能失败的短任务，让观众代入室友的日常挑战，再接到独家片段、投票和直播等节目内容入口。",
+   "style_zh": "高饱和粉、蓝、黄色录影棚与霓虹灯，写实家具、食物和杂物摆在同一张桌上；蒸汽、物品入锅与汤色变化组成反馈。",
+   "live_url": "",
+   "source_url": "https://futureperfect.digital/casestudy/drawbridge",
+   "demo_url": "https://cdn.sanity.io/files/ng8czpp4/production/fb79c5174150484371d079b99eee283d7f57101e.mp4",
+   "demo_label": "官方手机玩法演示",
+   "image": "images/big-brother-3d-house-cooking-2025.webp",
+   "image_source_url": "https://cdn.sanity.io/images/ng8czpp4/production/16de227725ee7094f14da0ec9ffb71ef247c4889-1804x1288.webp",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：研究者已下载并逐帧查看 29.9 秒官方手机演示，确认屋内移动、物品入锅、绿色成品及节目内容入口；封面为真实烹饪画面。原游戏域名 bigbrother3dhouse.com.au 在研究时返回 403，已停止请求，未亲自试玩；这不能证明永久下线，live_url 留空以免暗示当前可玩。项目属于 2025 节目季，准确开放日未确认。AI 自拍与语音是另外的环节，不等同于烹饪玩法；本次未开启摄像头或麦克风、上传照片或投票，历史节目权益也未核实当前有效。",
+   "verification_notes": "烹饪挑战单独作为玩法重点，七个固定站点的空间探索不夸大为自由移动。访问 403 只反映本次访问结果，不作为下线证明；未重试游戏入口。",
+   "tags": [
+    "配料选择",
+    "3D节目空间",
+    "失败反馈",
+    "角色代入",
+    "节目伴随",
+    "内容导流",
+    "手机网页"
+   ],
+   "evidence_urls": [
+    "https://futureperfect.digital/casestudy/drawbridge",
+    "https://cdn.sanity.io/files/ng8czpp4/production/fb79c5174150484371d079b99eee283d7f57101e.mp4",
+    "https://drawbridgelabs.com/",
+    "https://www.linkedin.com/posts/gavindouglas_bigbrother-averagedwelltime-immersive3dexperience-activity-7417805241758244865-f9Wd"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "tv-tokyo-tagawa-one-minute-dash-2025",
+   "title_zh": "东京电视台《太川阳介的一分钟冲刺》：路边美食不是奖励，贪吃就赶不上公交",
+   "brand": "テレビ東京 /《テレ東系 旅の日》",
+   "agency": "NEIGHBOR / DreamCore",
+   "region": "日本",
+   "format": "手机竖屏浏览器动作 / 节目宣传",
+   "date": "2025-12-22",
+   "date_evidence": "TV Tokyo 官方 X 游戏影片于 2025-12-22 公开，采用这一可确认日期；2025-12-27 为制作方新闻稿日期，12 月 27–28 日为合计九小时的节目播出期，不记成 2026 年项目。",
+   "why_zh": "玩家在六十秒内沿街巷赶往公交车，移动时要躲开章鱼烧和拉面等食物。撞上食物，角色会喊好吃并停下来吃，画面出现进食进度条，倒计时仍然继续；贪吃便可能错过公交，失败后可以重开。游戏把旅行节目中想吃美食又必须赶车的矛盾直接变成规则，常驻播出日期让一轮挑战持续关联节目。",
+   "style_zh": "3D 日本街巷跑道、像素风明星头像、夸张路边食物、竖屏倒计时与节目播出信息，进食进度条放大停下来的时间成本。",
+   "live_url": "https://www.dreamcore.gg/game/27f11744-ad09-4e91-b109-783822baa5fb",
+   "live_label": "历史游戏入口（当前返回403，未实玩）",
+   "source_url": "https://www.tv-tokyo.co.jp/tabinohi/game/",
+   "demo_url": "https://x.com/TVTOKYO_PR/status/2002934617582579836",
+   "demo_label": "官方玩法演示",
+   "image": "images/tv-tokyo-tagawa-one-minute-dash-2025.webp",
+   "image_source_url": "https://www.tv-tokyo.co.jp/txcms/media/others/fc/b9/63940d7a7a5f85e64ac83c0888aa.png",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：研究者已下载官方 122.88 秒真实录屏，并目视核对约 2、10、20、50、61、110、121 秒画面，可见移动、碰撞进食、错车与重开；未本人操作或在手机实测。TV Tokyo 规则页仍可读取，DreamCore 游戏入口在研究中返回 403 后已停止，不保证当前可运行，也不据此称永久下线。制作新闻稿的游戏 URL 缺少末尾 b，已依据 TV Tokyo 官网与官方 X 校正。X 浏览量不能当作玩家人数；官方提到的特殊人物帮助未在已核影片中目视确认，未据此描述为实测机制。",
+   "verification_notes": "节目日期、制作稿日期与游戏公开日期分别记录。食物是会消耗时间的碰撞干扰，不表述为收集奖励；特殊人物与奖励信息未获影片视觉验证，不加入具体玩法承诺。保留带明确 403 标注的历史入口，未重试访问。",
+   "tags": [
+    "限时赶车",
+    "食物干扰",
+    "碰撞停顿",
+    "时间管理",
+    "旅行节目",
+    "明星角色",
+    "手机网页"
+   ],
+   "evidence_urls": [
+    "https://www.tv-tokyo.co.jp/tabinohi/game/",
+    "https://x.com/TVTOKYO_PR/status/2002934617582579836",
+    "https://prtimes.jp/main/html/rd/p/000000061.000111821.html",
+    "https://video.twimg.com/amplify_video/2001962941722304512/vid/avc1/720x720/EWoMQw2ZOQxV7X-7.mp4?tag=16"
+   ],
+   "verified_at": "2026-10-17"
   },
   {
    "id": "nisshin-oillio-draw-magic-2026",
