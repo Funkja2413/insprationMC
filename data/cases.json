@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-17",
- "count": 310,
+ "count": 312,
  "cases": [
   {
    "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,83 @@
     "户外",
     "帐篷"
    ]
+  },
+  {
+   "id": "lego-brick-kickers-2026",
+   "title_zh": "LEGO「Brick Kickers」：双人踢真实足球，限时击碎大屏乐高砖墙抢分",
+   "brand": "LEGO",
+   "agency": "Cinética Studio",
+   "region": "全球足球快闪（影片具体场地未注明）",
+   "format": "线下体感双人游戏 / LED 大屏 / 足球撞击定位",
+   "date": "2026",
+   "date_evidence": "制作方官方目录将项目列为 2026 年，LEGO 2026-04-02 足球活动公告也点名 Brick Kickers；该公告说明全球活动，不作为影片中具体场次的首日。",
+   "why_zh": "两位玩家在围网小球场内，把真实足球踢向 LED 大屏上的乐高砖墙；传感器识别撞击位置，虚拟砖块随之崩解并计分。官方现场影片可见三十秒倒计时、双方比分，以及砖墙中的足球人物和奖杯。玩法将真实射门与乐高拆解、重组的视觉语言连在一起，用短局对抗吸引世界杯主题快闪现场围观，并展示 LEGO Editions 足球系列。",
+   "style_zh": "绿色小球场、真实足球与围网，LED 上的彩色乐高砖墙、醒目倒计时及双人比分，构成实体运动与数字破坏反馈的组合。",
+   "live_url": "",
+   "source_url": "https://www.cinetica.studio/portfolio/lego-brick-kickers",
+   "demo_url": "https://vimeo.com/1226748949",
+   "demo_label": "官方现场演示",
+   "image": "images/lego-brick-kickers-2026.webp",
+   "image_source_url": "https://cdn.prod.website-files.com/6928d64ecf605c3ac08d69a3/6aa87ef783393c1523b4819d_6aa8673d21d5626fae02f22b_LEGO_CHUTA_IA_op01.png",
+   "mobile": "no",
+   "availability_zh": "2026-10-17 核验：研究者已下载、解码并目视核对 36 秒官方现场影片，确认真实踢球、击中反馈、双方比分和倒计时；未亲自操作。该体验需要现场 LED 球场与传感装置，不是手机或浏览器游戏，live_url 留空。官方目录支持 2026 年，LEGO 2026-04-02 公告仅说明全球足球活动，未将其当作本场首日；具体场次、当前开放状态和奖品资格均未核实，不作参与或领奖承诺。",
+   "verification_notes": "真实操作证据来自官方现场影片；项目封面与现场玩法影片的证据作用分开记录。三十秒倒计时是影片中可见设置，不据此推定所有场次规则相同。",
+   "tags": [
+    "体育营销",
+    "双人对战",
+    "体感互动",
+    "线下装置",
+    "世界杯",
+    "实机演示"
+   ],
+   "evidence_urls": [
+    "https://www.cinetica.studio/portfolio/lego-brick-kickers",
+    "https://vimeo.com/1226748949",
+    "https://www.cinetica.studio/portfolio",
+    "https://www.lego.com/en-us/aboutus/news/2026/april/lego-editions-wants-a-piece"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "google-io-prism-shift-2025",
+   "title_zh": "Google I/O「Prism Shift」：拖动镜片、分解光谱，以空间解谜揭晓开发者大会日期",
+   "brand": "Google / Google I/O / Gemini",
+   "agency": "Left Field Labs",
+   "region": "美国 / 全球",
+   "format": "浏览器光路解谜 / 大会预热",
+   "date": "2025-02-11",
+   "date_evidence": "Google 2025-02-12 回顾说明谜题在前一天发布，并有 2025-02-11 官方日期公告交叉支持；不采用 2026 年获奖日期。",
+   "why_zh": "玩家长按拖动镜片，点击或轻触旋转，让光线反射、复制并分解为红绿蓝三色；当前区域的节点同时点亮，才会开启下一块棋盘。七个世界逐渐加入滤色、照亮暗区及一块旋转便全部联动的纠缠机制。额外玩法要求阅读 Gemini 谜语，在有限猜测次数内找到隐藏格，解锁 Chrome Dino、Android 等造型的奖励关。大会日期因此成为参与解谜后共同揭晓的结果，Gemini 也通过实际谜题内容进入体验。",
+   "style_zh": "星空背景、体素棋盘、虹彩镜片与红绿蓝光束，极简节点图标和不同配色的隐藏世界。",
+   "live_url": "https://io.google/2025/puzzle/",
+   "live_label": "官方游戏入口（未完成实玩）",
+   "source_url": "https://go.leftfieldlabs.com/google-io-prism-shift",
+   "demo_url": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/IO25-puzzle-how-we-made-it-2.mp4",
+   "demo_label": "官方玩法演示",
+   "image": "images/google-io-prism-shift-2025.webp",
+   "image_source_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Prism_Shift.width-1200.format-webp.webp",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：官方 2025 游戏入口仍有 Play now 与完整教程可读取，但不等于本次已完成实玩。研究者已下载并逐帧核对 Google 官方约 8.5 秒光路影片与 20.5 秒谜语影片，可见猜错扣除次数及 Dino 令牌解锁。封面为官方关卡图。竖屏展示和轻触说明支持移动界面设计，但未在手机上测试；大会日期已经揭晓，也未通过实际交互核验当前 Gemini 接口。日期采用 2025-02-11，不将后续奖项时间作为上线日。",
+   "verification_notes": "区分基础光路解谜与 Gemini 隐藏关，不将片段观看描述为完成七个世界。官方教程与入口可访问仅证明页面存在，保留未完成实玩标注。",
+   "tags": [
+    "光路解谜",
+    "拖拽旋转",
+    "空间推理",
+    "AI隐藏关",
+    "大会预热",
+    "产品能力体验"
+   ],
+   "evidence_urls": [
+    "https://go.leftfieldlabs.com/google-io-prism-shift",
+    "https://io.google/2025/puzzle/",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2025-puzzle-ai/",
+    "https://blog.google/feed/google-io-2025-save-the-date/",
+    "https://developers.googleblog.com/unlocking-bonus-worlds-with-gemini-for-the-google-io-puzzle/",
+    "https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/IO25-puzzle-how-we-made-it-2.mp4",
+    "https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/IO25-puzzle-how-we-made-it.mp4",
+    "https://images.ctfassets.net/nz9n5e42ygrm/69w28tTJUwV1AyOMWVFxMK/d767873a46918676e4fb6dd1a536e10f/PrismShift-8.png"
+   ],
+   "verified_at": "2026-10-17"
   },
   {
    "id": "idemia-traffic-guardian-2026",
