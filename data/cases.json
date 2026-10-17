@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-17",
- "count": 307,
+ "count": 310,
  "cases": [
   {
    "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,122 @@
     "户外",
     "帐篷"
    ]
+  },
+  {
+   "id": "idemia-traffic-guardian-2026",
+   "title_zh": "IDEMIA「Traffic Guardian」：先靠肉眼抓违章，再解锁 MESTA 辅助识别体验",
+   "brand": "IDEMIA Public Security / MESTA",
+   "agency": "Virtuoz × Djey Labs（Jérémy Rabouan）",
+   "region": "荷兰阿姆斯特丹 / 法国制作",
+   "format": "55英寸触屏展会游戏 / 限时观察点击",
+   "date": "2026-03-10",
+   "date_evidence": "品牌官方Intertraffic 2026动态与主办方2026年3月10–13日会期交叉对应，采用展会首日3月10日；不使用4月演示影片所在目录日期。",
+   "why_zh": "玩家在包括法国高速公路在内的三个执法场景中，限时点击车流里的违章车辆，选对加分、误点扣分，雨雾与车流密度增加观察压力。积满能量后可点击底部仪表启动Powered by MESTA Mobile辅助模式，以蓝色高亮帮助识别，能量耗尽后恢复普通观察；结算记录正确、错误、辅助使用时长与排行榜。将抽象技术改成玩家可感知的能力升级，为展台后续产品介绍提供操作经验。辅助模式仍是游戏内的视觉提示，不能描述为全自动执法。",
+   "style_zh": "紫金色科技HUD、写实车流与雨湿路面，蓝色扫描高亮配合能量仪表、计时和得分；大屏展示强化现场观看与参与。",
+   "source_url": "https://virtu-oz.fr/projet/idemia-projet-public-security/",
+   "demo_url": "https://virtu-oz.fr/wp-content/uploads/2026/04/demo-idemia-Game-1.mp4",
+   "demo_label": "官方实机演示",
+   "live_url": "",
+   "image": "images/idemia-traffic-guardian-2026.webp",
+   "image_source_url": "https://djeylabs.com/media/gameCapture.webp",
+   "mobile": "no",
+   "availability_zh": "2026-10-17 核验：上游研究已下载并逐帧查看131.75秒官方实机影片，确认关卡选择、违章检测、能量到100%后开启辅助、结算和现场排行榜。它是展会55英寸触屏游戏的录像，不是浏览器即玩入口；未现场操作或进行手机测试，live_url留空。游戏中的蓝色高亮与辅助时长用于产品体验示意，不能当作真实MESTA设备的识别准确率、自动执法流程或安全成效验证。封面为制作方真实触屏操作照片，不是当前网页试玩截图。",
+   "verification_notes": "本批重新读取Virtuoz及Djey Labs一手项目，核对IDEMIA委托、55英寸触屏、三场景、限时点击和超视辅助模式，以及Unity开发合作关系。131.75秒影片解码与视觉核验沿用上游研究，本批未重复下载影片，也未操作任何真实交通系统。",
+   "tags": [
+    "限时识别",
+    "正确错误反馈",
+    "能量蓄积",
+    "产品能力升级",
+    "B2B展会",
+    "AI产品演示"
+   ],
+   "evidence_urls": [
+    "https://virtu-oz.fr/projet/idemia-projet-public-security/",
+    "https://djeylabs.com/advergame-en.html",
+    "https://djeylabs.com/developpeur-unity-freelance.html",
+    "https://www.linkedin.com/posts/idemia-public-security_events-intertraffic-roadsafety-activity-7437480201800007680-twW_",
+    "https://www.rai.nl/en/calendar/intertraffic-2026",
+    "https://www.intertraffic.com/press-releases/intertraffic-amsterdam-concludes"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "kfc-italia-nuggets-game-2025",
+   "title_zh": "KFC Italia「Nuggets Game」：用炸鸡桶接新品，护盾与高分挑战延长会员回访",
+   "brand": "KFC Italia",
+   "agency": "Sidewave × Indici Opponibili",
+   "region": "意大利",
+   "format": "App内嵌 / 手机网页接物游戏",
+   "date": "2025-02-04",
+   "date_evidence": "KFC Italia官方首轮规则及新品资料明确活动为2025年2月4日至4月15日；采用首次活动开始日，不将后续会员常设版本混入。",
+   "why_zh": "玩家移动炸鸡桶接住新品N’Oggets、避开障碍，在速度递增的关卡中保住三条生命；特殊大块与护盾道具提供提分和保护机会。首轮活动每12小时提供五局，看品牌影片可增加机会，排行榜保留个人最高分，前100名按档位获得当时的产品奖励。新品同时成为高频得分物、视觉主角与奖励，把产品曝光接到反复挑战和会员回访；后续又纳入会员体系。",
+   "style_zh": "红绿渐变竖屏背景、写实鸡块图标、护盾道具与夸张关卡文字，品牌炸鸡桶作为底部接物容器。",
+   "source_url": "https://www.indiciopponibili.com/portfolio/lanciare-un-nuovo-prodotto-con-un-videogame",
+   "demo_url": "https://www.indiciopponibili.com/storage/media/6110aab5-0649-454e-993e-c3cc0129516f.gif",
+   "demo_label": "官方玩法 GIF",
+   "live_url": "",
+   "image": "images/kfc-italia-nuggets-game-2025.webp",
+   "image_source_url": "https://www.indiciopponibili.com/storage/media/6110aab5-0649-454e-993e-c3cc0129516f.gif",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：上游研究已下载并逐帧查看121帧官方GIF，确认移动炸鸡桶接取、得分及从第1级进入第2级；封面选取同一真实GIF帧。首轮活动限意大利成年注册用户，2025年2月4日至4月15日的局数、榜单和产品奖励均已成为历史规则。本次官网研究请求遇到403后已停止，不能据访问失败推断游戏已下线；未注册、安装App或参与榜单。后续会员FAQ涉及新旧版本，未登录核实今天的局数、积分与奖品，因此不提供当前试玩链接，也不把历史规则作为现行权益承诺。本批另确认GIF长6.05秒、121帧均可解码，并查看采样帧及选用的第60帧封面；它是玩法摘录，不是完整游戏通关。",
+   "verification_notes": "本条与现有KFC Italia 2026 Tattoo多人现场躲鸡腿游戏不同：本案是2025新品N’Oggets的个人接物与高分榜活动；也不同于Original Fake Games原生合集、11 Secrets解谜及2019经典街机联名。沿用上游已核验的首轮官方规则与制作方GIF，不重试已受限的KFC官网页面。",
+   "tags": [
+    "产品接取",
+    "护盾道具",
+    "递增难度",
+    "高分榜",
+    "新品上市",
+    "会员回访"
+   ],
+   "evidence_urls": [
+    "https://www.indiciopponibili.com/portfolio/lanciare-un-nuovo-prodotto-con-un-videogame",
+    "https://kfc.it/scopri-kfc/regolamento-kfcgame",
+    "https://strapi-kfc-bucket.s3.eu-west-3.amazonaws.com/2025_01_24_REGOLAMENTO_CONCORSO_v3_2ed07974df.pdf",
+    "https://strapi-kfc-bucket.s3.eu-west-3.amazonaws.com/CS_KFC_N_Oggets_def_38e144d790.pdf",
+    "https://www.linkedin.com/posts/sidewave-vr_sidewave-kfcitalia-activity-7310692072112422914-BeNP",
+    "https://kfc.it/faq"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "asus-rog-phone8-unboxing-mission-2024",
+   "title_zh": "ASUS ROG Phone 8 Pro 开箱任务：让包装盒成为游戏中的任务终端",
+   "brand": "ASUS ROG Phone 8 Pro",
+   "agency": "XX Studio 无无 × Yuri Studio 有日互动 × Macaca Games 玩猴游戏",
+   "region": "台湾制作 / 全球产品开箱",
+   "format": "硬件开箱互动 / 包装任务终端",
+   "date": "2024",
+   "date_evidence": "Macaca官方将项目列为2024年。ASUS于2024年1月9日公布Phone 8系列，Behance案例于6月18日发表；系列公布日和作品发表日均不直接作为已确认的开箱体验首发日，因此只保留年份。",
+   "why_zh": "玩家化身Agent X，对抗AI SuperNova。开箱后的手机先与包装指定区域完成任务互动，再滑入纸盒的终端槽，AniMe Vision背部灯阵透过包装窗口显示进度。玩家随后使用AirTrigger肩键突破障碍，并以倾转和触屏操作对抗核心。包装、机身输入、背部灯阵与屏幕叙事连接成一段开箱任务，让产品的控制方式、声音和灯光通过操作成为上手教程。",
+   "style_zh": "横屏手机上的红橙色数字空间、机械手与科幻核心，配合黑色纸盒终端、背部点阵灯光及真实双手操作，形成特工任务式开箱体验。",
+   "live_url": "",
+   "source_url": "https://www.xxstudio.cc/rog8-unboxing",
+   "demo_url": "https://static.wixstatic.com/media/18b1a8_0edf4592c6494c6fb7e256e9108ceda9~mv2.gif",
+   "demo_label": "官方硬件操作 GIF",
+   "image": "images/asus-rog-phone8-unboxing-mission-2024.webp",
+   "image_source_url": "https://static.wixstatic.com/media/18b1a8_0edf4592c6494c6fb7e256e9108ceda9~mv2.gif",
+   "image_source_note": "来自已核验官方硬件操作动图的真实画面，经Library提供；可见双手持机及屏幕任务演出。",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：研究者已正常下载官方Gaming Experience的三段动图并逐段抽帧，分别为8.65秒／173帧的肩键屏障操作、16.9秒／338帧的真机插入纸盒及背灯进度到100%和标志反馈、4.1秒／82帧的手持倾转瞄准。它们是真实硬件操作摘录，不是完整通关录像，也不是本次亲自试玩。体验需要对应的ROG Phone 8 Pro及包装，不是普通浏览器可以直接打开的网页游戏；本次没有使用该硬件，live_url留空，mobile标为历史硬件体验。不能据此确认普通Phone 8版同样具备该开箱流程，也不推测包装与手机之间的感应协议。另有官方YouTube与Vimeo影片，但本次未完整观看，不作为已看完的依据。",
+   "verification_notes": "产品系列发布、案例发表与体验上线日期已区分。本批仅从Library取得既有真实WebP帧并目视核验，没有重复下载原GIF或尝试运行硬件体验。未完整观看的补充影片为YouTube Srv-dF2JMuM与Vimeo 960255539；已观看依据仅为三段官方硬件操作GIF。",
+   "tags": [
+    "互动开箱",
+    "包装即终端",
+    "硬件功能教程",
+    "AirTrigger肩键",
+    "背部灯阵",
+    "倾转操作",
+    "科幻任务"
+   ],
+   "evidence_urls": [
+    "https://www.xxstudio.cc/rog8-unboxing",
+    "https://www.behance.net/gallery/201186225/Asus-ROG-Phone-8-Unboxing-Game",
+    "https://press.asus.com/news/press-releases/asus-rog-phone-8-series-ces-2024/",
+    "https://static.wixstatic.com/media/18b1a8_0edf4592c6494c6fb7e256e9108ceda9~mv2.gif",
+    "https://static.wixstatic.com/media/18b1a8_ebe6158910844885bc10c8ac067e2e0c~mv2.gif",
+    "https://static.wixstatic.com/media/18b1a8_d8177cb6a7664bc180abb8e1199fdf68~mv2.gif"
+   ],
+   "verified_at": "2026-10-17"
   },
   {
    "id": "big-brother-3d-house-cooking-2025",
