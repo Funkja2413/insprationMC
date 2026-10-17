@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-17",
-  "count": 220,
+  "count": 222,
   "cases": [
     {
       "id": "ogawa-tent-memory-2026",
@@ -32,6 +32,80 @@
         "商品导流",
         "户外",
         "帐篷"
+      ]
+    },
+    {
+      "id": "accept-humanoid-scavenger-hunt",
+      "title_zh": "ACCEPT《Humanoid》：搜出隐藏物件、重排歌名字母，逐步改写机器人统治系统",
+      "brand": "ACCEPT /《Humanoid》",
+      "agency": "Wayward Creative（客户 Napalm Records）",
+      "region": "德国 / 美国乐队，全球网页入口",
+      "format": "浏览器 3D 控制室寻物 + 歌名字母排序解谜",
+      "date": "2024",
+      "why_zh": "玩家进入专辑封面延伸出的机器人控制室，按乐队社交媒体发布的线索寻找隐藏物件，逐步开放解谜挑战；在终端上依次点选打乱的字母，拼出《Humanoid》等正确歌名，答对后显示 CORRECT 并进入下一题；另一任务要求将零件安装到正确位置，完成 AI 机器人重编程。把新专辑的反乌托邦故事、曲目名和试听结合成连续任务；历史入口以预保存换取参与，再用线索分发和阶段解锁推动回访。",
+      "style_zh": "暗色科幻控制室、青蓝终端字形、铜红色人形机器人大军、复古工业面板与隐秘物件",
+      "live_url": "",
+      "source_url": "https://www.wayward-creative.com/work/accept-interactive-fan-experience",
+      "demo_url": "https://www.wayward-creative.com/work/accept-interactive-fan-experience",
+      "demo_label": "官方案例影片",
+      "image_source_url": "https://cdn.sanity.io/images/xiy3sn9b/production/65769e3efbf42da29d8668f9e84447770c686f72-3450x1794.jpg",
+      "image": "images/accept-humanoid-scavenger-hunt.webp",
+      "mobile": "unknown",
+      "availability_zh": "2026-10-17 核验：Napalm Records 官方公告将互动站与 2024 新专辑及巡演共同发布；同期 2024-02-06 媒体新闻明确写明网站当日上线，主日期保守记为 2024。已下载并目视核对官方控制室图片和三段视频封面，并在约 25 秒的官方第二段视频中看见点选字母、正确答案反馈及下一题；演示链接是制作方含视频案例页，不是本次实际游戏试玩。原 accept-humanoid.vercel.app 在云端桌面浏览器持续黑屏，无可用入口，因此不标为当前可玩。历史活动要求先在 Spotify、Apple Music、Amazon Music、TIDAL 或 Deezer 预保存；本次未登录、预保存或授予账号权限。手机兼容性未独立确认。",
+      "tags": [
+        "音乐营销",
+        "专辑预热",
+        "3D寻物",
+        "歌名解谜",
+        "字母排序",
+        "分批解锁",
+        "2024"
+      ],
+      "evidence_urls": [
+        "https://www.wayward-creative.com/work/accept-interactive-fan-experience",
+        "https://www.linkedin.com/posts/napalmrecords_accept-activity-7160682203960524800-FxeY",
+        "https://blabbermouth.net/news/accept-announces-new-album-humanoid",
+        "https://accept-humanoid.vercel.app/",
+        "https://cdn.sanity.io/images/xiy3sn9b/production/65769e3efbf42da29d8668f9e84447770c686f72-3450x1794.jpg",
+        "https://image.mux.com/bicagSOf02F3koxRQC2Lbv700g0202VA00UEGSyJybxyVdNw/thumbnail.webp?width=1600",
+        "https://image.mux.com/izJICjJRwZBzZnzW5PA02cK8Xhad01HVI9ZSCyeEoPLsA/thumbnail.webp?width=1600"
+      ]
+    },
+    {
+      "id": "loro-piana-harrods-festive-quest",
+      "title_zh": "Loro Piana《The Festive Quest》：沿百货橱窗找答案，把羊绒工艺故事变成实地解谜路线",
+      "brand": "Loro Piana × Harrods",
+      "agency": "MONOGRID",
+      "region": "英国伦敦",
+      "format": "手机网页寻宝地图 + 实体橱窗观察答题",
+      "date": "2024-12",
+      "why_zh": "扫描 Harrods 橱窗二维码进入手机地图，沿 Brompton Road、Hans Road 的指定橱窗寻找线索；例如观察 Baby Cashmere 展示中出现哪些节日符号，再点选或滑动选项并确认。答题后解锁对应收藏图标、原料知识和下一处橱窗提示，最后到达 Workshop of Wonders。它让顾客为了找答案而仔细看展，用真实商品材质与橱窗细节支撑闯关，而地图又把分散的展示串成门店动线。",
+      "style_zh": "深蓝夜空、羊绒质感云朵、黄铜机械徽章、线描 Harrods 地图、驯鹿和圣诞树收藏球",
+      "live_url": "",
+      "source_url": "https://monogrid.com/en/project/loro-piana-x-harrods-workshop-of-wonders-2/",
+      "demo_url": "https://monogrid.com/en/project/loro-piana-x-harrods-workshop-of-wonders-2/",
+      "demo_label": "官方案例影片",
+      "image": "images/loro-piana-harrods-festive-quest.webp",
+      "image_source_url": "https://monogrid.com/api/optimized-image/b3185d2ff492aab442be9be421d3cfffcc548c9665ddde68c0a5d9d0787b9d3c.jpg?max-w=1200&auto=compress,format",
+      "mobile": "historical",
+      "availability_zh": "日期采用制作方案例页标注的 2024 年 12 月；整体百年圣诞活动为 2024-11-07 至 2025-01-02，不把活动开幕日直接当作手机游戏上线日。2026-10-17 已在云端浏览器看过官方地图演示，并下载目视核对包含题目、滑动确认、收藏图标和路线的真实界面图。开发者本人说明第二阶段为手机专属、答案藏在实体橱窗的问答体验。原 festivequest.loropiana.com/teaser 当前返回 Invalid URL，故不标作当前可玩；未实地参与或通关。演示链接是包含官方视频和游戏界面的制作方案例页。",
+      "tags": [
+        "奢侈品",
+        "周年营销",
+        "线下导流",
+        "橱窗寻宝",
+        "地图任务",
+        "观察解谜",
+        "工艺教育",
+        "2024"
+      ],
+      "evidence_urls": [
+        "https://monogrid.com/en/project/loro-piana-x-harrods-workshop-of-wonders-2/",
+        "https://tympanus.net/codrops/2026/02/27/gabriel-norman-from-gaming-culture-to-high-end-interactive-experiences/",
+        "https://hk.loropiana.com/en/harrods-workshop-of-wonders",
+        "https://player.vimeo.com/video/1038609052",
+        "https://festivequest.loropiana.com/teaser",
+        "https://monogrid.com/api/optimized-image/b3185d2ff492aab442be9be421d3cfffcc548c9665ddde68c0a5d9d0787b9d3c.jpg?max-w=1200&auto=compress,format"
       ]
     },
     {
