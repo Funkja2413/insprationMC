@@ -93,6 +93,8 @@ function token(){return ls(K_TOK)||""}
 function hidden(id){return remote.has(id)||pending.some(function(p){return p.id===id})}
 function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e}
 function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:""}
+function getDemoLabel(c){return c.demo_label||"实机演示"}
+function hasGameplayDemo(c){return !!safeUrl(c.demo_url)&&c.demo_type!=="puzzle_source"}
 
 function b64enc(s){return btoa(unescape(encodeURIComponent(s)))}
 function b64dec(s){return decodeURIComponent(escape(atob(s.replace(/\s/g,""))))}
@@ -215,7 +217,7 @@ function card(c){
   var ac=el("div","acts");
   var lu=safeUrl(c.live_url), du=safeUrl(c.demo_url), su=safeUrl(c.source_url);
   if(lu){var l=el("a","play",c.live_label||"体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
-  if(du){var v=el("a","","实机演示"); v.href=du; v.target="_blank"; v.rel="noopener noreferrer"; ac.appendChild(v)}
+  if(du){var v=el("a","",getDemoLabel(c)); v.href=du; v.target="_blank"; v.rel="noopener noreferrer"; ac.appendChild(v)}
   if(su&&su!==lu&&su!==du){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
   var d=el("button","del","删除"); d.type="button";
   d.onclick=function(){
@@ -230,7 +232,7 @@ function card(c){
 function matches(c,q){
   if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
   if(mobileOnly&&c.mobile!=="yes")return false;
-  if(demoOnly&&!safeUrl(c.demo_url))return false;
+  if(demoOnly&&!hasGameplayDemo(c))return false;
   if(!q)return true;
   return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
 }
