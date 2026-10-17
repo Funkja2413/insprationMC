@@ -1,7 +1,272 @@
 {
  "updated": "2026-10-17",
- "count": 141,
+ "count": 150,
  "cases": [
+  {
+   "id": "docomo-bakumore-influencer",
+   "title_zh": "Docomo「ばくモレ」：自拍越出圈，隐私越可能被围观者拼出来",
+   "brand": "NTT Docomo",
+   "agency": "未核实公开制作方",
+   "region": "日本",
+   "format": "手机/桌面浏览器模拟社交平台＋分支恐怖游戏",
+   "date": "2026-03-24",
+   "date_evidence": "品牌官方新闻稿明确称2026年3月24日起公开。",
+   "why_zh": "扮演想当网红的女孩，在每轮三张照片里选一张发到模拟社交平台，靠点赞和粉丝推进。看似漂亮的照片可能露出住址、学校或生活路径；发错后，评论从夸赞转成定位线索，再触发被盯上的恐怖反馈。把通信品牌的安全教育做成玩家亲手造成的后果，而非答题宣教。",
+   "style_zh": "竖屏仿社交应用、真人自拍、粉蓝渐变与故障风惊吓",
+   "live_url": "https://www.docomo.ne.jp/special_contents/bakumore/index.html",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000784.000118641.html",
+   "demo_url": "",
+   "image_source_url": "https://www.docomo.ne.jp/special_contents/bakumore/images/OGP.jpg",
+   "mobile": "yes",
+   "availability_zh": "2026-10-17云端浏览器实际进入三选一照片、发布模拟内容并触发隐私泄漏结局；未通关。含惊吓演出。无需上传真实照片或登录社交账号。",
+   "verification_notes": "Tested second photo in first round: photo of girl with tower/manhole background; comments mention tower, home vicinity, manhole pattern, then stalker alert. This was simulated game posting, no real SNS sharing.",
+   "tags": [
+    "社交模拟",
+    "分支叙事",
+    "恐怖",
+    "安全教育"
+   ],
+   "evidence_urls": [
+    "https://prtimes.jp/main/html/rd/p/000000784.000118641.html",
+    "https://www.docomo.ne.jp/binary/pdf/info/news_release/topics_260324_d1.pdf"
+   ],
+   "image": "images/docomo-bakumore-influencer.webp"
+  },
+  {
+   "id": "mos-chicken-melody",
+   "title_zh": "摩斯「炸鸡旋律」：把酥脆咬下声变成八个音阶",
+   "brand": "MOS Burger / MOS Chicken",
+   "agency": "Createch（クレアテック）",
+   "region": "日本",
+   "format": "浏览器节奏游戏＋自由演奏",
+   "date": "2024-11-13",
+   "date_evidence": "MOS官方2024-11-13新闻稿注明当日09:00上线，与圣诞炸鸡网络预约同步。",
+   "why_zh": "鸡腿就是音符和琴键：在Live模式跟随落下的鸡腿轮廓，按时点击对应音阶，用炸鸡的“咔嚓”声演奏童谣；按准确度累计分数、等级，再去重玩、换曲或购买炸鸡。自由模式则让八个鸡腿键组成小乐器。商品外形和最关键的食感声音一起进入玩法。",
+   "style_zh": "亮绿与金黄、产品实拍鸡腿、街机按钮、八轨音乐键盘",
+   "live_url": "https://www.mos.jp/oc/moschickenmelody/game/",
+   "source_url": "https://createch.jp/works/post-18/",
+   "demo_url": "",
+   "image_source_url": "https://www.mos.jp/oc/moschickenmelody/image/ogp.jpg",
+   "mobile": "yes",
+   "availability_zh": "2026-10-17云端浏览器实际进入选曲、移动音符、结算与自由演奏，并点击琴键；没有评估音频质量或高分准确性。手机优先，桌面也可进入。",
+   "tags": [
+    "节奏音游",
+    "食品",
+    "声音交互",
+    "产品即道具"
+   ],
+   "evidence_urls": [
+    "https://createch.jp/works/post-18/",
+    "https://www.mos.co.jp/company/pr_pdf/pr_241113_1.pdf",
+    "https://www.mos.jp/oc/moschickenmelody/"
+   ],
+   "image": "images/mos-chicken-melody.webp"
+  },
+  {
+   "id": "jtekt-jtekton-quest",
+   "title_zh": "JTEKT「J+TEKTON QUEST」：把工业技术配成产品，再打败社会问题怪兽",
+   "brand": "JTEKT（捷太格特）",
+   "agency": "新東通信 / Kayac / BeXide；Kayac Bond技术协力",
+   "region": "日本",
+   "format": "浏览器卡牌合成战斗／Japan Mobility Show展会联动",
+   "date": "2025-10-29",
+   "date_evidence": "Kayac案例页列服务公开日2025.10.29。",
+   "why_zh": "每次点选两张可组合的核心技术卡，生成真实JTEKT产品作为攻击；有的产品提高伤害、有的降低承伤。开局轮盘决定终极解决方案，集齐所需产品即可发动大招。三类怪兽分别阻碍移动、扰乱能源、制造灾害。技术→产品→社会用途的B2B解释链，直接成为卡牌配方和战斗目标。",
+   "style_zh": "日式怪兽卡牌、工业零件与3D技能演出、竖屏战斗UI",
+   "live_url": "https://jms2025.jtekt.co.jp/",
+   "source_url": "https://www.kayac.com/service/client/2066",
+   "demo_url": "https://www.youtube.com/watch?v=yzaysjk9JbI",
+   "image_source_url": "https://www.kayac.com/uploads/project/main_image/2066/4f35427f-862d-4dbe-b465-1fb9cef0065d.png",
+   "mobile": "partial",
+   "availability_zh": "官方体验入口仍可访问，制作方称展后持续提供。2026-10-17本云端浏览器提示不支持WebGL，未实际玩到战斗。官方48秒介绍视频链接和页面已核验，但云端播放器停在加载，不能称已看完视频。",
+   "verification_notes": "Gameplay rules independently inspected from official instruction image https://www.jtekt.co.jp/assets/uploads/2025/10/images/1021instruction_card.jpg ; this shows two-card synthesis, attack/damage reduction bonuses, initial solution roulette and 6/6 product requirement.",
+   "tags": [
+    "卡牌合成",
+    "B2B",
+    "工业",
+    "产品机制"
+   ],
+   "evidence_urls": [
+    "https://www.kayac.com/service/client/2066",
+    "https://www.jtekt.co.jp/jtekton_quest.html",
+    "https://bexide.co.jp/archives/25911",
+    "https://www.jtekt.co.jp/assets/uploads/2025/10/images/1021instruction_card.jpg"
+   ],
+   "image": "images/jtekt-jtekton-quest.webp"
+  },
+  {
+   "id": "okamoto-jelly-monster-curling",
+   "title_zh": "冈本「JELLY MONSTER」：太顺滑也会滑过头的怪兽冰壶",
+   "brand": "Okamoto / JELLY MONSTER",
+   "agency": "ENGINE iD",
+   "region": "日本",
+   "format": "手机网页滑动距离控制小游戏",
+   "date": "2026",
+   "date_evidence": "2026年案例；制作方素材路径为2026/04，行业案例发表于2026-06-02。尚未核实精确首发日期，不应将报道日写成上线日。",
+   "why_zh": "先选一只软胶怪兽，向上划动把它沿彩色滑道推出，目标是恰好停在靶心；力道过猛就会滑过头，再试一次。润滑卖点被转成手指能够感到的距离控制问题，失败文案也围绕“过头”。活动期曾用命中靶心领取样品与贴纸引导转化。",
+   "style_zh": "彩色黏液、果冻怪兽、粉黄渐变、手机单手操作",
+   "live_url": "",
+   "source_url": "https://engine-id.com/works/1394/",
+   "demo_url": "https://engine-id.com/_app/wp-content/uploads/2026/04/4c4dfba87b90dcb3fe95f22d4e2945f0.mp4",
+   "image_source_url": "https://engine-id.com/_app/wp-content/uploads/2026/04/jelly-Monster-curling_img01.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17已下载并抽帧核验制作方23.84秒实机录屏：说明、选怪兽、滑动、超出靶心与重试均可见。录屏已显示赠品活动结束；当前游戏入口未确认，不提供猜测URL。",
+   "verification_notes": "Verified direct video file, actual frames at0,5,10,15,20s. File local /workspace/shared/japan_research/jelly_agency.mp4. Claim is gameplay video verified, not game personally played.",
+   "tags": [
+    "物理手感",
+    "滑动操作",
+    "产品卖点",
+    "怪趣"
+   ],
+   "evidence_urls": [
+    "https://engine-id.com/works/1394/",
+    "https://n2p.co.jp/blog/campaign/20260507/"
+   ],
+   "image": "images/okamoto-jelly-monster-curling.webp"
+  },
+  {
+   "id": "directv-frankie-bobby-pixel-flight",
+   "title_zh": "DIRECTV「Frankie & Bobby」：让广告里的鸽子避开天线，把免卫星电视变成飞行规则",
+   "brand": "DIRECTV",
+   "agency": "TBWA\\Chiat\\Day × makemepulse",
+   "region": "美国",
+   "format": "浏览器像素飞行游戏",
+   "date": "2026-01（案例发布）",
+   "why_zh": "通过简单点击保持鸽子飞行，穿过屋顶天线和卫星碟之间的空隙，消耗鸡蛋形生命继续冲分。城市从白天变成黄昏和夜晚，广告中的两只鸽子成为可操纵主角。障碍物与结尾的 Satellite-Free 主张直接呼应：让用户在躲开卫星设备的过程中记住产品变化。",
+   "style_zh": "复古像素城市、剪影天线、柔和昼夜渐变与霓虹光晕",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/directv-frank-bobby-pixel-mini-game",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/aXfKZAIvOtkhB9Et_02_videocase.mp4-ezgif.com-crop-video.mp4",
+   "image": "images/directv-frankie-bobby-pixel-flight.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/aXet5gIvOtkhB8mY_01_cover-image.png?auto=format%2Ccompress&rect=0%2C39%2C1600%2C837&w=1080&h=565",
+   "mobile": "partial",
+   "availability_zh": "制作方案例首次发布于 2026-01-26；独立游戏实际首发日期未确认，勿与 2024 年鸽子电视广告首发混同。2026-10-17 核验：官方 MP4 可解码，已抽帧确认避障、计分、鸡蛋生命及结尾；未找到当前独立可玩入口。",
+   "tags": [
+    "产品即玩法",
+    "飞行",
+    "像素",
+    "电视广告延伸",
+    "避障"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/directv-frank-bobby-pixel-mini-game"
+   ]
+  },
+  {
+   "id": "hbo-winning-time-trip-referee",
+   "title_zh": "HBO「Trip a Referee」：三座像素球场绊倒裁判，拿篮球剧情做反应挑战",
+   "brand": "HBO《Winning Time》",
+   "agency": "Team Epiphany × makemepulse",
+   "region": "美国",
+   "format": "浏览器三关街机反应游戏",
+   "date": "2023",
+   "why_zh": "玩家在海滩、街头和球馆三关里瞄准裁判；误碰球员、吉祥物或啦啦队会被罚，拾取加成可补时间和得分。难度逐步上升，成绩进入排行榜并解锁可分享的数字奖杯。剧集的洛杉矶场景与裁判梗变成目标识别规则，复古卡带包装上的二维码则把影迷礼盒导向预热游戏。",
+   "style_zh": "80 年代 8-bit 篮球、紫金配色、三种洛杉矶球场与像素人物",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/hbo-winning-time-trip-a-referee",
+   "demo_url": "https://www.youtube.com/watch?v=VJjEbjM19js",
+   "image": "images/hbo-winning-time-trip-referee.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/a3389f46-fa31-43af-9bab-8946402904b8_Capture+d%E2%80%99e%CC%81cran+2023-11-23+a%CC%80+10.01.00.jpg?auto=compress,format&rect=0,13,984,515&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "2023 年第二季预热案例。2026-10-17 核验：官方案例保留教程、三关及计分截图，YouTube oEmbed 确认影片标题和制作方账号；未完整播放该 YouTube 影片，也未确认当前可玩入口。另一个可下载短片仅展示角色，不冒充完整试玩。",
+   "tags": [
+    "影视IP",
+    "反应",
+    "目标识别",
+    "排行榜",
+    "线下二维码"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/hbo-winning-time-trip-a-referee"
+   ]
+  },
+  {
+   "id": "highwest-prairie-dash",
+   "title_zh": "High West「Prairie Dash」：双拇指驱动叉角羚，在草原快反关卡里为保护行动助跑",
+   "brand": "High West Distillery",
+   "agency": "MullenLowe U.S. × makemepulse",
+   "region": "美国",
+   "format": "手机浏览器跑酷与快反游戏",
+   "date": "2021-06",
+   "why_zh": "玩家用双拇指输入让叉角羚接近每小时 61 英里的速度，依提示钻过围栏、跨越障碍并避开野牛群。得分原本对应抽奖机会，每局游戏也曾触发面向 American Prairie 的捐赠。酒厂把西部草原的动物、土地和保护主张做成跑酷环境，让公益参与与一次可重复的操作循环绑定。",
+   "style_zh": "夕阳草原、低多边形动物、暖色地平线与清楚的拇指操作提示",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/the-high-west-whiskey-prairie-dash",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/a05fda9f-5e53-4ed4-9df7-8e12632e693c_mmp-video-highwest-games.mp4",
+   "image": "images/highwest-prairie-dash.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/1100e4c6-c2b0-47e4-bc34-206d17feec0d_FWA_Thumbnail.jpg?auto=compress,format&rect=0,109,2152,1126&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "原活动为 2021-06-01 至 06-30 的美国 21 岁以上推广；捐赠和抽奖均为历史机制。2026-10-17 核验：官方视频可解码，已抽帧确认奔跑、围栏和野牛快反段；原公开游戏域名当前取回失败，未确认仍可玩。",
+   "tags": [
+    "跑酷",
+    "快反",
+    "公益",
+    "酒类",
+    "品牌世界观"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/the-high-west-whiskey-prairie-dash",
+    "https://highwest.pronghornrace.staging.makemepulse.com/assets/pdf/rules.pdf"
+   ]
+  },
+  {
+   "id": "klarna-mythbuster-challenge",
+   "title_zh": "Klarna「Mythbuster Challenge」：把品牌争议画成七幅神话，再用寻物小任务逐一解读",
+   "brand": "Klarna",
+   "agency": "Motel Company × makemepulse × Ignasi Monreal",
+   "region": "英国",
+   "format": "浏览器画廊与七幅互动寻物小游戏",
+   "date": "2021-05",
+   "why_zh": "从粉红云端画廊进入七幅神话式绘画，按提示找出隐藏物件或轻触画面中飞舞的目标，完成小任务后解锁品牌对相关误解的解释。街头壁画附二维码，把户外投放引入同一在线挑战。值得借鉴的是“先观察、再行动、再看解释”的顺序，以及绘画本身同时承担广告素材和谜题场景。",
+   "style_zh": "文艺复兴构图混合现代购物物件、粉红云海、超现实人物和微动效",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/klarna-the-mythbuster-challenge",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/a9137415-52c5-418e-ba1f-bba1d8774a4e_mmp-12-klarna_myth-mobile.mp4",
+   "image": "images/klarna-mythbuster-challenge.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/5f1b8ba7-eed4-493b-9da2-77979e11b929_mmp-00-klarna_cover.jpg?auto=compress,format&rect=162,0,2875,1504&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "2021-05 历史推广。2026-10-17 核验：制作方手机演示 MP4 可解码，已抽帧确认不同任务提示及交互画面；原站当前取回失败。金融观点是品牌当年的宣传说法，不作为当前产品条款或财务建议；原奖品已过期。",
+   "tags": [
+    "寻物",
+    "艺术",
+    "户外联动",
+    "品牌解释",
+    "轻游戏"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/klarna-the-mythbuster-challenge",
+    "https://www.thestable.com.au/understand-klarna-via-its-mythical-murals-and-mythbusting-game/"
+   ]
+  },
+  {
+   "id": "meta-fema-escape-plan",
+   "title_zh": "Meta × FEMA「Escape Plan」：一人看现场、一人看地图，在火场脱出中练习安全决策",
+   "brand": "Meta × FEMA Ready × Ad Council",
+   "agency": "makemepulse × Press Play On Tape",
+   "region": "美国",
+   "format": "WebXR / 浏览器单人或双人协作逃脱",
+   "date": "2023-05-16",
+   "why_zh": "在着火公寓里移动、查看可交互物件并选择逃生行动；双人模式让一位参与者做现场逃生者，另一位通过手机地图与提示担任向导。行动影响倒计时，结束后复盘选择是否安全。公共安全知识被放进有压力、可犯错又可重来的任务，Meta 则通过真实用途展示跨设备 WebXR 协作。",
+   "style_zh": "烟雾弥漫的实时 3D 房间、粉红提示标记、手机平面图与倒计时",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/escape-plan",
+   "demo_url": "https://www.youtube.com/watch?v=65Vq5DOD6VY",
+   "image": "images/meta-fema-escape-plan.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/5534dfe7-649d-4b33-be7f-1c84654676b6_EP-META-ig_post-09.png?auto=compress,format&rect=0,514,2160,1130&w=1080&h=565",
+   "mobile": "partial",
+   "availability_zh": "FEMA 官方公告确认 2023-05-16 发布。2026-10-17 核验：制作方多段 MP4 可解码，已抽帧确认关门热点、地图同步和计时交互；原域名当前取回失败。历史支持 VR、桌面与手机，当前兼容性和双人连接未完整验证，不能视为正式消防培训替代品。",
+   "tags": [
+    "协作",
+    "逃脱",
+    "安全教育",
+    "WebXR",
+    "决策"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/escape-plan",
+    "https://www.fema.gov/press-release/20230516/new-virtual-reality-experience-tests-users-fire-safety-skills"
+   ]
+  },
   {
    "id": "howl-magic-doors-taiwan-2024",
    "title_zh": "《霍尔的移动城堡》台湾重映：吹气救活卡西法、转动手机驾飞艇，四扇门把名场面变成小游戏",
