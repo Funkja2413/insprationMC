@@ -1,7 +1,166 @@
 {
  "updated": "2026-10-17",
- "count": 191,
+ "count": 196,
  "cases": [
+  {
+   "id": "nike-sport-wonderland-2023",
+   "title_zh": "Nike「Sport Wonderland」：微笑讓角色跑步、連點做HIIT，再用呼吸把禪意花園養出來",
+   "brand": "Nike",
+   "agency": "AKQA Shanghai × UNIT9",
+   "region": "中國",
+   "date": "2023",
+   "date_evidence": "UNIT9標記Release Date2023-08-18；參與製作人Yanyie Tran個人作品集列July2023，存在月份差異，故採2023而不把作品發布日當唯一確切活動日。",
+   "format": "淘寶／天貓超級品牌週手機互動世界、AR表情遊戲",
+   "why_zh": "在七日地圖旅程裡收集「動力」：持續微笑令角色跑步、場景越來越繽紛；快速點擊推動HIIT動作；最後跟隨方塊呼吸節奏，讓一朵花與禪意花園逐步成形。把運動的快樂、投入與放鬆拆成三種身體或手指輸入，鼓勵年輕女性自在探索運動。適合參考同一品牌主張如何被翻譯成不同操作，而非只換場景的三個遊戲。",
+   "style_zh": "高飽和螢光色、超現實運動世界、人物與植物動畫",
+   "source_url": "https://archive.unit9.com/project/nike-sport-wonderland/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/mobiles_001.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/zrzut-ekranu-2023-08-22-o-09-41-10-1400x788.png",
+   "image": "images/nike-sport-wonderland-2023.webp",
+   "live_url": "",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17原製作方案例及五段動態GIF可讀取；已下載、逐段抽幀檢視，其中288幀GIF顯示真人微笑驅動跑步，264幀GIF顯示呼吸引導與花朵變化。演示連結為官方動圖，提供的是實機動態片段，不是完整影片或目前可玩的遊戲；未授予相機權限、未實玩。",
+   "verification_notes": "Nike smile GIF63MB; breathing GIF39MB. Date conflict explicitly retained instead of assuming release date. Product relation is sports motivation, not shoe performance evidence. Source states emotional effects; do not repeat as clinically proven benefits.",
+   "evidence_urls": [
+    "https://www.yanyie.com/work",
+    "https://archive.unit9.com/wp-content/uploads/mobiles_002.gif"
+   ],
+   "tags": [
+    "表情控制",
+    "呼吸節奏",
+    "運動",
+    "AR",
+    "多玩法"
+   ]
+  },
+  {
+   "id": "coca-cola-tiger-family-games-2022",
+   "title_zh": "可口可樂「虎年和你一起玩」：眨眼跳躍、聲音飛行、搖頭打氣墊球，讓全家共用一支手機玩",
+   "brand": "Coca-Cola 可口可樂",
+   "agency": "Ogilvy Shanghai × UNIT9",
+   "region": "中國",
+   "date": "2022-01-15",
+   "date_evidence": "UNIT9原案例明列Release Date2022-01-15；主製片Yanyie Tran作品集也列January2022。",
+   "format": "罐身QR入口／微信瀏覽器H5／多人表情與聲音小遊戲",
+   "why_zh": "掃限定虎年罐背面的QR進入老虎家族世界，以眨眼控制跳躍、喊聲令老虎飛行、頭部移動操控氣墊球。雙人同框的人臉辨識和低門檻動作，讓家人不用熟悉按鍵也能一起比賽；遊戲成績換虎幣。限定包裝不只是宣傳入口，而是通往同一組老虎角色、家庭共玩的節慶娛樂，實踐「有你就是好年」的團聚主題。",
+   "style_zh": "可樂紅、虎年家族角色、山水節慶場景與手機多人同框",
+   "source_url": "https://archive.unit9.com/project/coca-cola-chinese-new-year-games/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/gif-1-8.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/hero-1-2-4-1400x762.png",
+   "image": "images/coca-cola-tiger-family-games-2022.webp",
+   "live_url": "",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17原製作方多段動態GIF仍可用，已下載並抽幀確認搖頭氣墊球、雙人同框跳躍與遊戲結算畫面；完整YouTube案例片目前為私享，未當公開影片推薦。演示連結為官方動圖，GIF是部分實機操作示範；歷史微信活動未實玩。",
+   "verification_notes": "Primary gif-1-8 is57frames, gif-2-10 is49frames; actual UI visible. Fullcase YouTubezXyMGzfxSrs explicitly private in browser. No alternative access attempted.",
+   "evidence_urls": [
+    "https://www.yanyie.com/work",
+    "https://archive.unit9.com/wp-content/uploads/gif-2-10.gif"
+   ],
+   "tags": [
+    "多人",
+    "表情控制",
+    "聲控",
+    "包裝入口",
+    "春節"
+   ]
+  },
+  {
+   "id": "mira-place-catch-fortune-rabbits-2023",
+   "title_zh": "Mira Place「齊來捉福」：沿商場找三隻AR福兔，把節慶裝置變成尋寶路線",
+   "brand": "Mira Place／美麗華集團",
+   "agency": "PRIZM Group",
+   "region": "香港",
+   "date": "2023-01-12",
+   "date_evidence": "活動資訊列2023-01-12至02-05；原製作方影片介面也顯示2023。",
+   "format": "商場實地AR尋寶／手機瀏覽器小遊戲",
+   "why_zh": "到商場三個指定裝置掃QR，用手機鏡頭尋找並點擊捕捉招福兔、飽飽兔與美麗兔。集齊三個點位後換主題禮品；另一路可在商戶店外掃碼收下當店優惠。將原本只供拍照的新春神社、兔子裝置變成可完成的逛店任務，讓遊戲路線與商場空間、店家消費相接。",
+   "style_zh": "紅金和風新春、白色福兔、真實商場中的AR角色",
+   "source_url": "https://www.prizmgroup.com/hk/work/Mira-place-CNY-year-of-the-rabbit-campaign",
+   "demo_url": "https://www.prizmgroup.com/userfiles/images/Videos/miraplace_cny_v4.mp4",
+   "image_source_url": "https://www.prizmgroup.com/userfiles/images/Mira_CNY_cover.jpg",
+   "image": "images/mira-place-catch-fortune-rabbits-2023.webp",
+   "live_url": "",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17原製作方28秒示範片仍可讀取，已下載抽幀檢查現場掃碼、兩種兔子捕捉畫面與優惠兌換步驟。活動已結束，沒有宣稱現場或舊活動網址仍可玩；當年需要電話OTP登入。",
+   "verification_notes": "Video metadata28.04s and downloaded via normal cloud-browser media control. Brandrelation is footfall/tenant discovery, not a product-performance mechanic. No sign-in or personaldata submitted.",
+   "evidence_urls": [
+    "https://www.klook.com/zh-HK/event-detail/101012892-2023-mira-place-lets-get-luck/"
+   ],
+   "tags": [
+    "AR尋寶",
+    "虛實聯動",
+    "商場",
+    "路線任務",
+    "節慶"
+   ]
+  },
+  {
+   "id": "hyundai-insteroid-retro-arcade",
+   "title_zh": "Hyundai「INSTEROID Retro Arcade」：收集電力讓量產車變身，再用迷宮圍困對手",
+   "brand": "Hyundai INSTER / INSTEROID",
+   "agency": "Hyundai Motor（官方稱自主開發，未公布外部製作商）",
+   "region": "韓國起源 / 全球巡展",
+   "format": "手機網頁街機遊戲＋實體街機展台",
+   "date": "2025-04-01",
+   "date_evidence": "Hyundai 2025-04-01 首爾發布稿已記載現場能玩此遊戲，並預告 4 月推出免下載網頁版；8 月 20–24 日 gamescom 是後續展出，9 月 19 日是回顧文章日期。此日期指首爾活動展示，不冒充已核實網頁開服日。",
+   "why_zh": "第一階段駕駛 INSTER，在追逐迷宮裡收集罐狀電力道具，讓小型電動車進化成誇張性能概念車 INSTEROID；第二階段改用變身後的車，藉路線把對手／最終頭目困住，競速完成任務。角色、音效和視覺取自實車 UX，產品從量產車到概念車的關係就是規則本身。gamescom 最快玩家還被加入更新版，成為對手角色。",
+   "style_zh": "黑底霓虹、復古像素迷宮、橙色街機、Q版車輛",
+   "source_url": "https://www.hyundai.com/worldwide/en/brand-journal/sports-gaming/2025-gamescom",
+   "live_url": "https://www.hyundai.com/worldwide/en/insteroidgame",
+   "live_label": "官方游戏入口（本轮未试玩成功）",
+   "demo_url": "https://www.youtube.com/watch?v=ResPWJx-h2M",
+   "image": "images/hyundai-insteroid-retro-arcade.webp",
+   "image_source_url": "https://www.hyundai.com/content/dam/hyundai/ww/en/images/brand-journal/lifestyle/250915-gamescom/hyundai-gamescom-04-pc-1120x600.jpg",
+   "mobile": "partial",
+   "availability_zh": "官方體驗網址仍存在；2026-10-17 在 dot 雲端瀏覽器載入時，Cocos 畫布因 WebGL 初始化錯誤而空白，未完成試玩。官方回顧頁嵌入的影片經 oEmbed 確認為 HyundaiWorldwide 的《INSTEROID | gamescom 2025》，未聲稱已看完影片。官方實機畫面圖已下載檢視，明確展示兩階段介面。",
+   "verification_notes": "Real official screenshot retrieved HTTP 200 and visually reviewed, not a generic car hero. Browser developer errors included null getExtension. Official 2025-08-20 press confirms self-developed, two stages, and planned Korean Casper Studio locations. Do not conflate with PHYSIA's distinct Casper time-attack installation.",
+   "tags": [
+    "迷宮追逐",
+    "產品變身",
+    "競速",
+    "虛實聯動",
+    "汽車"
+   ],
+   "evidence_urls": [
+    "https://www.news.hyundai.be/rev-up-with-insteroid-hyundai-motors-gaming-inspired-concept-car-debuts-in-seoul",
+    "https://www.hyundai.com/worldwide/en/newsroom/detail/hyundai-motor-brings-retro-arcade-fun-with-insteroid-concept-car-to-gamescom-2025-0000000999",
+    "https://www.hyundai.com/worldwide/en/brand-journal/sports-gaming/2025-gamescom"
+   ]
+  },
+  {
+   "id": "binggrae-zepeto-slime-party",
+   "title_zh": "Binggrae × ZEPETO「Slime Party」：把香蕉牛奶、優格和冰淇淋變成史萊姆的成長燃料",
+   "brand": "Binggrae（빙그레）",
+   "agency": "Binggrae × NAVER Z；CreatorZEA 為 Slime Party 地圖作者（合作執行商未完整公布）",
+   "region": "韓國 / ZEPETO 全球用戶",
+   "format": "ZEPETO 手機多人遊戲聯名地圖",
+   "date": "2022-05-20",
+   "date_evidence": "Binggrae 官方新聞稿發布 2022-05-20，明載為期三個月的 Slime Party 遊戲合作；ZEPETO 地圖更新說明亦列同日合作更新。不要使用基礎地圖 2021-12-09 的建立日期。",
+   "why_zh": "玩家在地圖中收集香蕉牛奶、Yoplait 優格、Super Cone 冰淇淋等 3D 食品，讓史萊姆變大並累積遊戲分數。活動專屬 Binggrae 金幣還可換到四種品牌寵物，加快成長；品牌食品同時成為二十款可解鎖服裝與配件，例如 Melona 光劍和魚形冰淇淋帽。真實產品不是背景商標，而是養成資源、效率升級和穿戴獎勵。",
+   "style_zh": "明亮糖果色、圓潤史萊姆、食品擬人化、可愛多人遊樂場",
+   "source_url": "https://www.bing.co.kr/news/news_announced_view?anno_idx=117",
+   "live_url": "https://world.zepeto.me/ko/detail/pfgW43wK87rt6lT0bPXSqUd",
+   "live_label": "查看原地图（联名已结束）",
+   "demo_url": "https://www.youtube.com/watch?v=YAy1msyWabg",
+   "image": "images/binggrae-zepeto-slime-party.webp",
+   "image_source_url": "https://www.bing.co.kr/upload/ckeditor/2022/08/b412e40b-2bb6-4dd0-b204-9e19617e9e2e",
+   "mobile": "historical",
+   "availability_zh": "歷史限時合作，不應將目前仍存在的 Slime Party 地圖頁寫成品牌活動仍可玩。2026-10-17 已核對官方品牌新聞、ZEPETO 地圖與民쩌미的 8:09 贊助遊玩影片頁；頁面及 oEmbed 確認影片身份，但 dot 雲端播放器顯示無法播放，未完整觀看。主圖為品牌官方 800×450 JPEG，已下載並檢視。",
+   "verification_notes": "YouTube title 빙그레 슬라임 파티 | 제페토; verified creator 민쩌미, description explicitly identifies advertisement. A separate D.MENTION 60-second promotional animation was downloaded and inspected but is cinematic, not gameplay; do not substitute it as an actual game demo or attribute the game to that video studio. Base game developer attribution is limited to the ZEPETO listing.",
+   "tags": [
+    "多人養成",
+    "產品道具",
+    "成長升級",
+    "食品",
+    "ZEPETO"
+   ],
+   "evidence_urls": [
+    "https://www.bing.co.kr/news/news_announced_view?anno_idx=117",
+    "https://www.bing.co.kr/news/news_story_view?sto_idx=11",
+    "https://world.zepeto.me/ko/detail/pfgW43wK87rt6lT0bPXSqUd",
+    "https://www.youtube.com/watch?v=YAy1msyWabg"
+   ]
+  },
   {
    "id": "a24-smashing-machine-2000",
    "title_zh": "A24「Smashing Machine 2000」：只用一个按钮，完成举重、打靶与呼吸训练",
