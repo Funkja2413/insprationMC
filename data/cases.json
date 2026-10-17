@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-17",
- "count": 312,
+ "count": 314,
  "cases": [
   {
    "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,83 @@
     "户外",
     "帐篷"
    ]
+  },
+  {
+   "id": "glico-bifix-puyo-tansa-2025",
+   "title_zh": "Glico BifiX × ぷよぷよ：五连锁召唤金色「タンサぷよ」，把产品名变成全屏消除奖励",
+   "brand": "Glico / BifiX × SEGA ぷよぷよ",
+   "agency": "未确认（SEGA 为游戏 IP 合作方）",
+   "region": "日本",
+   "format": "包装二维码解锁 / 手机浏览器消除游戏",
+   "date": "2025-07-07",
+   "date_evidence": "SEGA 2025年7月14日公告及Glico官方规则明确活动开放期为2025年7月7日11:00至10月31日23:59，采用活动开始日，不将公告日当作上线日。",
+   "why_zh": "购买三款指定375g联名包装酸奶中的任一款，扫描瓶盖二维码并回答一道产品题，无论答对答错均可进入游戏。180秒积分模式中，五连锁以上会召唤金色「タンサぷよ」并触发全屏消除；另一模式则要求在120秒上限内尽快达到5000分。把「タンサ」与「れんさ」（连锁）的声音联系做成可追求的奖励，让包装购买、产品词记忆和重复挑战连在一起。这里记录的是已结束的联名游戏机制，不据此背书酸奶的医疗或健康效用。",
+   "style_zh": "亮蓝放射背景、彩色软团棋子与金冠「タンサぷよ」，配合SEGA角色和乳白色酸奶联名包装；封面中的棋盘为官方游戏示意，不是实机截图。",
+   "source_url": "https://puyo.sega.jp/portal/topics/info/20250714_008841/",
+   "demo_url": "https://www.youtube.com/watch?v=69TO8koWlOA",
+   "demo_label": "第三方実況（播放未核验）",
+   "live_url": "",
+   "image": "images/glico-bifix-puyo-tansa-2025.webp",
+   "image_source_url": "https://puyo.sega.jp/portal/upload_images/information_250707_01_ogp.jpg",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：Glico官方活动页已明确标注结束，2025年7月7日11:00至10月31日23:59的包装解锁与游戏规则仅作为历史案例，当前试玩链接留空。第三方视频为「コウシの実況」2025年10月12日上传的《【緊急】ぷよぷよとヨーグルトとのコラボゲームやってみた!?【BifiXヨーグルト】》，上游核对了标题、频道、约733秒时长及说明中的SEGA链接；2026年10月17日09:41 UTC试播停留在0:00，未见动态帧，播放内容未核验，也未亲自实玩或进行手机交互测试。因此视频仅标为第三方実況（播放未核验），不能当作已观看的实机验证。封面为官方联名示意图。",
+   "verification_notes": "本批重新读取SEGA公告及Glico官方活动页，确认三款375g产品中的任一指定联名包装、扫描瓶盖、一道题不论正误可进入、180秒积分模式、120秒内达5000分和活动结束状态。五连锁金色タンサぷよ及全屏消除细节沿用上游研究。N2P补充页面本批读取不可用，未以其替代一手来源。未重新尝试播放视频、购买产品或提交任何资料。",
+   "tags": [
+    "消除",
+    "包装二维码",
+    "食品联名",
+    "连锁奖励",
+    "产品记忆",
+    "限时挑战"
+   ],
+   "evidence_urls": [
+    "https://puyo.sega.jp/portal/topics/info/20250714_008841/",
+    "https://cp.glico.com/bifix-2025smr/",
+    "https://www.youtube.com/watch?v=69TO8koWlOA",
+    "https://n2p.co.jp/blog/campaign/487-4/"
+   ],
+   "verified_at": "2026-10-17"
+  },
+  {
+   "id": "world-hardest-captcha-2025",
+   "title_zh": "World「世界最难 CAPTCHA」：把人机验证的挫败感做成可分享的闯关挑战",
+   "brand": "World / Tools for Humanity",
+   "agency": "LOOP",
+   "region": "美国 / 全球线上；历史奖品限合格美国参与者",
+   "format": "浏览器模拟验证码闯关 / 品牌认知",
+   "date": "2025-04-25",
+   "date_evidence": "官方活动规则明确开始日为2025-04-25，采用该日；不将2026年奖项年份当作上线时间。",
+   "why_zh": "玩家按条件点击图片网格，或用左右箭头调整数量后提交答案；失败时得到无法确认自己是human的反馈，结果以百分比环形卡呈现，鼓励分享并挑战他人。作品把日常人机验证中的观察、反复尝试与挫败感夸张成一场闯关游戏，让用户从操作体验进入World关于人类身份的品牌议题。它是模拟验证码挑战，不是真实身份验证，也不等同World ID。",
+   "style_zh": "蓝白表单、照片网格与黑白图标，配合简洁箭头控件和环形human分数卡；熟悉的验证界面被改写成带有挑战意味的结果分享页。",
+   "live_url": "https://www.worldshardestcaptcha.com/",
+   "live_label": "官方游戏入口（未实玩）",
+   "source_url": "https://www.loop.co/work/254",
+   "demo_url": "https://vimeo.com/1086507598/fb85b8ef68",
+   "demo_label": "官方玩法影片（30秒）",
+   "image": "images/world-hardest-captcha-2025.webp",
+   "image_source_url": "https://loop.s-g.dev/wp-content/uploads/2025/05/World-2048x1152.png",
+   "image_source_note": "官方案例主图：照片网格与26.2% human环形结果卡，分数为官方示例，不是本次操作成绩。",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：研究者已下载并观看30秒官方影片，确认手机浏览器中的雨伞图片网格、计数箭头、失败反馈，以及23.3%和100%的结果卡；这些百分比是官方演示画面，不是本次实测成绩。当前入口仅确认标题与开始按钮，未亲自试玩、点击提交或确认完整流程。手机适配依据官方影片，未在手机设备实测，因此mobile标为partial。当前页面数据未见可领取奖品，历史帽子奖励限合格美国参与者，最迟已于2025-06-30结束，不保证现在仍可领取。此项目是品牌模拟挑战，不是真实CAPTCHA验证或World ID认证；本次未注册、提交个人数据或处理实际身份验证。",
+   "verification_notes": "日期与奖励期限依据官方规则；官方30秒影片由父研究任务下载、解码并核验。本批仅整理资料及一次下载官方封面，不进入挑战、点击提交或测试任何实际验证码。",
+   "tags": [
+    "模拟验证码",
+    "观察力闯关",
+    "反向产品体验",
+    "失败分享",
+    "品牌认知",
+    "手机网页"
+   ],
+   "evidence_urls": [
+    "https://www.loop.co/work/254",
+    "https://www.worldshardestcaptcha.com/",
+    "https://www.worldshardestcaptcha.com/termsprivacy.pdf",
+    "https://world.org/es-es/worldU/events",
+    "https://shortyawards.com/18th/the-worlds-hardest-captcha",
+    "https://vimeo.com/1086507598/fb85b8ef68",
+    "https://player.vimeo.com/video/1086507598?h=fb85b8ef68"
+   ],
+   "verified_at": "2026-10-17"
   },
   {
    "id": "lego-brick-kickers-2026",
