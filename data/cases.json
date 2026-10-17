@@ -1,7 +1,307 @@
 {
- "updated": "2026-10-16",
- "count": 125,
+ "updated": "2026-10-17",
+ "count": 135,
  "cases": [
+  {
+   "id": "msi-egg-hunt-2023",
+   "title_zh": "MSI「The Egg Hunt」：机械兔跳过方块障碍，收集彩蛋兑换会员积分",
+   "brand": "MSI 微星",
+   "agency": "Merci-Michel",
+   "region": "全球（法国制作）",
+   "format": "3D 浏览器收集与躲障碍小游戏",
+   "date": "2023-04-13",
+   "why_zh": "操纵发光机械兔在彩色方块道路上前进，避开障碍并收集彩蛋。原活动把完成挑战、收集 30 枚彩蛋与 MSI Reward 积分连接起来，积分还能用于奖品抽选。值得参考的是完整的会员回流链路，以及把科技品牌常见的电竞霓虹视觉做成轻巧的节日游戏；产品功能与核心规则的联系较弱。",
+   "style_zh": "青紫色低多边形森林、发光机械兔、方块地面与能量波纹",
+   "live_url": "https://egghunt.merci-michel.com/",
+   "live_label": "游戏入口（未完整试玩）",
+   "source_url": "https://www.merci-michel.com/projects/msi-egg-hunt/",
+   "demo_url": "https://merci-michel.net/videos/msi_egghunt_reel.mp4",
+   "image": "images/msi-egg-hunt-2023.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/msi-egg-hunt/msi_egg_hunt_01.jpg",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：制作方视频可解码，已抽帧确认机械兔行进与彩蛋收集的游戏画面；游戏入口返回正确页面，未完整试玩或确认手机操作。原会员奖励活动于 2023-05-12 结束。主图为制作方游戏宣传图。",
+   "tags": [
+    "收集",
+    "躲障碍",
+    "会员积分",
+    "节日",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/msi-egg-hunt/",
+    "https://www.msi.com/Landing/hop-to-it-streaming-setup"
+   ]
+  },
+  {
+   "id": "msi-match-maker-2021",
+   "title_zh": "MSI「The Match Maker」：先匹配相似玩家，再用一串技能小游戏庆祝品牌周年",
+   "brand": "MSI 微星",
+   "agency": "Merci-Michel",
+   "region": "全球（法国制作）",
+   "format": "浏览器玩家配对与连续技能小游戏",
+   "date": "2021-08-12",
+   "why_zh": "先选择常玩的游戏类型、游玩时间和设备等偏好，再匹配一位相似玩家，进入画圆、快速旋转、配对形状、击中黄色目标、对颜色变化做反应五种短小挑战。分数决定原活动可参与的奖品档位，把品牌 35 周年做成玩家之间的连接和能力测试。玩法自身较通用，亮点在于先建立玩家身份，再进入双人挑战的参与顺序。",
+   "style_zh": "紫色霓虹空间、发光角色卡牌、复古街机字形与简短操作指令",
+   "live_url": "https://matchmaker.merci-michel.com/",
+   "live_label": "游戏入口（未完整试玩）",
+   "source_url": "https://www.merci-michel.com/projects/msi-thematchmaker/",
+   "demo_url": "https://merci-michel.net/videos/msi_screencast.mp4",
+   "image": "images/msi-match-maker-2021.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/msi-thematchmaker/msi_match_maker_01.jpg",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：制作方 3 分 42 秒流程视频可解码，已抽帧确认资料选择、队友匹配、画圆与精度分数。入口返回正确游戏页面，未完成实时匹配或手机试玩。抽奖于 2021-08-31 结束。",
+   "tags": [
+    "配对",
+    "连续小游戏",
+    "技能挑战",
+    "周年营销",
+    "社交"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/msi-thematchmaker/",
+    "https://download.msi.com/archive/mnu_exe/pdf/2021/Terms_and_Conditions_Final.pdf"
+   ]
+  },
+  {
+   "id": "montblanc-legend-red-race",
+   "title_zh": "Montblanc Legend Red「The Race」：沿赛道中线蓄满加速，把香水的红色激情变成速度体验",
+   "brand": "Montblanc Legend Red / Interparfums",
+   "agency": "Merci-Michel",
+   "region": "法国 / 全球",
+   "format": "手机 / PC 浏览器 3D 计时赛车",
+   "date": "2021-12",
+   "why_zh": "驾驶未来赛车穿越红色霓虹隧道，尽量贴住白色中线来积累并触发加速，再反复挑战更短圈速。香水的红色视觉与强烈情绪被转译成连续的速度反馈，适合参考如何把抽象气质变成身体感受；玩法没有模拟香味或成分。",
+   "style_zh": "高饱和红色赛道、白色星形光门、发光中线与强烈速度拖影",
+   "live_url": "https://therace.montblanclegend.com/",
+   "live_label": "游戏入口（未完整试玩）",
+   "source_url": "https://www.merci-michel.com/projects/interparfums-the-race/",
+   "demo_url": "https://merci-michel.net/videos/interparfums_montblanc_teaser.mp4",
+   "image": "images/montblanc-legend-red-race.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/interparfums-the-race/interparfums_the_race_01.jpg",
+   "mobile": "historical",
+   "availability_zh": "制作方项目数据标注 2021-12，公开推广资料见于 2022 年，精确首发日未确认。2026-10-17 核验：官方视频可解码，已抽帧确认赛车及手机竖屏演示；入口返回正确游戏页面，未完整试玩。",
+   "tags": [
+    "赛车",
+    "计时挑战",
+    "香水",
+    "情绪体验",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/interparfums-the-race/",
+    "https://therace.montblanclegend.com/",
+    "https://www.remixmagazine.com/beauty/introducing-montblancs-newest-eau-de-parfum-montblanc-legend-redpost/"
+   ]
+  },
+  {
+   "id": "coastal-world-bank-islands",
+   "title_zh": "Coastal Bank「Coastal World」：在群岛完成任务、解锁喷气背包，把金融伙伴介绍变成探索旅程",
+   "brand": "Coastal Community Bank",
+   "agency": "Merci-Michel",
+   "region": "美国（法国制作）",
+   "format": "浏览器 3D 群岛探索与任务游戏",
+   "date": "2022",
+   "why_zh": "不同金融科技伙伴各占群岛的一处，玩家与角色对话、完成任务、赚取金币与收藏物，解锁喷气背包和加速鞋继续探索。内容路线会按用户兴趣与价值观调整，进度保存在浏览器里。把难读的合作伙伴目录组织成地点、人物和任务，让了解金融服务成为探索的结果。",
+   "style_zh": "明亮低多边形群岛、可换装卡通角色、游乐园式建筑与交通工具",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/coastal-world/",
+   "demo_url": "https://merci-michel.net/videos/coastal_teaser_60.mp4",
+   "image": "images/coastal-world-bank-islands.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/coastal-world/coastal_world_00.jpg",
+   "mobile": "historical",
+   "availability_zh": "2022 年历史案例；制作方记录为 8 月，银行投资者资料称于 2022 年后期软启动。2026-10-17 核验：原 coastalworld.com 已跳转银行主页，不列作试玩；制作方视频可解码，已抽帧确认角色行走、赛车和物品解锁画面。",
+   "tags": [
+    "探索",
+    "任务",
+    "金融教育",
+    "品牌世界",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/coastal-world/",
+    "https://mercimichel.medium.com/coastal-world-8f23b945823b",
+    "https://s204.q4cdn.com/477948498/files/doc_presentations/2023/04/IP-Coastal-Financial-Corp-Investor-Presentation-1Q23-FINALv4.pdf"
+   ]
+  },
+  {
+   "id": "pierret-dream-house",
+   "title_zh": "Pierret「Dream House」：选房型、换门窗、布置庭院，把建材定制变成温柔造房游戏",
+   "brand": "Pierret Portes & Fenêtres",
+   "agency": "Merci-Michel",
+   "region": "比利时 / 法国",
+   "format": "浏览器 3D 自由造房与作品展示体验",
+   "date": "2024-09-30",
+   "why_zh": "从房屋造型和环境开始，逐步选择门窗、颜色和庭院摆件，完成自己的小房子。原活动允许展示作品、投票与分享，并将奖励连接到真实门窗改造。品牌提供的定制选择直接成为玩家的创作工具，比只展示色板更容易理解产品的组合空间。它偏自由创作体验，没有传统闯关或胜负。",
+   "style_zh": "柔和绘本风 3D 小屋、纸感界面、明亮山水与微缩庭院",
+   "live_url": "https://dreamhouse.pierret.net/",
+   "live_label": "体验入口（未完整试玩）",
+   "source_url": "https://www.merci-michel.com/projects/pierret-dreamhouse/",
+   "demo_url": "https://merci-michel.net/videos/pierret_dreamhouse_trailer.mp4",
+   "image": "images/pierret-dream-house.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/pierret-dreamhouse/pierret_dreamhouse_01.jpg",
+   "mobile": "partial",
+   "availability_zh": "日期取活动报道的开放日；制作方项目数据标注 2024-11。原竞赛于 2024-11-30 结束。2026-10-17 核验：官方视频可解码，已抽帧确认门窗、房屋及颜色选择；入口返回正确页面，未完整试玩或确认手机端。",
+   "tags": [
+    "产品即玩法",
+    "自由创作",
+    "家居",
+    "定制",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/pierret-dreamhouse/",
+    "https://www.verre-menuiserie.com/amp/article/75451--la-plus-belle-maison-virtuelle-un-jeu-video-interactif-inedit-imagine-par-pierret.html"
+   ]
+  },
+  {
+   "id": "cartier-fabulous-journey",
+   "title_zh": "Cartier「The Fabulous Journey」：轻按让飞艇升空，收集珠宝蓄速穿过暴风雪",
+   "brand": "Cartier 卡地亚",
+   "agency": "Merci-Michel",
+   "region": "法国 / 全球",
+   "format": "手机 / PC 浏览器横向飞行收集游戏",
+   "date": "2023-12",
+   "why_zh": "按住屏幕或空格让飞艇上升，松开下降，在横向卷动的梦幻世界里收集宝石、穿过光环。连续收齐小珠宝会给更大的加速；暴风雪让速度下降，必须继续抓住补给才能前进。珠宝既是品牌视觉，也是维持旅程的资源，把奢侈品展示接上有节奏的操作和电影式冒险。",
+   "style_zh": "云海、雪夜城市与红色飞艇，珠宝光点串起电影式 3D 风景",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/cartier-journey/",
+   "demo_url": "https://merci-michel.net/videos/cartier_fabulous.mp4",
+   "image": "images/cartier-fabulous-journey.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/cartier-journey/the_fabulous_cartier_journey_01.jpg",
+   "mobile": "historical",
+   "availability_zh": "制作方标注 2023-12。2026-10-17 核验：官方视频可解码，已抽帧确认飞艇、宝石路线与暴风雪；当前官网入口返回 403，未确认可玩。制作方文章明确说明点击、触屏与空格操作。",
+   "tags": [
+    "飞行",
+    "收集",
+    "珠宝",
+    "资源补给",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/cartier-journey/",
+    "https://mercimichel.medium.com/the-fabulous-cartier-journey-case-study-5089462d0948"
+   ]
+  },
+  {
+   "id": "vitality-rework-tangram",
+   "title_zh": "Team Vitality × Rework「Unlock the Collection」：把衣服拼完整，才获得购买升级再造单品的机会",
+   "brand": "Team Vitality × Rework Paris",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "手机 / PC 浏览器服装拼图与限量电商",
+   "date": "2022-10-19",
+   "why_zh": "旧队服被裁成拼接服装，网页也要求玩家把几何碎片拼回衣服轮廓。先随机展示一件商品，限时解开对应拼图后才能购买，价格更高的单品配更复杂的谜题。服装的再造工艺成为拼图规则，购买资格与操作能力绑定，适合参考限量商品如何摆脱普通排队抢购。",
+   "style_zh": "黑紫霓虹、发光服装轮廓、几何裁片与极简进度条",
+   "live_url": "https://rework.vitality.gg/",
+   "source_url": "https://www.merci-michel.com/projects/vitality-rework/",
+   "demo_url": "https://merci-michel.net/videos/vitality_rework_tangram.mp4",
+   "image": "images/vitality-rework-tangram.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/vitality-rework/vitality_01.jpg",
+   "mobile": "historical",
+   "availability_zh": "2022 年历史限量发售，当前商品和奖励状态未确认。2026-10-17 核验：官方视频可解码，已抽帧确认衣服轮廓拼图及手机竖屏画面；入口返回正确游戏页面，未完整试玩。",
+   "tags": [
+    "产品即玩法",
+    "拼图",
+    "升级再造",
+    "限量发售",
+    "电商"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/vitality-rework/",
+    "https://esportsinsider.com/2022/10/team-vitality-merchandise-rework-paris"
+   ],
+   "live_label": "游戏入口（未完整试玩）"
+  },
+  {
+   "id": "msi-i-want-it-all-breaker",
+   "title_zh": "MSI「I Want It All」：电脑卖点变成六种道具，在霓虹打砖块里逐一体验",
+   "brand": "MSI 微星",
+   "agency": "Merci-Michel",
+   "region": "全球（法国制作）",
+   "format": "浏览器 3D 打砖块与产品介绍游戏",
+   "date": "2022-07-21",
+   "why_zh": "左右移动挡板接球并打碎砖块，接住掉落道具改变局面。六种加成以 Power、Scale、Simultaneity 等电脑卖点命名，游戏中会出现对应字样和效果，再通向 MSI 整机系列与奖品。将“更强、更可扩展、同时做更多”的抽象说明插进玩家主动追逐的能力变化。",
+   "style_zh": "紫粉霓虹、发光弹球、3D 方块墙与 RGB 光带场地",
+   "live_url": "https://iwantitall.merci-michel.com/",
+   "source_url": "https://www.merci-michel.com/projects/msi-i-want-it-all/",
+   "demo_url": "https://merci-michel.net/videos/msi-iwantitall_userflow.mp4",
+   "image": "images/msi-i-want-it-all-breaker.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/msi-i-want-it-all/msi_01.jpg",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 核验：官方 70 秒视频可解码，已抽帧确认挡板、弹球、多球及道具说明；入口返回正确游戏页面，未完整试玩或确认手机操作。原活动于 2022-08-21 结束。",
+   "tags": [
+    "打砖块",
+    "产品卖点",
+    "道具",
+    "电脑",
+    "3D/WebGL"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/msi-i-want-it-all/",
+    "https://www.msi.com/Landing/i-want-it-all-gaming-desktop-pc-console",
+    "https://download.msi.com/archive/mnu_exe/pdf/2022/Want-It-All-Terms-and-Conditions.pdf"
+   ],
+   "live_label": "游戏入口（未完整试玩）"
+  },
+  {
+   "id": "miumiu-become-miuvie-star-2020",
+   "title_zh": "Miu Miu Twist「Become a Miuvie Star」：操纵 Elle Fanning 穿越像素片场，搜集香水与隐藏路线",
+   "brand": "Miu Miu Twist Eau de Toilette",
+   "agency": "Stink Studios Paris / Merci-Michel（像素美术 Thomas Lean）",
+   "region": "法国 / 全球",
+   "format": "浏览器横向跑酷与平台跳跃游戏",
+   "date": "2020",
+   "why_zh": "广告片女主角 Elle Fanning 变成可以操纵的像素角色，跑过多个电影布景，跳跃搜集香水瓶并寻找秘密路径。广告里“成为电影明星”的故事因而延长为玩家亲自跑出的旅程，香水瓶同时承担收藏目标与品牌识别。是 2020 年续作，区别于 2019 年第一代 Twist 游戏。",
+   "style_zh": "细腻 8-bit 像素、蓝色森林与粉色片场、夜间街景与漂浮香水瓶",
+   "live_url": "https://www.miumiu.com/miumiu-twist-edt/",
+   "source_url": "https://www.merci-michel.com/projects/miumiu-twist/",
+   "demo_url": "https://merci-michel.net/videos/miumiu_teaser.mp4",
+   "image": "images/miumiu-become-miuvie-star-2020.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/miumiu-twist/project_miu-miu_01.jpg",
+   "mobile": "partial",
+   "availability_zh": "代理商明确记为 2020 年 Twist 游戏续作；制作方站内 2019-09 元数据与此不一致，采用代理商叙述。2026-10-17 核验：官方视频可解码，已抽帧确认角色跑动、跳跃和香水瓶；旧入口仍返回 Twist 页面，未确认能从页面完整开玩。",
+   "tags": [
+    "跑酷",
+    "平台跳跃",
+    "香水",
+    "广告叙事",
+    "像素"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/miumiu-twist/",
+    "https://www.stinkstudios.com/work/miu-miu-become-miuvie-star-game"
+   ],
+   "live_label": "游戏入口（未完整试玩）"
+  },
+  {
+   "id": "eleclerc-worlds-largest-beer-cellar",
+   "title_zh": "E.Leclerc「世界最大啤酒窖」：在巨型酿酒厂里找菜单，边寻物边发现啤酒知识",
+   "brand": "E.Leclerc",
+   "agency": "Promo / Merci-Michel（插画 Guillaume Jolly）",
+   "region": "法国",
+   "format": "手机 / PC 浏览器插画寻物游戏",
+   "date": "2015-05",
+   "why_zh": "在细节密集的巨型酿酒厂中拖动寻找隐藏的酿酒师菜单，收齐后完成任务并进入原活动抽奖。发现点会揭开食品搭配与啤酒知识，使促销信息成为探索奖励。手机端把大地图拆成三段，保留找物目标，值得参考大幅复杂插画如何在小屏上转化为清楚的任务。",
+   "style_zh": "等距插画酿酒厂、微型人物、巨型啤酒槽与密集餐桌场景",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/eleclerc-cave-a-bieres/",
+   "demo_url": "https://merci-michel.net/videos/eleclerc-cave-a-bieres.mp4",
+   "image": "images/eleclerc-worlds-largest-beer-cellar.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/eleclerc-cave-a-bieres/eleclerc-cave-a-bieres_01.jpg",
+   "mobile": "historical",
+   "availability_zh": "制作方项目数据标注 2015-05。2026-10-17 核验：官方流程视频可解码，已抽帧确认地图移动、知识弹窗、菜单收集及完成画面；未提供当前试玩，原促销奖励为历史信息。制作方技术文章确认曾适配手机。",
+   "tags": [
+    "寻物",
+    "互动地图",
+    "零售促销",
+    "食品搭配",
+    "插画"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/eleclerc-cave-a-bieres/",
+    "https://mercimichel.medium.com/la-plus-grande-cave-%C3%A0-bi%C3%A8res-du-monde-c2db691104a5"
+   ]
+  },
   {
    "id": "kenzo-shopping-league-2018",
    "title_zh": "Kenzo「Shopping League」：购物车也能被抢，限量鞋发售变成实时对战",
