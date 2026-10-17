@@ -1,7 +1,154 @@
 {
  "updated": "2026-10-17",
- "count": 160,
+ "count": 165,
  "cases": [
+  {
+   "id": "ibm-catch-fishy-ai",
+   "title_zh": "IBM「Catch Fishy AI」：扫描会场里的怪鱼，用轻量收集认识 AI 错误",
+   "brand": "IBM × Adobe",
+   "agency": "Ogilvy NY × makemepulse",
+   "region": "美国 / Adobe Summit 2024",
+   "format": "手机 WebAR 寻找、扫描与收集",
+   "date": "2024",
+   "why_zh": "在会场寻找印在 T 恤、海报和餐巾上的怪鱼，用手机扫描并做一个简单手势完成捕捉，解锁它所代表的 AI 问题说明。也能在网页鱼缸里查看幻觉、数据漂移、数据孤岛等不同鱼种。把抽象企业技术风险变成可寻找和辨认的角色，使会场物料、球形巨幕和产品教育共享一套视觉与任务。",
+   "style_zh": "电光蓝鱼缸、超现实混种鱼、图鉴式知识卡与实体印刷物",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/ibm-catch-fishy-ai",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/Znp89pbWFbowe074_mmp_ibm-fishyAI_07.mp4",
+   "image": "images/ibm-catch-fishy-ai.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/ZnqCk5bWFbowe0_R_v2.jpg?auto=format%2Ccompress&rect=0%2C38%2C1920%2C1004&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "制作方明确为 Adobe Summit 2024。2026-10-17 核验：官方实机演示可解码，已抽帧确认手机扫描印刷鱼、解锁图鉴与现场屏幕；原站当前取回失败，未测试捕捉手势。属于寻物与解锁式轻游戏，没有证实复杂计分或胜负规则。",
+   "tags": [
+    "AR",
+    "寻物",
+    "B2B",
+    "产品教育",
+    "线下联动"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/ibm-catch-fishy-ai"
+   ]
+  },
+  {
+   "id": "galeries-lafayette-play-for-good",
+   "title_zh": "Galeries Lafayette「Play for Good」：按住蓄力跳柱子，把可持续服装知识变成沿路收集物",
+   "brand": "Galeries Lafayette 老佛爷百货",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "手机 / PC 浏览器蓄力跳跃游戏",
+   "date": "2019-03",
+   "why_zh": "按住蓄积跳跃力量、松开让小球跃上下一根彩色柱子；准确着陆能加分并积累超级跳跃，失足则结束。途中收集代表回收材料、有机纺织纤维等概念的物件，结算再查看对应解释。用熟悉的一键精度挑战维持节奏，品牌责任信息放在玩家主动争取的奖励里，避免打断游戏。",
+   "style_zh": "糖果色渐变柱海、弹性质感小球、扁平环保图标与彩虹超级跳跃",
+   "live_url": "https://play.gl/",
+   "source_url": "https://www.merci-michel.com/projects/galeries-lafayette-playforgood/",
+   "demo_url": "https://merci-michel.net/videos/gl-funorama_playforgood_userflow.mp4",
+   "image": "images/galeries-lafayette-play-for-good.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/galeries-lafayette-playforgood/project_galeries_lafayette_01_playforgood.jpg",
+   "mobile": "historical",
+   "availability_zh": "品牌申报材料写 2019-03 上线，制作方案例标注 2019-04。2026-10-17 核验：官方完整流程 MP4 可解码，已抽帧确认跳跃、超级跳跃、失误结算与知识卡；原入口返回正确游戏页面，未完整试玩，历史抽奖不视为现行。",
+   "tags": [
+    "蓄力",
+    "跳跃",
+    "收集",
+    "可持续",
+    "知识卡"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/galeries-lafayette-playforgood/",
+    "https://gang.tv/works/galeries-lafayette-play-for-good",
+    "https://grand-prix-essec.fr/wp-content/uploads/2022/07/Galeries-Lafayette_-Candidature-offre-de-produits-et-services-2.pdf"
+   ],
+   "live_label": "游戏入口（未完整试玩）"
+  },
+  {
+   "id": "height-be-my-guess",
+   "title_zh": "Height「Be My Guess」：用真任务混入假答案，让站会变成同事互猜的派对游戏",
+   "brand": "Height",
+   "agency": "Merci-Michel",
+   "region": "美国 / 全球",
+   "format": "浏览器多人真假任务问答",
+   "date": "2023-10",
+   "why_zh": "通过房间码邀请同事，围绕成员正在做的事输入可信的假答案，再从真假混合选项中抢答。识破谎言可得分，自己编的答案骗到别人也得分，最快答对还有额外奖励。项目协作工具把“知道同事在做什么”变成可反复进行的社交小游戏，直接演示团队同步的价值，而不要求先注册产品。",
+   "style_zh": "手绘小怪兽头像、彩色便签答案、清爽线条 UI 和夸张回合提示",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/height-bemyguess/",
+   "demo_url": "https://merci-michel.net/videos/height_be_my_guess.mp4",
+   "image": "images/height-be-my-guess.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/height-bemyguess/height-bemyguess_01.jpg",
+   "mobile": "historical",
+   "availability_zh": "制作方标注 2023-10。2026-10-17 核验：官方视频可解码，已抽帧确认房间码、编假答案、抢答与 Rush 模式；原入口当前取回失败。原体验允许非 Height 用户参与，当前多人服务器和产品状态未确认。",
+   "tags": [
+    "多人",
+    "真假问答",
+    "团队协作",
+    "产品即玩法",
+    "社交"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/height-bemyguess/",
+    "https://gang.tv/works/height-be-my-guess"
+   ]
+  },
+  {
+   "id": "laughing-cow-time-explorers",
+   "title_zh": "笑牛牌「Time Explorers」：用 iPad 在奶酪博物馆找线索，解锁六星球与十五个小游戏",
+   "brand": "La Vache qui rit / The Laughing Cow 笑牛牌",
+   "agency": "Merci-Michel",
+   "region": "法国",
+   "format": "博物馆 iPad AR 探索与小游戏合集",
+   "date": "2018-10",
+   "why_zh": "带着 iPad 在历史奶酪地窖寻找并扫描展品，把真实展览解锁成六颗主题星球。参与迷宫、拼合、找物和问答等十五个小游戏，驾驶小飞船继续探索品牌历史。实体陈列提供答案和触发物，屏幕任务提供发现目标，让品牌博物馆从观看包装变成有连续进度的亲子探索。",
+   "style_zh": "奶酪色星球、圆形小飞船、童趣宇宙和展品 AR 叠加",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/bel-maison-de-la-vache-qui-rit/",
+   "demo_url": "https://merci-michel.net/videos/bel-mvqr-app_case.mp4",
+   "image": "images/laughing-cow-time-explorers.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/bel-maison-de-la-vache-qui-rit/bel-maison-de-la-vache-qui-rit_12.jpg",
+   "mobile": "historical",
+   "availability_zh": "制作方标注 2018-10。2026-10-17 核验：官方案例影片可解码，已抽帧确认现场平板、展品扫描、迷宫与拼合互动。它是依赖博物馆现场的历史 iPad 体验，非家中即可完整玩的网页；现有运营状态未确认。来源对时长分别写 45 分钟和约一小时，因此不标唯一时长。",
+   "tags": [
+    "AR",
+    "博物馆",
+    "品牌历史",
+    "多关卡",
+    "亲子"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/bel-maison-de-la-vache-qui-rit/"
+   ]
+  },
+  {
+   "id": "montblanc-legend-blue-the-run",
+   "title_zh": "Montblanc Legend Blue「The Run」：沿中线滑行积蓄加速，把手机也变成大屏控制器",
+   "brand": "Montblanc Legend Blue / Interparfums",
+   "agency": "Merci-Michel",
+   "region": "法国 / 全球",
+   "format": "手机 / PC 浏览器滚珠竞速与线下双屏版本",
+   "date": "2024-03",
+   "why_zh": "操控能量球沿蓝色未来赛道前进，尽量贴住中央线累积速度加成，以更短时间跑完全程。线下快闪版本把手机变成控制器，驱动店内大屏上的同一场比赛。冷蓝色金属轨道与香水视觉结合，规则专注一个“稳定贴线换速度”的动作，便于在线广告和实体试香活动共用。",
+   "style_zh": "冷蓝未来轨道、金属扶栏、发光圆环与极简能量球",
+   "live_url": "https://therun.montblanclegend.com/",
+   "source_url": "https://gang.tv/works/interparfums-montblanc-the-run",
+   "demo_url": "https://vimeo.com/916652082",
+   "image": "images/montblanc-legend-blue-the-run.webp",
+   "image_source_url": "https://cdn.sanity.io/images/qo87bypy/production/1788fc9d488ca9150e7eaf18c05aee6f03b83ec9-1920x1080.png",
+   "mobile": "partial",
+   "availability_zh": "2024-03 推广，与 Legend Red 的 2022 The Race 为不同游戏。2026-10-17 核验：原入口返回正确标题和游戏脚本，官方案例保留演示嵌入与真实赛道图；未完成当前游戏试玩或完整视频播放，奖品状态未确认。双屏机制由制作方访谈明确说明。",
+   "tags": [
+    "竞速",
+    "精准控制",
+    "双屏",
+    "香水",
+    "线下联动"
+   ],
+   "evidence_urls": [
+    "https://gang.tv/works/interparfums-montblanc-the-run",
+    "https://www.commarts.com/webpicks/the-run",
+    "https://www.strategies.fr/actualites/marques/LQ2965829C/montblanc-devoile-un-jeu-video-l-occasion-de-sa-nouvelle-fragrance.html"
+   ],
+   "live_label": "游戏入口（未完整试玩）"
+  },
   {
    "id": "xbox-netflix-red-notice-vault",
    "title_zh": "Xbox × Netflix「The Vault」：四分钟找齐 27 件藏品，用品牌历史知识守住电影金库",
