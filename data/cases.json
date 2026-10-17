@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-17",
-  "count": 242,
+  "count": 245,
   "cases": [
     {
       "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,119 @@
         "户外",
         "帐篷"
       ]
+    },
+    {
+      "id": "psycho-bunny-pb-rush-2026",
+      "title_zh": "Psycho Bunny「PB Rush」：上下换道冲刺迈阿密赛道，四台街机共用周末排行榜",
+      "brand": "Psycho Bunny",
+      "agency": "New Monster（创意）；The Pixel Artist / Jude Buffum（设计与开发）；Doctor Octoroc（音乐）",
+      "region": "美国迈阿密 / F1 Miami Grand Prix",
+      "format": "Phaser 网页赛车 + 四台联网街机 + iPad 触屏版",
+      "date": "2026-05-01",
+      "why_zh": "玩家驾驶品牌粉白赛车，用上下方向键换道，躲开对手、油污及碰撞，在映射真实迈阿密大奖赛布局的赛道完成三圈计时。活动的四台街机把成绩汇入中央 Top 8 排行榜，吸引观众在观赛间歇反复回来刷时间；周末最快成绩获得当时的现金奖励。将赛事赞助、品牌粉色视觉与现场快闪店结合起来，游戏既是停留理由，也形成跨机台的共同竞争；后续保留网页及 iPad 版本延长使用寿命。",
+      "style_zh": "8-bit 像素赛车、荧光粉兔子标志、棋盘格路沿、迈阿密天际线、芯片音乐、实时小地图",
+      "live_url": "https://judebuffum.itch.io/pbrush",
+      "live_label": "开发者公开试玩入口（未完成实玩）",
+      "source_url": "https://www.the-pixel-artist.com/projects/psycho-bunny-branded-arcade-game-by-illustrator-jude-buffum",
+      "demo_url": "https://player.vimeo.com/video/1195755524?h=de8098c230",
+      "image": "images/psycho-bunny-pb-rush-2026.webp",
+      "image_source_url": "https://images.squarespace-cdn.com/content/v1/67e8537ebeca793d9f40fba8/34d50506-d898-45d2-b2c8-3f63666ef504/psychobunny-pb-rush-branded-game-gameplay-pixel-art.png",
+      "mobile": "partial",
+      "availability_zh": "2026-10-17 核验：已下载、解码并目视官方约147秒游戏演示，确认三圈、油污、减速、结算及输入缩写界面。开发者 itch 页面和触屏版入口仍存在；云端浏览器截图超时，未完成实玩。日期取 itch 明示的2026-05-01，非视频上传日。现场现金竞赛为历史活动；未提交成绩或联系方式。 制作方提供 iPad 触屏版本，但本次未在手机或 iPad 实测，mobile 标为 partial。",
+      "tags": [
+        "像素赛车",
+        "三圈计时",
+        "换道避障",
+        "联网排行榜",
+        "赛事赞助",
+        "街机与网页",
+        "iPad触屏"
+      ],
+      "evidence_urls": [
+        "https://judebuffum.itch.io/pbrush",
+        "https://www.the-pixel-artist.com/projects/psycho-bunny-branded-arcade-game-by-illustrator-jude-buffum",
+        "https://player.vimeo.com/video/1195755524?h=de8098c230",
+        "https://luxury-cheesecake-95a0ef.netlify.app/"
+      ],
+      "date_evidence": "开发者 itch 页面明确标注 2026-05-01；不采用视频上传日。",
+      "verified_at": "2026-10-17",
+      "demo_label": "官方游戏演示"
+    },
+    {
+      "id": "uber-backseat-arcade-2025",
+      "title_zh": "Uber「Backseat Arcade」：行程中的后座街机，高分兑换下一程优惠",
+      "brand": "Uber Australia",
+      "agency": "EssenceMediacom × Livewire × Special；Gamify（游戏制作）",
+      "region": "澳大利亚",
+      "format": "Uber App 行程内小游戏合集；2026年延伸至 Vivid Sydney 接客区二维码",
+      "date": "2025-12",
+      "why_zh": "乘客在正在进行的 Uber 行程内打开后座街机，玩贪吃蛇、陨石射击或打砖块，短局节奏适配车程。当时达到不同分数档位可解锁下一次乘车的折扣，历史活动最高为七折。创意把“自己开车时做不了的事”落实为只有乘客此刻能享受的操作权限，再用下一程优惠形成复乘动机；2026年 Vivid Sydney 版本把入口扩展到接客区二维码，连等车时间也变为游戏场景。",
+      "style_zh": "霓虹紫复古街机、竖屏触控、像素贪吃蛇、太空射击、粉色挡板打砖块、分数阶梯奖励",
+      "live_url": "",
+      "source_url": "https://livewire.group/case-studies/uber-backseat-arcade/",
+      "demo_url": "https://www.gamify.com/__l5e/assets-v1/7dc80ae7-bf72-4689-9937-55f8fc93b89c/uber-hover.mp4",
+      "image": "images/uber-backseat-arcade-2025.webp",
+      "image_source_url": "https://cdn.sanity.io/images/20umgq7u/production/b622cd1b2f77e20c0f93dfa4be68bf4c69588cdf-2518x1536.png",
+      "mobile": "historical",
+      "availability_zh": "2026-10-17 核验：已下载、解码并目视 Livewire 约105秒原活动案例片，确认 App 入口、打砖块实机与奖励档位；另观看 Gamify 14秒三款游戏录屏，其画面属于2026 Vivid Sydney 延伸版。原版为2025年12月两周限时活动，仅在进行中的 Uber 行程开放；未发起付费行程，也未实际领取优惠。2026二维码版另有活动方官方说明，但未取得可独立试玩的公开入口。 演示入口明确指向 2026 Vivid Sydney 延伸版的三款游戏录屏，不将该画面当作原版 2025 年活动的录屏。",
+      "tags": [
+        "行程场景",
+        "App内游戏",
+        "贪吃蛇",
+        "打砖块",
+        "街机合集",
+        "复乘优惠",
+        "接客区二维码"
+      ],
+      "evidence_urls": [
+        "https://livewire.group/case-studies/uber-backseat-arcade/",
+        "https://www.wppmedia.com/case-studies/uber-backseat-arcade",
+        "https://www.linkedin.com/posts/special-group-australia_as-part-of-our-cant-do-that-if-youre-driving-activity-7419498527161991170--zRi",
+        "https://campaignbrief.com/uber-levels-up-backseat-experience-with-in-app-arcade-via-essencemediacom-livewire-special/",
+        "https://www.vividsydney.com/sponsors/uber",
+        "https://www.gamify.com/video-game-library",
+        "https://www.gamify.com/__l5e/assets-v1/7dc80ae7-bf72-4689-9937-55f8fc93b89c/uber-hover.mp4"
+      ],
+      "date_evidence": "原活动于 2025 年 12 月开放两周；2026 年 Vivid Sydney 接客区二维码是后续延伸版本，不作为原版上线日期。",
+      "verified_at": "2026-10-17",
+      "demo_label": "2026延伸版游戏录屏"
+    },
+    {
+      "id": "spark-killabyte-mission-hub-2024",
+      "title_zh": "Spark「Killabyte」：扫码积攒伤害，用手机联手击败全场巨蛇",
+      "brand": "Spark New Zealand",
+      "agency": "Colenso BBDO / Satellite / BUCK / Spur",
+      "region": "新西兰奥克兰",
+      "format": "手机网页任务中心 / NFC 与 QR 现场联动 / 多人协作大屏 Boss 战",
+      "date": "2024-09-07",
+      "date_evidence": "Spark 官方公告明确首届活动在 2024-09-07 举行；2025 为案例获奖或发表年份，不当作上线日。",
+      "why_zh": "参与者打开无需下载的手机网页 Mission Hub，扫描现场 QR 码或用 NFC 腕带触碰互动点，完成活动任务、解锁道具并累计积分和对巨蛇 Byte 的伤害；手机显示个人进度，场内屏幕更新排行榜。终场所有人的网页切换为 Exablaster，玩家点击手机上的攻击按钮，共同消耗大屏 Boss 的血条。把展台探索、观赛与现场互动串成一场有共同目标的游戏，为电信品牌 Spark 举办的首届大型游戏节创造跨屏参与与品牌记忆。",
+      "style_zh": "霓虹紫、品红与青绿；低多边形数字巨蛇、像素故障特效、血条与排行榜；手机黄色攻击面板呼应巨幅环场屏幕",
+      "live_url": "",
+      "source_url": "https://www.satellite.co.nz/work/activations/spark-game-arena",
+      "demo_url": "https://buck.co/work/spark-arena-byte",
+      "demo_label": "官方案例影片",
+      "image": "images/spark-killabyte-mission-hub-2024.webp",
+      "image_source_url": "https://cdn.sanity.io/images/uk7b627p/production/ff2e565214eaef2bda77fbcf1370b45cfe194b4f-2048x1537.png",
+      "mobile": "historical",
+      "availability_zh": "2026-10-17 核验：Spark 官方公告明确首届活动在 2024-09-07 举行；2025 为案例获奖或发表年份，不当作上线日。技术制作方 Satellite 明确确认全网页、手机参与且无需下载。已下载并解码 BUCK 官方 122.8 秒案例片，目视核对手机点击攻击、巨蛇血条、现场排行与 NFC 腕带，并查看官方角色主图。活动依赖当时现场票务、腕带与同步大屏，未找到现在可独立重玩的游戏入口；未实玩，live_url 留空，demo 为制作方官方案例影片页。",
+      "tags": [
+        "手机遥控大屏",
+        "多人协作",
+        "Boss战",
+        "NFC腕带",
+        "扫码任务",
+        "线下游戏节"
+      ],
+      "evidence_urls": [
+        "https://www.satellite.co.nz/work/activations/spark-game-arena",
+        "https://buck.co/work/spark-arena-byte",
+        "https://www.spark.co.nz/online/about/our-company/news/Spark-announces-ultimate-gaming-festival-coming-to-Aotearoas-Spark-Arena",
+        "https://www.kimberleyragan.com/killabyte",
+        "https://stream.mux.com/phTE01lvGhvwEHTfBmKp8ol23IFvsfue02tulqtO6XyQs.m3u8",
+        "https://image.mux.com/phTE01lvGhvwEHTfBmKp8ol23IFvsfue02tulqtO6XyQs/thumbnail.jpg?time=94"
+      ],
+      "verified_at": "2026-10-17"
     },
     {
       "id": "tamagotchi-cake-time-trial-2025",
