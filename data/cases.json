@@ -1,7 +1,314 @@
 {
  "updated": "2026-10-17",
- "count": 172,
+ "count": 182,
  "cases": [
+  {
+   "id": "goodwe-solar-pinball-2024",
+   "title_zh": "GoodWe「Solar Pinball」：把光伏逆變器、電池和充電樁做成彈珠台的能量機關",
+   "brand": "GoodWe 固德威",
+   "agency": "上海九影網絡 9shadow",
+   "region": "中國品牌／澳洲首發、全球",
+   "date": "2024-10-22",
+   "date_evidence": "App Store版本紀錄1.0為2024-10-22；品牌2024-10-10公告在10月23–24日All-Energy Australia展會首發。九影案例2025-02日期是作品集發布時間，不是遊戲首發。",
+   "format": "iOS／Android手機彈珠遊戲；展會體驗機",
+   "why_zh": "以能源工程師Goole帶領玩家操控擋板，讓能量球撞擊光伏設備、逆變器和電池等GoodWe產品造型機關。任務模式要盡快把電池充至100%，街機模式用三條命挑戰分數和全球排行榜，另有無限生命的離線模式。設備不只出現在背景：撞擊、能量收集與充電目標一起解釋品牌所做的事，把B2B能源系統轉成容易上手的消費者娛樂。",
+   "style_zh": "3D太空彈珠台、真實產品機關、能量光束與可愛工程師角色",
+   "source_url": "https://www.goodwe.com.au/solarpinball",
+   "demo_url": "https://www.goodwe.com.au/Public/Uploads/uploadfile/files/20250305/game_secret_content_left.mp4",
+   "image_source_url": "https://www.goodwe.com.au/Public/Uploads/uploadfile/images/20250306/7.webp",
+   "image": "images/goodwe-solar-pinball-2024.webp",
+   "live_url": "https://apps.apple.com/au/app/solar-pinball/id6702011793",
+   "live_label": "App Store（未安装实测）",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17官方介紹頁、App Store及Google Play商品頁仍可讀取；已下載並抽幀核驗官方4.8秒實機循環片段，能看到球在產品機關間彈跳。未安裝客戶端、未親自完成遊戲；商店仍上架不等於伺服器或排行榜已完整實測。",
+   "verification_notes": "Official direct video decoded and contact sheet visually checked; secondary 3.5s onboarding loop also verified. Agency-hosted recording returned403 to direct request, so use brand's public video instead. Actual screenshots downloaded and visually checked. InitialAustralia launch dates primary-verified.",
+   "evidence_urls": [
+    "https://www.goodwe.com.au/allenergy",
+    "https://apps.apple.com/au/app/solar-pinball/id6702011793",
+    "https://play.google.com/store/apps/details?id=com.goodwe.solarpinball",
+    "https://www.9shadow.com/2025_02/case_360.html"
+   ],
+   "tags": [
+    "彈珠",
+    "產品機制",
+    "能源",
+    "B2B",
+    "展會"
+   ]
+  },
+  {
+   "id": "mlily-zero-pressure-pillow-fight-2023",
+   "title_zh": "夢百合「0壓枕頭大戰」：挑一款真實枕頭，攻擊、格擋，把睡不好與壞心情打掉",
+   "brand": "MLILY 夢百合",
+   "agency": "上海九影網絡 9shadow",
+   "region": "中國",
+   "date": "2023-04",
+   "date_evidence": "品牌官方文章索引標示2023-04-25，標題為「五一0壓勞動節，解壓就來夢百合！夢百合0壓枕頭大戰一觸即發！」；九影2023-05作品集與完整錄屏相符。精確遊戲上線日未核實，採月份。",
+   "format": "微信H5／3D角色枕頭格鬥小遊戲",
+   "why_zh": "先從九款夢百合枕頭中選擇武器，再在臥室場景按「枕頭出擊」與「枕頭回旋」攻擊、格擋，透過血條判斷對戰進度；命中時出現壞心情、難以入睡、壓力等文字。把床品變成解壓工具，讓「壓力小，睡得好」成為一場輕鬆的枕頭戰。結束後接到品牌商城的抽獎入口；可參考的是產品選擇與戰鬥演繹，不是最後的轉盤。",
+   "style_zh": "藍紫品牌介面、Q版3D人物、臥室場景與真實枕頭商品圖",
+   "source_url": "https://www.9shadow.com/2023_05/case_298.html",
+   "demo_url": "https://official-images.9shadow.com/uploads/case_video/bbba961520c648bab2417a7c7b984041.mp4",
+   "image_source_url": "https://official-images.9shadow.com/uploads/case_img/23092a3efdd84771889a83b4320ab5db.jpg",
+   "image": "images/mlily-zero-pressure-pillow-fight-2023.webp",
+   "live_url": "",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17製作方頁面和62.9秒完整操作錄屏可在雲端瀏覽器讀取；已下載影片並抽幀檢查選枕、對戰與結算流程，未實玩舊微信活動。品牌原公告目前回傳憑證過期造成的502，沒有繞過安全警告；日期使用仍可查到的官方搜尋索引，精確上線日未證實。",
+   "verification_notes": "Browser DOM video readyState4 duration62.903; downloaded through normal media control. No different pillow stats established: do not claim stat-bearing equipment. Rotation button visibly used for defense, wording rendered枕头回旋. No user data entered, registration and lottery untouched.",
+   "evidence_urls": [
+    "https://mlily.com.cn/cn/news/detail/ca8d0384.html"
+   ],
+   "tags": [
+    "產品武器",
+    "輕格鬥",
+    "床品",
+    "解壓",
+    "H5"
+   ]
+  },
+  {
+   "id": "gentle-monster-crystal-clear",
+   "title_zh": "Gentle Monster × 蔡徐坤「Crystal Clear」：眼镜变成特工技能，在三座异星世界中边走位边升级",
+   "brand": "Gentle Monster × CAI XU KUN",
+   "agency": "Gentle Monster New Media Team；RETRO FUTURE（Unity）；MINTSOFT（iOS / Android）",
+   "region": "韩国 / 中国及全球市场",
+   "format": "iOS / Android 3D生存动作游戏；中国微信小程序版本",
+   "date": "2023-04-21",
+   "date_evidence": "制作团队Behance项目直接列Event 2023, Apr.21–May12；游戏总监Xihye Lee的LinkedIn回顾明确2023-04-21上线。不要误用作品集2023-08-28发布日期。",
+   "why_zh": "玩家扮演戴着联名眼镜的特工KUN，在冰冻星球、过热城市与特工飞船收集水晶、升级技能并对抗成群怪物。不同眼镜对应不同能力，后续关卡还要寻找隐藏技能、开补给箱完善装备。联名产品既决定角色外观，也进入能力与成长系统；线下特工主题快闪和当年的排名奖品延续同一世界。",
+   "style_zh": "Q版3D特工、蓝紫异星地形、成群敌人与夸张技能特效",
+   "live_url": "",
+   "source_url": "https://www.behance.net/gallery/174947545/GENTLE-MONSTER-X-KUN-Crystal-Clear",
+   "demo_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/f99175174947545.64b0e065650be.gif",
+   "image_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/989a26174947545.64ad2e01306a0.jpg",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17在dot云端浏览器核验制作团队作品集，下载并抽帧检查125帧第一关实机动画与90帧技能演示。演示链接是动画GIF。作品集内Vimeo影片目前要求登录，未作为公开视频入口；未确认当前可玩的官方客户端，不建议下载第三方APK。",
+   "verification_notes": "Gameplay GIF visibly shows moving player, enemy waves, crystals and radial weapons, not merely title art. Files saved under /workspace/shared/korea_research/crystal_stage.bin and crystal_skill.bin; contact sheets reviewed. No game installation or live playtest. China WeChat mini program independently described in Dao Insights; exact publisher app availability not confirmed.",
+   "tags": [
+    "生存动作",
+    "产品技能",
+    "明星联名",
+    "成长升级",
+    "服饰"
+   ],
+   "evidence_urls": [
+    "https://www.gentlemonster.com/legacy/story/en/caixukun.html",
+    "https://www.behance.net/gallery/174947545/GENTLE-MONSTER-X-KUN-Crystal-Clear",
+    "https://kr.linkedin.com/posts/xihye_gentle-monster-x-kun-crystal-clear-activity-7130013926355857409-_KQp",
+    "https://daoinsights.com/works/gentle-monster-x-cai-xukun-collab-makes-a-splash-on-chinese-social-media/"
+   ],
+   "image": "images/gentle-monster-crystal-clear.webp"
+  },
+  {
+   "id": "gentle-monster-jentle-garden",
+   "title_zh": "Gentle Monster × Jennie「Jentle Garden」：种花、卖花和升级农具，把联名眼镜的花园世界变成日常经营",
+   "brand": "Gentle Monster × Jennie",
+   "agency": "Gentle Monster New Media Team；Day1 Entertainment（开发）；JaeBum Joo（像素美术）",
+   "region": "韩国 / 全球",
+   "format": "iOS / Android像素花园经营游戏",
+   "date": "2022-02-22",
+   "date_evidence": "制作团队项目列Event 2022, Feb22–May31；2022-02-22新闻确认当天推出。作品集发布于2023，不是游戏上线年。",
+   "why_zh": "以Jennie为角色，在像素花园种植、浇水、收割，把花卖到店里赚金币，再升级工具和花园；农场动物还会给金种子。联名系列的花朵、花店和眼镜收藏都被放进可反复经营的世界，随后在五座城市的实体快闪里重现。它的价值是把明星联名的美术概念做成玩家愿意每日返回的小生活，而非一次点完的宣传页。",
+   "style_zh": "精细像素花园、蓝天白云、粉色小车、童话店铺与可爱的明星角色",
+   "live_url": "",
+   "source_url": "https://www.behance.net/gallery/169818567/GENTLE-MONSTER-X-JENNIE-Jentle-Garden",
+   "demo_url": "https://www.youtube.com/watch?v=OtM0NViaiHU",
+   "image_source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/03dd3a169818567.6459f620cff5e.png",
+   "mobile": "historical",
+   "availability_zh": "历史活动，制作团队列运营结束日2022-05-31，当前未确认可玩。2026-10-17云端浏览器核验团队作品集及农场、商店、排行界面；像素美术师官网嵌入官方YouTube短片，oEmbed确认标题和Gentle Monster发布账号，但云端播放器超时，不能称已播放视频。",
+   "verification_notes": "Official video titled Play ‘JENTLE GARDEN’ with Jennie. Original artist source https://joojaebum.com/GentleMonster links three official YouTube videos. Product-in-mechanic is softer than Crystal Clear: garden world and collectible eyewear, not a verified eyewear-stat system. No APK installed.",
+   "tags": [
+    "经营养成",
+    "像素",
+    "明星联名",
+    "虚实联动",
+    "服饰"
+   ],
+   "evidence_urls": [
+    "https://www.behance.net/gallery/169818567/GENTLE-MONSTER-X-JENNIE-Jentle-Garden",
+    "https://joojaebum.com/GentleMonster",
+    "https://view.asiae.co.kr/article/2022022213452709367"
+   ],
+   "image": "images/gentle-monster-jentle-garden.webp"
+  },
+  {
+   "id": "aomori-puyo-ringo",
+   "title_zh": "青森「ぷよりんご」：红苹果都长得差不多，认品种才是消除难点",
+   "brand": "青森县 / 青森苹果",
+   "agency": "青森县观光企划课 SNS 团队（约4人）及外部编程专家；SEGA《ぷよぷよプログラミング》示例代码为基础",
+   "region": "日本",
+   "format": "浏览器消除游戏",
+   "date": "2021-11-23",
+   "date_evidence": "青森县政府官方 PDF 明确首次发布为2021年11月23日上午10点；2021年11月27日追加青苹果模式。2022年线下零售活动不是上线日期。",
+   "why_zh": "两颗苹果成对落下，移动、旋转、加速下落，让同品种的4颗相连消除。三个难度用4、5、8种极相似的红苹果构成，玩家必须记住色泽、形状和纹路，而非只看不同颜色；得分显示为收获重量和连锁数。把青森苹果的品种丰富度直接变成难度，而不是把logo贴到通用消除上。2022年还延伸至超市试玩和三颗装苹果袋。",
+   "style_zh": "纯白底、手绘黑线树枝框、真实苹果抠图；荒诞的极简食物拼贴。",
+   "source_url": "https://www.pref.aomori.lg.jp/release/files/2022/72527.pdf",
+   "live_url": "https://marugotoaomori-puyoringo.com/",
+   "demo_url": "",
+   "image_source_url": "https://marugotoaomori-puyoringo.com/img/ogp.jpg",
+   "image": "images/aomori-puyo-ringo.webp",
+   "mobile": "partial",
+   "availability_zh": "2021年历史案例，当前体验仍可运行。2026-10-17在云端Chrome实际打开、选择红苹果及简单难度、看到苹果持续落下并用按住方向键和上键验证移动/旋转；也看到堆满后的Game Over。未完成连锁消除，移动端未单独测试。键盘需略微按住，瞬间按键可能被游戏循环漏掉。未点击社交分享。",
+   "caveats": "2021年旧作，但当前体验仍可运行。移动端未单独测试；键盘需略微按住，瞬间按键可能被游戏循环漏掉。未点击社交分享。不能将AOI Pro.列为游戏开发方，其获奖页面明确其职责是案例影片制作。",
+   "tags": [
+    "消除",
+    "品种识别",
+    "食品",
+    "地方推广",
+    "产品即玩法"
+   ],
+   "evidence_urls": [
+    "https://game.creators-guild.com/g4c/interview-indiegames-20211207/",
+    "https://gigazine.net/news/20211124-puyoringo/"
+   ],
+   "verified_at": "2026-10-17T07:26:00Z"
+  },
+  {
+   "id": "twix-second-screen-staredown",
+   "title_zh": "Twix「Second Screen Staredown」：和两根金条对视，把超级碗广告时段变成注意力耐力赛",
+   "brand": "Twix / Mars",
+   "agency": "adam&eveDDB London × UNIT9",
+   "region": "美国",
+   "format": "手机浏览器摄像头凝视挑战",
+   "date": "2025-02-03 预热；2025-02-09 正式活动",
+   "why_zh": "在超级碗广告间歇打开手机，对着长有人眼的两根金色 Twix 持续凝视。摄像头追踪视线，盯得越久，获得的历史抽奖次数越多；200 多条荒诞语音不断挑逗或鼓励玩家。双屏、双条巧克力和两根金条奖品共享同一个「二」的记忆点，把转移注意力的习惯变成品牌自己的计时挑战。",
+   "style_zh": "Twix 红底与金条、真人眼睛合成、巨大计时数字、荒诞语音角色",
+   "live_url": "",
+   "source_url": "https://unit9.com/interactive/twix-second-screen-stare-down",
+   "demo_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmo1oy2wia5h407mj307baa2a",
+   "image_source_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmql4l8ib3toz06mgmsj68ujy",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方 130 秒案例视频可解码，已抽帧确认手机凝视界面及活动展示；未进行实时摄像头游戏测试。Mars 原始新闻稿明确预热于 2025-02-03、正式挑战于 2025-02-09，金条抽奖属于当时的活动，不能视为现行奖励。",
+   "tags": [
+    "凝视交互",
+    "第二屏",
+    "计时挑战",
+    "超级碗",
+    "产品即玩法"
+   ],
+   "evidence_urls": [
+    "https://unit9.com/interactive/twix-second-screen-stare-down",
+    "https://www.prnewswire.com/news-releases/twix-is-giving-fans-the-chance-to-win-two-solid-gold-bars-on-game-day-302363315.html",
+    "https://www.dandad.org/work/d-ad-awards-archive/twix-second-screen-staredown"
+   ],
+   "image": "images/twix-second-screen-staredown.webp"
+  },
+  {
+   "id": "kinder-joy-stranger-things-clock",
+   "title_zh": "Kinder Joy ×《怪奇物语》：把 Vecna 的大钟放进房间，解开机械谜题救出角色",
+   "brand": "Kinder Joy / Ferrero × Stranger Things / Netflix × Funko Pop!",
+   "agency": "UNIT9",
+   "region": "多市场（制作方未列游戏开放国家）",
+   "format": "免下载手机 WebAR 解谜游戏",
+   "date": "2025（整合活动年份；游戏首发日未确认）",
+   "why_zh": "用手机把剧中的落地大钟放进真实房间，再处理钟内的机械谜题，释放被困角色并解锁联名数字奖励。官方实机演示可见齿轮散落在钟前、钟门上的字母缺口及计时显示。实体玩具收藏与能亲手破解的剧中道具接在一起，让联名包装之外还有一次有目标、有回报的角色互动。",
+   "style_zh": "写实木质落地钟、红黑颠倒世界、现实房间 AR 叠加、Funko 收藏角色",
+   "live_url": "https://fandom.kinder.com/strangerthings/",
+   "source_url": "https://unit9.com/interactive/kinder-joy-x-stranger-things-x-funko-pop",
+   "demo_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmole61qf3f9p07mqpqoce4pd",
+   "image_source_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmql48pcx3lgm06mmysdo741z",
+   "mobile": "partial",
+   "availability_zh": "2026-10-17 云端桌面浏览器已打开正式域名，显示 Kinder 品牌页及「DEVICE NOT SUPPORTED / Scan the QR code on your mobile device to continue」，因此仅确认手机入口仍在，未完成手机 AR 或摄像头实测。官方 9 秒演示已解码并抽帧查看。2025 年由同一活动的 Lucca Comics & Games 项目支持，未把 2026 年美国联名商品上市误记为游戏首发；数字奖励现行可用性未验证。",
+   "tags": [
+    "WebAR",
+    "解谜",
+    "影视联名",
+    "包装延伸",
+    "玩具收藏"
+   ],
+   "evidence_urls": [
+    "https://unit9.com/interactive/kinder-joy-x-stranger-things-x-funko-pop",
+    "https://fandom.kinder.com/strangerthings/"
+   ],
+   "image": "images/kinder-joy-stranger-things-clock.webp"
+  },
+  {
+   "id": "fanta-beetlejuice-afterlife-train",
+   "title_zh": "Fanta ×《怪奇大法师》「Afterlife Train」：画门、找罐、喂沙虫，解开三节来世车厢",
+   "brand": "Fanta × Beetlejuice Beetlejuice",
+   "agency": "UNIT9（互动制作）",
+   "region": "多市场；已核对爱尔兰及北爱尔兰规则",
+   "format": "手机网页 / Coca-Cola App 内 360° 解谜游戏 + AR 通关奖励",
+   "date": "2024-09-10（已核对的爱尔兰活动开始日）",
+   "why_zh": "三节车厢分别要求沿线画门、快速找齐饮料罐，以及限时收集 9 个 Bob 头喂沙虫；绘画精度和完成速度决定星级与宝石数。完成全部车厢后解锁 Beetlejuice 变脸滤镜。包装扫码带入电影场景，解谜再把参与导向 App 积分，最后用可分享的角色扮演延长传播。",
+   "style_zh": "蒂姆·伯顿式怪诞车厢、循环 360° 影像、实拍角色与写实 3D、橙绿 Halloween 配色",
+   "live_url": "",
+   "source_url": "https://unit9.com/interactive/fanta-beetlejuice-2",
+   "demo_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmo35fu473qwe07lcm8jvx993",
+   "image_source_url": "https://eu-west-2.graphassets.com/cmi8t363l0cf407lac7ifdyv6/cmqkyoqjfw1cs06l6iehg0wef",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：制作方手机演示片段可解码，已查看车厢探索与交互画面；文件名虽含 Full Play through，实际链接只有约 8.7 秒，不能当作完整通关视频。未确认独立游戏现仍可玩。爱尔兰原促销为 2024-09-10 至 10-21，补抽报名改至 11-18 至 11-28；当时仅限当地 18 岁以上注册用户、每日前 5 次游戏可得宝石。奖励已属历史活动。",
+   "tags": [
+    "360全景",
+    "限时寻物",
+    "绘画输入",
+    "影视联名",
+    "多关卡"
+   ],
+   "evidence_urls": [
+    "https://unit9.com/interactive/fanta-beetlejuice-2",
+    "https://www.coca-cola.com/ie/en/legal/fanta-halloween-2024-terms",
+    "https://www.coca-colacompany.com/media-center/fanta-invites-fans-to-manifest-halloween-thrills"
+   ],
+   "image": "images/fanta-beetlejuice-afterlife-train.webp"
+  },
+  {
+   "id": "coca-cola-endless-catcher",
+   "title_zh": "Coca-Cola「Endless Catcher」：点击接住音乐节腕带，让抢票愿望变成持续冲分",
+   "brand": "Coca-Cola",
+   "agency": "UNIT9",
+   "region": "未注明具体开放市场",
+   "format": "Coca-Cola App 内 WebGL 3D 接取 / 匹配小游戏",
+   "date": "2024-04-30（制作方标注）",
+   "why_zh": "在计时与分数反馈下点按、滑动接住飞来的入场腕带；制作方为活动提供无尽跑酷与快速匹配两种玩法。特殊可乐瓶会把场景切到夏日演出入口，狂热模式则改造整个 3D 空间。把演唱会、欧洲杯及巴黎奥运的历史奖品变成游戏里的腕带与传送目标，让品牌 App 的重复访问有直接理由。",
+   "style_zh": "高饱和 3D 腕带、音乐节舞台与流动通道、霓虹狂热模式、清晰分数反馈",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/coca-cola-endless-catcher/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/Comb02-optimized-1.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/hero-12-1400x788.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方 GIF 可解码，已抽帧确认腕带接取、倒计时、得分和结算画面。演示链接为官方动图，属于历史制作素材，未登录或测试 Coca-Cola App 当前游戏。案例中的 UEFA EURO 2024、Paris 2024 和演出票均为当时的促销奖励，不能理解为现行兑换。",
+   "tags": [
+    "接取",
+    "快速匹配",
+    "音乐营销",
+    "App促活",
+    "积分奖励"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/coca-cola-endless-catcher/"
+   ],
+   "image": "images/coca-cola-endless-catcher.webp"
+  },
+  {
+   "id": "fanta-parade-of-play",
+   "title_zh": "Fanta「Parade of Play」：在三座城市找人、翻瓶集钥匙，打开威尼斯狂欢节",
+   "brand": "Fanta / Coca-Cola",
+   "agency": "Studio X EU × UNIT9",
+   "region": "欧洲多市场",
+   "format": "手机专属 360° 网页小游戏 / Coca-Cola App 内体验",
+   "date": "2024-01-23（制作方标注）",
+   "why_zh": "在巴塞罗那、柏林、巴黎的 360° 街景里完成限时小游戏：演示可见瓶子挑战的计分，以及按头像提示寻找对应角色。闯过三城收齐三把钥匙，才能打开威尼斯狂欢节；部分市场另用宝石连接 App 奖励。真实城市全景和同一组品牌角色把分散小任务串成有终点的旅程，适合节庆持续促活。",
+   "style_zh": "实景街道叠加平面插画、橙紫蓝撞色、夸张舞者、纸屑水果与城市声景",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/fanta-parade-play/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/phones_2.gif",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/3_phones.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方 GIF 已解码，逐段查看 30 秒计时、瓶子挑战计分、头像寻人、钥匙与结算界面；演示链接为官方动图，未完成 App 内实测。意大利品牌页仍保留 2024 活动介绍及下载 App 入口，但这不证明该关卡或奖品仍在线，因此未把活动介绍页充作可玩链接。",
+   "tags": [
+    "360全景",
+    "限时寻物",
+    "翻瓶",
+    "钥匙收集",
+    "节庆营销"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/fanta-parade-play/",
+    "https://www.coca-cola.com/it/it/offerings/fanta-carnevale-2024"
+   ],
+   "image": "images/fanta-parade-of-play.webp"
+  },
   {
    "id": "kdk-shout-out-showdown-2024",
    "title_zh": "KDK 115週年：朝電風扇吶喊的 Shout Out Showdown",
