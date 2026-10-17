@@ -1,7 +1,294 @@
 {
  "updated": "2026-10-17",
- "count": 150,
+ "count": 160,
  "cases": [
+  {
+   "id": "xbox-netflix-red-notice-vault",
+   "title_zh": "Xbox × Netflix「The Vault」：四分钟找齐 27 件藏品，用品牌历史知识守住电影金库",
+   "brand": "Xbox × Netflix《Red Notice》",
+   "agency": "Assembly Media × makemepulse",
+   "region": "全球",
+   "format": "浏览器 3D 寻物与限时问答",
+   "date": "2021-11-15",
+   "why_zh": "在电影式金库中转动视角，寻找 27 件 Xbox 主机、道具和角色藏品，点击后回答四选一问题并获得积分。倒计时只有四分钟，时间将尽时房间变红、最终金库关门；原活动每 1000 分增加一次抽奖机会，重复游戏只取最高分。把二十年品牌资产变成值得辨认和回忆的题库，再借电影的盗宝叙事制造时间压力。",
+   "style_zh": "暖金色私人金库、精细 3D 游戏藏品、红色警报与黑金问答卡",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/the-xbox-vault",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/5df75742-e3ad-4c3b-a2f0-0f56b28196ea_06+-+large+video.mp4",
+   "image": "images/xbox-netflix-red-notice-vault.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/9f372656-0522-4734-94d9-2f1ab0c7d343_00+-+cover.jpg?auto=compress,format&rect=162,0,2875,1504&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "Xbox 官方确认活动于 2021-11-15 至 11-24 开放，奖品现已过期。2026-10-17 核验：制作方导航、问答和计分片段可解码，已抽帧确认倒计时、道具选择与答对加分；原站当前取回失败，未确认仍可玩。",
+   "tags": [
+    "寻物",
+    "问答",
+    "周年",
+    "影视联名",
+    "品牌资产"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/the-xbox-vault",
+    "https://news.xbox.com/en-us/2021/11/15/xbox-netflix-red-notice-anniversary-partnership/"
+   ]
+  },
+  {
+   "id": "renault-twingo-custom-test-drive",
+   "title_zh": "Renault「Twingo Experience」：先配出自己的车，再带同一辆车玩避障和轨迹挑战",
+   "brand": "Renault 雷诺",
+   "agency": "We Are Social × makemepulse",
+   "region": "法国",
+   "format": "浏览器 3D 汽车配置与双小游戏",
+   "date": "2019-04",
+   "why_zh": "先自选车身颜色、轮毂、贴花与内饰，从各角度查看车型，再把同一辆定制 Twingo 开进两种测试游戏：穿越移动障碍的赛道与俯视轨迹关。车型个性化结果被保留成玩家的游戏角色，车辆的尺寸、转向和舒适性因此有了可以操作的展示场景，配置器也多出了一次自然的再参与理由。",
+   "style_zh": "奶油白与浅金极简赛道、真实汽车模型、几何障碍和俯视路线",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/renault-twingo-120-ans",
+   "demo_url": "https://www.youtube.com/watch?v=K7LhkszUDZA",
+   "image": "images/renault-twingo-custom-test-drive.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/9db68e67-1113-41ec-a92d-abed0375cf63_Twingo_Cover_1600x752.jpg?auto=compress,format&rect=162,0,2875,1504&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "2019-04 推广，由当年报道和制作方作品档案交叉确认。2026-10-17 核验：官方 MP4 与 GIF 均可解码，已抽帧确认后视避障及俯视轨迹画面；原雷诺活动域名当前取回失败，未完整试玩。",
+   "tags": [
+    "产品即玩法",
+    "汽车配置",
+    "避障",
+    "赛车",
+    "个性化"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/renault-twingo-120-ans",
+    "https://www.cbnews.fr/digital/image-twingo-campagne-personnalisation-avec-we-are-social-makemepulse-43105",
+    "https://www.behance.net/gallery/80321297/Renault-Twingo-Experience"
+   ]
+  },
+  {
+   "id": "kerrygold-magical-pantry",
+   "title_zh": "Kerrygold「The Magical Pantry」：把擦奶酪、搅拌与烹饪手势嵌进一本可定制童话",
+   "brand": "Kerrygold",
+   "agency": "Energy BBDO × makemepulse × Dan Gartman",
+   "region": "美国首发 / 后续英国、爱尔兰及德国",
+   "format": "手机 / PC 浏览器互动食谱与手势任务",
+   "date": "2022-10-05（公告）",
+   "why_zh": "从近 40 道食谱和四种故事中组合一段冒险，自定义主角后进入绘本。在叙事节点滑动、搅拌或触碰屏幕完成擦奶酪、混合、调理等微任务，推进故事并收集成就贴纸；还可用朗读功能听故事。黄油与奶酪的使用方法成为剧情推进动作，让品牌食谱从单向说明变成亲子协作的烹饪预演。",
+   "style_zh": "手绘森林动物、暖黄绿色绘本、可定制儿童主角与食材近景",
+   "live_url": "",
+   "source_url": "https://www.makemepulse.com/case-study/kerrygold-the-magical-pantry",
+   "demo_url": "https://makemepulse.cdn.prismic.io/makemepulse/70e5b0e7-a2c6-498c-8170-51c59a3a5711_15-video-fullscreen.mp4",
+   "image": "images/kerrygold-magical-pantry.webp",
+   "image_source_url": "https://images.prismic.io/makemepulse/23a702a9-6bca-4d96-b7a1-ed58cc18d505_0-cover.jpg?auto=compress,format&rect=96,0,3047,1594&w=1080&h=565",
+   "mobile": "historical",
+   "availability_zh": "品牌新闻稿日期为 2022-10-05，正文提及美国 9 月推出，因此按公告日期标注。2026-10-17 核验：官方操作与奖励片段可解码，已抽帧确认擦奶酪、搅拌及记忆贴纸界面；独立体验站当前取回失败。属于故事中的轻游戏任务，无复杂胜负系统。",
+   "tags": [
+    "产品即玩法",
+    "食谱",
+    "手势",
+    "亲子",
+    "成就"
+   ],
+   "evidence_urls": [
+    "https://www.makemepulse.com/case-study/kerrygold-the-magical-pantry",
+    "https://www.prnewswire.com/news-releases/kerrygold-launches-the-magical-pantry-a-first-of-its-kind-interactive-experience-that-takes-stories-from-fable-to-table--bringing-families-together-through-the-magic-of-cooking-301640989.html"
+   ]
+  },
+  {
+   "id": "essilor-eyezen-eye-tracking-challenge",
+   "title_zh": "Essilor「Eyezen Challenge」：把眼睛变成瞄准器，与 Fnatic 选手进行视线射击对决",
+   "brand": "Essilor 依视路 Eyezen × Fnatic",
+   "agency": "Herezie × Merci-Michel",
+   "region": "法国 / 全球",
+   "format": "桌面 WebGL 眼动追踪射击挑战",
+   "date": "2016-04-04",
+   "why_zh": "通过摄像头校准视线后，用眼睛在动态 3D 场景里追踪并击中光点，与电竞选手 Rekkles 的表现进行分数挑战。观看屏幕、眼球运动和视觉负荷本身成为输入方式，再衔接镜片说明。相比在电竞内容旁投放广告，这个案例把镜片所围绕的感官直接改造成游戏控制器。",
+   "style_zh": "深蓝实时 3D 隧道、发光目标、电竞真人影像与眼动校准图层",
+   "live_url": "",
+   "source_url": "https://www.merci-michel.com/projects/essilor-eyezen-challenge/",
+   "demo_url": "https://merci-michel.net/videos/essilor-eyezen-challenge_b.mp4",
+   "image": "images/essilor-eyezen-eye-tracking-challenge.webp",
+   "image_source_url": "https://storage.googleapis.com/mm-com.appspot.com/prod/essilor-eyezen-challenge/essilor-eyezen-challenge_01.jpg",
+   "mobile": "no",
+   "availability_zh": "制作方与 Essilor 2016-04-04 新闻稿确认。2026-10-17 核验：官方案例 MP4 可解码，已抽帧确认眼动识别、目标射击和积分界面；未确认现可玩。原体验主要依赖桌面摄像头；镜片和蓝光相关表述是当年品牌宣传，不能当作当前医学结论。",
+   "tags": [
+    "产品即玩法",
+    "眼动追踪",
+    "射击",
+    "电竞",
+    "感官交互"
+   ],
+   "evidence_urls": [
+    "https://www.merci-michel.com/projects/essilor-eyezen-challenge/",
+    "https://www.optiknow.ca/wp-content/uploads/2016/04/Essilor-launches-the-Eyezen-Challenge.pdf"
+   ]
+  },
+  {
+   "id": "dominos-pizza-hero-2011",
+   "title_zh": "Domino’s「Pizza Hero」：先亲手做一张虚拟披萨，再把它变成真实订单",
+   "brand": "Domino’s 达美乐",
+   "agency": "CP+B × UNIT9 / Helpful Strangers",
+   "region": "美国",
+   "format": "iPad 披萨制作模拟与电商",
+   "date": "2011-11-19",
+   "why_zh": "从披萨训练学校开始，用触屏处理面团、抹酱、撒奶酪和放配料，在切片、戳气泡等小任务中提高效率并挑战排行榜。自由制作的披萨可通过 Make An Order 入口衔接真实订购，优秀玩家当年还获得门店工作机会。制作流程本身就是玩法，游戏成绩、点餐和招聘三个结果共享同一套真实产品技能。",
+   "style_zh": "写实面团与配料、披萨纸盒界面、厨房工作台和质感食物近景",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/dominos-pizza-hero/",
+   "demo_url": "https://vimeo.com/90242483",
+   "image": "images/dominos-pizza-hero-2011.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/ph1.png",
+   "mobile": "historical",
+   "availability_zh": "UNIT9 标注 2011-11-19 发布，为历史 iPad 应用。2026-10-17 核验：官方案例和真实界面图片可读取，Vimeo 页面确认 UNIT9 发布的对应演示；视频未完整播放，应用现有下载、下单和招聘功能均未验证。",
+   "tags": [
+    "产品即玩法",
+    "烹饪",
+    "电商",
+    "招聘",
+    "模拟"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/dominos-pizza-hero/",
+    "https://vimeo.com/90242483"
+   ]
+  },
+  {
+   "id": "laliga-beat-challenge",
+   "title_zh": "LaLiga「The Beat Challenge」：在主题乐园找地点解锁足球挑战，把排队时间变成练球时间",
+   "brand": "LaLiga Entertainment × PortAventura World × Kosmos",
+   "agency": "COPA90 × UNIT9",
+   "region": "西班牙 / 全球",
+   "format": "定位 AR 手机 App + 40 个足球小游戏",
+   "date": "2021-12-20（制作方标注）",
+   "why_zh": "先在家玩训练模式，再到 PortAventura World 按地图寻找挑战点，解锁防守、盘带与射门等 40 个小任务。巨型 AR 球星在真实园区担任引导，探索与挑战进度还会解锁头像配件和收藏物。把园区空间变成关卡地图，让线上预热、到访理由和现场等待时间接成同一条游戏进程。",
+   "style_zh": "荧光粉蓝足球世界、卡通球星与头像、真实园景上的 AR 球场",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/la-liga-beat-challenge/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/7-14-1.gif",
+   "image": "images/laliga-beat-challenge.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/top-2-1400x788.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：制作方原始 GIF 可解码，已抽帧确认头像定制、园区定位和多种足球挑战画面。演示链接为官方动图，非当前可玩游戏；未确认 App 仍可下载。完整体验原本依赖到访西班牙 PortAventura World，居家只提供训练预览。",
+   "tags": [
+    "地理定位",
+    "AR",
+    "足球",
+    "多关卡",
+    "到店引流"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/la-liga-beat-challenge/"
+   ]
+  },
+  {
+   "id": "jfk-moonshot-ar-missions",
+   "title_zh": "JFK「Moonshot」：拨开关、转手机、移滑杆，在身边复演阿波罗登月任务",
+   "brand": "John F. Kennedy Presidential Library Foundation",
+   "agency": "Digitas Boston × UNIT9",
+   "region": "美国 / 全球",
+   "format": "iOS / Android AR 纪录片与任务小游戏",
+   "date": "2019-06-12",
+   "why_zh": "把土星五号放进现实环境，按任务提示拨动系统开关、旋转设备对准轮廓、拖动滑杆完成指定位置，配合带排行榜的 AR 挑战理解登月过程。2019 年周年期间还能按历史时间追踪五天的飞行。纪念机构用可操作任务连接档案资料，让年轻人从观看历史转向亲自参与任务步骤。",
+   "style_zh": "真实火箭与登月舱 AR、NASA 档案影像、黑白打字机式指令和精密仪表",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/jfk-moonshot/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/1-17.gif",
+   "image": "images/jfk-moonshot-ar-missions.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/jfk-hero-1400x788.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：官方实机 GIF 可解码，已抽帧确认开关、设备转动与滑杆任务。演示链接为官方动图；案例另附 Vimeo 影片但当前未完整播放。iOS/Android 原商店入口本次无法读取，当前下载与设备兼容性未确认。五日同步登月是 2019 年 7 月周年机制。",
+   "tags": [
+    "AR",
+    "任务",
+    "教育",
+    "纪念活动",
+    "手机传感器"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/jfk-moonshot/",
+    "https://player.vimeo.com/video/362313509"
+   ]
+  },
+  {
+   "id": "toyota-goal-gold-cup-voice",
+   "title_zh": "Toyota「Goal to the Gold Cup」：对着手机喊得越响越久，皮卡在像素公路上跑得越远",
+   "brand": "Toyota 丰田",
+   "agency": "Conill × UNIT9",
+   "region": "美国 / Concacaf 球迷",
+   "format": "手机浏览器声控距离挑战",
+   "date": "2021-08-02（制作方标注）",
+   "why_zh": "先选择 Tundra 或 Tacoma 以及支持的球队，再对手机持续高喊“Goal”。麦克风分析音量，声音越响、维持越久，车辆就跑得越远；沙漠、森林与雪地道路不断生成，显示距离成绩。把足球助威这种自然行为直接变成油门，让赛事赞助和皮卡性能通过同一个操作被记住。",
+   "style_zh": "8-bit 像素皮卡、暖色沙漠与森林雪地、漫画助威头像和醒目距离数字",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/toyota-gold-cup/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/toyota_game_02-2.gif",
+   "image": "images/toyota-goal-gold-cup-voice.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/project-page-2-1400x788.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：制作方原始 GIF 可解码，已抽帧确认车型选择、喊声指令、行驶距离与结束成绩；演示链接为官方动图。2021 年金杯赛历史活动，未确认独立游戏入口仍可使用。原玩法需手机麦克风权限，未在当前设备实测。",
+   "tags": [
+    "声音互动",
+    "赛车",
+    "赛事赞助",
+    "像素",
+    "产品即玩法"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/toyota-gold-cup/"
+   ]
+  },
+  {
+   "id": "kia-aces-for-oceans",
+   "title_zh": "Kia「Aces for Oceans」：在 AR 网球场瞄准发球，把 Ace 成绩汇入海洋塑料回收进度",
+   "brand": "Kia 起亚",
+   "agency": "We Are Fearless × UNIT9",
+   "region": "澳大利亚公开赛 / 九个市场",
+   "format": "手机浏览器 WebAR 限时网球发球游戏",
+   "date": "2022（制作方案例标注 03-17）",
+   "why_zh": "把虚拟网球场放到身边，在倒计时内瞄准目标发出 Ace，清掉场上的垃圾并累积成绩。原活动将线上 Ace 与澳网场上的 Ace 一起连接到海洋塑料回收、再制网球装备的行动进度。让赛事观众也能通过同一运动动作参与赞助商的环保主张，手机中的集体进度提供可见反馈。",
+   "style_zh": "海洋蓝 AR 球场、黄色球拍与目标线、塑料回收进度柱",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/kia-acesforoceans/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/3-41-1.gif",
+   "image": "images/kia-aces-for-oceans.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/s2-16-950x607.png",
+   "mobile": "historical",
+   "availability_zh": "活动对应 2022 澳网，制作方档案日期为 2022-03-17，不把它误写为比赛首发日。2026-10-17 核验：官方截图与可解码 GIF 显示 AR 放置、目标发球和回收进度；演示动图主要为活动与进度界面。当前可玩入口未确认，回收联动属于历史推广，不代表现在继续触发捐赠。",
+   "tags": [
+    "AR",
+    "网球",
+    "环保",
+    "赛事赞助",
+    "集体进度"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/kia-acesforoceans/"
+   ]
+  },
+  {
+   "id": "virgin-media-snapchat-path-puzzle",
+   "title_zh": "Virgin Media「Faster Brings Us Closer」：调好三维道路，让两位广告主角穿过 AR 迷宫相遇",
+   "brand": "Virgin Media",
+   "agency": "adam&eveDDB × UNIT9",
+   "region": "英国",
+   "format": "Snapchat Lens 三关 AR 路径益智游戏",
+   "date": "2021-05-10",
+   "why_zh": "把立体路线放到现实地面，调整道路、接通路径，让广告主角 Throng 和 Vyper 团聚。三关都会记录用时，通关后还能重玩争取更短总时间。把宽带广告中“连接更快、彼此更近”的主张变成明确目标，而广告角色和红色连接线则贯穿规则、空间与结算页。",
+   "style_zh": "现实地面上的红色立体折线路径、微缩角色、霓虹广告主视觉与计时牌",
+   "live_url": "",
+   "source_url": "https://archive.unit9.com/project/virgin-media-snapchat-ar-game/",
+   "demo_url": "https://archive.unit9.com/wp-content/uploads/2-40-1.gif",
+   "image": "images/virgin-media-snapchat-path-puzzle.webp",
+   "image_source_url": "https://archive.unit9.com/wp-content/uploads/s1-14-950x607.png",
+   "mobile": "historical",
+   "availability_zh": "2026-10-17 核验：三段官方 GIF 可解码，已抽帧确认 AR 场景摆放、路线变化、分关与总用时结算；演示链接为官方实机动图。原 Snapchat Lens 入口保留在案例页，当前 Lens 可用性未实测，不标为可直接游玩的网页。",
+   "tags": [
+    "AR",
+    "路径益智",
+    "计时挑战",
+    "广告角色",
+    "产品主张"
+   ],
+   "evidence_urls": [
+    "https://archive.unit9.com/project/virgin-media-snapchat-ar-game/"
+   ]
+  },
   {
    "id": "docomo-bakumore-influencer",
    "title_zh": "Docomo「ばくモレ」：自拍越出圈，隐私越可能被围观者拼出来",
