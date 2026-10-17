@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-17",
-  "count": 241,
+  "count": 242,
   "cases": [
     {
       "id": "ogawa-tent-memory-2026",
@@ -33,6 +33,41 @@
         "户外",
         "帐篷"
       ]
+    },
+    {
+      "id": "tamagotchi-cake-time-trial-2025",
+      "title_zh": "Tamagotchi 蛋糕店计时赛：照着订单拖拽装饰",
+      "brand": "Bandai Namco Entertainment / たまごっちのプチプチおみせっち おまちど〜さま！",
+      "agency": "FLAG（企划、内容制作、网页开发与社交广告）",
+      "region": "日本",
+      "format": "手机网页游戏 / X Amplify 活动落地页",
+      "date": "2025-11-13",
+      "date_evidence": "Bandai Namco 2025年11月13日官方电子报确认：配合家用游戏新增蛋糕店，官方X已开展「ケーキいくつ作れるかな？タイムトライアル」。FLAG案例标注2025年11月；这里采用可确认的官方宣传日期，不把作品页发布日期当上线日。",
+      "why_zh": "把家用游戏中的蛋糕店抽成一局手机试玩：先看客人的蛋糕范本，再把星星、叶子、花朵、蘑菇等装饰拖到蛋糕对应位置，按「完成」检查。素材或位置不符会给出具体提示；画面显示10分钟总时限，完成4个蛋糕可得到最高评价并分享结果。用原游戏角色、店内动画和订单复刻，让未买主机游戏的人先获得一次「我会玩」的体验。",
+      "style_zh": "糖果粉与奶油黄的竖屏蛋糕工坊；沿用原作3D角色视频，2D拖拽操作覆盖其上。",
+      "source_url": "https://www.flag-pictures.co.jp/works/client/6255/",
+      "live_url": "https://oms-cp.bn-ent.net/cake/",
+      "live_label": "试玩蛋糕制作（未完成通关）",
+      "demo_url": "",
+      "image": "images/tamagotchi-cake-time-trial-2025.webp",
+      "image_source_url": "https://www.flag-pictures.co.jp/wp2023/wp-content/uploads/2025/12/works_X_format_tamagotti_03.jpg",
+      "mobile": "partial",
+      "availability_zh": "2026-10-17 在桌面云端浏览器进入实际蛋糕制作画面，查看10分钟时限与4种装饰，进行了拖拽尝试及完成提交，实际收到素材或位置错误提示；未确认拖拽放置成功，也未完成4个蛋糕或通关。最高评价仅由制作方真实案例图确认，不能视为实测成绩。鼠标点击在本次测试中间歇超时，键盘Return可启动与提交；未在手机设备实测。早期牙医版本 https://oms-cp.bn-ent.net/ 同属这套推广，本次只进入片头，未另计案例；6月牙医与11月蛋糕不是同一天上线。体验链接为实际游戏，未重复列作演示影片。",
+      "tags": [
+        "拖拽装饰",
+        "订单复刻",
+        "计时挑战",
+        "主机游戏推广",
+        "Tamagotchi",
+        "网页试玩",
+        "角色IP"
+      ],
+      "evidence_urls": [
+        "https://sbn.bandainamcoent.co.jp/data/index_pc251113.html",
+        "https://www.flag-pictures.co.jp/works/client/6255/",
+        "https://oms-cp.bn-ent.net/cake/"
+      ],
+      "verified_at": "2026-10-17T08:34:44Z"
     },
     {
       "id": "netflix-its-whats-inside-game-2024",
