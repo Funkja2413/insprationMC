@@ -87,6 +87,18 @@ async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new P
     await card().locator('.fav').scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(output,'favorites-mobile-actions.png'),fullPage:false});
     check('No uncaught browser errors',errors.length===0);
+    const delayed=await browser.newContext();
+    await delayed.addInitScript(id=>localStorage.setItem('inspo-pending-favorites',JSON.stringify([{id,value:true,version:'preexisting'}])),first.id);
+    let release;const gate=new Promise(r=>release=r);
+    await delayed.route('https://api.github.com/**',async route=>{
+      if(route.request().url().includes('/favorites.json'))await gate;
+      await route.fulfill({status:200,json:{sha:'1',content:Buffer.from(JSON.stringify(route.request().url().includes('/favorites.json')?[]:removed)).toString('base64')}});
+    });
+    const delayedPage=await delayed.newPage();await delayedPage.goto(base);await delayedPage.locator('.fav').first().waitFor();
+    await delayedPage.getByRole('tab',{name:'我喜欢的case',exact:true}).click();
+    await delayedPage.locator('.fav').click();
+    check('Unfavorite immediately after reload works before remote hydration',await delayedPage.locator('.card').count()===0);
+    release();await delayed.close();
     fs.writeFileSync(path.join(output,'browser-report.json'),JSON.stringify({passed:true,checks,errors,visibleCaseCount:expected.length,favoriteWrites,deleteWrites,network:'GitHub API mocked; no credentials or production data used',screenshots:['favorites-desktop.png','favorites-mobile.png','favorites-mobile-actions.png']},null,2));
     console.log(JSON.stringify({passed:true,checks:checks.length,visibleCases:expected.length,output}));
   }finally{await browser.close()}

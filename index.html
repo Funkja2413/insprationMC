@@ -286,6 +286,7 @@ function matches(c,q){
 }
 function render(){
   var list=document.getElementById("list"), empty=document.getElementById("empty");
+  favoriteSignature=cases.filter(function(c){return favorites.has(c.id)}).map(function(c){return c.id}).join("\n");
   var focusId=document.activeElement&&document.activeElement.dataset.favoriteId;
   Array.prototype.slice.call(list.querySelectorAll(".card")).forEach(function(n){n.remove()});
   var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), liked=vis.filter(function(c){return favorites.has(c.id)}), scope=favoritesOnly?liked:vis, n=0;
