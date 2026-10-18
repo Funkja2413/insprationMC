@@ -17,6 +17,11 @@ h1 small{font-size:12px;color:var(--sub);font-weight:400}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink);cursor:pointer}
 .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.views{display:flex;gap:6px;margin-bottom:9px}
+.view{border:0;border-radius:9px;background:transparent;color:var(--sub);padding:8px 11px;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
+.view[aria-selected="true"]{background:var(--ink);color:#fff}
+.view-count{font-size:12px;margin-left:5px;opacity:.8}
+button:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
 main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
 @media(max-width:599px){header{padding:12px 12px 8px}main{padding:12px;gap:14px;grid-template-columns:1fr}footer{padding:20px 12px 90px}}
 .card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:opacity .25s,transform .25s;min-width:0}
@@ -33,6 +38,8 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 .acts{display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:4px;flex-wrap:wrap}
 .acts a{font-size:13.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 11px;border-radius:9px;background:#fafaf8}
 .acts a.play{background:var(--ink);color:#fff;border-color:var(--ink)}
+.fav{border:1px solid var(--line);border-radius:9px;background:#fafaf8;color:var(--ink);padding:8px 11px;font-size:13.5px;cursor:pointer;min-height:40px}
+.fav[aria-pressed="true"]{background:#fff0e9;color:#ad361e;border-color:#f4bea9}
 .del{margin-left:auto;font-size:13.5px;border:1px solid #f1c9c4;color:var(--red);background:#fff;padding:6px 12px;border-radius:9px;cursor:pointer}
 .confirm{margin-left:auto;display:flex;gap:6px}
 .confirm button{font-size:13.5px;padding:6px 11px;border-radius:9px;cursor:pointer;border:1px solid var(--line);background:#fff}
@@ -40,6 +47,9 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 #empty{display:none;text-align:center;color:var(--sub);padding:40px 0;grid-column:1/-1}
 footer{text-align:center;font-size:12px;color:var(--sub);padding:20px 24px 90px;width:100%}
 footer a{color:var(--sub)}
+#favoriteHelp{max-width:620px;margin:8px auto 0}
+#favoriteStatus{margin-top:4px;min-height:1.55em}
+#favoriteRetry{border:0;background:transparent;color:var(--ink);text-decoration:underline;cursor:pointer;padding:5px 8px;font:inherit}
 #toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(150%);background:#222;color:#fff;border-radius:12px;padding:10px 12px 10px 16px;display:flex;gap:14px;align-items:center;font-size:14px;transition:transform .25s;z-index:30;max-width:92vw}
 #toast.show{transform:translateX(-50%) translateY(0)}
 #toast button{background:none;border:0;color:#ffb199;font-size:14px;font-weight:600;cursor:pointer;padding:4px 6px}
@@ -62,11 +72,18 @@ footer a{color:var(--sub)}
 <body>
 <header>
   <h1>互动营销灵感库 <small id="count"></small></h1>
+  <div class="views" role="tablist" aria-label="案例视图">
+    <button type="button" class="view" id="allTab" role="tab" aria-selected="true" aria-controls="list">全部案例 <span class="view-count" id="allCount" aria-hidden="true"></span></button>
+    <button type="button" class="view" id="favoritesTab" role="tab" aria-label="我喜欢的case" aria-selected="false" aria-controls="list" tabindex="-1">我喜欢的case <span class="view-count" id="favoriteCount" aria-hidden="true"></span></button>
+  </div>
   <input id="q" type="search" placeholder="搜索品牌 / 关键词" autocomplete="off">
   <div class="chips" id="chips"></div>
 </header>
-<main id="list"><div id="empty">没有匹配的案例</div></main>
-<footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a></footer>
+<main id="list" role="tabpanel" aria-labelledby="allTab"><div id="empty">没有匹配的案例</div></main>
+<footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a>
+  <p id="favoriteHelp">收藏先保存在本浏览器；已有 GitHub 授权时自动同步。同步后的收藏随此公开案例库共享。</p>
+  <div id="favoriteStatus" role="status" aria-live="polite"></div><button type="button" id="favoriteRetry" hidden>重试收藏同步</button>
+</footer>
 <div id="sync"></div>
 <div id="toast"><span id="toastMsg">已删除</span><button id="undo">撤销</button></div>
 <div class="modal" id="tokModal"><div class="sheet">
@@ -76,6 +93,7 @@ footer a{color:var(--sub)}
   <div id="tokErr"></div>
   <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
 </div></div>
+<script src="favorites.js"></script>
 <script>
 (function(){
 "use strict";
@@ -84,7 +102,7 @@ var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
 var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
-var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false, demoOnly=false;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false, demoOnly=false, favoritesOnly=false;
 
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
 function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
@@ -98,6 +116,32 @@ function hasGameplayDemo(c){return !!safeUrl(c.demo_url)&&c.demo_type!=="puzzle_
 
 function b64enc(s){return btoa(unescape(encodeURIComponent(s)))}
 function b64dec(s){return decodeURIComponent(escape(atob(s.replace(/\s/g,""))))}
+var favoriteSignature="", favorites=new InspoFavorites({
+  storage:{getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)}},
+  fetch:function(url,options){return fetch(url,options)},token:token,encode:b64enc,decode:b64dec,
+  api:"https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/data/favorites.json",
+  raw:"https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/data/favorites.json",
+  path:"data/favorites.json",onChange:function(){
+    var signature=cases.filter(function(c){return favorites.has(c.id)}).map(function(c){return c.id}).join("\n");
+    if(signature!==favoriteSignature){favoriteSignature=signature;render()}
+    showFavoriteStatus();
+  }
+});
+function showFavoriteStatus(){
+  var state=favorites.status(), message;
+  if(!state.persistent)message="浏览器无法保存收藏，刷新后可能丢失。";
+  else if(state.syncing)message="收藏已保存，正在同步…";
+  else if(state.error==="auth")message="收藏已保存在本浏览器，GitHub 同步授权不可用。";
+  else if(state.error)message="收藏已保存在本浏览器，暂时无法读取或同步远端收藏。";
+  else if(state.pending&&!state.authorized)message="收藏已保存在本浏览器，尚未连接 GitHub 同步。";
+  else if(state.pending)message="收藏已保存在本浏览器，等待同步。";
+  else if(state.authorized&&!state.loaded)message="正在检查收藏同步状态…";
+  else if(state.authorized)message="收藏已同步；使用同一案例库可在其他设备查看。";
+  else message="未连接 GitHub 同步，新收藏仅保存在本浏览器。";
+  document.getElementById("favoriteStatus").textContent=message;
+  document.getElementById("favoriteRetry").hidden=state.syncing||(!state.error&&!state.pending)||!state.authorized;
+}
+function selectView(only){favoritesOnly=only;render()}
 
 /* ---------- remote removed.json ---------- */
 function fetchRemoved(){
@@ -219,6 +263,10 @@ function card(c){
   if(lu){var l=el("a","play",c.live_label||"体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
   if(du){var v=el("a","",getDemoLabel(c)); v.href=du; v.target="_blank"; v.rel="noopener noreferrer"; ac.appendChild(v)}
   if(su&&su!==lu&&su!==du){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
+  var f=el("button","fav",favorites.has(c.id)?"♥ 已收藏":"♡ 收藏"); f.type="button";
+  f.dataset.favoriteId=c.id; f.setAttribute("aria-pressed",String(favorites.has(c.id)));
+  f.setAttribute("aria-label",(favorites.has(c.id)?"取消收藏：":"收藏：")+c.title_zh);
+  f.onclick=function(){favorites.set(c.id,!favorites.has(c.id))}; ac.appendChild(f);
   var d=el("button","del","删除"); d.type="button";
   d.onclick=function(){
     var cf=el("span","confirm"), y=el("button","yes","确认删除"), n=el("button","","取消");
@@ -238,12 +286,19 @@ function matches(c,q){
 }
 function render(){
   var list=document.getElementById("list"), empty=document.getElementById("empty");
+  var focusId=document.activeElement&&document.activeElement.dataset.favoriteId;
   Array.prototype.slice.call(list.querySelectorAll(".card")).forEach(function(n){n.remove()});
-  var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), n=0;
-  vis.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
+  var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), liked=vis.filter(function(c){return favorites.has(c.id)}), scope=favoritesOnly?liked:vis, n=0;
+  scope.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
+  empty.textContent=favoritesOnly?(liked.length?"没有匹配的收藏，试试调整搜索或筛选。":"还没有收藏，点击案例上的「♡ 收藏」即可加入这里。"):"没有匹配的案例";
   empty.style.display=n?"none":"block";
-  document.getElementById("count").textContent=(n===vis.length?vis.length:n+" / "+vis.length)+" 个案例";
-  renderChips(vis);
+  document.getElementById("count").textContent=(n===scope.length?scope.length:n+" / "+scope.length)+(favoritesOnly?" 个收藏":" 个案例");
+  document.getElementById("allCount").textContent=vis.length;
+  document.getElementById("favoriteCount").textContent=liked.length;
+  ["allTab","favoritesTab"].forEach(function(id,index){var tab=document.getElementById(id),selected=favoritesOnly===(index===1);tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
+  list.setAttribute("aria-labelledby",favoritesOnly?"favoritesTab":"allTab");
+  renderChips(scope);
+  if(focusId){var target=Array.prototype.find.call(list.querySelectorAll(".fav"),function(button){return button.dataset.favoriteId===focusId});(target||document.getElementById(favoritesOnly?"favoritesTab":"allTab")).focus({preventScroll:true})}
 }
 function renderChips(vis){
   var box=document.getElementById("chips"), counts={}; box.innerHTML="";
@@ -259,22 +314,34 @@ function renderChips(vis){
 
 /* ---------- init ---------- */
 document.getElementById("undo").onclick=undo;
+document.getElementById("allTab").onclick=function(){selectView(false)};
+document.getElementById("favoritesTab").onclick=function(){selectView(true)};
+document.querySelector(".views").addEventListener("keydown",function(e){
+  if(["ArrowLeft","ArrowRight","Home","End"].indexOf(e.key)<0)return;
+  e.preventDefault(); selectView(e.key==="Home"?false:e.key==="End"?true:e.target.id!=="favoritesTab");
+  document.getElementById(favoritesOnly?"favoritesTab":"allTab").focus();
+});
+document.getElementById("favoriteRetry").onclick=function(){favorites.refresh()};
 document.getElementById("q").addEventListener("input",render);
 document.getElementById("sync").onclick=function(){flush()};
 document.getElementById("setLink").onclick=function(e){e.preventDefault();openModal("")};
 document.getElementById("tokCancel").onclick=function(){closeModal();showSync()};
-document.getElementById("tokClear").onclick=function(){ls(K_TOK,null);closeModal();showSync()};
+document.getElementById("tokClear").onclick=function(){ls(K_TOK,null);closeModal();showSync();showFavoriteStatus()};
 document.getElementById("tokSave").onclick=function(){
   var v=document.getElementById("tokIn").value.trim();
   if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)){document.getElementById("tokErr").textContent="格式不对，应以 github_pat_ 开头";return}
-  ls(K_TOK,v); closeModal(); flush();
+  ls(K_TOK,v); closeModal(); flush(); favorites.refresh();
 };
 window.addEventListener("online",flush);
+window.addEventListener("online",function(){favorites.refresh()});
+window.addEventListener("storage",function(e){favorites.onStorage(e.key);if(e.key===K_TOK){showFavoriteStatus();if(token())favorites.refresh()}});
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")favorites.refresh()});
 loadPending();
 try{JSON.parse(ls(K_SEEN)||"[]").forEach(function(id){remote.add(id)})}catch(e){}
 fetch("data/cases.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   cases=d.cases||d; if(d.updated)document.getElementById("upd").textContent="更新于 "+d.updated;
   render();
+  showFavoriteStatus();favorites.refresh();
   return fetchRemoved().then(function(arr){applyRemoved(arr);render();showSync();if(pending.length&&token())flush()});
 }).catch(function(e){document.getElementById("empty").textContent="加载失败："+e;document.getElementById("empty").style.display="block"});
 })();
