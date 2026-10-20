@@ -8,20 +8,45 @@
 <style>
 :root{--bg:#f5f5f2;--card:#fff;--ink:#1d1d1f;--sub:#6b6b70;--line:#e6e6e2;--acc:#ff5a36;--red:#d93025}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
 header{position:sticky;top:0;z-index:10;background:rgba(245,245,242,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:12px 24px 8px;border-bottom:1px solid var(--line);width:100%}
 h1{font-size:19px;margin:0 0 8px;display:flex;align-items:baseline;gap:8px}
 h1 small{font-size:12px;color:var(--sub);font-weight:400}
-#q{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
-.chips::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink);cursor:pointer}
-.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+#q{width:100%;min-width:0;flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff;min-height:44px}
+.search-tools{display:flex;align-items:center;gap:8px}
+.filter-select,.filter-trigger{min-height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;font-size:13px}
+.filter-select{max-width:100%;padding:9px 30px 9px 12px;cursor:pointer}
+.filter-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;white-space:nowrap;cursor:pointer;flex-shrink:0}
+.filter-trigger svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.filter-count{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 5px;background:var(--ink);color:white;border-radius:999px;font-size:11px}
+#mobileFilters{display:none}
+.active-filters{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding-top:8px}
+.active-filter{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:6px 10px;border:1px solid #f3d8ca;border-radius:8px;background:#fff3ed;color:#883c24;font:inherit;font-size:12px;cursor:pointer}
+.active-filter span{font-size:17px;line-height:1}
+.clear-filters{border:0;background:transparent;color:var(--sub);font:inherit;font-size:12px;min-height:36px;padding:6px 10px;cursor:pointer;text-decoration:underline}
+.filter-dialog{width:calc(100% - 32px);max-width:480px;max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--line);border-radius:18px;color:var(--ink);background:#fff;overflow:auto;box-shadow:0 16px 60px #0003}
+.filter-dialog::backdrop{background:#0006}
+.filter-dialog-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 0 20px}
+.filter-dialog h2{font-size:19px;margin:0}
+.filter-close{width:44px;height:44px;border:0;background:transparent;color:var(--sub);font-size:27px;cursor:pointer;border-radius:10px}
+.filter-body{padding:4px 20px 20px}
+.filter-description{font-size:13px;color:var(--sub);margin:0 0 18px}
+.filter-field{display:block;font-size:13px;font-weight:600;margin-bottom:16px}
+.filter-field select{display:block;width:100%;margin-top:7px;font-weight:400;font-size:15px}
+.filter-check{display:flex;align-items:center;gap:10px;min-height:48px;font-size:14px;cursor:pointer}
+.filter-check input{width:18px;height:18px;accent-color:var(--ink);margin:0}
+.filter-dialog-actions{position:sticky;bottom:0;display:flex;gap:10px;padding:14px 20px;background:#fff;border-top:1px solid var(--line)}
+.filter-dialog-actions button{min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;cursor:pointer}
+.filter-dialog-actions .apply{flex:1;background:var(--ink);color:#fff;border-color:var(--ink)}
+body:has(dialog[open]){overflow:hidden}
+@media(min-width:600px){.dialog-primary-filters{display:none}}
+@media(max-width:599px){.desktop-filter{display:none}#mobileFilters{display:inline-flex}.filter-trigger{padding:9px 11px}.filter-dialog{width:100%;max-width:none;max-height:85dvh;margin:auto 0 0;border-radius:20px 20px 0 0;border-bottom:0}.filter-dialog-actions{padding-bottom:calc(14px + env(safe-area-inset-bottom))}}
 .views{display:flex;gap:6px;margin-bottom:9px}
 .view{border:0;border-radius:9px;background:transparent;color:var(--sub);padding:8px 11px;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
 .view[aria-selected="true"]{background:var(--ink);color:#fff}
 .view-count{font-size:12px;margin-left:5px;opacity:.8}
-button:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
 main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
 @media(max-width:599px){header{padding:12px 12px 8px}main{padding:12px;gap:14px;grid-template-columns:1fr}footer{padding:20px 12px 90px}}
 .card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:opacity .25s,transform .25s;min-width:0}
@@ -37,8 +62,6 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 .summary-mechanic,.summary-industry{white-space:nowrap}
 .meta{font-size:12.5px;color:var(--sub)}
 .why{font-size:14px;margin:0;color:#333}
-.tags{display:flex;flex-wrap:wrap;gap:5px}
-.tag{font-size:11.5px;background:#f0f0ec;color:#555;padding:1px 7px;border-radius:6px}
 .acts{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px;flex-wrap:nowrap}
 .action-group{display:flex;gap:4px;align-items:center;min-width:0}
 .action-group--manage{margin-left:auto}
@@ -97,9 +120,28 @@ footer a{color:var(--sub)}
     <button type="button" class="view" id="allTab" role="tab" aria-selected="true" aria-controls="list">全部案例 <span class="view-count" id="allCount" aria-hidden="true"></span></button>
     <button type="button" class="view" id="favoritesTab" role="tab" aria-label="我喜欢的case" aria-selected="false" aria-controls="list" tabindex="-1">我喜欢的case <span class="view-count" id="favoriteCount" aria-hidden="true"></span></button>
   </div>
-  <input id="q" type="search" placeholder="搜索品牌 / 关键词" autocomplete="off">
-  <div class="chips" id="chips"></div>
+  <div class="search-tools">
+    <input id="q" type="search" placeholder="搜索品牌 / 关键词" aria-label="搜索品牌 / 关键词" autocomplete="off">
+    <select id="gameplayFilter" class="filter-select desktop-filter" aria-label="玩法"></select>
+    <select id="industryFilter" class="filter-select desktop-filter" aria-label="品牌行业"></select>
+    <button id="moreFilters" class="filter-trigger desktop-filter" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false">更多筛选 <span class="filter-count" hidden></span></button>
+    <button id="mobileFilters" class="filter-trigger" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg>筛选 <span class="filter-count" hidden></span></button>
+  </div>
+  <div class="active-filters" id="activeFilters" aria-label="已选筛选条件" hidden></div>
 </header>
+<dialog id="filterDialog" class="filter-dialog" aria-labelledby="filterTitle" aria-describedby="filterDescription">
+  <div class="filter-dialog-head"><h2 id="filterTitle">筛选案例</h2><button type="button" id="closeFilters" class="filter-close" aria-label="关闭筛选">×</button></div>
+  <div class="filter-body">
+    <p id="filterDescription" class="filter-description">组合筛选条件，找到适合参考的案例。</p>
+    <div class="dialog-primary-filters">
+      <label class="filter-field" for="dialogGameplay">玩法<select id="dialogGameplay" class="filter-select"></select></label>
+      <label class="filter-field" for="dialogIndustry">品牌行业<select id="dialogIndustry" class="filter-select"></select></label>
+    </div>
+    <label class="filter-check"><input type="checkbox" id="filterMobile">仅手机可玩</label>
+    <label class="filter-check"><input type="checkbox" id="filterDemo">有实机演示</label>
+  </div>
+  <div class="filter-dialog-actions"><button type="button" id="resetFilters">重置</button><button type="button" id="applyFilters" class="apply">查看案例</button></div>
+</dialog>
 <main id="list" role="tabpanel" aria-labelledby="allTab"><div id="empty">没有匹配的案例</div></main>
 <footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a>
   <p id="favoriteHelp">收藏先保存在本浏览器；已有 GitHub 授权时自动同步。同步后的收藏随此公开案例库共享。</p>
@@ -117,6 +159,7 @@ footer a{color:var(--sub)}
 <dialog id="actionDialog" class="action-dialog" aria-labelledby="actionDialogTitle" aria-describedby="actionDialogDescription"></dialog>
 <script src="favorites.js"></script>
 <script src="presentation.js"></script>
+<script src="filters.js"></script>
 <script>
 (function(){
 "use strict";
@@ -125,7 +168,9 @@ var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
 var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
-var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false, demoOnly=false, favoritesOnly=false;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, favoritesOnly=false;
+var filterState={gameplay:"",industry:"",mobileOnly:false,demoOnly:false}, filterDraft=null;
+var filterDialog=document.getElementById("filterDialog"), filterOpener=null;
 
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
 function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
@@ -345,7 +390,6 @@ function card(c){
   b.appendChild(el("div","meta",[c.brand,c.region,c.date&&c.date!=="unknown"?c.date:""].filter(Boolean).join(" · ")));
   if(c.format)b.appendChild(el("div","meta",c.format));
   b.appendChild(el("p","why",c.why_zh));
-  if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
   var ac=el("div","acts");
   var left=el("div","action-group action-group--links"), right=el("div","action-group action-group--manage");
   ac.appendChild(left);ac.appendChild(right);
@@ -369,10 +413,8 @@ function card(c){
   right.appendChild(d); b.appendChild(ac); a.appendChild(b);
   return a;
 }
-function matches(c,q){
-  if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
-  if(mobileOnly&&c.mobile!=="yes")return false;
-  if(demoOnly&&!hasGameplayDemo(c))return false;
+function matches(c,q,filters){
+  if(!InspoFilters.matches(c,filters||filterState))return false;
   if(!q)return true;
   var summary=InspoPresentation.summarize(c);
   return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,summary.mechanic,summary.industry,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
@@ -384,28 +426,90 @@ function render(){
   Array.prototype.slice.call(list.querySelectorAll(".card")).forEach(function(n){n.remove()});
   var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), liked=vis.filter(function(c){return favorites.has(c.id)}), scope=favoritesOnly?liked:vis, n=0;
   scope.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
-  empty.textContent=favoritesOnly?(liked.length?"没有匹配的收藏，试试调整搜索或筛选。":"还没有收藏，点击案例上的「♡ 收藏」即可加入这里。"):"没有匹配的案例";
+  empty.textContent=favoritesOnly?(liked.length?"没有匹配的收藏，试试调整搜索或筛选。":"还没有收藏，点击案例上的「♡ 收藏」即可加入这里。"):"没有匹配的案例，试试调整搜索或清空筛选。";
   empty.style.display=n?"none":"block";
   document.getElementById("count").textContent=(n===scope.length?scope.length:n+" / "+scope.length)+(favoritesOnly?" 个收藏":" 个案例");
   document.getElementById("allCount").textContent=vis.length;
   document.getElementById("favoriteCount").textContent=liked.length;
   ["allTab","favoritesTab"].forEach(function(id,index){var tab=document.getElementById(id),selected=favoritesOnly===(index===1);tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
   list.setAttribute("aria-labelledby",favoritesOnly?"favoritesTab":"allTab");
-  renderChips(scope);
+  syncFilterUI();
   if(actionDialog.open){actionOpener=currentActionOpener();if(actionOpener)actionOpener.setAttribute("aria-expanded","true")}
   if(focusId){var target=Array.prototype.find.call(list.querySelectorAll(".fav"),function(button){return button.dataset.favoriteId===focusId});(target||document.getElementById(favoritesOnly?"favoritesTab":"allTab")).focus({preventScroll:true})}
 }
-function renderChips(vis){
-  var box=document.getElementById("chips"), counts={}; box.innerHTML="";
-  vis.forEach(function(c){(c.tags||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
-  function chip(label,on,fn){var b=el("button","chip"+(on?" on":""),label); b.type="button"; b.onclick=fn; box.appendChild(b)}
-  chip("全部",!activeTag&&!mobileOnly&&!demoOnly,function(){activeTag="";mobileOnly=false;demoOnly=false;render()});
-  chip("📱 手机可玩",mobileOnly,function(){mobileOnly=!mobileOnly;render()});
-  chip("实机演示",demoOnly,function(){demoOnly=!demoOnly;render()});
-  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(t){
-    chip(t+" "+counts[t],activeTag===t,function(){activeTag=activeTag===t?"":t;render()});
-  });
+/* ---------- compact filters ---------- */
+function emptyFilters(){return {gameplay:"",industry:"",mobileOnly:false,demoOnly:false}}
+function filterButton(){return document.getElementById(window.matchMedia("(max-width:599px)").matches?"mobileFilters":"moreFilters")}
+function groupLabel(groups,value){var group=groups.find(function(g){return g.value===value});return group?group.label:""}
+function filterOptions(id,groups,label){
+  var select=document.getElementById(id), all=el("option","",label);all.value="";select.appendChild(all);
+  groups.forEach(function(g){var option=el("option","",g.label);option.value=g.value;select.appendChild(option)});
 }
+function updateFilterPreview(){
+  if(!filterDraft)return;
+  var q=document.getElementById("q").value.trim().toLowerCase();
+  var n=cases.filter(function(c){return !hidden(c.id)&&(!favoritesOnly||favorites.has(c.id))&&matches(c,q,filterDraft)}).length;
+  document.getElementById("applyFilters").textContent="查看 "+n+" 个案例";
+}
+function syncFilterUI(){
+  document.getElementById("gameplayFilter").value=filterState.gameplay;
+  document.getElementById("industryFilter").value=filterState.industry;
+  var entries=[
+    {key:"gameplay",label:groupLabel(InspoFilters.gameplayGroups,filterState.gameplay),name:"玩法"},
+    {key:"industry",label:groupLabel(InspoFilters.industryGroups,filterState.industry),name:"行业"},
+    {key:"mobileOnly",label:filterState.mobileOnly?"仅手机可玩":"",name:"手机可玩"},
+    {key:"demoOnly",label:filterState.demoOnly?"有实机演示":"",name:"实机演示"}
+  ].filter(function(x){return !!x.label});
+  var box=document.getElementById("activeFilters");box.replaceChildren();box.hidden=!entries.length;
+  entries.forEach(function(item){
+    var button=el("button","active-filter",item.label);button.type="button";button.setAttribute("aria-label","移除"+item.name+"筛选");
+    var cross=el("span","","×");cross.setAttribute("aria-hidden","true");button.appendChild(cross);
+    button.onclick=function(){
+      filterState[item.key]=typeof filterState[item.key]==="boolean"?false:"";render();
+      (box.querySelector("button")||filterButton()).focus({preventScroll:true});
+    };box.appendChild(button);
+  });
+  if(entries.length){var clear=el("button","clear-filters","清空");clear.id="clearFilters";clear.type="button";clear.onclick=function(){filterState=emptyFilters();render();filterButton().focus({preventScroll:true})};box.appendChild(clear)}
+  [["mobileFilters",entries.length],["moreFilters",Number(filterState.mobileOnly)+Number(filterState.demoOnly)]].forEach(function(item){
+    var badge=document.getElementById(item[0]).querySelector(".filter-count");badge.hidden=!item[1];badge.textContent=item[1]||"";
+  });
+  if(filterDialog.open)updateFilterPreview();
+}
+function syncDraftControls(){
+  document.getElementById("dialogGameplay").value=filterDraft.gameplay;
+  document.getElementById("dialogIndustry").value=filterDraft.industry;
+  document.getElementById("filterMobile").checked=filterDraft.mobileOnly;
+  document.getElementById("filterDemo").checked=filterDraft.demoOnly;
+  updateFilterPreview();
+}
+function openFilters(event){
+  filterOpener=event.currentTarget;filterDraft=Object.assign({},filterState);syncDraftControls();
+  filterOpener.setAttribute("aria-expanded","true");filterDialog.showModal();
+}
+filterDialog.addEventListener("close",function(){
+  if(filterOpener)filterOpener.setAttribute("aria-expanded","false");
+  filterDraft=null;filterButton().focus({preventScroll:true});filterOpener=null;
+});
+filterDialog.addEventListener("click",function(event){
+  if(event.target!==filterDialog)return;var rect=filterDialog.getBoundingClientRect();
+  if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)filterDialog.close();
+});
+filterOptions("gameplayFilter",InspoFilters.gameplayGroups,"玩法 · 全部");
+filterOptions("industryFilter",InspoFilters.industryGroups,"行业 · 全部");
+filterOptions("dialogGameplay",InspoFilters.gameplayGroups,"全部玩法");
+filterOptions("dialogIndustry",InspoFilters.industryGroups,"全部行业");
+["gameplayFilter","industryFilter"].forEach(function(id,index){document.getElementById(id).onchange=function(event){filterState[index?"industry":"gameplay"]=event.target.value;render()}});
+document.getElementById("moreFilters").onclick=openFilters;
+document.getElementById("mobileFilters").onclick=openFilters;
+document.getElementById("closeFilters").onclick=function(){filterDialog.close()};
+document.getElementById("resetFilters").onclick=function(){filterDraft=emptyFilters();syncDraftControls()};
+document.getElementById("applyFilters").onclick=function(){filterState=Object.assign({},filterDraft);filterDialog.close();render()};
+["dialogGameplay","dialogIndustry","filterMobile","filterDemo"].forEach(function(id){
+  document.getElementById(id).onchange=function(){
+    filterDraft={gameplay:document.getElementById("dialogGameplay").value,industry:document.getElementById("dialogIndustry").value,mobileOnly:document.getElementById("filterMobile").checked,demoOnly:document.getElementById("filterDemo").checked};
+    updateFilterPreview();
+  };
+});
 
 /* ---------- init ---------- */
 document.getElementById("undo").onclick=undo;
