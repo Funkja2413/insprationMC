@@ -12,12 +12,27 @@ function check(name,value=true){assert.ok(value,name);checks.push(name)}
 async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new Promise(r=>setTimeout(r,50))}throw Error('Expected UI state did not arrive')}
 const safeUrl=url=>/^https?:\/\//i.test(url||'')?url:'';
 const experienceUrls=c=>[...new Set([c.live_url,...(c.additional_live_urls||[])].map(safeUrl).filter(Boolean))];
+async function checkCardSummaries(page){
+  const cards=await page.locator('.card').evaluateAll(cards=>cards.map(card=>({
+    id:card.dataset.id,summaries:card.querySelectorAll('.case-summary').length,
+    mechanic:card.querySelector('.summary-mechanic')?.textContent.trim(),
+    industry:card.querySelector('.summary-industry')?.textContent.trim(),
+    summary:card.querySelector('.case-summary')?.textContent,
+    text:card.textContent
+  })));
+  check('Every visible card has one nonempty gameplay × brand-type summary',cards.every(card=>card.summaries===1&&card.mechanic&&card.industry&&card.summary.includes('×')));
+  check('Verification notes are absent from card DOM while remaining in case data',cards.every(card=>{
+    const availability=expected.find(c=>c.id===card.id).availability_zh;
+    return !availability||!card.text.includes(availability);
+  }));
+}
 async function checkActionBars(page){
   const bars=await page.locator('.card').evaluateAll(cards=>cards.map(card=>{
     const action=control=>({
       kind:['play','demo','source','fav','del'].find(name=>control.classList.contains(name)),
       href:control.getAttribute('href'),label:control.getAttribute('aria-label'),
       tooltip:control.querySelector('.action-tooltip')?.textContent,
+      icon:control.querySelector('svg')?.getAttribute('data-icon'),
       iconOnly:control.querySelectorAll('svg[aria-hidden="true"]').length===1&&
         [...control.childNodes].every(node=>node.nodeType===Node.TEXT_NODE?!node.textContent.trim():node.matches('svg, .action-tooltip')),
       width:control.getBoundingClientRect().width,height:control.getBoundingClientRect().height
@@ -27,7 +42,9 @@ async function checkActionBars(page){
       right:[...card.querySelectorAll('.action-group--manage > button')].map(action)};
   }));
   check('Every card has at most five toolbar actions',bars.every(bar=>bar.count<=5));
-  check('Management actions are grouped right in favorite/delete order',bars.every(bar=>JSON.stringify(bar.right.map(x=>x.kind))==='["fav","del"]'));
+  check('Management actions are grouped right in favorite/not-interested order',bars.every(bar=>JSON.stringify(bar.right.map(x=>x.kind))==='["fav","del"]'));
+  check('Not-interested action uses the requested Chinese label and tooltip',bars.every(bar=>bar.right[1].label==='不感兴趣'&&bar.right[1].tooltip==='不感兴趣'));
+  check('Experience links use a gamepad and not-interested uses a broken heart',bars.every(bar=>bar.left.filter(action=>action.kind==='play').every(action=>action.icon==='gamepad')&&bar.right[1].icon==='heartBroken'));
   check('All toolbar actions are SVG-only with Chinese labels and tooltips',bars.every(bar=>[...bar.left,...bar.right].every(action=>action.iconOnly&&/[\u3400-\u9fff]/.test(action.label)&&/[\u3400-\u9fff]/.test(action.tooltip))));
   check('Every toolbar action has a 44px minimum hit target',bars.every(bar=>[...bar.left,...bar.right].every(action=>action.width>=44&&action.height>=44)));
   for(const bar of bars){
@@ -63,6 +80,7 @@ async function checkActionBars(page){
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
     await page.goto(base);await until(async()=>await page.locator('.card').count()===expected.length);
     check('All existing visible cases retained',await page.locator('.card').count()===expected.length);
+    await checkCardSummaries(page);
     await checkActionBars(page);
     const multi=expected.find(c=>experienceUrls(c).length>1);
     check('Existing multiple-experience case is available for regression coverage',!!multi);
@@ -94,14 +112,16 @@ async function checkActionBars(page){
     await page.getByPlaceholder('搜索品牌 / 关键词').fill('no-matching-case-xyz');
     check('Search within favorites',await page.locator('.card').count()===0&&(await page.locator('#empty').innerText()).includes('没有匹配的收藏'));
     await page.getByPlaceholder('搜索品牌 / 关键词').fill('');
-    await card().getByRole('button',{name:'删除',exact:true}).click();
-    check('Delete confirmation stays outside the five-action toolbar',await card().locator('.acts a,.acts button').count()<=5&&await actionDialog.getByRole('button',{name:'确认删除',exact:true}).isVisible());
+    await card().getByRole('button',{name:'不感兴趣',exact:true}).click();
+    check('Not-interested confirmation stays outside the five-action toolbar',await card().locator('.acts a,.acts button').count()<=5&&await actionDialog.getByRole('button',{name:'确认不感兴趣',exact:true}).isVisible());
+    check('Not-interested dialog has the requested confirmation heading',await actionDialog.getByRole('heading',{name:'不再显示这个案例？',exact:true}).isVisible());
     await actionDialog.getByRole('button',{name:'取消',exact:true}).click();
     await until(async()=>!(await actionDialog.isVisible()));
-    check('Cancel preserves the case and restores delete-button focus',await card().isVisible()&&await card().locator('.del').evaluate(button=>document.activeElement===button));
-    await card().getByRole('button',{name:'删除',exact:true}).click();await actionDialog.getByRole('button',{name:'确认删除',exact:true}).click();
+    check('Cancel preserves the case and restores not-interested-button focus',await card().isVisible()&&await card().locator('.del').evaluate(button=>document.activeElement===button));
+    await card().getByRole('button',{name:'不感兴趣',exact:true}).click();await actionDialog.getByRole('button',{name:'确认不感兴趣',exact:true}).click();
     await until(async()=>await page.locator('.card').count()===0);
-    check('Delete hides favorite and updates count',await page.locator('#favoriteCount').innerText()==='0');
+    check('Not-interested hides favorite and updates count',await page.locator('#favoriteCount').innerText()==='0');
+    check('Not-interested confirmation shows the requested undo message',await page.locator('#toastMsg').innerText()==='已标记为不感兴趣');
     await page.getByRole('button',{name:'撤销',exact:true}).click();
     check('Undo restores the favorite',await page.locator('.card').count()===1&&await card().locator('.fav').getAttribute('aria-pressed')==='true');
     await card().locator('.fav').click();
@@ -127,9 +147,9 @@ async function checkActionBars(page){
     await page.locator('#tokIn').fill('ghp_test_only_not_a_real_credential_123456');await page.getByRole('button',{name:'保存',exact:true}).click();
     await until(()=>favoriteWrites>0&&cloud.includes(first.id));
     check('Existing authorization path syncs pending IDs to mocked GitHub');
-    await card().getByRole('button',{name:'删除',exact:true}).click();
+    await card().getByRole('button',{name:'不感兴趣',exact:true}).click();
     await page.waitForTimeout(900);
-    check('Background sync preserves delete confirmation',await actionDialog.getByRole('button',{name:'确认删除',exact:true}).isVisible());
+    check('Background sync preserves not-interested confirmation',await actionDialog.getByRole('button',{name:'确认不感兴趣',exact:true}).isVisible());
     await actionDialog.getByRole('button',{name:'取消',exact:true}).click();
     await card().locator('.fav').click();await until(()=>!cloud.includes(first.id));
     check('Unfavorite sync removes its ID');check('No real delete was committed',deleteWrites===0);
@@ -154,6 +174,10 @@ async function checkActionBars(page){
         return left.right<=right.left&&right.right<=bounds.right+1&&controls.every(rect=>rect.width>=44&&rect.height>=44&&Math.abs(rect.top-controls[0].top)<1);
       }));
       check(width+'px actions stay on one line with separate left/right groups and 44px targets',mobileLayout);
+      check(width+'px summary labels stay within their cards',await page.locator('.case-summary').evaluateAll(summaries=>summaries.every(summary=>{
+        const bounds=summary.getBoundingClientRect(),card=summary.closest('.card').getBoundingClientRect();
+        return bounds.left>=card.left&&bounds.right<=card.right&&summary.scrollWidth<=summary.clientWidth;
+      })));
       await multiCard().getByRole('button',{name:'体验链接',exact:true}).click();
       check(width+'px multiple-experience dialog fits the viewport',await actionDialog.evaluate(dialog=>{
         const rect=dialog.getBoundingClientRect();return rect.left>=0&&rect.right<=innerWidth&&rect.top>=0&&rect.bottom<=innerHeight&&dialog.scrollWidth<=dialog.clientWidth;

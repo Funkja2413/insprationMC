@@ -31,6 +31,10 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 .mb{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
 .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
 .t{font-size:16px;font-weight:600;line-height:1.4;margin:0}
+.case-summary{display:flex;align-items:center;align-self:flex-start;flex-wrap:wrap;gap:4px 6px;max-width:100%;margin:2px 0;padding:5px 8px;border-radius:7px;background:#fff3ed;color:#883c24;font-size:12px;line-height:1.5}
+.summary-mechanic{font-weight:600}
+.summary-cross{color:#b56c51}
+.summary-mechanic,.summary-industry{white-space:nowrap}
 .meta{font-size:12.5px;color:var(--sub)}
 .why{font-size:14px;margin:0;color:#333}
 .tags{display:flex;flex-wrap:wrap;gap:5px}
@@ -102,16 +106,17 @@ footer a{color:var(--sub)}
   <div id="favoriteStatus" role="status" aria-live="polite"></div><button type="button" id="favoriteRetry" hidden>重试收藏同步</button>
 </footer>
 <div id="sync"></div>
-<div id="toast"><span id="toastMsg">已删除</span><button id="undo">撤销</button></div>
+<div id="toast"><span id="toastMsg">已标记为不感兴趣</span><button id="undo">撤销</button></div>
 <div class="modal" id="tokModal"><div class="sheet">
   <h3>需要 GitHub 令牌</h3>
-  <p>删除会写入仓库。请在 GitHub → Settings → Developer settings → Fine-grained tokens 新建令牌：只选 <b>insprationMC</b> 仓库，权限 Contents 设为 Read and write，粘贴到下面（只保存在本机浏览器）。</p>
+  <p>“不感兴趣”会同步到此案例库。请在 GitHub → Settings → Developer settings → Fine-grained tokens 新建令牌：只选 <b>insprationMC</b> 仓库，权限 Contents 设为 Read and write，粘贴到下面（只保存在本机浏览器）。</p>
   <input id="tokIn" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
   <div id="tokErr"></div>
   <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
 </div></div>
 <dialog id="actionDialog" class="action-dialog" aria-labelledby="actionDialogTitle" aria-describedby="actionDialogDescription"></dialog>
 <script src="favorites.js"></script>
+<script src="presentation.js"></script>
 <script>
 (function(){
 "use strict";
@@ -134,16 +139,16 @@ function hasGameplayDemo(c){return !!safeUrl(c.demo_url)&&c.demo_type!=="puzzle_
 
 /* Only the presentation of actions changes; persisted case and preference data stay intact. */
 var iconPaths={
-  play:'<path d="M14 3h7v7M21 3 10 14"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
+  gamepad:'<path d="M6 8h12a3 3 0 0 1 3 2.5l1 7a2.5 2.5 0 0 1-4.2 2.1L15 17H9l-2.8 2.6A2.5 2.5 0 0 1 2 17.5l1-7A3 3 0 0 1 6 8Z"/><path d="M6 11v4M4 13h4M15 12h.01M18 14h.01"/>',
   demo:'<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/>',
   source:'<path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
   favorite:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',
-  delete:'<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/>'
+  heartBroken:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/><path d="m12 5.7-2 4.8 4 3-2 3V21"/>'
 };
 function iconAction(tag,cls,icon,label){
   var control=el(tag,"icon-action "+cls); if(tag==="button")control.type="button";
   control.setAttribute("aria-label",label);
-  control.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+iconPaths[icon]+'</svg>';
+  control.innerHTML='<svg viewBox="0 0 24 24" data-icon="'+icon+'" aria-hidden="true" focusable="false">'+iconPaths[icon]+'</svg>';
   var tip=el("span","action-tooltip",label); tip.setAttribute("aria-hidden","true");control.appendChild(tip);
   return control;
 }
@@ -187,9 +192,9 @@ function showExperiences(c,urls,opener){
   dialogButton(row,"关闭","",function(){dialog.close()});dialog.appendChild(row);dialog.showModal();
 }
 function confirmDelete(c,cardEl,opener){
-  var dialog=openActionDialog(opener,"删除案例？",c.title_zh+"。删除后可在 5 秒内撤销。"), row=el("div","dialog-actions");
+  var dialog=openActionDialog(opener,"不再显示这个案例？",c.title_zh+"。标记后会从全部案例和收藏视图中隐藏，5 秒内可撤销。"), row=el("div","dialog-actions");
   dialogButton(row,"取消","",function(){dialog.close()});
-  dialogButton(row,"确认删除","yes",function(){actionCloseFocus=document.getElementById("undo");dialog.close();doDelete(c.id,cardEl)});
+  dialogButton(row,"确认不感兴趣","yes",function(){actionCloseFocus=document.getElementById("undo");dialog.close();doDelete(c.id,cardEl)});
   dialog.appendChild(row);dialog.showModal();
 }
 
@@ -286,7 +291,7 @@ function flush(){
 function showSync(msg){
   var s=document.getElementById("sync"), n=pending.filter(function(p){return p.ready}).length;
   if(msg){s.textContent=msg;s.style.display="block";return}
-  if(n){s.textContent=n+" 条删除待同步 · 点此重试";s.style.display="block"} else s.style.display="none";
+  if(n){s.textContent=n+" 条不感兴趣标记待同步 · 点此重试";s.style.display="block"} else s.style.display="none";
 }
 
 /* ---------- delete / undo ---------- */
@@ -295,7 +300,7 @@ function doDelete(id,cardEl){
   if(hidden(id))return;
   pending.push({id:id,at:new Date().toISOString(),ready:false}); savePending();
   cardEl.classList.add("gone"); setTimeout(function(){render()},250);
-  lastId=id; toast("已删除");
+  lastId=id; toast("已标记为不感兴趣");
   timers[id]=setTimeout(function(){
     delete timers[id];
     var p=pending.find(function(x){return x.id===id}); if(p){p.ready=true; flush()}
@@ -332,10 +337,14 @@ function card(c){
   a.appendChild(iw);
   var b=el("div","body");
   b.appendChild(el("h2","t",c.title_zh));
+  var summary=InspoPresentation.summarize(c), summaryLine=el("p","case-summary");
+  summaryLine.appendChild(el("span","summary-mechanic",summary.mechanic));
+  summaryLine.appendChild(el("span","summary-cross","×"));
+  summaryLine.appendChild(el("span","summary-industry",summary.industry));
+  b.appendChild(summaryLine);
   b.appendChild(el("div","meta",[c.brand,c.region,c.date&&c.date!=="unknown"?c.date:""].filter(Boolean).join(" · ")));
   if(c.format)b.appendChild(el("div","meta",c.format));
   b.appendChild(el("p","why",c.why_zh));
-  if(c.availability_zh)b.appendChild(el("div","meta",c.availability_zh));
   if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
   var ac=el("div","acts");
   var left=el("div","action-group action-group--links"), right=el("div","action-group action-group--manage");
@@ -343,7 +352,7 @@ function card(c){
   var lu=safeUrl(c.live_url), du=safeUrl(c.demo_url), su=safeUrl(c.source_url);
   var urls=experienceUrls(c);
   if(urls.length){
-    var l=iconAction(urls.length>1?"button":"a","play","play","体验链接");
+    var l=iconAction(urls.length>1?"button":"a","play","gamepad","体验链接");
     if(urls.length===1)externalLink(l,urls[0]);
     else{l.setAttribute("aria-haspopup","dialog");l.setAttribute("aria-expanded","false");l.setAttribute("aria-controls","actionDialog");l.onclick=function(){showExperiences(c,urls,l)}}
     left.appendChild(l);
@@ -354,7 +363,7 @@ function card(c){
   f.dataset.favoriteId=c.id; f.setAttribute("aria-pressed",String(favorites.has(c.id)));
   f.setAttribute("aria-label",(favorites.has(c.id)?"已收藏（点击取消）：":"收藏：")+c.title_zh);
   f.onclick=function(){favorites.set(c.id,!favorites.has(c.id))}; right.appendChild(f);
-  var d=iconAction("button","del","delete","删除");
+  var d=iconAction("button","del","heartBroken","不感兴趣");
   d.setAttribute("aria-haspopup","dialog");d.setAttribute("aria-expanded","false");d.setAttribute("aria-controls","actionDialog");
   d.onclick=function(){confirmDelete(c,a,d)};
   right.appendChild(d); b.appendChild(ac); a.appendChild(b);
@@ -365,7 +374,8 @@ function matches(c,q){
   if(mobileOnly&&c.mobile!=="yes")return false;
   if(demoOnly&&!hasGameplayDemo(c))return false;
   if(!q)return true;
-  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
+  var summary=InspoPresentation.summarize(c);
+  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,summary.mechanic,summary.industry,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
 }
 function render(){
   var list=document.getElementById("list"), empty=document.getElementById("empty");

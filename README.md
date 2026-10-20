@@ -2,7 +2,9 @@
 
 https://funkja2413.github.io/insprationMC/
 
-静态案例库：`index.html` 展示 `data/cases.json`，`images/` 保存案例图片。网站的「删除」按钮将排除记录写入 `data/removed.json`；发布时必须保留它，已删除的案例不能重新加入。
+静态案例库：`index.html` 展示 `data/cases.json`，`images/` 保存案例图片。网站的「不感兴趣」心碎按钮沿用原有隐藏逻辑，将排除记录写入 `data/removed.json`，确认后有 5 秒撤销时间；发布时必须保留它，已排除的案例不能重新加入。
+
+卡片标题下的「玩法 × 品牌类型」由 `presentation.js` 的共用规则根据现有案例内容生成，辅助快速比较案例，也支持关键词搜索。核验说明 `availability_zh` 保留在原始数据中，不在卡片上显示。体验链接使用游戏手柄图标；多个真实体验入口仍收纳在同一个按钮中。摘要规则测试：`node --test tests/presentation.test.cjs`。
 
 ## 收藏
 
