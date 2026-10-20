@@ -35,15 +35,32 @@ main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;
 .why{font-size:14px;margin:0;color:#333}
 .tags{display:flex;flex-wrap:wrap;gap:5px}
 .tag{font-size:11.5px;background:#f0f0ec;color:#555;padding:1px 7px;border-radius:6px}
-.acts{display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:4px;flex-wrap:wrap}
-.acts a{font-size:13.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 11px;border-radius:9px;background:#fafaf8}
-.acts a.play{background:var(--ink);color:#fff;border-color:var(--ink)}
-.fav{border:1px solid var(--line);border-radius:9px;background:#fafaf8;color:var(--ink);padding:8px 11px;font-size:13.5px;cursor:pointer;min-height:40px}
-.fav[aria-pressed="true"]{background:#fff0e9;color:#ad361e;border-color:#f4bea9}
-.del{margin-left:auto;font-size:13.5px;border:1px solid #f1c9c4;color:var(--red);background:#fff;padding:6px 12px;border-radius:9px;cursor:pointer}
-.confirm{margin-left:auto;display:flex;gap:6px}
-.confirm button{font-size:13.5px;padding:6px 11px;border-radius:9px;cursor:pointer;border:1px solid var(--line);background:#fff}
-.confirm .yes{background:var(--red);color:#fff;border-color:var(--red)}
+.acts{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px;flex-wrap:nowrap}
+.action-group{display:flex;gap:4px;align-items:center;min-width:0}
+.action-group--manage{margin-left:auto}
+.icon-action{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:10px;background:#fafaf8;color:var(--ink);text-decoration:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.icon-action svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.icon-action.play{background:var(--ink);color:#fff;border-color:var(--ink)}
+.icon-action.del{color:var(--red);border-color:#f1c9c4;background:#fff}
+.icon-action.fav[aria-pressed="true"]{background:#fff0e9;color:#ad361e;border-color:#f4bea9}
+.icon-action.fav[aria-pressed="true"] svg{fill:currentColor}
+.icon-action:active{transform:scale(.96)}
+.action-tooltip{position:absolute;bottom:calc(100% + 7px);left:0;z-index:2;width:max-content;max-width:210px;padding:5px 8px;border-radius:6px;background:#222;color:#fff;font-size:12px;font-weight:400;line-height:1.45;text-align:left;white-space:normal;pointer-events:none;visibility:hidden;opacity:0;transition:opacity .12s}
+.action-group--manage .action-tooltip{left:auto;right:0}
+.icon-action:focus-visible .action-tooltip{visibility:visible;opacity:1}
+@media(hover:hover){.icon-action:hover{box-shadow:0 0 0 2px var(--line)}.icon-action:hover .action-tooltip{visibility:visible;opacity:1}}
+.action-dialog{width:calc(100% - 32px);max-width:420px;max-height:calc(100dvh - 32px);padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);box-shadow:0 16px 60px #0003;overflow:auto}
+.action-dialog::backdrop{background:#0006}
+.action-dialog h3{font-size:18px;margin:0 0 8px}
+.action-dialog p{font-size:14px;margin:0 0 16px;color:var(--sub);overflow-wrap:anywhere}
+.experience-links{display:flex;flex-direction:column;gap:8px}
+.experience-links a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--ink);text-decoration:none;min-height:44px}
+.experience-links a:hover{background:var(--bg)}
+.experience-links small{display:block;margin-top:2px;color:var(--sub);overflow-wrap:anywhere}
+.dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+.dialog-actions button{min-height:44px;padding:8px 14px;font:inherit;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);cursor:pointer}
+.dialog-actions .yes{background:var(--red);color:#fff;border-color:var(--red)}
+@media(prefers-reduced-motion:reduce){.icon-action:active{transform:none}.action-tooltip{transition:none}}
 #empty{display:none;text-align:center;color:var(--sub);padding:40px 0;grid-column:1/-1}
 footer{text-align:center;font-size:12px;color:var(--sub);padding:20px 24px 90px;width:100%}
 footer a{color:var(--sub)}
@@ -93,6 +110,7 @@ footer a{color:var(--sub)}
   <div id="tokErr"></div>
   <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
 </div></div>
+<dialog id="actionDialog" class="action-dialog" aria-labelledby="actionDialogTitle" aria-describedby="actionDialogDescription"></dialog>
 <script src="favorites.js"></script>
 <script>
 (function(){
@@ -113,6 +131,67 @@ function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=c
 function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:""}
 function getDemoLabel(c){return c.demo_label||"实机演示"}
 function hasGameplayDemo(c){return !!safeUrl(c.demo_url)&&c.demo_type!=="puzzle_source"}
+
+/* Only the presentation of actions changes; persisted case and preference data stay intact. */
+var iconPaths={
+  play:'<path d="M14 3h7v7M21 3 10 14"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
+  demo:'<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/>',
+  source:'<path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
+  favorite:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',
+  delete:'<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/>'
+};
+function iconAction(tag,cls,icon,label){
+  var control=el(tag,"icon-action "+cls); if(tag==="button")control.type="button";
+  control.setAttribute("aria-label",label);
+  control.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+iconPaths[icon]+'</svg>';
+  var tip=el("span","action-tooltip",label); tip.setAttribute("aria-hidden","true");control.appendChild(tip);
+  return control;
+}
+function externalLink(control,url){control.href=url;control.target="_blank";control.rel="noopener noreferrer";return control}
+function experienceUrls(c){
+  var urls=[c.live_url].concat(Array.isArray(c.additional_live_urls)?c.additional_live_urls:[]).map(safeUrl).filter(Boolean);
+  return urls.filter(function(url,index){return urls.indexOf(url)===index});
+}
+var actionDialog=document.getElementById("actionDialog"), actionOpener=null, actionContext=null, actionCloseFocus=null;
+function openActionDialog(opener,title,description){
+  actionContext={id:opener.closest(".card").dataset.id,selector:opener.classList.contains("play")?".play":".del"};
+  actionOpener=opener;opener.setAttribute("aria-expanded","true");actionDialog.replaceChildren();
+  var heading=el("h3","",title);heading.id="actionDialogTitle";actionDialog.appendChild(heading);
+  var detail=el("p","",description);detail.id="actionDialogDescription";actionDialog.appendChild(detail);
+  return actionDialog;
+}
+function dialogButton(row,label,cls,fn){var button=el("button",cls,label);button.type="button";button.onclick=fn;row.appendChild(button);return button}
+function currentActionOpener(){
+  if(!actionContext)return null;
+  var owner=Array.prototype.find.call(document.querySelectorAll(".card"),function(cardEl){return cardEl.dataset.id===actionContext.id});
+  return owner&&owner.querySelector(actionContext.selector);
+}
+actionDialog.addEventListener("close",function(){
+  var opener=currentActionOpener()||actionOpener;
+  if(opener)opener.setAttribute("aria-expanded","false");
+  var target=actionCloseFocus||(opener&&opener.isConnected?opener:document.getElementById(favoritesOnly?"favoritesTab":"allTab"));
+  if(target)target.focus({preventScroll:true});
+  actionOpener=actionContext=actionCloseFocus=null;
+});
+actionDialog.addEventListener("click",function(e){
+  if(e.target!==actionDialog)return;var rect=actionDialog.getBoundingClientRect();
+  if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)actionDialog.close();
+});
+function showExperiences(c,urls,opener){
+  var dialog=openActionDialog(opener,"体验链接",c.title_zh), links=el("div","experience-links");
+  urls.forEach(function(url,index){
+    var link=externalLink(el("a","","体验链接 "+(index+1)),url);
+    link.appendChild(el("small","",url));links.appendChild(link);
+  });
+  dialog.appendChild(links);var row=el("div","dialog-actions");
+  dialogButton(row,"关闭","",function(){dialog.close()});dialog.appendChild(row);dialog.showModal();
+}
+function confirmDelete(c,cardEl,opener){
+  var dialog=openActionDialog(opener,"删除案例？",c.title_zh+"。删除后可在 5 秒内撤销。"), row=el("div","dialog-actions");
+  dialogButton(row,"取消","",function(){dialog.close()});
+  dialogButton(row,"确认删除","yes",function(){actionCloseFocus=document.getElementById("undo");dialog.close();doDelete(c.id,cardEl)});
+  dialog.appendChild(row);dialog.showModal();
+}
 
 function b64enc(s){return btoa(unescape(encodeURIComponent(s)))}
 function b64dec(s){return decodeURIComponent(escape(atob(s.replace(/\s/g,""))))}
@@ -259,22 +338,26 @@ function card(c){
   if(c.availability_zh)b.appendChild(el("div","meta",c.availability_zh));
   if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
   var ac=el("div","acts");
+  var left=el("div","action-group action-group--links"), right=el("div","action-group action-group--manage");
+  ac.appendChild(left);ac.appendChild(right);
   var lu=safeUrl(c.live_url), du=safeUrl(c.demo_url), su=safeUrl(c.source_url);
-  if(lu){var l=el("a","play",c.live_label||"体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
-  if(du){var v=el("a","",getDemoLabel(c)); v.href=du; v.target="_blank"; v.rel="noopener noreferrer"; ac.appendChild(v)}
-  if(su&&su!==lu&&su!==du){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
-  var f=el("button","fav",favorites.has(c.id)?"♥ 已收藏":"♡ 收藏"); f.type="button";
+  var urls=experienceUrls(c);
+  if(urls.length){
+    var l=iconAction(urls.length>1?"button":"a","play","play","体验链接");
+    if(urls.length===1)externalLink(l,urls[0]);
+    else{l.setAttribute("aria-haspopup","dialog");l.setAttribute("aria-expanded","false");l.setAttribute("aria-controls","actionDialog");l.onclick=function(){showExperiences(c,urls,l)}}
+    left.appendChild(l);
+  }
+  if(du){var demoLabel=c.demo_type==="puzzle_source"?getDemoLabel(c):"实机演示"+(c.demo_label&&c.demo_label!=="实机演示"?" · "+c.demo_label:"");left.appendChild(externalLink(iconAction("a","demo","demo",demoLabel),du))}
+  if(su&&su!==lu&&su!==du)left.appendChild(externalLink(iconAction("a","source","source","来源"),su));
+  var f=iconAction("button","fav","favorite",favorites.has(c.id)?"已收藏（点击取消）":"收藏");
   f.dataset.favoriteId=c.id; f.setAttribute("aria-pressed",String(favorites.has(c.id)));
-  f.setAttribute("aria-label",(favorites.has(c.id)?"取消收藏：":"收藏：")+c.title_zh);
-  f.onclick=function(){favorites.set(c.id,!favorites.has(c.id))}; ac.appendChild(f);
-  var d=el("button","del","删除"); d.type="button";
-  d.onclick=function(){
-    var cf=el("span","confirm"), y=el("button","yes","确认删除"), n=el("button","","取消");
-    y.type=n.type="button"; cf.appendChild(n); cf.appendChild(y); d.replaceWith(cf);
-    n.onclick=function(){cf.replaceWith(d)};
-    y.onclick=function(){doDelete(c.id,a)};
-  };
-  ac.appendChild(d); b.appendChild(ac); a.appendChild(b);
+  f.setAttribute("aria-label",(favorites.has(c.id)?"已收藏（点击取消）：":"收藏：")+c.title_zh);
+  f.onclick=function(){favorites.set(c.id,!favorites.has(c.id))}; right.appendChild(f);
+  var d=iconAction("button","del","delete","删除");
+  d.setAttribute("aria-haspopup","dialog");d.setAttribute("aria-expanded","false");d.setAttribute("aria-controls","actionDialog");
+  d.onclick=function(){confirmDelete(c,a,d)};
+  right.appendChild(d); b.appendChild(ac); a.appendChild(b);
   return a;
 }
 function matches(c,q){
@@ -299,6 +382,7 @@ function render(){
   ["allTab","favoritesTab"].forEach(function(id,index){var tab=document.getElementById(id),selected=favoritesOnly===(index===1);tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
   list.setAttribute("aria-labelledby",favoritesOnly?"favoritesTab":"allTab");
   renderChips(scope);
+  if(actionDialog.open){actionOpener=currentActionOpener();if(actionOpener)actionOpener.setAttribute("aria-expanded","true")}
   if(focusId){var target=Array.prototype.find.call(list.querySelectorAll(".fav"),function(button){return button.dataset.favoriteId===focusId});(target||document.getElementById(favoritesOnly?"favoritesTab":"allTab")).focus({preventScroll:true})}
 }
 function renderChips(vis){

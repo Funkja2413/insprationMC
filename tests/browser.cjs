@@ -10,6 +10,39 @@ const expected=data.cases.filter(c=>!removed.some(r=>r.id===c.id));
 const checks=[], errors=[];
 function check(name,value=true){assert.ok(value,name);checks.push(name)}
 async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new Promise(r=>setTimeout(r,50))}throw Error('Expected UI state did not arrive')}
+const safeUrl=url=>/^https?:\/\//i.test(url||'')?url:'';
+const experienceUrls=c=>[...new Set([c.live_url,...(c.additional_live_urls||[])].map(safeUrl).filter(Boolean))];
+async function checkActionBars(page){
+  const bars=await page.locator('.card').evaluateAll(cards=>cards.map(card=>{
+    const action=control=>({
+      kind:['play','demo','source','fav','del'].find(name=>control.classList.contains(name)),
+      href:control.getAttribute('href'),label:control.getAttribute('aria-label'),
+      tooltip:control.querySelector('.action-tooltip')?.textContent,
+      iconOnly:control.querySelectorAll('svg[aria-hidden="true"]').length===1&&
+        [...control.childNodes].every(node=>node.nodeType===Node.TEXT_NODE?!node.textContent.trim():node.matches('svg, .action-tooltip')),
+      width:control.getBoundingClientRect().width,height:control.getBoundingClientRect().height
+    });
+    return {id:card.dataset.id,count:card.querySelectorAll('.acts a,.acts button').length,
+      left:[...card.querySelectorAll('.action-group--links > a,.action-group--links > button')].map(action),
+      right:[...card.querySelectorAll('.action-group--manage > button')].map(action)};
+  }));
+  check('Every card has at most five toolbar actions',bars.every(bar=>bar.count<=5));
+  check('Management actions are grouped right in favorite/delete order',bars.every(bar=>JSON.stringify(bar.right.map(x=>x.kind))==='["fav","del"]'));
+  check('All toolbar actions are SVG-only with Chinese labels and tooltips',bars.every(bar=>[...bar.left,...bar.right].every(action=>action.iconOnly&&/[\u3400-\u9fff]/.test(action.label)&&/[\u3400-\u9fff]/.test(action.tooltip))));
+  check('Every toolbar action has a 44px minimum hit target',bars.every(bar=>[...bar.left,...bar.right].every(action=>action.width>=44&&action.height>=44)));
+  for(const bar of bars){
+    const c=expected.find(c=>c.id===bar.id),urls=experienceUrls(c),demo=safeUrl(c.demo_url),source=safeUrl(c.source_url);
+    const kinds=[urls.length&&'play',demo&&'demo',source&&source!==safeUrl(c.live_url)&&source!==demo&&'source'].filter(Boolean);
+    assert.deepEqual(bar.left.map(action=>action.kind),kinds,'Available actions and left-to-right order for '+c.id);
+    for(const action of bar.left){
+      if(action.kind==='play'){
+        assert.equal(action.label,'体验链接','Experience naming stays unified for '+c.id);
+        assert.equal(action.href,urls.length===1?urls[0]:null,'Real experience URL or single multi-link trigger for '+c.id);
+      }else assert.equal(action.href,action.kind==='demo'?demo:source,'Real '+action.kind+' URL for '+c.id);
+    }
+  }
+  checks.push('All visible cases retain actual URLs and action order; missing links create no controls');
+}
 (async()=>{
   fs.mkdirSync(output,{recursive:true});
   const browser=await chromium.launch({channel:'chrome',headless:true,chromiumSandbox:true,ignoreDefaultArgs:['--disable-client-side-phishing-detection','--disable-popup-blocking','--unsafely-disable-devtools-self-xss-warnings','--enable-unsafe-swiftshader']});
@@ -30,9 +63,29 @@ async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new P
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
     await page.goto(base);await until(async()=>await page.locator('.card').count()===expected.length);
     check('All existing visible cases retained',await page.locator('.card').count()===expected.length);
+    await checkActionBars(page);
+    const multi=expected.find(c=>experienceUrls(c).length>1);
+    check('Existing multiple-experience case is available for regression coverage',!!multi);
+    const multiCard=()=>page.locator('article').filter({has:page.getByRole('heading',{name:multi.title_zh,exact:true})});
+    await multiCard().getByRole('button',{name:'体验链接',exact:true}).click();
+    const actionDialog=page.getByRole('dialog');
+    assert.deepEqual(await actionDialog.locator('.experience-links a').evaluateAll(links=>links.map(link=>link.getAttribute('href'))),experienceUrls(multi));
+    check('One experience icon exposes all original and additional URLs',await multiCard().locator('.play').count()===1&&await actionDialog.isVisible());
+    check('Multi-link dialog has an accessible name and description',await actionDialog.getAttribute('aria-labelledby')==='actionDialogTitle'&&await actionDialog.getAttribute('aria-describedby')==='actionDialogDescription');
+    await page.keyboard.press('Escape');
+    await until(async()=>!(await actionDialog.isVisible()));
+    check('Escape closes experience links and returns focus to the trigger',await multiCard().locator('.play').evaluate(button=>document.activeElement===button)&&await multiCard().locator('.play').getAttribute('aria-expanded')==='false');
     const first=expected[0],card=()=>page.locator('article').filter({has:page.getByRole('heading',{name:first.title_zh,exact:true})});
+    await card().locator('.del').hover();
+    check('Hover exposes a Chinese action tooltip',await card().locator('.del .action-tooltip').isVisible());
+    await page.mouse.move(0,0);await page.getByPlaceholder('搜索品牌 / 关键词').focus();await page.keyboard.press('Tab');await card().locator('.del').focus();
+    check('Keyboard focus exposes a Chinese action tooltip',await card().locator('.del .action-tooltip').isVisible());
+    await card().locator('.fav').focus();
+    const unlikedStyle=await card().locator('.fav').evaluate(button=>({fill:getComputedStyle(button.querySelector('svg')).fill,background:getComputedStyle(button).backgroundColor}));
     await card().locator('.fav').click();
     check('Favorite toggles immediately',await card().locator('.fav').getAttribute('aria-pressed')==='true');
+    const likedStyle=await card().locator('.fav').evaluate(button=>({fill:getComputedStyle(button.querySelector('svg')).fill,background:getComputedStyle(button).backgroundColor}));
+    check('Favorite state differs by filled icon and background',likedStyle.fill!=='none'&&likedStyle.fill!==unlikedStyle.fill&&likedStyle.background!==unlikedStyle.background);
     await page.getByRole('tab',{name:'我喜欢的case',exact:true}).click();
     check('Favorite tab and count',await page.locator('.card').count()===1&&await page.locator('#favoriteCount').innerText()==='1');
     await page.reload();await until(async()=>await page.locator('#favoriteCount').innerText()==='1');
@@ -41,7 +94,12 @@ async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new P
     await page.getByPlaceholder('搜索品牌 / 关键词').fill('no-matching-case-xyz');
     check('Search within favorites',await page.locator('.card').count()===0&&(await page.locator('#empty').innerText()).includes('没有匹配的收藏'));
     await page.getByPlaceholder('搜索品牌 / 关键词').fill('');
-    await card().getByRole('button',{name:'删除',exact:true}).click();await card().getByRole('button',{name:'确认删除',exact:true}).click();
+    await card().getByRole('button',{name:'删除',exact:true}).click();
+    check('Delete confirmation stays outside the five-action toolbar',await card().locator('.acts a,.acts button').count()<=5&&await actionDialog.getByRole('button',{name:'确认删除',exact:true}).isVisible());
+    await actionDialog.getByRole('button',{name:'取消',exact:true}).click();
+    await until(async()=>!(await actionDialog.isVisible()));
+    check('Cancel preserves the case and restores delete-button focus',await card().isVisible()&&await card().locator('.del').evaluate(button=>document.activeElement===button));
+    await card().getByRole('button',{name:'删除',exact:true}).click();await actionDialog.getByRole('button',{name:'确认删除',exact:true}).click();
     await until(async()=>await page.locator('.card').count()===0);
     check('Delete hides favorite and updates count',await page.locator('#favoriteCount').innerText()==='0');
     await page.getByRole('button',{name:'撤销',exact:true}).click();
@@ -71,8 +129,8 @@ async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new P
     check('Existing authorization path syncs pending IDs to mocked GitHub');
     await card().getByRole('button',{name:'删除',exact:true}).click();
     await page.waitForTimeout(900);
-    check('Background sync preserves delete confirmation',await card().getByRole('button',{name:'确认删除',exact:true}).isVisible());
-    await card().getByRole('button',{name:'取消',exact:true}).click();
+    check('Background sync preserves delete confirmation',await actionDialog.getByRole('button',{name:'确认删除',exact:true}).isVisible());
+    await actionDialog.getByRole('button',{name:'取消',exact:true}).click();
     await card().locator('.fav').click();await until(()=>!cloud.includes(first.id));
     check('Unfavorite sync removes its ID');check('No real delete was committed',deleteWrites===0);
     await card().locator('.fav').click();await until(()=>cloud.includes(first.id));
@@ -82,10 +140,26 @@ async function until(fn){for(let i=0;i<100;i++){if(await fn())return;await new P
     await page.setViewportSize({width:390,height:844});
     await page.evaluate(()=>scrollTo(0,0));
     check('Mobile has no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-    check('Mobile favorite control is at least 40px high',(await card().locator('.fav').boundingBox()).height>=40);
+    check('Mobile favorite control is at least 44px high',(await card().locator('.fav').boundingBox()).height>=44);
     await page.screenshot({path:path.join(output,'favorites-mobile.png'),fullPage:false});
     await card().locator('.fav').scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(output,'favorites-mobile-actions.png'),fullPage:false});
+    await page.getByRole('tab',{name:/全部案例/}).click();
+    for(const width of [390,320]){
+      await page.setViewportSize({width,height:844});
+      check(width+'px viewport has no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      const mobileLayout=await page.locator('.acts').evaluateAll(bars=>bars.every(bar=>{
+        const bounds=bar.getBoundingClientRect(),left=bar.querySelector('.action-group--links').getBoundingClientRect(),right=bar.querySelector('.action-group--manage').getBoundingClientRect();
+        const controls=[...bar.querySelectorAll('a,button')].map(button=>button.getBoundingClientRect());
+        return left.right<=right.left&&right.right<=bounds.right+1&&controls.every(rect=>rect.width>=44&&rect.height>=44&&Math.abs(rect.top-controls[0].top)<1);
+      }));
+      check(width+'px actions stay on one line with separate left/right groups and 44px targets',mobileLayout);
+      await multiCard().getByRole('button',{name:'体验链接',exact:true}).click();
+      check(width+'px multiple-experience dialog fits the viewport',await actionDialog.evaluate(dialog=>{
+        const rect=dialog.getBoundingClientRect();return rect.left>=0&&rect.right<=innerWidth&&rect.top>=0&&rect.bottom<=innerHeight&&dialog.scrollWidth<=dialog.clientWidth;
+      }));
+      await page.keyboard.press('Escape');await until(async()=>!(await actionDialog.isVisible()));
+    }
     check('No uncaught browser errors',errors.length===0);
     const delayed=await browser.newContext();
     await delayed.addInitScript(id=>localStorage.setItem('inspo-pending-favorites',JSON.stringify([{id,value:true,version:'preexisting'}])),first.id);
