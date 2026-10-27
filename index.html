@@ -16,6 +16,10 @@ h1 small{font-size:12px;color:var(--sub);font-weight:400}
 #q{width:100%;min-width:0;flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff;min-height:44px}
 .search-tools{display:flex;align-items:center;gap:8px}
 .filter-select,.filter-trigger{min-height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;font-size:13px}
+#gameplayFilter{width:206px;flex-shrink:0}
+.gameplay-note{font-size:11px;color:var(--sub);margin:7px 0 0;line-height:1.6}
+.gameplay-note span{white-space:nowrap}
+.dialog-gameplay-note{margin:-9px 0 16px}
 .filter-select{max-width:100%;padding:9px 30px 9px 12px;cursor:pointer}
 .filter-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;white-space:nowrap;cursor:pointer;flex-shrink:0}
 .filter-trigger svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
@@ -122,11 +126,12 @@ footer a{color:var(--sub)}
   </div>
   <div class="search-tools">
     <input id="q" type="search" placeholder="搜索品牌 / 关键词" aria-label="搜索品牌 / 关键词" autocomplete="off">
-    <select id="gameplayFilter" class="filter-select desktop-filter" aria-label="玩法"></select>
+    <select id="gameplayFilter" class="filter-select desktop-filter" aria-label="玩法" aria-describedby="gameplayNote"></select>
     <select id="industryFilter" class="filter-select desktop-filter" aria-label="品牌行业"></select>
     <button id="moreFilters" class="filter-trigger desktop-filter" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false">更多筛选 <span class="filter-count" hidden></span></button>
     <button id="mobileFilters" class="filter-trigger" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg>筛选 <span class="filter-count" hidden></span></button>
   </div>
+  <p class="gameplay-note" id="gameplayNote" aria-live="polite">玩法按本库案例数量从高到低排序。</p>
   <div class="active-filters" id="activeFilters" aria-label="已选筛选条件" hidden></div>
 </header>
 <dialog id="filterDialog" class="filter-dialog" aria-labelledby="filterTitle" aria-describedby="filterDescription">
@@ -134,7 +139,8 @@ footer a{color:var(--sub)}
   <div class="filter-body">
     <p id="filterDescription" class="filter-description">组合筛选条件，找到适合参考的案例。</p>
     <div class="dialog-primary-filters">
-      <label class="filter-field" for="dialogGameplay">玩法<select id="dialogGameplay" class="filter-select"></select></label>
+      <label class="filter-field" for="dialogGameplay">玩法<select id="dialogGameplay" class="filter-select" aria-describedby="dialogGameplayNote"></select></label>
+      <p class="gameplay-note dialog-gameplay-note" id="dialogGameplayNote"></p>
       <label class="filter-field" for="dialogIndustry">品牌行业<select id="dialogIndustry" class="filter-select"></select></label>
     </div>
     <label class="filter-check"><input type="checkbox" id="filterMobile">仅手机可玩</label>
@@ -160,6 +166,7 @@ footer a{color:var(--sub)}
 <script src="favorites.js"></script>
 <script src="presentation.js"></script>
 <script src="filters.js"></script>
+<script src="gameplay-trends.js"></script>
 <script>
 (function(){
 "use strict";
@@ -169,6 +176,8 @@ var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
 var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, favoritesOnly=false;
+var gameplayTracker=InspoGameplayTrends.createTracker({storage:{getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)}},version:"gameplay-taxonomy-v1"});
+var gameplayReady=false,gameplayLoadFailed=false,gameplayCountsKey=null;
 var filterState={gameplay:"",industry:"",mobileOnly:false,demoOnly:false}, filterDraft=null;
 var filterDialog=document.getElementById("filterDialog"), filterOpener=null;
 
@@ -273,16 +282,16 @@ function showFavoriteStatus(){
 function selectView(only){favoritesOnly=only;render()}
 
 /* ---------- remote removed.json ---------- */
+function validateRemoved(arr){if(!Array.isArray(arr))throw new Error("invalid removed list");return arr}
 function fetchRemoved(){
   var h={"Accept":"application/vnd.github+json"}; var t=token(); if(t)h.Authorization="Bearer "+t;
   return fetch(API+"?ref="+BRANCH+"&t="+Date.now(),{headers:h,cache:"no-store"}).then(function(r){
-    if(r.status===404)return [];
     if(!r.ok)throw new Error("api "+r.status);
-    return r.json().then(function(j){return JSON.parse(b64dec(j.content||"")||"[]")});
+    return r.json().then(function(j){return validateRemoved(JSON.parse(b64dec(j.content||"")))});
   }).catch(function(){
-    return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0; return r.json()})
+    return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0; return r.json()}).then(validateRemoved)
   }).catch(function(){
-    return fetch("data/removed.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():[]}).catch(function(){return null})
+    return fetch("data/removed.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(validateRemoved).catch(function(){return null})
   });
 }
 function applyRemoved(arr){
@@ -433,6 +442,7 @@ function render(){
   document.getElementById("favoriteCount").textContent=liked.length;
   ["allTab","favoritesTab"].forEach(function(id,index){var tab=document.getElementById(id),selected=favoritesOnly===(index===1);tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
   list.setAttribute("aria-labelledby",favoritesOnly?"favoritesTab":"allTab");
+  syncGameplayOptions(vis);
   syncFilterUI();
   if(actionDialog.open){actionOpener=currentActionOpener();if(actionOpener)actionOpener.setAttribute("aria-expanded","true")}
   if(focusId){var target=Array.prototype.find.call(list.querySelectorAll(".fav"),function(button){return button.dataset.favoriteId===focusId});(target||document.getElementById(favoritesOnly?"favoritesTab":"allTab")).focus({preventScroll:true})}
@@ -444,6 +454,37 @@ function groupLabel(groups,value){var group=groups.find(function(g){return g.val
 function filterOptions(id,groups,label){
   var select=document.getElementById(id), all=el("option","",label);all.value="";select.appendChild(all);
   groups.forEach(function(g){var option=el("option","",g.label);option.value=g.value;select.appendChild(option)});
+}
+// Ranking uses the entire non-excluded library, never a filtered or favorite subset.
+function syncGameplayOptions(visible){
+  var key=visible.map(function(c){return c.id}).join("\n")+"|"+gameplayReady+"|"+gameplayLoadFailed;
+  if(key===gameplayCountsKey)return;
+  gameplayCountsKey=key;
+  var ranked=InspoFilters.gameplayStats(visible),total=ranked.reduce(function(sum,g){return sum+g.count},0);
+  var comparison=gameplayReady?gameplayTracker.compare(ranked):{hasBaseline:false,deltas:{},previousAt:null};
+  [["gameplayFilter","玩法 · 全部",filterState.gameplay],["dialogGameplay","全部玩法",filterDraft?filterDraft.gameplay:filterState.gameplay]].forEach(function(item){
+    var select=document.getElementById(item[0]),all=el("option","",item[1]+"（"+total+"）");
+    all.value="";select.replaceChildren(all);
+    ranked.forEach(function(g){
+      var delta=comparison.deltas[g.value]||0;
+      var label=g.label+" · "+g.count+" 个"+(comparison.hasBaseline&&delta?"（"+(delta>0?"+":"")+delta+"）":"");
+      var option=el("option","",label);option.value=g.value;option.dataset.count=String(g.count);option.dataset.delta=String(delta);option.disabled=g.count===0;select.appendChild(option);
+    });
+    select.value=item[2];
+  });
+  var note="玩法排行 · 全库 "+total+" 个案例 · 数量从高到低";
+  var details="按本库未排除的案例统计；搜索、行业和收藏视图不改变数量或排序。每个案例按主要玩法计数一次。";
+  if(gameplayReady){
+    var persisted=gameplayTracker.save(ranked);
+    if(comparison.hasBaseline){
+      var changed=ranked.some(function(g){return comparison.deltas[g.value]});
+      var date=new Date(comparison.previousAt).toLocaleString("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false});
+      note+=" · "+(changed?"增减见选项":"数量未变")+"（较 "+date+" 记录）";
+    }else note+=" · "+(persisted?"已记录，下次可对比变化":"数量记录仅本次有效");
+    if(!persisted&&comparison.hasBaseline)note+=" · 暂未保存本次记录";
+    details+=" 增减对比保存在当前浏览器，首次记录不显示增长；同一访问期间基准保持不变。";
+  }else note+=gameplayLoadFailed?" · 排除记录暂不可用，未记录本次数量":" · 正在核对排除记录";
+  ["gameplayNote","dialogGameplayNote"].forEach(function(id){var target=document.getElementById(id);target.textContent=note;target.title=details});
 }
 function updateFilterPreview(){
   if(!filterDraft)return;
@@ -494,9 +535,9 @@ filterDialog.addEventListener("click",function(event){
   if(event.target!==filterDialog)return;var rect=filterDialog.getBoundingClientRect();
   if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)filterDialog.close();
 });
-filterOptions("gameplayFilter",InspoFilters.gameplayGroups,"玩法 · 全部");
+
 filterOptions("industryFilter",InspoFilters.industryGroups,"行业 · 全部");
-filterOptions("dialogGameplay",InspoFilters.gameplayGroups,"全部玩法");
+
 filterOptions("dialogIndustry",InspoFilters.industryGroups,"全部行业");
 ["gameplayFilter","industryFilter"].forEach(function(id,index){document.getElementById(id).onchange=function(event){filterState[index?"industry":"gameplay"]=event.target.value;render()}});
 document.getElementById("moreFilters").onclick=openFilters;
@@ -541,7 +582,7 @@ fetch("data/cases.json?t="+Date.now(),{cache:"no-store"}).then(function(r){retur
   cases=d.cases||d; if(d.updated)document.getElementById("upd").textContent="更新于 "+d.updated;
   render();
   showFavoriteStatus();favorites.refresh();
-  return fetchRemoved().then(function(arr){applyRemoved(arr);render();showSync();if(pending.length&&token())flush()});
+  return fetchRemoved().then(function(arr){applyRemoved(arr);gameplayReady=Array.isArray(arr);gameplayLoadFailed=!gameplayReady;render();showSync();if(pending.length&&token())flush()});
 }).catch(function(e){document.getElementById("empty").textContent="加载失败："+e;document.getElementById("empty").style.display="block"});
 })();
 </script>

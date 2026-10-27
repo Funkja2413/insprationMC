@@ -5,7 +5,7 @@
   "use strict";
 
   function text(value){return typeof value==="string"?value:""}
-  function rule(label,pattern){return {label:label,pattern:pattern}}
+  function rule(label,pattern,prosePattern){return {label:label,pattern:pattern,prosePattern:prosePattern}}
   function match(rules,value){
     for(var i=0;i<rules.length;i++)if(rules[i].pattern.test(value))return rules[i].label;
     return "";
@@ -13,7 +13,7 @@
   function firstMention(rules,value){
     var label="", position=Infinity;
     rules.forEach(function(entry){
-      var found=entry.pattern.exec(value);
+      var found=(entry.prosePattern||entry.pattern).exec(value);
       if(found&&found.index<position){label=entry.label;position=found.index}
     });
     return label;
@@ -139,10 +139,14 @@
     rule("叙事探索玩法",/叙事|敘事|交互电影|互动电影|交互报告|立体书/),
     rule("机关互动玩法",/玩具式|机关.{0,8}触发|强烈的视觉反馈/),
     rule("益智解谜玩法",/解谜|解謎|益智/),
-    rule("动作闯关玩法",/动作|闯关|跳跃|闖關|跳躍|竞速|競速/),
+    // In prose, "选购动作" and "身体动作" describe ordinary actions;
+    // they are not evidence of an action game. Explicit format/tags still count.
+    rule("动作闯关玩法",/动作|闯关|跳跃|闖關|跳躍|竞速|競速/,/动作游戏|动作闯关|动作挑战|闯关|跳跃|闖關|跳躍|竞速|競速/),
     rule("体感互动玩法",/体感|體感|传感器/)
   ];
   var collectionPattern=/小游戏合集|微游戏合集|街机合集|游戏合集|多玩法|双小游戏|四种岗位|三颗星球|多种.{0,4}小游戏|[2-9二三四五六七八九十]\s*(款|个|项).{0,8}(小游戏|音乐主题任务)/;
+  var chargedJumpPattern=/蓄力[^。！？!?；;]{0,28}(?:跳跃|跳躍|跨越)/;
+  var musicEvidencePattern=/音乐|音樂|音游|音遊|音符|节拍|節拍|演奏|(?:按|跟)[^。！？!?；;]{0,6}(?:节奏|節奏)/;
 
   function summarize(c){
     c=c&&typeof c==="object"?c:{};
@@ -157,6 +161,9 @@
     // rename a running game.
     if(!mechanic)mechanic=collectionPattern.test(description)?"小游戏合集玩法":firstMention(mechanicRules,description)||match(mechanicRules,title);
     if(mechanic==="体感互动玩法")mechanic=firstMention(mechanicRules,description)||mechanic;
+    // A loose "节奏/跳跃" format can mean jump timing, not music. A concrete
+    // charged jump overrides it only when no musical or beat-following input is described.
+    if(mechanic==="音乐节奏玩法"&&chargedJumpPattern.test(description)&&!musicEvidencePattern.test(signals+" / "+description))mechanic="平台跳跃玩法";
     var industry=match(industryRules,brand);
     if(/Hermès|爱马仕/i.test(brand)&&/香氛|香水/.test(signals))industry="美妆品牌";
     return {mechanic:mechanic||"互动探索玩法",industry:industry||"综合品牌"};

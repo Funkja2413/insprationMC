@@ -19,9 +19,19 @@ async function checkVisibleCases(page,name,cases){
   const ids=await page.locator('.card').evaluateAll(cards=>cards.map(card=>card.dataset.id));
   assert.deepEqual(ids,cases.map(c=>c.id),name);checks.push(name);
 }
+async function checkGameplayRanking(page,name,visibleCases=expected){
+  const ranked=filters.gameplayStats(visibleCases);
+  for(const id of ['gameplayFilter','dialogGameplay']){
+    const options=await page.locator('#'+id+' option').evaluateAll(items=>items.slice(1).map(item=>({value:item.value,count:Number(item.dataset.count),disabled:item.disabled,text:item.textContent})));
+    assert.deepEqual(options.map(({value,count})=>({value,count})),ranked.map(({value,count})=>({value,count})),name+' '+id+' follows full-library counts and descending rank');
+    check(name+' '+id+' displays counts and disables only empty genres',options.every(option=>option.text.includes(option.count+' 个')&&option.disabled===(option.count===0)));
+  }
+  check(name+' ranking describes the whole library', (await page.locator('#gameplayNote').innerText()).includes('全库 '+visibleCases.length+' 个案例'));
+}
 async function checkFilters(page){
   const panel=page.locator('#filterDialog'),search=page.getByPlaceholder('搜索品牌 / 关键词');
   const demoCases=expected.filter(hasDemo),mobileCases=expected.filter(c=>c.mobile==='yes');
+  await checkGameplayRanking(page,'Initial');
   check('Desktop shows gameplay and industry selects plus more filters',await page.getByRole('combobox',{name:'玩法',exact:true}).isVisible()&&await page.getByRole('combobox',{name:'品牌行业',exact:true}).isVisible()&&await page.locator('#moreFilters').isVisible());
   check('Cards no longer render old tag chips',await page.locator('.card .tags,.card .tag').count()===0);
   await page.locator('#moreFilters').click();await panel.getByLabel('有实机演示',{exact:true}).check();
@@ -41,6 +51,7 @@ async function checkFilters(page){
   await page.locator('#industryFilter').selectOption(combo.industry);
   const categorized=expected.filter(c=>filters.matches(c,{gameplay:combo.gameplay,industry:combo.industry}));
   await checkVisibleCases(page,'Gameplay and brand industry combine with AND semantics',categorized);
+  await checkGameplayRanking(page,'Industry and gameplay do not narrow the ranking');
   await page.locator('#moreFilters').click();
   await panel.locator('#filterMobile').check();await panel.locator('#filterDemo').check();
   await panel.locator('#closeFilters').click();
@@ -72,6 +83,7 @@ async function checkFilters(page){
   const query=tagged.tags.find(tag=>!searchMatches({...tagged,tags:[]},tag)),searched=expected.filter(c=>searchMatches(c,query));
   await search.fill(query);
   await checkVisibleCases(page,'Search still finds original tag text although card tags are hidden',searched);
+  await checkGameplayRanking(page,'Search does not narrow the ranking');
   await page.locator('#gameplayFilter').selectOption(filters.classify(tagged).gameplay);
   await page.locator('#clearFilters').click();
   check('Clearing conditions preserves the search text',await search.inputValue()===query);
@@ -188,6 +200,7 @@ async function checkActionBars(page){
     check('Favorite state differs by filled icon and background',likedStyle.fill!=='none'&&likedStyle.fill!==unlikedStyle.fill&&likedStyle.background!==unlikedStyle.background);
     await page.getByRole('tab',{name:'我喜欢的case',exact:true}).click();
     check('Favorite tab and count',await page.locator('.card').count()===1&&await page.locator('#favoriteCount').innerText()==='1');
+  await checkGameplayRanking(page,'Favorites do not narrow the ranking');
     await page.reload();await until(async()=>await page.locator('#favoriteCount').innerText()==='1');
     await page.getByRole('tab',{name:'我喜欢的case',exact:true}).click();
     check('Favorite survives refresh',await page.locator('.card').count()===1);
@@ -203,9 +216,11 @@ async function checkActionBars(page){
     await card().getByRole('button',{name:'不感兴趣',exact:true}).click();await actionDialog.getByRole('button',{name:'确认不感兴趣',exact:true}).click();
     await until(async()=>await page.locator('.card').count()===0);
     check('Not-interested hides favorite and updates count',await page.locator('#favoriteCount').innerText()==='0');
+  await checkGameplayRanking(page,'Excluding a case immediately updates ranking',expected.filter(c=>c.id!==first.id));
     check('Not-interested confirmation shows the requested undo message',await page.locator('#toastMsg').innerText()==='已标记为不感兴趣');
     await page.getByRole('button',{name:'撤销',exact:true}).click();
     check('Undo restores the favorite',await page.locator('.card').count()===1&&await card().locator('.fav').getAttribute('aria-pressed')==='true');
+  await checkGameplayRanking(page,'Undo restores ranking');
     await card().locator('.fav').click();
     check('Unfavorite removes from tab with empty state',await page.locator('.card').count()===0&&(await page.locator('#empty').innerText()).includes('还没有收藏'));
     await page.reload();await until(async()=>await page.locator('.card').count()===expected.length);
