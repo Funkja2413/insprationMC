@@ -1,7 +1,30 @@
 {
- "updated": "2026-10-28",
- "count": 106,
+ "updated": "2026-10-29",
+ "count": 107,
  "cases": [
+  {
+   "id": "pitbull-dale-10",
+   "title_zh": "Pitbull「Dale 10」：把迈阿密做成可逛的 3D 网页城，专辑曲目变成收集物和解锁小游戏",
+   "brand": "Pitbull（Mr. 305 / Dale 专辑十周年）",
+   "agency": "Wayward Creative",
+   "region": "美国",
+   "format": "手机/桌面浏览器 WebGL 开放城市场景 + 多关小游戏（需 Spotify/Apple Music 登录）",
+   "date": "2025-08",
+   "why_zh": "创意点是把专辑十周年做成可逛的 3D 迈阿密：玩家操控 Pitbull 形象在城里找曲目相关收集物，解锁《El Taxi》街头赛车、歌名拼字开金库、快艇竞速、录音棚重排音轨等小游戏；登录即预存 Dale、专辑当背景音乐。产品（专辑）不是皮肤贴图，而是探索目标和解锁条件。好在形式超出普通跑酷换皮，适合竖屏触控；缺点是娱乐艺人向、强依赖流媒体账号门槛，和消费品“产品当道具”的口味不完全同频，用来校准音乐 IP 网页游戏。",
+   "style_zh": "高饱和迈阿密街景、3D 卡通化 Pitbull 形象、城市探索+出租车/快艇/录音棚小关",
+   "live_url": "https://game.pitbullmusic.com/",
+   "source_url": "https://www.wayward-creative.com/work/pitbull-dale-10th-anniversary",
+   "image": "images/pitbull-dale-10.webp",
+   "mobile": "yes",
+   "tags": [
+    "WebGL",
+    "3D场景",
+    "专辑营销",
+    "音乐",
+    "开放世界",
+    "美国"
+   ]
+  },
   {
    "id": "beardpapa-run-jump",
    "title_zh": "ビアードパパ「走って跳んで」：横版跳跃收集泡芙，主题是守护酥皮不被湿气吃掉",
