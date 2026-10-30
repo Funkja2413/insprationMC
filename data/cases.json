@@ -1,7 +1,53 @@
 {
- "updated": "2026-10-29",
- "count": 107,
+ "updated": "2026-10-30",
+ "count": 109,
  "cases": [
+  {
+   "id": "nike-acg-all-conditions-world",
+   "title_zh": "Nike ACG「All Conditions World」：可转的 WebGL 野地地球，把越野路线做成可逛的活地图",
+   "brand": "Nike ACG（All Conditions Gear）",
+   "agency": "R/GA（UK / Americas）",
+   "region": "欧洲（多语站点）/ 全球",
+   "format": "手机/桌面浏览器 WebGL 3D 地球探索 + 实时 Wild Score + Strava 路线联动",
+   "date": "2026-02",
+   "why_zh": "创意点是把 ACG「适应一切天候」做成可逛的 WebGL 野地：转动地球点开运动员与社群手采的欧洲越野线，听语音笔记、看现场 CCTV，Wild Score 按实时天气/地形/季节跳动；每条线接到真实 Strava 路线和 Wild 300 户外挑战。不是答题或抽奖落地页，交互本身就是主张——数字体验故意把人推回户外。好在视觉与信息密度高、手机可开；缺点是探索站偏展示、强依赖 Strava 才闭环，用来校准「3D 叙事站 + 真实世界出口」这一档。",
+   "style_zh": "手作感脏野风 WebGL：可转地球、鸟云山羊、雪怪彩蛋，路线挂实时天气与 Wild Score",
+   "live_url": "https://www.nike.com/gb/all-conditions-world",
+   "source_url": "https://lbbonline.com/news/Nike-ACG-Brings-All-Conditions-Ethos-to-Life-Through-Wild-Digital-World",
+   "image": "images/nike-acg-all-conditions-world.webp",
+   "mobile": "yes",
+   "tags": [
+    "WebGL",
+    "3D场景",
+    "户外",
+    "品牌叙事",
+    "Strava",
+    "欧洲"
+   ]
+  },
+  {
+   "id": "vw-drive-carnival-2025",
+   "title_zh": "Volkswagen「DRIVE CARnival」：把在售车型做成手机 Unity 赛车，用赛道体感不同车的脾气",
+   "brand": "Volkswagen 日本（フォルクスワーゲン ジャパン）",
+   "agency": null,
+   "region": "日本",
+   "format": "手机浏览器 Unity WebGL 赛车（车型选择 + 计时赛）",
+   "date": "2025-12-26",
+   "why_zh": "创意点是让玩家在手机里「试驾」官方线列：选 Polo、T-Cross、ID. Buzz 等真实车型上场，各车特性写进操控，用计时赛比较脾气，而不是贴一张车皮的通用跑酷。下载不用，杂志页和独立域名都能开。好在产品即载具、和库里 Lexus Rally 同族可校准；缺点是本质仍是纵版/触控赛车，玩法新意中等，宁缺毋滥下仍收是因为 2025-12 新上线且 2026-10 仍可玩、车型差异被做成规则。",
+   "style_zh": "卡通化实车模型在奇幻赛道狂奔，车型选择屏并列 Polo、T-Cross、ID. Buzz 等真实线列",
+   "live_url": "https://volkswagen-carnival.com/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000151.000058804.html",
+   "image": "images/vw-drive-carnival-2025.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "Unity",
+    "赛车",
+    "产品即玩法",
+    "日本",
+    "汽车"
+   ]
+  },
   {
    "id": "pitbull-dale-10",
    "title_zh": "Pitbull「Dale 10」：把迈阿密做成可逛的 3D 网页城，专辑曲目变成收集物和解锁小游戏",
