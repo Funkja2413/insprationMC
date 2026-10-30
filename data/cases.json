@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-30",
- "count": 109,
+ "count": 110,
  "cases": [
   {
    "id": "nike-acg-all-conditions-world",
@@ -23,6 +23,29 @@
     "品牌叙事",
     "Strava",
     "欧洲"
+   ]
+  },
+  {
+   "id": "tame-impala-jennie-dracula",
+   "title_zh": "Tame Impala×JENNIE「Dracula Remix」：把 MV 沙漠公路做成第一人称无尽驾驶小游戏",
+   "brand": "Tame Impala × JENNIE（《Dracula》Remix）",
+   "agency": "Wayward Creative",
+   "region": "全球",
+   "format": "手机/桌面浏览器第一人称无尽驾驶小游戏（可 Spotify/Apple Music 登录预存曲目）",
+   "date": "2026-02",
+   "why_zh": "创意点是把 Remix MV 的沙漠公路直接做成可玩场景：玩家坐在半挂车驾驶位，边听 remix 边收集道具、躲开木桩，结束后出带成绩的分享图；登录流媒体就把产品（单曲）写进曲库。和库里 Pitbull Dale 10 同属 Wayward 音乐 IP 网页游戏，但这里是纵深无尽驾驶而不是开放城。好在形式干净、手机即开；缺点仍是娱乐艺人向、强依赖账号门槛，用来继续校准音乐联名小游戏。",
+   "style_zh": "高反差沙漠公路、半挂卡车第一人称、木桩障碍与红色收集物，MV 同款荒凉霓虹",
+   "live_url": "https://dracula.jenn.ie/",
+   "source_url": "https://www.wayward-creative.com/work/tame-impala-dracula-remix-game",
+   "image": "images/tame-impala-jennie-dracula.webp",
+   "mobile": "yes",
+   "tags": [
+    "轻游戏",
+    "专辑营销",
+    "音乐",
+    "第一人称",
+    "开放驾驶",
+    "美国"
    ]
   },
   {
