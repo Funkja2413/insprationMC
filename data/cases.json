@@ -1,7 +1,76 @@
 {
- "updated": "2026-10-30",
- "count": 110,
+ "updated": "2026-11-02",
+ "count": 113,
  "cases": [
+  {
+   "id": "chillout-banner-ad-buster",
+   "title_zh": "CHILL OUT「バナー広告バスター」：在 Coke ON 里狂点关掉烦人横幅广告",
+   "brand": "CHILL OUT（日本可口可乐）",
+   "agency": "日本可口可乐 / 可口可乐系统",
+   "region": "日本",
+   "format": "Coke ON App 内限时关广告小游戏（已结束）+ 户外/网页「秒关横幅」广告",
+   "date": "2026-06",
+   "why_zh": "创意点是把人人都烦的「关不掉的横幅广告」做成游戏核心循环，同时真金白银投放「关闭按钮一目了然」的广告，让品牌主张「秒チル」可玩、可点。好在交互即吐槽共鸣、和产品心智强绑；缺点是仅 Coke ON App、2026-06-17～30 已结束，用来校准「情绪共鸣玩法 + App 内游戏化」。",
+   "style_zh": "App 内限时小游戏：限时内点掉乱飞的「关不掉」横幅广告，通关拿 Coke ON 印章；外场还有「秒で消せるバナー広告」真广告投放",
+   "live_url": "https://c.cocacola.co.jp/app/",
+   "source_url": "https://www.coca-cola.com/jp/ja/media-center/news-20260601-11",
+   "image": "images/chillout-banner-ad-buster.webp",
+   "mobile": "partial",
+   "tags": [
+    "App内",
+    "情绪共鸣",
+    "关广告",
+    "已归档",
+    "日本",
+    "可口可乐"
+   ]
+  },
+  {
+   "id": "pulse-candy-blow-surf",
+   "title_zh": "Pulse Candy「Candy Day Surfing Edition」：对着手机吹气加速的冲浪收集小游戏",
+   "brand": "Pulse Candy（DS Group）",
+   "agency": "MakeAR",
+   "region": "印度",
+   "format": "手机浏览器动作/吹气识别冲浪小游戏（PC 显示请用手机扫码）",
+   "date": "2025-11",
+   "why_zh": "创意点是把「吹口气」变成控制——延续上年 #ScreamForPulse 声音玩法，升级成吹气控速的 60 秒冲浪，产品糖块就是收集物。印度 National Candy Day 一周窗口，MakeAR 制作。好在交互入口非常新奇、产品即道具、手机优先；站点现仍可开（标题现显示 Face-Controlled Runner，保留吹气示意图资源）。缺点是活动窗口短、依赖麦克风/动作识别在不同机型上不稳定，用来校准「非常规传感器控制 + 糖果收集」。",
+   "style_zh": "手机限定冲浪跑酷：吹气/动作识别加速，收 Pulse 糖、躲障碍，有排行榜和分享图",
+   "live_url": "https://www.pulsecandyday.com/",
+   "source_url": "https://www.adgully.com/post/8654/ds-groups-pulse-candy-launches-indias-first-blow-controlled-digital-game",
+   "image": "images/pulse-candy-blow-surf.webp",
+   "mobile": "yes",
+   "tags": [
+    "吹气控制",
+    "动作识别",
+    "跑酷收集",
+    "糖果",
+    "手机限定",
+    "印度"
+   ]
+  },
+  {
+   "id": "dope-security-swg-wars",
+   "title_zh": "dope.security「SWG Wars」：把后门回传和断线做成敌人的复古太空射击网页游戏",
+   "brand": "dope.security",
+   "agency": "dope.security 内部（品牌与产品共创）",
+   "region": "美国 / 全球（网络安全圈）",
+   "format": "手机/桌面浏览器 Phaser HTML5 复古太空射击 + 排行榜",
+   "date": "2025-08",
+   "why_zh": "创意点是把 B2B 安全产品主张「Fly Direct / 不经数据中心绕路」做成可打的敌人：玩家开飞船打掉 backhaul、outage、legacy proxy，玩法本身就是品类叙事。配合 Black Hat 两周排行榜与现场奖品。好在竖版/手机可开、产品痛点=玩法元素，贴合用户对射击方向的兴趣；缺点是偏企业安全受众、奖池活动已过，用来校准「竖版射击 + 产品即敌人」。",
+   "style_zh": "星球大战风像素街机：Space Invaders 式射击，敌机=旧式代理的回传/隧道/宕机痛点",
+   "live_url": "https://play.swgwars.dope.security/",
+   "source_url": "https://ajeer10.medium.com/swg-wars-how-dope-security-turned-a-retro-space-shooter-into-b2b-mindshare-12b7fce8487e",
+   "image": "images/dope-security-swg-wars.webp",
+   "mobile": "yes",
+   "tags": [
+    "竖版射击",
+    "HTML5",
+    "产品即敌人",
+    "B2B",
+    "手机可玩",
+    "美国"
+   ]
+  },
   {
    "id": "nike-acg-all-conditions-world",
    "title_zh": "Nike ACG「All Conditions World」：可转的 WebGL 野地地球，把越野路线做成可逛的活地图",
