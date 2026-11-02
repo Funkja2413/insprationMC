@@ -1,7 +1,74 @@
 {
  "updated": "2026-11-02",
- "count": 113,
+ "count": 117,
  "cases": [
+  {
+   "id": "riize-insomnia-sheep-game",
+   "title_zh": "RIIZE「INSOMNIA SHEEP GAME」：数羊填满睡眠条，躲开咖啡和闹钟的像素失眠小游戏",
+   "brand": "RIIZE（SM Entertainment）",
+   "agency": "SM Entertainment（官方站）",
+   "region": "韩国 / 全球粉丝",
+   "format": "手机浏览器像素跳跃/数羊小游戏",
+   "date": "2026-10-21",
+   "why_zh": "创意点是把单曲《Insomnia》的失眠意象直接做成关卡障碍与道具（咖啡、闹钟 vs 数羊），成员选择带密语彩蛋。2026-10-21 上线、官方域名仍可玩，上线一小时约 7 万人。好在手机浏览器即开、主题=玩法；缺点是偶像宣发向、玩法偏短跑酷，用来校准韩团数字单曲小游戏。",
+   "style_zh": "像素风竖屏：选 6 名成员之一，跳过咖啡/闹钟等失眠干扰，数羊填睡眠条，有 fever 与密语分享",
+   "live_url": "https://riizeofficial.com/",
+   "source_url": "https://allkpop.com/article/2026/10/riizes-sheep-game-for-insomnia-draws-about-70000-players-within-an-hour-of-launch",
+   "image": "images/riize-insomnia-sheep-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "像素",
+    "偶像",
+    "跑酷",
+    "手机可玩",
+    "韩国",
+    "单曲预热"
+   ]
+  },
+  {
+   "id": "niwaka-ale-koikoi",
+   "title_zh": "にわかエール「対戦こいこい」：自研花札对战，五个原创角色陪你打牌",
+   "brand": "にわかエール（Niwaka Ale）",
+   "agency": "にわかエール 自研",
+   "region": "日本",
+   "format": "手机/桌面浏览器花札こいこい对战",
+   "date": "2026-10-16",
+   "why_zh": "2026-10-16 公开的完整卡牌对战，符合用户对手机内卡牌互动的兴趣，非抽奖会场。好在可玩深度够、仍在线；弱点是产品未强绑成牌面道具（偏边喝边玩），用来校准精酿品牌自研卡牌游戏。",
+   "style_zh": "浏览器花札こいこい：对战 5 名原创角色，有 cut-in 与语音，PC+手机可开",
+   "live_url": "https://niwaka-ale.com/koikoi/",
+   "source_url": "https://niwaka-ale.com/news/261016-2/",
+   "image": "images/niwaka-ale-koikoi.webp",
+   "mobile": "yes",
+   "tags": [
+    "卡牌",
+    "花札",
+    "精酿啤酒",
+    "手机可玩",
+    "日本"
+   ]
+  },
+  {
+   "id": "imoyaki-masse-imozuru",
+   "title_zh": "いも焼きマッセ「芋づる式」：烤红薯块带藤蔓连锁的下落消消拼图",
+   "brand": "いも焼きマッセ × StewardTech",
+   "agency": "StewardTech（与いも焼きマッセ联名）",
+   "region": "日本",
+   "format": "手机/桌面浏览器 Canvas 下落拼图",
+   "date": "2026-09-27",
+   "why_zh": "创意点是产品直接变成方块，并用「芋づる式」藤蔓连锁做出品牌专属规则，不是换皮三消。手机浏览器免装免注册，2026-09-27 公开仍可玩。好在产品即道具、机制有辨识度；缺点是高分绑优惠码偏促销收口，用来校准日系食品下落拼图。",
+   "style_zh": "竖屏下落拼图：块全是烤红薯，消行时沿「ツル」藤蔓连锁，「土」块可干扰/转化，高分换店优惠码",
+   "live_url": "https://steward-tech.com/game/imozuru/",
+   "source_url": "https://masse-group.com/imoyaki/blog/imozuru-collabo.html",
+   "image": "images/imoyaki-masse-imozuru.webp",
+   "mobile": "yes",
+   "tags": [
+    "下落拼图",
+    "产品即道具",
+    "食品",
+    "手机可玩",
+    "日本"
+   ]
+  },
   {
    "id": "chillout-banner-ad-buster",
    "title_zh": "CHILL OUT「バナー広告バスター」：在 Coke ON 里狂点关掉烦人横幅广告",
@@ -23,6 +90,29 @@
     "已归档",
     "日本",
     "可口可乐"
+   ]
+  },
+  {
+   "id": "shopify-bfcm-live-globe-pinball",
+   "title_zh": "Shopify BFCM 2025 Live Globe：把全球实时订单塞进浏览器弹珠台",
+   "brand": "Shopify",
+   "agency": "Shopify Engineering",
+   "region": "全球",
+   "format": "手机/桌面浏览器 WebGL 弹珠台 + 实时交易数据",
+   "date": "2025-11-28",
+   "why_zh": "创意点是把 Black Friday 实时成交数据做成可玩的物理弹珠台，而不只是数据大屏。工程博文写明兼顾 mobile。好在交互形式极强、一年内、手机可开；文中另提可选 XR 但主路径是网页弹珠，非 WebAR 门槛。缺点是电商平台自宣、旺季过后实时感变弱，用来校准「数据可视化变玩法」。",
+   "style_zh": "Three.js/R3F 弹珠机：地球仪嵌在台面，实时订单弧线喂球，里程碑触发 multiball 与小游戏模块",
+   "live_url": "https://bfcm.shop/",
+   "source_url": "https://shopify.engineering/2025-bfcm-live-globe",
+   "image": "images/shopify-bfcm-live-globe-pinball.webp",
+   "mobile": "yes",
+   "tags": [
+    "WebGL",
+    "弹珠",
+    "数据可视化",
+    "BFCM",
+    "手机可玩",
+    "全球"
    ]
   },
   {
