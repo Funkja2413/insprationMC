@@ -1,7 +1,30 @@
 {
  "updated": "2026-11-03",
- "count": 119,
+ "count": 121,
  "cases": [
+  {
+   "id": "bean-shot-rush",
+   "title_zh": "Bean Shot「Bean Shot Rush」：圣诞杯插画街景上的送咖啡跑酷网页游戏",
+   "brand": "Bean Shot Coffee",
+   "agency": "The Artist Studio",
+   "region": "英国",
+   "format": "手机/桌面浏览器平台跑酷（触控+键盘）",
+   "date": "2026-10",
+   "why_zh": "创意点是把圣诞杯上的手绘小镇插画直接做成可跑的关卡，包装视觉=游戏世界，送咖啡任务绑定品牌。触控可玩，不是答题抽奖。用来校准「包装/插画资产变成玩法场景」的方向。",
+   "style_zh": "手绘圣诞杯街景变成关卡：咖啡师 Alex 送 6 杯咖啡，从人行道跑到烟囱顶再冲回工作室",
+   "live_url": "https://bean-shot-rush.pages.dev/",
+   "source_url": "https://theartiststudio.agency/bean-shot-rush",
+   "image": "images/bean-shot-rush.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "跑酷",
+    "产品包装即场景",
+    "节日营销",
+    "手机可玩",
+    "英国"
+   ]
+  },
   {
    "id": "citeo-lingette-moi",
    "title_zh": "Citeo × Philippe Katerine「Lingette-moi」：躲开马桶、把湿巾扔进垃圾桶的 8-bit 网页游戏",
@@ -24,6 +47,29 @@
     "手机可玩",
     "法国",
     "排行榜"
+   ]
+  },
+  {
+   "id": "okamoto-jelly-monster-curling",
+   "title_zh": "オカモト JELLY MONSTER「すんどめカーリング」：把果冻润滑做成滑动力度的竖屏冰壶",
+   "brand": "オカモト JELLY MONSTER",
+   "agency": "ENGINE iD（制作方参考公开作品页）",
+   "region": "日本",
+   "format": "手机浏览器竖屏滑动冰壶小游戏（选角色→甩力度→停在靶心）",
+   "date": "2026-05",
+   "why_zh": "创意点是把润滑「滑」的产品体验做成冰壶力度控制：滑太多/太少都失败，刚好停下才得分，玩法=品牌口号。库内已有杜蕾斯街机案例，这条用来校准日系计生品牌把产品物理感做成轻游戏。奖池已关，游戏仍可玩。",
+   "style_zh": "果冻怪物角色冰壶：滑过头/滑不够/正中靶心三种结局，对应「いきすぎ注意」产品主张",
+   "live_url": "https://lovers-labo.jp/campaign/jellymonster-campain/game.html",
+   "source_url": "https://lovers-labo.jp/campaign/jellymonster-campain/",
+   "image": "images/okamoto-jelly-monster-curling.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "物理滑动",
+    "产品即玩法",
+    "竖屏",
+    "手机可玩",
+    "日本"
    ]
   },
   {
