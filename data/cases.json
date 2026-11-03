@@ -1,7 +1,55 @@
 {
- "updated": "2026-11-02",
- "count": 117,
+ "updated": "2026-11-03",
+ "count": 119,
  "cases": [
+  {
+   "id": "citeo-lingette-moi",
+   "title_zh": "Citeo × Philippe Katerine「Lingette-moi」：躲开马桶、把湿巾扔进垃圾桶的 8-bit 网页游戏",
+   "brand": "Citeo Soin & Hygiène",
+   "agency": "Ogilvy Paris（制作 Precious）",
+   "region": "法国",
+   "format": "手机浏览器 8-bit 街机小游戏 + 排行榜 + 分享",
+   "date": "2026-07-01",
+   "why_zh": "创意点是把「湿巾不能冲马桶」做成可玩的街机关卡：湿巾是收集物、马桶是障碍、垃圾桶是得分点，玩法本身就是主张。配明星歌曲与排行榜，不是答题抽奖模板。2026-11-03 用 iPhone Safari UA 实测 lingette-moi.vercel.app 仍可开局。",
+   "style_zh": "复古像素街机：捡湿巾丢进粉色垃圾桶，躲开马桶与管道；配 Philippe Katerine 荒诞流行曲",
+   "live_url": "https://lingette-moi.vercel.app/",
+   "source_url": "https://lbbonline.com/news/citeo-philippe-katerine-lingette-moi-dans-la-poubelle",
+   "image": "images/citeo-lingette-moi.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "街机",
+    "公益营销",
+    "产品即玩法",
+    "手机可玩",
+    "法国",
+    "排行榜"
+   ]
+  },
+  {
+   "id": "cash-app-cash-apples",
+   "title_zh": "Cash App × MSCHF「Cash Apples」：在网页果园摇树捡金苹果换真钱",
+   "brand": "Cash App",
+   "agency": "Applied MSCHF / MSCHF",
+   "region": "美国",
+   "format": "手机/桌面浏览器多人像素果园探索（摇树捡苹果）+ 真金奖励（已结束）",
+   "date": "2026-03-09",
+   "why_zh": "创意点是把「钱长在树上」做成可逛的网页果园，而不是转盘抽奖：摇树、找稀有苹果、阶梯兑奖，由 MSCHF 做玩法气质。活动仅约五天、现已 Game over，用来校准金融品牌网页游戏与限时发钱机制；缺点是偏奖金驱动、玩法本身偏轻。",
+   "style_zh": "可爱像素果园：走动、摇树、找金色/钻石苹果按阶梯兑换 Cash App 现金",
+   "live_url": "https://cashapples.com/",
+   "source_url": "https://www.theverge.com/games/891544/cash-apples-is-giving-away-500000-to-people-who-click-on-trees-in-a-web-browser",
+   "image": "images/cash-app-cash-apples.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "探索",
+    "金融科技",
+    "限时活动",
+    "已归档",
+    "美国",
+    "MSCHF"
+   ]
+  },
   {
    "id": "riize-insomnia-sheep-game",
    "title_zh": "RIIZE「INSOMNIA SHEEP GAME」：数羊填满睡眠条，躲开咖啡和闹钟的像素失眠小游戏",
