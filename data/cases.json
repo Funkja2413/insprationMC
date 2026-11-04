@@ -1,7 +1,57 @@
 {
- "updated": "2026-11-03",
- "count": 121,
+ "updated": "2026-11-04",
+ "count": 123,
  "cases": [
+  {
+   "id": "cathay-fly-high-80",
+   "title_zh": "国泰航空「FLY HIGH with CATHAY」：踩云跳跃冲高的 80 秒周年小游戏",
+   "brand": "Cathay Pacific / 国泰航空（Cathay）",
+   "agency": "未公开（国泰官方发布；韩/日/台三站）",
+   "region": "韩国 / 日本 / 台湾",
+   "format": "手机浏览器竖屏踩云跳跃小游戏 + 国家榜 + 每日抽奖（需 SNS 登录）",
+   "date": "2026-10-28",
+   "why_zh": "把航空品牌体验做成可玩道具：踩白云爬高，飞机/里程/机上冰淇淋等是加减秒道具，80 秒与前 80 名呼应 80 周年。玩法本身讲品牌旅程，不是答题转盘模板。需 Naver/Kakao/LINE 登录后才能进局，故 mobile=partial。",
+   "style_zh": "80 秒限时踩云冲高；飞机、Asia Miles、机上饮品与店商品是加减时道具，处处扣「80」周年梗",
+   "live_url": "https://www.cathaypacific80.com/",
+   "source_url": "https://news.cathaypacific.com/%EC%BA%90%EC%84%B8%EC%9D%B4-%EC%B0%BD%EB%A6%BD-80%EC%A3%BC%EB%85%84-%EA%B8%B0%EB%85%90-%EA%B2%8C%EC%9E%84-%EC%9D%B4%EB%B2%A4%ED%8A%B8",
+   "image": "images/cathay-fly-high-80.webp",
+   "mobile": "partial",
+   "tags": [
+    "HTML5",
+    "跳跃",
+    "产品即玩法",
+    "航空",
+    "手机可玩",
+    "排行榜",
+    "韩国",
+    "日本",
+    "台湾"
+   ]
+  },
+  {
+   "id": "carvana-tap-tap-sold",
+   "title_zh": "Carvana「Tap Tap Sold」：卖车估价拆成三关街机小游戏",
+   "brand": "Carvana",
+   "agency": "The Electric Factory",
+   "region": "美国",
+   "format": "手机浏览器 8-bit 街机三关小游戏 + 排行榜（免安装）",
+   "date": "2026-01",
+   "why_zh": "创意点是把「卖给 Carvana」的估价流程拆成三关可玩街机：里程越低越好、接住好配置躲开柠檬、开车躲开障碍，得分直接映射报价叙事。产品流程本身就是关卡规则，不是答题抽奖模板。2026-11-04 用 iPhone Safari UA 实测主站与三关资源仍在线。",
+   "style_zh": "复古像素街机：里程英雄 / 功能接住 / 路况闪避，把卖车估价三步做成一键点击关卡",
+   "live_url": "https://www.carvanataptapsold.com/",
+   "source_url": "https://theelectricfactory.com/work/carvanaminigames",
+   "image": "images/carvana-tap-tap-sold.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "街机",
+    "产品即玩法",
+    "手机可玩",
+    "美国",
+    "排行榜",
+    "汽车"
+   ]
+  },
   {
    "id": "bean-shot-rush",
    "title_zh": "Bean Shot「Bean Shot Rush」：圣诞杯插画街景上的送咖啡跑酷网页游戏",
