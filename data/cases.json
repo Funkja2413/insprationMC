@@ -1,7 +1,77 @@
 {
- "updated": "2026-11-04",
- "count": 123,
+ "updated": "2026-11-05",
+ "count": 126,
  "cases": [
+  {
+   "id": "wendyquest-legend",
+   "title_zh": "Wendy's「WendyQuest」：快餐宇宙 RPG，打 Boss 换真薯条",
+   "brand": "Wendy's",
+   "agency": "81 Monkeys（制作） / VML（营销）",
+   "region": "美国",
+   "format": "原生 App / Steam 免费像素 RPG（打 Boss 兑 Wendy’s App 真券）",
+   "date": "2026-11-04",
+   "why_zh": "把菜单做成可探索的食物王国：区域、敌人、队友伤害类型都按薯条/Frosty/鸡块/早餐/牛肉命名，打过 Mech Boss 直接掉可兑真餐的 Corner Stone 券。玩法不是套皮转盘，而是长篇回合制+解谜。2026-11-04 刚上线，无公开网页版故标 partial。",
+   "style_zh": "8-bit 像素 RPG：薯条林、Frosty 雪峰、方饼 Corner Stone，Wendy 双铲打机甲",
+   "live_url": "https://www.wendys.com/wendyquest",
+   "source_url": "https://www.wendys.com/blog/wendysr-square-deal-blog/rpg-mobile-game-real-food-rewards-wendyquest-just-dropped",
+   "image": "images/wendyquest-legend.webp",
+   "mobile": "partial",
+   "tags": [
+    "App内",
+    "RPG",
+    "产品即玩法",
+    "手机可玩",
+    "美国",
+    "快餐",
+    "联名"
+   ]
+  },
+  {
+   "id": "douyin-chanmao-waimai",
+   "title_zh": "抖音「馋猫外卖」：假装点外卖，钱进自己的存钱罐",
+   "brand": "抖音支付 / 抖音",
+   "agency": "",
+   "region": "中国大陆",
+   "format": "抖音内搜索小程序：高仿外卖点单流程，实付进「馋猫钱罐」可提现",
+   "date": "2026-08-20",
+   "why_zh": "创意点是把「深夜想点外卖」的多巴胺流程原样搬进游戏，确认下单后明确「不会真实送达」，付款进入自己的馋猫钱罐并可提现。产品（抖音零钱/支付）藏在点单肌肉记忆里，不是答题领券。App 内限定故 mobile=partial。",
+   "style_zh": "高保真外卖 UI 仿品：店铺评分、满减、口味备注、骑手动画，结账变存钱",
+   "live_url": "",
+   "source_url": "https://socialbeta.com/campaign/28313",
+   "image": "images/douyin-chanmao-waimai.webp",
+   "mobile": "partial",
+   "tags": [
+    "小程序",
+    "产品即玩法",
+    "手机可玩",
+    "中国大陆",
+    "金融/支付",
+    "新奇交互"
+   ]
+  },
+  {
+   "id": "mintia-refresh-beat",
+   "title_zh": "ミンティア「リフレッシュビート」：把微压力怪打成节奏靶的30周年音游",
+   "brand": "ミンティア / アサヒグループ食品",
+   "agency": "",
+   "region": "日本",
+   "format": "手机浏览器节奏小游戏（免安装，竖屏点按）",
+   "date": "2026-04-30",
+   "why_zh": "把薄荷糖「一口提神」做成节奏关卡：日常微压力具象成向玩家冲来的怪，按节拍 TAP 等于嗑一粒ミンティア把它们刷新掉。产品手感=操作本身，不是换皮答题。2026-04-30 上线，2026-11-05 官方特设站仍在线。",
+   "style_zh": "复古像素街机风：闹钟/蛇形等「マイクロストレッサーズ」沿路冲来，点按像嗑一粒ミンティア",
+   "live_url": "https://www.mintia.jp/refreshbeat/",
+   "source_url": "https://nlab.itmedia.co.jp/cont/articles/3827021/",
+   "image": "images/mintia-refresh-beat.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "节奏游戏",
+    "产品即玩法",
+    "手机可玩",
+    "日本",
+    "食品"
+   ]
+  },
   {
    "id": "cathay-fly-high-80",
    "title_zh": "国泰航空「FLY HIGH with CATHAY」：踩云跳跃冲高的 80 秒周年小游戏",
