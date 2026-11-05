@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-05",
- "count": 126,
+ "count": 127,
  "cases": [
   {
    "id": "wendyquest-legend",
@@ -24,6 +24,29 @@
     "美国",
     "快餐",
     "联名"
+   ]
+  },
+  {
+   "id": "amamp-safety-pin",
+   "title_zh": "Am Amp「ハートに安全ピン！」：歌名安全别针射心，全员攒点解锁",
+   "brand": "Am Amp",
+   "agency": "tnzn",
+   "region": "日本",
+   "format": "手机浏览器轻互动（点按射别针 + 全球累计解锁）",
+   "date": "2026-11-02",
+   "why_zh": "歌名道具「安全ピン」直接变成操作：点屏幕向爱心射别针。个人分并入全员累计，到百万级节点解锁未公开 MV 等共创内容，不是个人排行抽奖。用来校准小型音乐 IP 网页共创。2026-11-05 手机 UA 仍可开。",
+   "style_zh": "极简网页：心形靶 + 安全别针弹射，个人得分并入全球阶段",
+   "live_url": "https://amamp.tnzn.net/",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000152.000104775.html",
+   "image": "images/amamp-safety-pin.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "产品即玩法",
+    "手机可玩",
+    "日本",
+    "音乐IP",
+    "共创"
    ]
   },
   {
