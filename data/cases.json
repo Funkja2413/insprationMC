@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09",
- "count": 130,
+ "count": 132,
  "cases": [
   {
    "id": "aorus-infinity-run",
@@ -48,6 +48,55 @@
     "手机可玩",
     "越南",
     "体育旅游"
+   ]
+  },
+  {
+   "id": "atheart-34-rhythm-game",
+   "title_zh": "AtHeart「3!4!」：选推成员、MV 连动的网页节奏游",
+   "brand": "AtHeart / TITAN CONTENT",
+   "agency": "TITAN CONTENT（自研）",
+   "region": "日本 / 韩国",
+   "format": "手机浏览器节奏小游戏（竖屏框架约440px，免安装）",
+   "date": "2026-08-21",
+   "why_zh": "把新曲发行做成可玩的节奏关：粉丝选推成员，MV 当背景轨，操作致敬 Pump It Up，打完自动生成可分享成绩卡。音乐 IP 直接变成玩法，不是问卷或抽奖。2026-08-21 上线，2026-11-09 仍可玩。",
+   "style_zh": "街机节奏风：选 AtHeart 成员当推，背景播「3!4!」MV，踩拍出 Perfect/Good 与成绩卡",
+   "live_url": "https://play.atheart.me/3_4",
+   "source_url": "https://prtimes.jp/main/html/rd/p/000000014.000184970.html",
+   "image": "images/atheart-34-rhythm-game.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "节奏游戏",
+    "偶像",
+    "手机可玩",
+    "日本",
+    "韩国",
+    "音乐"
+   ]
+  },
+  {
+   "id": "maeve-mamas-night-off",
+   "title_zh": "Mama's Night Off：公主猫 Donut 用魔法导弹打下落樱桃",
+   "brand": "Maeve Chocolate × Dungeon Crawler Carl",
+   "agency": "",
+   "region": "美国",
+   "format": "手机浏览器轻射击小游戏（嵌在商品页，点按/触控）",
+   "date": "2026-07-15",
+   "why_zh": "新品 Virgin Dirty Shirley 棒里的樱桃/跳跳糖，直接变成 Donut 要打的下落靶；产品原料=关卡元素，再配上 Jeff Hays 新配音。独立页已归档，但商品页仍可点开玩，适合校准「电商页内嵌小游戏」方向。",
+   "style_zh": "像素/插画街机：Donut 发魔法导弹，30 秒打下落樱桃（对应巧克力棒里的樱桃与跳跳糖）",
+   "live_url": "https://maevechocolate.com/products/virgin-dirty-shirley",
+   "source_url": "https://mattdinniman.com/mamas-night-off-available-to-play-now/",
+   "image": "images/maeve-mamas-night-off.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "轻射击",
+    "产品即玩法",
+    "联名",
+    "手机可玩",
+    "美国",
+    "食品",
+    "IP"
    ]
   },
   {
