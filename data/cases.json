@@ -1,7 +1,80 @@
 {
- "updated": "2026-11-05",
- "count": 127,
+ "updated": "2026-11-09",
+ "count": 130,
  "cases": [
+  {
+   "id": "aorus-infinity-run",
+   "title_zh": "AORUS Infinity Run：用跳滑跑酷穿越品牌40年硬件史",
+   "brand": "GIGABYTE / AORUS",
+   "agency": "",
+   "region": "印度",
+   "format": "手机浏览器横版/竖屏友好跑酷（免登录，约90秒一局）",
+   "date": "2026-11-01",
+   "why_zh": "把 GIGABYTE 40 年硬件史做成可跑的时间轴：绿屏年代的 bug、PC Boom 的蓝屏、RGB 时代的过热都是障碍，护盾/超频/散热风扇当道具。产品演进=关卡叙事，不是换皮抽奖。2026-11-01 上线，免登录手机浏览器可玩。",
+   "style_zh": "AORUS chibi 自动奔跑，玩家只负责跳与滑；关卡按 1986→2026 五段硬件时代推进，障碍做成系统故障梗",
+   "live_url": "https://www.aorus.com/in/explore/events-page/infinity-run2/index.html",
+   "source_url": "https://digitalterminal.in/gaming/gigabyte-celebrates-40-years-with-enter-infinity-campaign-for-indian-gamers",
+   "image": "images/aorus-infinity-run.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "跑酷",
+    "产品即玩法",
+    "手机可玩",
+    "印度",
+    "硬件",
+    "周年"
+   ]
+  },
+  {
+   "id": "sportkation-pickleball-breaker",
+   "title_zh": "Pickleball Breaker：把湄公河皮克球度假村做成手机 WebGL 街机",
+   "brand": "Sportkation",
+   "agency": "Code Crush",
+   "region": "越南 / 东南亚",
+   "format": "手机浏览器 WebGL 街机（Three.js，免安装免注册）",
+   "date": "2026-09-10",
+   "why_zh": "度假村把自己的湄公河球场做成可分享的 Three.js 街机：拖拍、砸靶、连击，场景就是真实场地数字孪生。零安装、专为手机调过性能，品牌场所直接变成玩法空间，不是换皮答题。",
+   "style_zh": "Breakout 式隔网对打：真实度假村球场做成 Mekong Night 3D 场景，连击倍率与六种道具",
+   "live_url": "https://pickleball.sportkation.com/",
+   "source_url": "https://sportkation.com/blog/pickleball-breaker-arcade-game",
+   "image": "images/sportkation-pickleball-breaker.webp",
+   "mobile": "yes",
+   "tags": [
+    "WebGL",
+    "3D",
+    "街机",
+    "产品即场景",
+    "手机可玩",
+    "越南",
+    "体育旅游"
+   ]
+  },
+  {
+   "id": "mercari-mikes-surf",
+   "title_zh": "メルカリ「mike's surf」：吉祥物冲浪收齐13枚周年币",
+   "brand": "メルカリ",
+   "agency": "",
+   "region": "日本",
+   "format": "手机浏览器横版冲浪小游戏（触摸/方向键，免安装）",
+   "date": "2026-07-01",
+   "why_zh": "把メルカリ猫吉祥物做成冲浪主角，13 枚硬币对应 13 周年——品牌符号直接变成收集目标与关卡节奏。操作只有左右跳，但后期 Boss 会逼出路线规划。抽奖已关，2026-11-09 游戏页仍可玩。",
+   "style_zh": "官方猫吉祥物 MIKE 踩浪板躲鲨鱼、收编号硬币；中段出现搞怪 Boss，清完取旗通关",
+   "live_url": "https://events.mercari.com/games/mike-surf/",
+   "source_url": "https://jp-news.mercari.com/info/53928",
+   "image": "images/mercari-mikes-surf.webp",
+   "mobile": "yes",
+   "tags": [
+    "HTML5",
+    "轻度游戏",
+    "吉祥物",
+    "产品即玩法",
+    "手机可玩",
+    "日本",
+    "电商",
+    "周年"
+   ]
+  },
   {
    "id": "wendyquest-legend",
    "title_zh": "Wendy's「WendyQuest」：快餐宇宙 RPG，打 Boss 换真薯条",
