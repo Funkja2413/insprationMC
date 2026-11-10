@@ -13,6 +13,9 @@ header{position:sticky;top:0;z-index:10;background:rgba(245,245,242,.94);backdro
 h1{font-size:19px;margin:0 0 8px;display:flex;align-items:baseline;gap:8px}
 h1 small{font-size:12px;color:var(--sub);font-weight:400}
 #q{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
+.gameplay-row{display:flex;align-items:center;gap:10px;padding-top:8px}
+#gameplayFilter{min-width:0;max-width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);font:13px inherit}
+#gameplayNote{font-size:12px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink);cursor:pointer}
@@ -63,6 +66,10 @@ footer a{color:var(--sub)}
 <header>
   <h1>互动营销灵感库 <small id="count"></small></h1>
   <input id="q" type="search" placeholder="搜索品牌 / 关键词" autocomplete="off">
+  <div class="gameplay-row">
+    <select id="gameplayFilter" aria-label="玩法筛选"></select>
+    <span id="gameplayNote" title="玩法数量按全部未排除案例统计">玩法排行加载中…</span>
+  </div>
   <div class="chips" id="chips"></div>
 </header>
 <main id="list"><div id="empty">没有匹配的案例</div></main>
@@ -76,6 +83,9 @@ footer a{color:var(--sub)}
   <div id="tokErr"></div>
   <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
 </div></div>
+<script src="presentation.js"></script>
+<script src="filters.js"></script>
+<script src="gameplay-trends.js"></script>
 <script>
 (function(){
 "use strict";
@@ -84,7 +94,8 @@ var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
 var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
-var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false, activeGameplay="", gameplayReady=false;
+var gameplayTracker=InspoGameplayTrends.createTracker({storage:{getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)}},version:"gameplay-taxonomy-v1"});
 
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
 function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
@@ -227,6 +238,7 @@ function card(c){
 function matches(c,q){
   if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
   if(mobileOnly&&c.mobile!=="yes")return false;
+  if(activeGameplay&&InspoFilters.classify(c).gameplay!==activeGameplay)return false;
   if(!q)return true;
   return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
 }
@@ -237,7 +249,25 @@ function render(){
   vis.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
   empty.style.display=n?"none":"block";
   document.getElementById("count").textContent=(n===vis.length?vis.length:n+" / "+vis.length)+" 个案例";
+  renderGameplayFilter(vis);
   renderChips(vis);
+}
+function renderGameplayFilter(vis){
+  var select=document.getElementById("gameplayFilter"), note=document.getElementById("gameplayNote");
+  var ranked=InspoFilters.gameplayStats(vis), total=ranked.reduce(function(sum,row){return sum+row.count},0);
+  var comparison=gameplayReady?gameplayTracker.compare(ranked):{hasBaseline:false,deltas:{}};
+  select.replaceChildren();
+  var all=el("option","","玩法 · 全部（"+total+"）"); all.value=""; select.appendChild(all);
+  ranked.forEach(function(row){
+    var delta=comparison.deltas[row.value]||0;
+    var label=row.label+" · "+row.count+" 个"+(comparison.hasBaseline&&delta?"（"+(delta>0?"+":"")+delta+"）":"");
+    var option=el("option","",label); option.value=row.value; option.disabled=row.count===0; select.appendChild(option);
+  });
+  select.value=activeGameplay;
+  if(gameplayReady){
+    var saved=gameplayTracker.save(ranked);
+    note.textContent="玩法排行 · 全库 "+total+" 个 · 数量从高到低"+(comparison.hasBaseline?" · 增减见选项":saved?" · 已记录，下次可对比变化":"");
+  }else note.textContent="玩法排行 · 正在核对排除记录";
 }
 function renderChips(vis){
   var box=document.getElementById("chips"), counts={}; box.innerHTML="";
@@ -253,6 +283,7 @@ function renderChips(vis){
 /* ---------- init ---------- */
 document.getElementById("undo").onclick=undo;
 document.getElementById("q").addEventListener("input",render);
+document.getElementById("gameplayFilter").addEventListener("change",function(e){activeGameplay=e.target.value;render()});
 document.getElementById("sync").onclick=function(){flush()};
 document.getElementById("setLink").onclick=function(e){e.preventDefault();openModal("")};
 document.getElementById("tokCancel").onclick=function(){closeModal();showSync()};
@@ -268,7 +299,7 @@ try{JSON.parse(ls(K_SEEN)||"[]").forEach(function(id){remote.add(id)})}catch(e){
 fetch("data/cases.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   cases=d.cases||d; if(d.updated)document.getElementById("upd").textContent="更新于 "+d.updated;
   render();
-  return fetchRemoved().then(function(arr){applyRemoved(arr);render();showSync();if(pending.length&&token())flush()});
+  return fetchRemoved().then(function(arr){applyRemoved(arr);gameplayReady=Array.isArray(arr);render();showSync();if(pending.length&&token())flush()});
 }).catch(function(e){document.getElementById("empty").textContent="加载失败："+e;document.getElementById("empty").style.display="block"});
 })();
 </script>
