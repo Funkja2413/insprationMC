@@ -8,96 +8,38 @@
 <style>
 :root{--bg:#f5f5f2;--card:#fff;--ink:#1d1d1f;--sub:#6b6b70;--line:#e6e6e2;--acc:#ff5a36;--red:#d93025}
 *{box-sizing:border-box}
-[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
 header{position:sticky;top:0;z-index:10;background:rgba(245,245,242,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:12px 24px 8px;border-bottom:1px solid var(--line);width:100%}
 h1{font-size:19px;margin:0 0 8px;display:flex;align-items:baseline;gap:8px}
 h1 small{font-size:12px;color:var(--sub);font-weight:400}
-#q{width:100%;min-width:0;flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff;min-height:44px}
-.search-tools{display:flex;align-items:center;gap:8px}
-.filter-select,.filter-trigger{min-height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;font-size:13px}
-#gameplayFilter{width:206px;flex-shrink:0}
-.gameplay-note{font-size:11px;color:var(--sub);margin:7px 0 0;line-height:1.6}
-.gameplay-note span{white-space:nowrap}
-.dialog-gameplay-note{margin:-9px 0 16px}
-.filter-select{max-width:100%;padding:9px 30px 9px 12px;cursor:pointer}
-.filter-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 12px;white-space:nowrap;cursor:pointer;flex-shrink:0}
-.filter-trigger svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
-.filter-count{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 5px;background:var(--ink);color:white;border-radius:999px;font-size:11px}
-#mobileFilters{display:none}
-.active-filters{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding-top:8px}
-.active-filter{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:6px 10px;border:1px solid #f3d8ca;border-radius:8px;background:#fff3ed;color:#883c24;font:inherit;font-size:12px;cursor:pointer}
-.active-filter span{font-size:17px;line-height:1}
-.clear-filters{border:0;background:transparent;color:var(--sub);font:inherit;font-size:12px;min-height:36px;padding:6px 10px;cursor:pointer;text-decoration:underline}
-.filter-dialog{width:calc(100% - 32px);max-width:480px;max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--line);border-radius:18px;color:var(--ink);background:#fff;overflow:auto;box-shadow:0 16px 60px #0003}
-.filter-dialog::backdrop{background:#0006}
-.filter-dialog-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 0 20px}
-.filter-dialog h2{font-size:19px;margin:0}
-.filter-close{width:44px;height:44px;border:0;background:transparent;color:var(--sub);font-size:27px;cursor:pointer;border-radius:10px}
-.filter-body{padding:4px 20px 20px}
-.filter-description{font-size:13px;color:var(--sub);margin:0 0 18px}
-.filter-field{display:block;font-size:13px;font-weight:600;margin-bottom:16px}
-.filter-field select{display:block;width:100%;margin-top:7px;font-weight:400;font-size:15px}
-.filter-check{display:flex;align-items:center;gap:10px;min-height:48px;font-size:14px;cursor:pointer}
-.filter-check input{width:18px;height:18px;accent-color:var(--ink);margin:0}
-.filter-dialog-actions{position:sticky;bottom:0;display:flex;gap:10px;padding:14px 20px;background:#fff;border-top:1px solid var(--line)}
-.filter-dialog-actions button{min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;cursor:pointer}
-.filter-dialog-actions .apply{flex:1;background:var(--ink);color:#fff;border-color:var(--ink)}
-body:has(dialog[open]){overflow:hidden}
-@media(min-width:600px){.dialog-primary-filters{display:none}}
-@media(max-width:599px){.desktop-filter{display:none}#mobileFilters{display:inline-flex}.filter-trigger{padding:9px 11px}.filter-dialog{width:100%;max-width:none;max-height:85dvh;margin:auto 0 0;border-radius:20px 20px 0 0;border-bottom:0}.filter-dialog-actions{padding-bottom:calc(14px + env(safe-area-inset-bottom))}}
-.views{display:flex;gap:6px;margin-bottom:9px}
-.view{border:0;border-radius:9px;background:transparent;color:var(--sub);padding:8px 11px;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
-.view[aria-selected="true"]{background:var(--ink);color:#fff}
-.view-count{font-size:12px;margin-left:5px;opacity:.8}
-button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+#q{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink);cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{width:100%;max-width:100%;margin:0;padding:16px 24px;display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
 @media(max-width:599px){header{padding:12px 12px 8px}main{padding:12px;gap:14px;grid-template-columns:1fr}footer{padding:20px 12px 90px}}
 .card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:opacity .25s,transform .25s;min-width:0}
 .card.gone{opacity:0;transform:scale(.97)}
-.imgw{position:relative;aspect-ratio:4/3;background:#e9e9e6;flex-shrink:0;overflow:hidden}
-.imgw img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.imgw{position:relative;aspect-ratio:4/3;background:#e9e9e6}
+.imgw img{width:100%;height:100%;object-fit:cover;display:block}
 .mb{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
 .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
 .t{font-size:16px;font-weight:600;line-height:1.4;margin:0}
-.case-summary{display:flex;align-items:center;align-self:flex-start;flex-wrap:wrap;gap:4px 6px;max-width:100%;margin:2px 0;padding:5px 8px;border-radius:7px;background:#fff3ed;color:#883c24;font-size:12px;line-height:1.5}
-.summary-mechanic{font-weight:600}
-.summary-cross{color:#b56c51}
-.summary-mechanic,.summary-industry{white-space:nowrap}
 .meta{font-size:12.5px;color:var(--sub)}
 .why{font-size:14px;margin:0;color:#333}
-.acts{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px;flex-wrap:nowrap}
-.action-group{display:flex;gap:4px;align-items:center;min-width:0}
-.action-group--manage{margin-left:auto}
-.icon-action{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:10px;background:#fafaf8;color:var(--ink);text-decoration:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.icon-action svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
-.icon-action.play{background:var(--ink);color:#fff;border-color:var(--ink)}
-.icon-action.del{color:var(--red);border-color:#f1c9c4;background:#fff}
-.icon-action.fav[aria-pressed="true"]{background:#fff0e9;color:#ad361e;border-color:#f4bea9}
-.icon-action.fav[aria-pressed="true"] svg{fill:currentColor}
-.icon-action:active{transform:scale(.96)}
-.action-tooltip{position:absolute;bottom:calc(100% + 7px);left:0;z-index:2;width:max-content;max-width:210px;padding:5px 8px;border-radius:6px;background:#222;color:#fff;font-size:12px;font-weight:400;line-height:1.45;text-align:left;white-space:normal;pointer-events:none;visibility:hidden;opacity:0;transition:opacity .12s}
-.action-group--manage .action-tooltip{left:auto;right:0}
-.icon-action:focus-visible .action-tooltip{visibility:visible;opacity:1}
-@media(hover:hover){.icon-action:hover{box-shadow:0 0 0 2px var(--line)}.icon-action:hover .action-tooltip{visibility:visible;opacity:1}}
-.action-dialog{width:calc(100% - 32px);max-width:420px;max-height:calc(100dvh - 32px);padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);box-shadow:0 16px 60px #0003;overflow:auto}
-.action-dialog::backdrop{background:#0006}
-.action-dialog h3{font-size:18px;margin:0 0 8px}
-.action-dialog p{font-size:14px;margin:0 0 16px;color:var(--sub);overflow-wrap:anywhere}
-.experience-links{display:flex;flex-direction:column;gap:8px}
-.experience-links a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--ink);text-decoration:none;min-height:44px}
-.experience-links a:hover{background:var(--bg)}
-.experience-links small{display:block;margin-top:2px;color:var(--sub);overflow-wrap:anywhere}
-.dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
-.dialog-actions button{min-height:44px;padding:8px 14px;font:inherit;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);cursor:pointer}
-.dialog-actions .yes{background:var(--red);color:#fff;border-color:var(--red)}
-@media(prefers-reduced-motion:reduce){.icon-action:active{transform:none}.action-tooltip{transition:none}}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11.5px;background:#f0f0ec;color:#555;padding:1px 7px;border-radius:6px}
+.acts{display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:4px;flex-wrap:wrap}
+.acts a{font-size:13.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 11px;border-radius:9px;background:#fafaf8}
+.acts a.play{background:var(--ink);color:#fff;border-color:var(--ink)}
+.del{margin-left:auto;font-size:13.5px;border:1px solid #f1c9c4;color:var(--red);background:#fff;padding:6px 12px;border-radius:9px;cursor:pointer}
+.confirm{margin-left:auto;display:flex;gap:6px}
+.confirm button{font-size:13.5px;padding:6px 11px;border-radius:9px;cursor:pointer;border:1px solid var(--line);background:#fff}
+.confirm .yes{background:var(--red);color:#fff;border-color:var(--red)}
 #empty{display:none;text-align:center;color:var(--sub);padding:40px 0;grid-column:1/-1}
 footer{text-align:center;font-size:12px;color:var(--sub);padding:20px 24px 90px;width:100%}
 footer a{color:var(--sub)}
-#favoriteHelp{max-width:620px;margin:8px auto 0}
-#favoriteStatus{margin-top:4px;min-height:1.55em}
-#favoriteRetry{border:0;background:transparent;color:var(--ink);text-decoration:underline;cursor:pointer;padding:5px 8px;font:inherit}
 #toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(150%);background:#222;color:#fff;border-radius:12px;padding:10px 12px 10px 16px;display:flex;gap:14px;align-items:center;font-size:14px;transition:transform .25s;z-index:30;max-width:92vw}
 #toast.show{transform:translateX(-50%) translateY(0)}
 #toast button{background:none;border:0;color:#ffb199;font-size:14px;font-weight:600;cursor:pointer;padding:4px 6px}
@@ -120,53 +62,20 @@ footer a{color:var(--sub)}
 <body>
 <header>
   <h1>互动营销灵感库 <small id="count"></small></h1>
-  <div class="views" role="tablist" aria-label="案例视图">
-    <button type="button" class="view" id="allTab" role="tab" aria-selected="true" aria-controls="list">全部案例 <span class="view-count" id="allCount" aria-hidden="true"></span></button>
-    <button type="button" class="view" id="favoritesTab" role="tab" aria-label="我喜欢的case" aria-selected="false" aria-controls="list" tabindex="-1">我喜欢的case <span class="view-count" id="favoriteCount" aria-hidden="true"></span></button>
-  </div>
-  <div class="search-tools">
-    <input id="q" type="search" placeholder="搜索品牌 / 关键词" aria-label="搜索品牌 / 关键词" autocomplete="off">
-    <select id="gameplayFilter" class="filter-select desktop-filter" aria-label="玩法" aria-describedby="gameplayNote"></select>
-    <select id="industryFilter" class="filter-select desktop-filter" aria-label="品牌行业"></select>
-    <button id="moreFilters" class="filter-trigger desktop-filter" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false">更多筛选 <span class="filter-count" hidden></span></button>
-    <button id="mobileFilters" class="filter-trigger" type="button" aria-haspopup="dialog" aria-controls="filterDialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg>筛选 <span class="filter-count" hidden></span></button>
-  </div>
-  <p class="gameplay-note" id="gameplayNote" aria-live="polite">玩法按本库案例数量从高到低排序。</p>
-  <div class="active-filters" id="activeFilters" aria-label="已选筛选条件" hidden></div>
+  <input id="q" type="search" placeholder="搜索品牌 / 关键词" autocomplete="off">
+  <div class="chips" id="chips"></div>
 </header>
-<dialog id="filterDialog" class="filter-dialog" aria-labelledby="filterTitle" aria-describedby="filterDescription">
-  <div class="filter-dialog-head"><h2 id="filterTitle">筛选案例</h2><button type="button" id="closeFilters" class="filter-close" aria-label="关闭筛选">×</button></div>
-  <div class="filter-body">
-    <p id="filterDescription" class="filter-description">组合筛选条件，找到适合参考的案例。</p>
-    <div class="dialog-primary-filters">
-      <label class="filter-field" for="dialogGameplay">玩法<select id="dialogGameplay" class="filter-select" aria-describedby="dialogGameplayNote"></select></label>
-      <p class="gameplay-note dialog-gameplay-note" id="dialogGameplayNote"></p>
-      <label class="filter-field" for="dialogIndustry">品牌行业<select id="dialogIndustry" class="filter-select"></select></label>
-    </div>
-    <label class="filter-check"><input type="checkbox" id="filterMobile">仅手机可玩</label>
-    <label class="filter-check"><input type="checkbox" id="filterDemo">有实机演示</label>
-  </div>
-  <div class="filter-dialog-actions"><button type="button" id="resetFilters">重置</button><button type="button" id="applyFilters" class="apply">查看案例</button></div>
-</dialog>
-<main id="list" role="tabpanel" aria-labelledby="allTab"><div id="empty">没有匹配的案例</div></main>
-<footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a>
-  <p id="favoriteHelp">收藏先保存在本浏览器；已有 GitHub 授权时自动同步。同步后的收藏随此公开案例库共享。</p>
-  <div id="favoriteStatus" role="status" aria-live="polite"></div><button type="button" id="favoriteRetry" hidden>重试收藏同步</button>
-</footer>
+<main id="list"><div id="empty">没有匹配的案例</div></main>
+<footer><span id="upd"></span> · <a href="#" id="setLink">令牌设置</a></footer>
 <div id="sync"></div>
-<div id="toast"><span id="toastMsg">已标记为不感兴趣</span><button id="undo">撤销</button></div>
+<div id="toast"><span id="toastMsg">已删除</span><button id="undo">撤销</button></div>
 <div class="modal" id="tokModal"><div class="sheet">
   <h3>需要 GitHub 令牌</h3>
-  <p>“不感兴趣”会同步到此案例库。请在 GitHub → Settings → Developer settings → Fine-grained tokens 新建令牌：只选 <b>insprationMC</b> 仓库，权限 Contents 设为 Read and write，粘贴到下面（只保存在本机浏览器）。</p>
+  <p>删除会写入仓库。请在 GitHub → Settings → Developer settings → Fine-grained tokens 新建令牌：只选 <b>insprationMC</b> 仓库，权限 Contents 设为 Read and write，粘贴到下面（只保存在本机浏览器）。</p>
   <input id="tokIn" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
   <div id="tokErr"></div>
   <div class="row"><button class="warn" id="tokClear">清除已保存令牌</button><button id="tokCancel">稍后</button><button class="pri" id="tokSave">保存</button></div>
 </div></div>
-<dialog id="actionDialog" class="action-dialog" aria-labelledby="actionDialogTitle" aria-describedby="actionDialogDescription"></dialog>
-<script src="favorites.js"></script>
-<script src="presentation.js"></script>
-<script src="filters.js"></script>
-<script src="gameplay-trends.js"></script>
 <script>
 (function(){
 "use strict";
@@ -175,11 +84,7 @@ var API="https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+PATH;
 var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+PATH;
 var K_TOK="inspo-gh-token", K_PEND="inspo-pending-deletes", K_SEEN="inspo-removed-cache";
 var UNDO_MS=5000;
-var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, favoritesOnly=false;
-var gameplayTracker=InspoGameplayTrends.createTracker({storage:{getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)}},version:"gameplay-taxonomy-v1"});
-var gameplayReady=false,gameplayLoadFailed=false,gameplayCountsKey=null;
-var filterState={gameplay:"",industry:"",mobileOnly:false,demoOnly:false}, filterDraft=null;
-var filterDialog=document.getElementById("filterDialog"), filterOpener=null;
+var cases=[], remote=new Set(), pending=[], timers={}, flushing=false, activeTag="", mobileOnly=false;
 
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null}}
 function loadPending(){try{pending=JSON.parse(ls(K_PEND)||"[]")||[]}catch(e){pending=[]} pending.forEach(function(p){p.ready=true})}
@@ -188,110 +93,21 @@ function token(){return ls(K_TOK)||""}
 function hidden(id){return remote.has(id)||pending.some(function(p){return p.id===id})}
 function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e}
 function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:""}
-function getDemoLabel(c){return c.demo_label||"实机演示"}
-function hasGameplayDemo(c){return !!safeUrl(c.demo_url)&&c.demo_type!=="puzzle_source"}
-
-/* Only the presentation of actions changes; persisted case and preference data stay intact. */
-var iconPaths={
-  gamepad:'<path d="M6 8h12a3 3 0 0 1 3 2.5l1 7a2.5 2.5 0 0 1-4.2 2.1L15 17H9l-2.8 2.6A2.5 2.5 0 0 1 2 17.5l1-7A3 3 0 0 1 6 8Z"/><path d="M6 11v4M4 13h4M15 12h.01M18 14h.01"/>',
-  demo:'<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/>',
-  source:'<path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
-  favorite:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',
-  heartBroken:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/><path d="m12 5.7-2 4.8 4 3-2 3V21"/>'
-};
-function iconAction(tag,cls,icon,label){
-  var control=el(tag,"icon-action "+cls); if(tag==="button")control.type="button";
-  control.setAttribute("aria-label",label);
-  control.innerHTML='<svg viewBox="0 0 24 24" data-icon="'+icon+'" aria-hidden="true" focusable="false">'+iconPaths[icon]+'</svg>';
-  var tip=el("span","action-tooltip",label); tip.setAttribute("aria-hidden","true");control.appendChild(tip);
-  return control;
-}
-function externalLink(control,url){control.href=url;control.target="_blank";control.rel="noopener noreferrer";return control}
-function experienceUrls(c){
-  var urls=[c.live_url].concat(Array.isArray(c.additional_live_urls)?c.additional_live_urls:[]).map(safeUrl).filter(Boolean);
-  return urls.filter(function(url,index){return urls.indexOf(url)===index});
-}
-var actionDialog=document.getElementById("actionDialog"), actionOpener=null, actionContext=null, actionCloseFocus=null;
-function openActionDialog(opener,title,description){
-  actionContext={id:opener.closest(".card").dataset.id,selector:opener.classList.contains("play")?".play":".del"};
-  actionOpener=opener;opener.setAttribute("aria-expanded","true");actionDialog.replaceChildren();
-  var heading=el("h3","",title);heading.id="actionDialogTitle";actionDialog.appendChild(heading);
-  var detail=el("p","",description);detail.id="actionDialogDescription";actionDialog.appendChild(detail);
-  return actionDialog;
-}
-function dialogButton(row,label,cls,fn){var button=el("button",cls,label);button.type="button";button.onclick=fn;row.appendChild(button);return button}
-function currentActionOpener(){
-  if(!actionContext)return null;
-  var owner=Array.prototype.find.call(document.querySelectorAll(".card"),function(cardEl){return cardEl.dataset.id===actionContext.id});
-  return owner&&owner.querySelector(actionContext.selector);
-}
-actionDialog.addEventListener("close",function(){
-  var opener=currentActionOpener()||actionOpener;
-  if(opener)opener.setAttribute("aria-expanded","false");
-  var target=actionCloseFocus||(opener&&opener.isConnected?opener:document.getElementById(favoritesOnly?"favoritesTab":"allTab"));
-  if(target)target.focus({preventScroll:true});
-  actionOpener=actionContext=actionCloseFocus=null;
-});
-actionDialog.addEventListener("click",function(e){
-  if(e.target!==actionDialog)return;var rect=actionDialog.getBoundingClientRect();
-  if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)actionDialog.close();
-});
-function showExperiences(c,urls,opener){
-  var dialog=openActionDialog(opener,"体验链接",c.title_zh), links=el("div","experience-links");
-  urls.forEach(function(url,index){
-    var link=externalLink(el("a","","体验链接 "+(index+1)),url);
-    link.appendChild(el("small","",url));links.appendChild(link);
-  });
-  dialog.appendChild(links);var row=el("div","dialog-actions");
-  dialogButton(row,"关闭","",function(){dialog.close()});dialog.appendChild(row);dialog.showModal();
-}
-function confirmDelete(c,cardEl,opener){
-  var dialog=openActionDialog(opener,"不再显示这个案例？",c.title_zh+"。标记后会从全部案例和收藏视图中隐藏，5 秒内可撤销。"), row=el("div","dialog-actions");
-  dialogButton(row,"取消","",function(){dialog.close()});
-  dialogButton(row,"确认不感兴趣","yes",function(){actionCloseFocus=document.getElementById("undo");dialog.close();doDelete(c.id,cardEl)});
-  dialog.appendChild(row);dialog.showModal();
-}
 
 function b64enc(s){return btoa(unescape(encodeURIComponent(s)))}
 function b64dec(s){return decodeURIComponent(escape(atob(s.replace(/\s/g,""))))}
-var favoriteSignature="", favorites=new InspoFavorites({
-  storage:{getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)}},
-  fetch:function(url,options){return fetch(url,options)},token:token,encode:b64enc,decode:b64dec,
-  api:"https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/data/favorites.json",
-  raw:"https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/data/favorites.json",
-  path:"data/favorites.json",onChange:function(){
-    var signature=cases.filter(function(c){return favorites.has(c.id)}).map(function(c){return c.id}).join("\n");
-    if(signature!==favoriteSignature){favoriteSignature=signature;render()}
-    showFavoriteStatus();
-  }
-});
-function showFavoriteStatus(){
-  var state=favorites.status(), message;
-  if(!state.persistent)message="浏览器无法保存收藏，刷新后可能丢失。";
-  else if(state.syncing)message="收藏已保存，正在同步…";
-  else if(state.error==="auth")message="收藏已保存在本浏览器，GitHub 同步授权不可用。";
-  else if(state.error)message="收藏已保存在本浏览器，暂时无法读取或同步远端收藏。";
-  else if(state.pending&&!state.authorized)message="收藏已保存在本浏览器，尚未连接 GitHub 同步。";
-  else if(state.pending)message="收藏已保存在本浏览器，等待同步。";
-  else if(state.authorized&&!state.loaded)message="正在检查收藏同步状态…";
-  else if(state.authorized)message="收藏已同步；使用同一案例库可在其他设备查看。";
-  else message="未连接 GitHub 同步，新收藏仅保存在本浏览器。";
-  document.getElementById("favoriteStatus").textContent=message;
-  document.getElementById("favoriteRetry").hidden=state.syncing||(!state.error&&!state.pending)||!state.authorized;
-}
-function selectView(only){favoritesOnly=only;render()}
 
 /* ---------- remote removed.json ---------- */
-function validateRemoved(arr){if(!Array.isArray(arr))throw new Error("invalid removed list");return arr}
 function fetchRemoved(){
   var h={"Accept":"application/vnd.github+json"}; var t=token(); if(t)h.Authorization="Bearer "+t;
   return fetch(API+"?ref="+BRANCH+"&t="+Date.now(),{headers:h,cache:"no-store"}).then(function(r){
+    if(r.status===404)return [];
     if(!r.ok)throw new Error("api "+r.status);
-    return r.json().then(function(j){return validateRemoved(JSON.parse(b64dec(j.content||"")))});
+    return r.json().then(function(j){return JSON.parse(b64dec(j.content||"")||"[]")});
   }).catch(function(){
-    return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0; return r.json()}).then(validateRemoved)
+    return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0; return r.json()})
   }).catch(function(){
-    return fetch("data/removed.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(validateRemoved).catch(function(){return null})
+    return fetch("data/removed.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():[]}).catch(function(){return null})
   });
 }
 function applyRemoved(arr){
@@ -345,7 +161,7 @@ function flush(){
 function showSync(msg){
   var s=document.getElementById("sync"), n=pending.filter(function(p){return p.ready}).length;
   if(msg){s.textContent=msg;s.style.display="block";return}
-  if(n){s.textContent=n+" 条不感兴趣标记待同步 · 点此重试";s.style.display="block"} else s.style.display="none";
+  if(n){s.textContent=n+" 条删除待同步 · 点此重试";s.style.display="block"} else s.style.display="none";
 }
 
 /* ---------- delete / undo ---------- */
@@ -354,7 +170,7 @@ function doDelete(id,cardEl){
   if(hidden(id))return;
   pending.push({id:id,at:new Date().toISOString(),ready:false}); savePending();
   cardEl.classList.add("gone"); setTimeout(function(){render()},250);
-  lastId=id; toast("已标记为不感兴趣");
+  lastId=id; toast("已删除");
   timers[id]=setTimeout(function(){
     delete timers[id];
     var p=pending.find(function(x){return x.id===id}); if(p){p.ready=true; flush()}
@@ -387,202 +203,72 @@ function card(c){
   var iw=el("div","imgw");
   if(c.image){var im=el("img"); im.loading="lazy"; im.decoding="async"; im.alt=""; im.src=c.image; iw.appendChild(im)}
   if(c.mobile==="yes")iw.appendChild(el("span","mb","📱 手机可玩"));
-  if(c.mobile==="historical")iw.appendChild(el("span","mb","📱 手机互动案例"));
   a.appendChild(iw);
   var b=el("div","body");
   b.appendChild(el("h2","t",c.title_zh));
-  var summary=InspoPresentation.summarize(c), summaryLine=el("p","case-summary");
-  summaryLine.appendChild(el("span","summary-mechanic",summary.mechanic));
-  summaryLine.appendChild(el("span","summary-cross","×"));
-  summaryLine.appendChild(el("span","summary-industry",summary.industry));
-  b.appendChild(summaryLine);
   b.appendChild(el("div","meta",[c.brand,c.region,c.date&&c.date!=="unknown"?c.date:""].filter(Boolean).join(" · ")));
   if(c.format)b.appendChild(el("div","meta",c.format));
   b.appendChild(el("p","why",c.why_zh));
+  if(c.tags&&c.tags.length){var tg=el("div","tags"); c.tags.forEach(function(x){tg.appendChild(el("span","tag",x))}); b.appendChild(tg)}
   var ac=el("div","acts");
-  var left=el("div","action-group action-group--links"), right=el("div","action-group action-group--manage");
-  ac.appendChild(left);ac.appendChild(right);
-  var lu=safeUrl(c.live_url), du=safeUrl(c.demo_url), su=safeUrl(c.source_url);
-  var urls=experienceUrls(c);
-  if(urls.length){
-    var l=iconAction(urls.length>1?"button":"a","play","gamepad","体验链接");
-    if(urls.length===1)externalLink(l,urls[0]);
-    else{l.setAttribute("aria-haspopup","dialog");l.setAttribute("aria-expanded","false");l.setAttribute("aria-controls","actionDialog");l.onclick=function(){showExperiences(c,urls,l)}}
-    left.appendChild(l);
-  }
-  if(du){var demoLabel=c.demo_type==="puzzle_source"?getDemoLabel(c):"实机演示"+(c.demo_label&&c.demo_label!=="实机演示"?" · "+c.demo_label:"");left.appendChild(externalLink(iconAction("a","demo","demo",demoLabel),du))}
-  if(su&&su!==lu&&su!==du)left.appendChild(externalLink(iconAction("a","source","source","来源"),su));
-  var f=iconAction("button","fav","favorite",favorites.has(c.id)?"已收藏（点击取消）":"收藏");
-  f.dataset.favoriteId=c.id; f.setAttribute("aria-pressed",String(favorites.has(c.id)));
-  f.setAttribute("aria-label",(favorites.has(c.id)?"已收藏（点击取消）：":"收藏：")+c.title_zh);
-  f.onclick=function(){favorites.set(c.id,!favorites.has(c.id))}; right.appendChild(f);
-  var d=iconAction("button","del","heartBroken","不感兴趣");
-  d.setAttribute("aria-haspopup","dialog");d.setAttribute("aria-expanded","false");d.setAttribute("aria-controls","actionDialog");
-  d.onclick=function(){confirmDelete(c,a,d)};
-  right.appendChild(d); b.appendChild(ac); a.appendChild(b);
+  var lu=safeUrl(c.live_url), su=safeUrl(c.source_url);
+  if(lu){var l=el("a","play","体验链接"); l.href=lu; l.target="_blank"; l.rel="noopener noreferrer"; ac.appendChild(l)}
+  if(su&&su!==lu){var s=el("a","","来源"); s.href=su; s.target="_blank"; s.rel="noopener noreferrer"; ac.appendChild(s)}
+  var d=el("button","del","删除"); d.type="button";
+  d.onclick=function(){
+    var cf=el("span","confirm"), y=el("button","yes","确认删除"), n=el("button","","取消");
+    y.type=n.type="button"; cf.appendChild(n); cf.appendChild(y); d.replaceWith(cf);
+    n.onclick=function(){cf.replaceWith(d)};
+    y.onclick=function(){doDelete(c.id,a)};
+  };
+  ac.appendChild(d); b.appendChild(ac); a.appendChild(b);
   return a;
 }
-function matches(c,q,filters){
-  if(!InspoFilters.matches(c,filters||filterState))return false;
+function matches(c,q){
+  if(activeTag&&(c.tags||[]).indexOf(activeTag)<0)return false;
+  if(mobileOnly&&c.mobile!=="yes")return false;
   if(!q)return true;
-  var summary=InspoPresentation.summarize(c);
-  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,c.availability_zh,summary.mechanic,summary.industry,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
+  return [c.title_zh,c.brand,c.agency,c.region,c.format,c.why_zh,c.style_zh,(c.tags||[]).join(" ")].join(" ").toLowerCase().indexOf(q)>=0;
 }
 function render(){
   var list=document.getElementById("list"), empty=document.getElementById("empty");
-  favoriteSignature=cases.filter(function(c){return favorites.has(c.id)}).map(function(c){return c.id}).join("\n");
-  var focusId=document.activeElement&&document.activeElement.dataset.favoriteId;
   Array.prototype.slice.call(list.querySelectorAll(".card")).forEach(function(n){n.remove()});
-  var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), liked=vis.filter(function(c){return favorites.has(c.id)}), scope=favoritesOnly?liked:vis, n=0;
-  scope.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
-  empty.textContent=favoritesOnly?(liked.length?"没有匹配的收藏，试试调整搜索或筛选。":"还没有收藏，点击案例上的「♡ 收藏」即可加入这里。"):"没有匹配的案例，试试调整搜索或清空筛选。";
+  var q=document.getElementById("q").value.trim().toLowerCase(), vis=cases.filter(function(c){return !hidden(c.id)}), n=0;
+  vis.forEach(function(c){if(matches(c,q)){list.insertBefore(card(c),empty);n++}});
   empty.style.display=n?"none":"block";
-  document.getElementById("count").textContent=(n===scope.length?scope.length:n+" / "+scope.length)+(favoritesOnly?" 个收藏":" 个案例");
-  document.getElementById("allCount").textContent=vis.length;
-  document.getElementById("favoriteCount").textContent=liked.length;
-  ["allTab","favoritesTab"].forEach(function(id,index){var tab=document.getElementById(id),selected=favoritesOnly===(index===1);tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
-  list.setAttribute("aria-labelledby",favoritesOnly?"favoritesTab":"allTab");
-  syncGameplayOptions(vis);
-  syncFilterUI();
-  if(actionDialog.open){actionOpener=currentActionOpener();if(actionOpener)actionOpener.setAttribute("aria-expanded","true")}
-  if(focusId){var target=Array.prototype.find.call(list.querySelectorAll(".fav"),function(button){return button.dataset.favoriteId===focusId});(target||document.getElementById(favoritesOnly?"favoritesTab":"allTab")).focus({preventScroll:true})}
+  document.getElementById("count").textContent=(n===vis.length?vis.length:n+" / "+vis.length)+" 个案例";
+  renderChips(vis);
 }
-/* ---------- compact filters ---------- */
-function emptyFilters(){return {gameplay:"",industry:"",mobileOnly:false,demoOnly:false}}
-function filterButton(){return document.getElementById(window.matchMedia("(max-width:599px)").matches?"mobileFilters":"moreFilters")}
-function groupLabel(groups,value){var group=groups.find(function(g){return g.value===value});return group?group.label:""}
-function filterOptions(id,groups,label){
-  var select=document.getElementById(id), all=el("option","",label);all.value="";select.appendChild(all);
-  groups.forEach(function(g){var option=el("option","",g.label);option.value=g.value;select.appendChild(option)});
-}
-// Ranking uses the entire non-excluded library, never a filtered or favorite subset.
-function syncGameplayOptions(visible){
-  var key=visible.map(function(c){return c.id}).join("\n")+"|"+gameplayReady+"|"+gameplayLoadFailed;
-  if(key===gameplayCountsKey)return;
-  gameplayCountsKey=key;
-  var ranked=InspoFilters.gameplayStats(visible),total=ranked.reduce(function(sum,g){return sum+g.count},0);
-  var comparison=gameplayReady?gameplayTracker.compare(ranked):{hasBaseline:false,deltas:{},previousAt:null};
-  [["gameplayFilter","玩法 · 全部",filterState.gameplay],["dialogGameplay","全部玩法",filterDraft?filterDraft.gameplay:filterState.gameplay]].forEach(function(item){
-    var select=document.getElementById(item[0]),all=el("option","",item[1]+"（"+total+"）");
-    all.value="";select.replaceChildren(all);
-    ranked.forEach(function(g){
-      var delta=comparison.deltas[g.value]||0;
-      var label=g.label+" · "+g.count+" 个"+(comparison.hasBaseline&&delta?"（"+(delta>0?"+":"")+delta+"）":"");
-      var option=el("option","",label);option.value=g.value;option.dataset.count=String(g.count);option.dataset.delta=String(delta);option.disabled=g.count===0;select.appendChild(option);
-    });
-    select.value=item[2];
+function renderChips(vis){
+  var box=document.getElementById("chips"), counts={}; box.innerHTML="";
+  vis.forEach(function(c){(c.tags||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
+  function chip(label,on,fn){var b=el("button","chip"+(on?" on":""),label); b.type="button"; b.onclick=fn; box.appendChild(b)}
+  chip("全部",!activeTag&&!mobileOnly,function(){activeTag="";mobileOnly=false;render()});
+  chip("📱 手机可玩",mobileOnly,function(){mobileOnly=!mobileOnly;render()});
+  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(t){
+    chip(t+" "+counts[t],activeTag===t,function(){activeTag=activeTag===t?"":t;render()});
   });
-  var note="玩法排行 · 全库 "+total+" 个案例 · 数量从高到低";
-  var details="按本库未排除的案例统计；搜索、行业和收藏视图不改变数量或排序。每个案例按主要玩法计数一次。";
-  if(gameplayReady){
-    var persisted=gameplayTracker.save(ranked);
-    if(comparison.hasBaseline){
-      var changed=ranked.some(function(g){return comparison.deltas[g.value]});
-      var date=new Date(comparison.previousAt).toLocaleString("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false});
-      note+=" · "+(changed?"增减见选项":"数量未变")+"（较 "+date+" 记录）";
-    }else note+=" · "+(persisted?"已记录，下次可对比变化":"数量记录仅本次有效");
-    if(!persisted&&comparison.hasBaseline)note+=" · 暂未保存本次记录";
-    details+=" 增减对比保存在当前浏览器，首次记录不显示增长；同一访问期间基准保持不变。";
-  }else note+=gameplayLoadFailed?" · 排除记录暂不可用，未记录本次数量":" · 正在核对排除记录";
-  ["gameplayNote","dialogGameplayNote"].forEach(function(id){var target=document.getElementById(id);target.textContent=note;target.title=details});
 }
-function updateFilterPreview(){
-  if(!filterDraft)return;
-  var q=document.getElementById("q").value.trim().toLowerCase();
-  var n=cases.filter(function(c){return !hidden(c.id)&&(!favoritesOnly||favorites.has(c.id))&&matches(c,q,filterDraft)}).length;
-  document.getElementById("applyFilters").textContent="查看 "+n+" 个案例";
-}
-function syncFilterUI(){
-  document.getElementById("gameplayFilter").value=filterState.gameplay;
-  document.getElementById("industryFilter").value=filterState.industry;
-  var entries=[
-    {key:"gameplay",label:groupLabel(InspoFilters.gameplayGroups,filterState.gameplay),name:"玩法"},
-    {key:"industry",label:groupLabel(InspoFilters.industryGroups,filterState.industry),name:"行业"},
-    {key:"mobileOnly",label:filterState.mobileOnly?"仅手机可玩":"",name:"手机可玩"},
-    {key:"demoOnly",label:filterState.demoOnly?"有实机演示":"",name:"实机演示"}
-  ].filter(function(x){return !!x.label});
-  var box=document.getElementById("activeFilters");box.replaceChildren();box.hidden=!entries.length;
-  entries.forEach(function(item){
-    var button=el("button","active-filter",item.label);button.type="button";button.setAttribute("aria-label","移除"+item.name+"筛选");
-    var cross=el("span","","×");cross.setAttribute("aria-hidden","true");button.appendChild(cross);
-    button.onclick=function(){
-      filterState[item.key]=typeof filterState[item.key]==="boolean"?false:"";render();
-      (box.querySelector("button")||filterButton()).focus({preventScroll:true});
-    };box.appendChild(button);
-  });
-  if(entries.length){var clear=el("button","clear-filters","清空");clear.id="clearFilters";clear.type="button";clear.onclick=function(){filterState=emptyFilters();render();filterButton().focus({preventScroll:true})};box.appendChild(clear)}
-  [["mobileFilters",entries.length],["moreFilters",Number(filterState.mobileOnly)+Number(filterState.demoOnly)]].forEach(function(item){
-    var badge=document.getElementById(item[0]).querySelector(".filter-count");badge.hidden=!item[1];badge.textContent=item[1]||"";
-  });
-  if(filterDialog.open)updateFilterPreview();
-}
-function syncDraftControls(){
-  document.getElementById("dialogGameplay").value=filterDraft.gameplay;
-  document.getElementById("dialogIndustry").value=filterDraft.industry;
-  document.getElementById("filterMobile").checked=filterDraft.mobileOnly;
-  document.getElementById("filterDemo").checked=filterDraft.demoOnly;
-  updateFilterPreview();
-}
-function openFilters(event){
-  filterOpener=event.currentTarget;filterDraft=Object.assign({},filterState);syncDraftControls();
-  filterOpener.setAttribute("aria-expanded","true");filterDialog.showModal();
-}
-filterDialog.addEventListener("close",function(){
-  if(filterOpener)filterOpener.setAttribute("aria-expanded","false");
-  filterDraft=null;filterButton().focus({preventScroll:true});filterOpener=null;
-});
-filterDialog.addEventListener("click",function(event){
-  if(event.target!==filterDialog)return;var rect=filterDialog.getBoundingClientRect();
-  if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)filterDialog.close();
-});
-
-filterOptions("industryFilter",InspoFilters.industryGroups,"行业 · 全部");
-
-filterOptions("dialogIndustry",InspoFilters.industryGroups,"全部行业");
-["gameplayFilter","industryFilter"].forEach(function(id,index){document.getElementById(id).onchange=function(event){filterState[index?"industry":"gameplay"]=event.target.value;render()}});
-document.getElementById("moreFilters").onclick=openFilters;
-document.getElementById("mobileFilters").onclick=openFilters;
-document.getElementById("closeFilters").onclick=function(){filterDialog.close()};
-document.getElementById("resetFilters").onclick=function(){filterDraft=emptyFilters();syncDraftControls()};
-document.getElementById("applyFilters").onclick=function(){filterState=Object.assign({},filterDraft);filterDialog.close();render()};
-["dialogGameplay","dialogIndustry","filterMobile","filterDemo"].forEach(function(id){
-  document.getElementById(id).onchange=function(){
-    filterDraft={gameplay:document.getElementById("dialogGameplay").value,industry:document.getElementById("dialogIndustry").value,mobileOnly:document.getElementById("filterMobile").checked,demoOnly:document.getElementById("filterDemo").checked};
-    updateFilterPreview();
-  };
-});
 
 /* ---------- init ---------- */
 document.getElementById("undo").onclick=undo;
-document.getElementById("allTab").onclick=function(){selectView(false)};
-document.getElementById("favoritesTab").onclick=function(){selectView(true)};
-document.querySelector(".views").addEventListener("keydown",function(e){
-  if(["ArrowLeft","ArrowRight","Home","End"].indexOf(e.key)<0)return;
-  e.preventDefault(); selectView(e.key==="Home"?false:e.key==="End"?true:e.target.id!=="favoritesTab");
-  document.getElementById(favoritesOnly?"favoritesTab":"allTab").focus();
-});
-document.getElementById("favoriteRetry").onclick=function(){favorites.refresh()};
 document.getElementById("q").addEventListener("input",render);
 document.getElementById("sync").onclick=function(){flush()};
 document.getElementById("setLink").onclick=function(e){e.preventDefault();openModal("")};
 document.getElementById("tokCancel").onclick=function(){closeModal();showSync()};
-document.getElementById("tokClear").onclick=function(){ls(K_TOK,null);closeModal();showSync();showFavoriteStatus()};
+document.getElementById("tokClear").onclick=function(){ls(K_TOK,null);closeModal();showSync()};
 document.getElementById("tokSave").onclick=function(){
   var v=document.getElementById("tokIn").value.trim();
   if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)){document.getElementById("tokErr").textContent="格式不对，应以 github_pat_ 开头";return}
-  ls(K_TOK,v); closeModal(); flush(); favorites.refresh();
+  ls(K_TOK,v); closeModal(); flush();
 };
 window.addEventListener("online",flush);
-window.addEventListener("online",function(){favorites.refresh()});
-window.addEventListener("storage",function(e){favorites.onStorage(e.key);if(e.key===K_TOK){showFavoriteStatus();if(token())favorites.refresh()}});
-document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")favorites.refresh()});
 loadPending();
 try{JSON.parse(ls(K_SEEN)||"[]").forEach(function(id){remote.add(id)})}catch(e){}
 fetch("data/cases.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   cases=d.cases||d; if(d.updated)document.getElementById("upd").textContent="更新于 "+d.updated;
   render();
-  showFavoriteStatus();favorites.refresh();
-  return fetchRemoved().then(function(arr){applyRemoved(arr);gameplayReady=Array.isArray(arr);gameplayLoadFailed=!gameplayReady;render();showSync();if(pending.length&&token())flush()});
+  return fetchRemoved().then(function(arr){applyRemoved(arr);render();showSync();if(pending.length&&token())flush()});
 }).catch(function(e){document.getElementById("empty").textContent="加载失败："+e;document.getElementById("empty").style.display="block"});
 })();
 </script>
