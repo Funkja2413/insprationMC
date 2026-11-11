@@ -1,7 +1,38 @@
 {
   "updated": "2026-11-11",
-  "count": 164,
+  "count": 165,
   "cases": [
+    {
+      "id": "uncommon-resn-the-unread-2026",
+      "title_zh": "The Unread：把未读邮件变成丧尸，清邮箱成为第一人称射击",
+      "brand": "Uncommon Creative Studio × Resn（联合品牌自宣）",
+      "agency": "Uncommon Creative Studio × Resn",
+      "region": "英国 / 新西兰（全球网页）",
+      "format": "手机网页 / 功能游戏化 / 第一人称射击",
+      "date": "2026年10月（10月23日已有公开报道，确切首发日未公开）",
+      "why_zh": "把未读邮件转为持着信件来袭的丧尸；连接Gmail的Slaughter模式中，每消灭一个丧尸就把相应邮件移至垃圾箱，未读数与生命值成为同屏反馈。玩法行为直接完成清理任务，而不是给射击游戏贴品牌皮肤。不接邮箱的Voyeur模式可先体验第一关。这是两家创意公司的联合品牌自宣，不是Google或Gmail委托广告。",
+      "style_zh": "阴暗手绘卡通办公走廊、持邮件的丧尸、第一人称武器、红白未读计数和爱心生命值；制作方发布的真实局内UI",
+      "live_url": "https://the-unread.com/",
+      "source_url": "https://www.linkedin.com/posts/resnglobal_introducing-the-unread-a-mobile-shooter-activity-7521757280225185793-w3xc",
+      "image": "images/uncommon-resn-the-unread-2026.webp",
+      "mobile": "yes",
+      "mobile_note": "制作方Resn明确称其为mobile shooter，并明确可不连接邮箱游玩；同期报道说明免连接Voyeur模式限第一关。未本人实测触控，不推断具体滑动、点按或瞄准手势。连接Slaughter模式需Gmail读取与修改权限，会实际移动邮件；本次未登录或接入任何邮箱。",
+      "tags": [
+        "手机网页",
+        "功能游戏化",
+        "第一人称射击",
+        "万圣节",
+        "品牌自宣"
+      ],
+      "evidence_urls": [
+        "https://the-unread.com/",
+        "https://lbbonline.com/news/uncommon-the-unread",
+        "https://www.creativeboom.com/news/a-new-halloween-game-turns-your-unread-emails-into-zombies-you-can-actually-kill/",
+        "https://www.campaignlive.com/article/vccp-uncommon-gamify-terrors-agency-life-spam-emails/1973927",
+        "https://www.linkedin.com/posts/uncommon-creative-studio_the-average-person-is-sitting-on-1000-unread-activity-7521891960144465920-VS6V"
+      ],
+      "evidence_note": "制作方原始局内图片已目视，含未读计数、5颗爱心、4个底部动作按钮及持信件丧尸；原图800×446，无裁切或放大。日期由2026-10-23同期报道及10月30日双方发布共同约束，不将奖项日期当上线日。官网明确邮件移至Gmail Trash，因此不表述为永久删除。免连接试玩范围依据公开报道，未宣称本次已实际游玩。"
+    },
     {
       "id": "yeos-tea-journey-single-leaf-2026",
       "title_zh": "Yeo’s「一片茶叶的旅程」：倾手机采茶，卡氧化时机做出不同茶",
