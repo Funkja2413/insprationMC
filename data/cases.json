@@ -1,7 +1,68 @@
 {
   "updated": "2026-11-11",
-  "count": 165,
+  "count": 167,
   "cases": [
+    {
+      "id": "pasco-miraii-sandwich-race-2026",
+      "title_zh": "Pasco × miraii「サンドイッチレース」：三明治配料就是上学赛跑的体力配置",
+      "brand": "Pasco 敷島製パン（食育顾问）× miraii",
+      "agency": "miraii",
+      "region": "日本",
+      "format": "浏览器食育小游戏（免费账号；PC/平板推荐，手机可用）",
+      "date": "2026-01-10",
+      "why_zh": "先选面包与三种配料组装早餐，再让角色与朋友赛跑到学校；配料的营养平衡直接改变跑速、体力及恢复能力。不是回答营养测验，而是把早餐作为角色性能配置，亲眼看到组合带来的比赛差异。",
+      "style_zh": "明亮2D食物角色、配料选择与跑步能量条；官方发布真实局内UI",
+      "live_url": "https://miraii-park.com/",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000050.000048575.html",
+      "mobile": "partial",
+      "mobile_note": "开发方明确说明手机也可使用，但推荐PC/平板以获得更舒适的操作体验。须免费注册并登录みらいいパーク，再进入ゲームゾーン。当前运行与手机体验未实测。",
+      "tags": [
+        "网页游戏",
+        "食品配方",
+        "数值构筑",
+        "日本"
+      ],
+      "evidence_note": "2026-01-13开发方发布稿明确2026-01-10开始配信，Pasco担任食育顾问，并提出通过三明治游戏传达饮食价值。官方公开的配料选择、面包选择、性能结果和赛跑界面显示营养配置影响角色性能。面向小学生；局内未见特定Pasco SKU或商标露出，属于品牌参与的食育合作，而非特定新品广告。",
+      "date_quote": "2026年１月10日(土)より無料配信を開始",
+      "phone_quote": "スマートフォンでもご利用可能ですが、快適に操作ができる端末としてPC・タブレットでのご利用をおすすめしております",
+      "evidence_urls": [
+        "https://prtimes.jp/main/html/rd/p/000000050.000048575.html",
+        "https://prcdn.freetls.fastly.net/release_image/48575/50/48575-50-22c3c32538ae308f5a810be781e71162-729x544.png?width=1950&height=1350&quality=85&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+        "https://prcdn.freetls.fastly.net/release_image/48575/50/48575-50-5b5962d561b4aaeb96e6c412c8411dec-728x548.png?width=1950&height=1350&quality=85&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+        "https://prcdn.freetls.fastly.net/release_image/48575/50/48575-50-be07f89437fecdf29918c87319e789e3-761x562.jpg?width=1950&height=1350&quality=85&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
+      ],
+      "image": "images/pasco-miraii-sandwich-race-2026.webp"
+    },
+    {
+      "id": "vccp-kill-it-or-be-killed-2026",
+      "title_zh": "VCCP Kill It：把广告职场焦虑变成迷宫、词块消除与膨胀Logo贪吃蛇",
+      "brand": "VCCP US（机构品牌自宣）",
+      "agency": "VCCP US",
+      "region": "美国（全球网页）",
+      "format": "手机网页 / 职业生存 / 微游戏合集",
+      "date": "2026年10月23日",
+      "why_zh": "从虚构广告公司Hollow & Vane的初级创意做起，把行业日常直接变成游戏规则：寻找策略是在迷宫中收集Insight后打开出口；不断放大的客户Logo成为越吃越长的贪吃蛇；负面公关词块则要在倒计时中清理。经典街机机制共同服务于同一个职业生存主题，而非仅替换角色与品牌配色。这是VCCP US的机构自宣作品。",
+      "style_zh": "黑底、血红与奶油白的8-bit像素视觉，纸张般的迷宫墙体、Insight计数、Logo Size与倒计时构成明确的街机HUD；封面为制作方原始预告中的真实迷宫局内画面",
+      "live_url": "https://hollowandvane.com/",
+      "source_url": "https://musebyclios.com/gaming/vccps-halloween-game-helps-you-kill-it-in-the-creative-world/",
+      "image": "images/vccp-kill-it-or-be-killed-2026.webp",
+      "mobile": "yes",
+      "mobile_note": "官网实际游戏页包含专门为270×480手机重新布局的界面、手机键盘提示，以及迷宫/贪吃蛇的滑动方向控制和可点按按钮；不是仅依据网页响应式或通用引擎判断手机支持。未试玩，未连接个人账户或提交资料；未宣称经真实手机实测。",
+      "tags": [
+        "手机网页",
+        "微游戏合集",
+        "像素风",
+        "职场生存",
+        "品牌自宣"
+      ],
+      "evidence_urls": [
+        "https://hollowandvane.com/play/?v=2610300927",
+        "https://lbbonline.com/news/climb-vccp-s-advertising-ladder-or-die-trying-this-halloween",
+        "https://roastbrief.us/this-halloween-climb-the-advertising-ladder-or-die-trying/",
+        "https://www.linkedin.com/posts/jose-prieto-625a9bb_one-of-the-first-games-i-remember-playing-activity-7519487228859990016-tVEJ"
+      ],
+      "evidence_note": "2026年10月23日同期品牌稿明确写明当天上线；创作者访谈将Pac-Man对应找策略、Missile Command对应公关危机，抢先向创意总监提交想法是另一项挑战，二者不混用。预告31–33秒显示Insight迷宫与出口，34–35秒显示负面PR词块与倒计时，39–41秒显示公鸡Logo贪吃蛇和Logo Size增长。封面取32秒整帧，1280×720，不裁切、不放大。原片为16:9宣传剪辑，不是完整手机录屏；模拟光标不构成真人触控证据。"
+    },
     {
       "id": "uncommon-resn-the-unread-2026",
       "title_zh": "The Unread：把未读邮件变成丧尸，清邮箱成为第一人称射击",
