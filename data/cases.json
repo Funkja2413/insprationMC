@@ -1,7 +1,184 @@
 {
   "updated": "2026-11-11",
-  "count": 153,
+  "count": 159,
   "cases": [
+    {
+      "id": "daisyknit-gzhel-garden-of-inspiration-2026",
+      "title_zh": "DAISYKNIT × Gzhel「灵感花园」：找到瓷器，再采花把花瓶和瓷盘填满",
+      "brand": "DAISYKNIT × Gzhel Porcelain Factory",
+      "agency": "FITTIN",
+      "region": "俄罗斯",
+      "format": "DAISYKNIT 手机App内找物与动态插花互动（非独立H5）",
+      "date": "2026-10",
+      "date_note": "Gzhel工厂官网2026-10-05宣布整个10月可在DAISYKNIT App游玩；非2026作品页上传时间推定。",
+      "why_zh": "先在秋日花园寻找Gzhel花瓶与瓷盘，再点击采集鲜花和草本；花实时插进花瓶，草本摆到盘中，产品容器随收集逐渐丰满。经典找物被变成可视化插花和摆盘，不只是目标计数。官方介绍5个场景；现有原片只演示一个连续全景，不冒称逐一玩过。",
+      "style_zh": "秋日果园与精细植物全景，蓝白瓷器、暖光、采集容器动态填充",
+      "live_url": "https://app.daisyknit.ru",
+      "source_url": "https://fittin.ru/all_cases/daisyknit-gzhel",
+      "image": "images/daisyknit-gzhel-garden-of-inspiration-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "品牌与制作方均明确手机App内；父助手观看原始60秒540×1174录屏，见手机状态栏与动态插花。未安装App/未自行试玩；10月活动按归档案例记录，当前能否进入未验证。入口为App下载，不是即开即玩H5。",
+      "tags": [
+        "App内",
+        "找物",
+        "动态插花",
+        "产品即玩法",
+        "俄罗斯"
+      ],
+      "evidence_urls": [
+        "https://farfor-gzhel.ru/company/news/32339/",
+        "https://daisyknit.ru/garden-of-daisyknit/",
+        "https://fittin.ru/all_cases/daisyknit-gzhel",
+        "https://fittin.ru/images/cases/Daisyknit/gzhel/game.webp",
+        "https://fittin.ru/images/cases/Daisyknit/gzhel/review.mp4"
+      ],
+      "evidence_note": "封面为制作方完整真实游戏UI原图，不是宣传场景图。动态插花说明据原始手机录屏复核；官方5场景与片中仅一个连续场景严格分开。未自行试玩。"
+    },
+    {
+      "id": "jd-new-chicken-voice-platformer-2026",
+      "title_zh": "京东家电家居「呼声最高的新品鸡」：喊叫控制小鸡跳上真实家电平台",
+      "brand": "京东家电家居 / 闪电新品季",
+      "agency": "作品作者见梅花原作；制作署名尚未独立确认",
+      "region": "中国大陆",
+      "format": "京东App内声控平台跳跃小游戏；3D视觉，未验证实时WebGL",
+      "date": "2026-03-23",
+      "why_zh": "把“呼声最高”变成声音操作：麦克风音量驱动小鸡移动和跳跃，洗衣机、扫地机器人、牙刷等真实新品模型就是可落脚平台；通关鸡皮肤呼应AI新品。核心沿用经典声控平台跳跃类型，价值在家电地形与整体拟态视觉，不宣称首创声控或家电性能改变物理规则。",
+      "style_zh": "粉色高饱和3D家电舞台、AI拟态小鸡；真实手机录屏静帧",
+      "live_url": "",
+      "source_url": "https://www.meihua.info/shots/7079798553068544",
+      "image": "images/jd-new-chicken-voice-platformer-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "同期活动入口为京东App搜索“闪电新品季”；父流已复核原始手机录屏，有iOS状态栏/Home条、加载、失败重试、完整跳跃至终点。活动可能已结束，未本人实机试玩，无稳定独立H5直链。",
+      "tags": [
+        "App内",
+        "声控",
+        "平台跳跃",
+        "3D",
+        "中国大陆"
+      ],
+      "evidence_urls": [
+        "https://news.mydrivers.com/1/1111/1111471.htm",
+        "https://news.ikanchai.com/2026/0325/652801.shtml",
+        "https://resource.meihua.info/0b-wtwvTrw48ieLeNE6UEZpQw0c=/lpLHyGFbNjrhIC6xIRYrUNeld95c"
+      ],
+      "evidence_note": "2026-03-25同期报道明确3月23日上线并提AWE2026；不按作者11月上传/4月标签推断。视频00:05—01:10为核心游戏，01:11后的扭蛋抽奖是后置转化，明确剥离，不当创意理由。封面为真实048秒游戏帧等比居中留边，非作者蓝色Figma设计稿；原录屏已复核，未本人实机试玩。"
+    },
+    {
+      "id": "bezumno-shawarma-kitchen-sim-2026",
+      "title_zh": "Безумно「沙威玛厨房」：亲手配料、掌火候，再用订单收入经营真实品牌小店",
+      "brand": "Безумно. Крутая Шаурма",
+      "agency": "Максим Шевцов / Валентин Горин（HITs студенты，品牌认可并参与流程打磨的粉丝开发）",
+      "region": "俄罗斯",
+      "format": "VK手机即玩2D像素经营模拟（未实测触控）",
+      "date": "2026-02-24",
+      "date_note": "品牌发布稿日期，最迟此日已上线；首发精确日未另证。不把2026-02-13图片文件名当上线日。",
+      "why_zh": "真实沙威玛制作、烤制火候与订单/配方构成经营循环；真实员工成为教程角色，品牌参与实际流程校正；不是Logo跑酷或纯收物。 以组装、烤制、交付与配方升级串起餐饮经营，品牌支持的已上线粉丝共创，不是学生概念作业。",
+      "style_zh": "橙黑品牌色的精细像素厨房、食材操作台、烤架与订单经营HUD",
+      "live_url": "https://vk.com/games/bezumno_game",
+      "source_url": "https://www.retail.ru/rbc/pressreleases/postroit-biznes-na-shaurme-smozhet-kazhdyy-brend-bezumno-krutaya-shaurma-zapustil-igru-simulyator-v-/",
+      "image": "images/bezumno-shawarma-kitchen-sim-2026.webp",
+      "mobile": "yes",
+      "mobile_note": "精确VK游戏官方页面的搜索索引称мобильный тайм-менеджмент-симулятор；品牌稿称VK即玩无需安装。静态直读VK正文为空，未手机触控实测，手机证据强度如实保留。 当前可玩性未验证。",
+      "tags": [
+        "VK",
+        "经营模拟",
+        "产品即玩法",
+        "像素",
+        "俄罗斯"
+      ],
+      "evidence_urls": [
+        "https://www.retail.ru/rbc/pressreleases/postroit-biznes-na-shaurme-smozhet-kazhdyy-brend-bezumno-krutaya-shaurma-zapustil-igru-simulyator-v-/",
+        "https://vk.com/games/bezumno_game",
+        "https://www.retail.ru/upload/medialibrary/980/xpnyu83qt2bpzxh35qoaaa71vzjsuuvw/2026_02_13_15_58_50.png"
+      ],
+      "evidence_note": "完整像素厨房UI：Day1/500卢布、真实员工教程气泡、四格配料、饼皮、265°烤架、配方板和暂停按钮；来源品牌发布稿供图，不是运行截图。 未试玩；VK详细规则为官方页面搜索索引可读文本，非本机运行结果。"
+    },
+    {
+      "id": "bouygues-30ans-time-travel-hidden-objects",
+      "title_zh": "Bouygues Telecom 30 周年：穿过五个时代寻找历代手机和 Bbox",
+      "brand": "Bouygues Telecom",
+      "agency": "DKPL Purple",
+      "region": "法国",
+      "format": "手机App内品牌找物游戏",
+      "date": "2026",
+      "why_zh": "五张年代情境图覆盖1996–2026。玩家缩放/探索场景，依轮廓寻找品牌各时代标志性硬件；每周解锁一个年代。 不是贴Logo：历代手机与首代Bbox本身是需要辨认、寻找并解锁品牌史的目标。",
+      "style_zh": "高密度等距时代场景；制作方说明AI辅助绘图，不声称全手绘/像素。",
+      "live_url": "https://purple.paris/fr/portfolio/bouygues-telecom-30-ans/",
+      "source_url": "https://purple.paris/fr/portfolio/bouygues-telecom-30-ans/",
+      "image": "images/bouygues-30ans-time-travel-hidden-objects.webp",
+      "mobile": "partial",
+      "mobile_note": "制作方明确运营商手机App独占，完整真实作品UI有目标轮廓、城市探索、找到早期手机确认。未安装App/未实机试玩；仅App入口而非H5。",
+      "tags": [
+        "产品即玩法",
+        "App内",
+        "法国"
+      ],
+      "evidence_urls": [
+        "https://purple.paris/wp-content/uploads/2026/06/visuel-1159x767-b-bouygtel-30.webp",
+        "https://purple.paris/wp-content/uploads/2026/06/visuel-1159x767-a-bouygtel-30.webp"
+      ],
+      "evidence_note": "制作方完整真实作品UI可见轮廓任务、可探索年代场景和找到早期手机后的确认页；历代手机/Bbox是具体识别目标。5年代/每周解锁与AI辅助绘图依制作方说明。未安装App、未开局试玩，不称现在仍可玩。"
+    },
+    {
+      "id": "kracie-kampo-lab-delivery-2026",
+      "title_zh": "Kracie「つくって とどけて おたすけ かんぽう！」：选药、研磨、煎煮，再送药疏通身体世界",
+      "brand": "Kracie クラシエ薬品",
+      "agency": "KidsStar（ごっこランド）",
+      "region": "日本",
+      "format": "iOS / Android ごっこランド App内品牌双小游戏（非独立H5）",
+      "date": "2026-07-09",
+      "why_zh": "约20种生药可自由选配，依次以药研碾碎、乳钵混合、玻璃壶煎煮，制造流程本身就是手势交互；再进入气、血、水三个视觉世界，送药到元气节点后打开被堵道路。两段共同把品牌汉方理念转成可操作体验，按一个品牌活动计1条。",
+      "style_zh": "明亮亲子卡通、器械近景与身体世界关卡；官方实际游戏UI",
+      "live_url": "https://kidsstar.link/jp/QrhIHl",
+      "source_url": "https://www.kracie.co.jp/release/10193436_3833.html",
+      "image": "images/kracie-kampo-lab-delivery-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "须安装iOS/AndroidごっこランドApp；品牌官方明确手机可玩，实际游戏UI已目视核验，未安装或开局试玩。无实物/现场要求。",
+      "tags": [
+        "App内",
+        "制造流程",
+        "合成",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://youtu.be/jXPs6OF8G2E",
+        "https://prcdn.freetls.fastly.net/release_image/72329/175/72329-175-8797b43714a334be900b64029be556ea-807x454.png?width=1950&height=1350&quality=85&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+        "https://prcdn.freetls.fastly.net/release_image/72329/175/72329-175-909dffdc9c81d62e9f90e4ca81771caa-2089x1178.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+        "https://prcdn.freetls.fastly.net/release_image/72329/175/72329-175-99e44319796c925e566e3f6640f5d321-1573x887.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+        "https://prcdn.freetls.fastly.net/release_image/72329/175/72329-175-76740768e303b12d4a791ee6db91260b-1716x967.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
+      ],
+      "evidence_note": "品牌官方2026-07-09明确当日首次开放两游戏。已目视标题、药研研磨、乳钵与玻璃壶煎煮真实UI；配送至元气点打开道路依品牌官方玩法说明，不称已实机看到该段。药效叙述是品牌游戏世界观，不作为医学事实；未安装App、未开局试玩。"
+    },
+    {
+      "id": "kion-tunnel-border-shift-2025",
+      "title_zh": "KION《Тоннель: Пограничная смена》：核验证件、决定放行，承担边境值班的奖惩",
+      "brand": "KION / MTS",
+      "agency": "制作方未独立确认",
+      "region": "俄罗斯",
+      "format": "竖屏Unity WebGL剧情决策模拟；官方支持手机与桌面",
+      "date": "2025-12",
+      "date_note": "2025-12-17品牌引用发布稿已报道上线，12月19日MTS供稿明确Desktop/Mobile；画面2010-01-20是剧情内日期，不是活动上线日。",
+      "why_zh": "把剧集前传转为边境检查员工作模拟：核对证件号码、有效期、照片、印章与旅客行为，参照通缉名单和规则卡，选择批准、拒绝或呼叫保安；错误处理影响轮班评分、奖金和罚款。玩家亲历主人公的职业压力与后果，不是答题测验或Logo跑酷。官方另述下班分配家庭预算，但目前试玩未到该段。",
+      "style_zh": "冷峻边境检查站、写实人物肖像、纸质证件与桌面道具；竖屏操作画布",
+      "live_url": "https://static.kion.ru/games/tonnel/index.html",
+      "source_url": "https://www.content-review.com/articles/71853/",
+      "image": "images/kion-tunnel-border-shift-2025.webp",
+      "mobile": "yes",
+      "mobile_note": "MTS供稿明确网站Desktop及Mobile版本对所有用户开放；真实游戏竖屏画布。父助手在桌面浏览器无需登录实玩教程和前几位旅客至剧情内12点；未手机触控试玩，未验证移动设备性能，不把竖屏或HTTP200当手机实测。",
+      "tags": [
+        "手机网页",
+        "剧情决策",
+        "模拟经营",
+        "影视前传",
+        "俄罗斯"
+      ],
+      "evidence_urls": [
+        "https://artmoskovia.ru/kion-zapustil-igru-tonnel-pogranichnaya-smena-po-motivam-odnoimennogo-seriala.html",
+        "https://www.content-review.com/articles/71853/",
+        "https://static.kion.ru/games/tonnel/index.html"
+      ],
+      "evidence_note": "封面为父助手真实桌面浏览器运行截图，无需登录；已见证件核验、通缉名单/规则、放行/拒绝/保安与奖惩说明。家庭食物/衣服/日用开支仅依据品牌发布文案，未试玩到，不声称动态验证。影视娱乐品牌为补充方向，不取代消费品牌主线。"
+    },
     {
       "id": "nisshin-oillio-delicious-magic-2026",
       "title_zh": "日清オイリオ「オイルでデリシャスマジック」",
@@ -88,7 +265,7 @@
       "region": "日本",
       "format": "iOS / Android ごっこランド App 内品牌小游戏（非独立H5）",
       "date": "2026-04-28",
-      "why_zh": "同一馆三个小游戏：拉弹把除螨喷雾变成球，打向家中尘螨，官方实机视频在打倒之后接上打扫；驱蚊喷雾涂上之后，视频里的角色变成虫子找不到的透明人，再进森林探险，KidsStar 介绍写这项探索使用陀螺仪和拍摄；浴泡用来画动物、载具并做装饰。",
+      "why_zh": "本条仅以触屏除螨和浴泡绘画为收录依据：拉弹把除螨喷雾变成球，打向家中尘螨，官方实机视频在打倒之后接上打扫；浴泡可画动物、载具并做装饰。产品的清洁/泡沫使用动作进入游戏。馆内另有驱蚊森林探索，制作方介绍涉及陀螺仪和拍摄，该部分不作为本条入库依据，也未据此判断整馆均为非AR。",
       "style_zh": "亲子卡通，产品形状/动作进入玩法；官方实际游戏UI",
       "live_url": "https://kidsstar.link/jp/wLSLft",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000609.000023444.html",
@@ -104,7 +281,7 @@
       "evidence_urls": [
         "https://www.youtube.com/watch?v=nGqErqF7As8"
       ],
-      "evidence_note": "日期对照 PR TIMES 与 KidsStar 的 2026-04-28 发布。玩法对照上述稿件和官方 YouTube：拉弹喷雾、打倒后打扫、透明人探险、浴泡作画。包内图片是入浴泡游戏画面。未安装 App，未开局试玩。"
+      "evidence_note": "日期对照PR TIMES与KidsStar的2026-04-28发布。仅以已核实的触屏拉弹除螨、打倒后打扫和浴泡绘画作为玩法依据；包内封面为浴泡游戏真实UI。馆内驱蚊森林探索涉及陀螺仪/拍摄，不用于本条选入判断，未确认该部分是否含AR；不得表述成全馆非AR。未安装App、未开局试玩。"
     },
     {
       "id": "autodrop-de-losgeslagen-rit",
