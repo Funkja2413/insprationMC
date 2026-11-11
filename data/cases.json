@@ -1,7 +1,39 @@
 {
   "updated": "2026-11-11",
-  "count": 167,
+  "count": 168,
   "cases": [
+    {
+      "id": "eminem-nerds-marshalls-massacre-2026",
+      "title_zh": "Marshall’s Massacre：Eminem × NERDS音乐街服联名的像素丧尸防线",
+      "brand": "NERDS Clothing × Eminem / Shady Records",
+      "agency": "FanArcade",
+      "region": "美国（全球网页）",
+      "format": "手机网页 / 像素街机 / 三路防守",
+      "date": "2026年10月（10月2日宣布联名，10月8–11日NYCC活动）",
+      "why_zh": "以戴面具、持电锯的Shady形象，把万圣节恐怖IP、音乐人格与街服联名统一为可玩的像素街机入口。局内引导要求左右移动对齐来袭丧尸，并在敌人进入范围时点按攻击；分数与三条初始生命提供短局反馈。游戏角色美术也出现在联名服饰、滑板和定制街机上，形成线上游戏与实体系列共用的视觉世界，而非虚构服装SKU的战斗属性。NERDS是街头服装品牌，不是同名糖果品牌。",
+      "style_zh": "暗蓝像素森林、三路来袭丧尸、白色Score/Lives与直接叠加的玩法指令；入口以红黑恐怖字标、面具电锯人物和三方品牌Logo建立街服联名辨识",
+      "live_url": "https://marshallsmassacre.com/",
+      "source_url": "https://variety.com/2026/gaming/news/eminem-nerds-clothing-merch-marshalls-massacre-video-game-1236897557/",
+      "image": "images/eminem-nerds-marshalls-massacre-2026.webp",
+      "mobile": "yes",
+      "mobile_note": "真实局内引导明确写明“Swipe left/right to align Shady”和“Tap when zombies get in range”，官网游戏以540×960竖屏画布呈现。已做浏览器鼠标短玩，确认入口、引导、丧尸来袭及分数/生命UI；该次0分、生命降至0，未验证成功攻击，也未做手机真机或触控实测。进入游戏不需填注册资料；结束后的Claim your score会要求用户名和邮箱注册FanArcade，本次未填写或提交。",
+      "tags": [
+        "手机网页",
+        "三路防守",
+        "像素风",
+        "万圣节",
+        "音乐IP",
+        "街服联名"
+      ],
+      "evidence_urls": [
+        "https://www.instagram.com/p/Dd_3YlMEcrh/",
+        "https://x.com/NERDSClothing/status/2106055602044535040",
+        "https://x.com/NERDSClothing/status/2106123369242341446",
+        "https://x.com/Shadyind/status/2106086615341035541",
+        "https://marshallsmassacre.com/game-20261008.js"
+      ],
+      "evidence_note": "正常公开入口已见NERDS Clothing、Shady Records、FanArcade三方Logo。封面来自实际浏览器局内截图：原图1920×1072，裁去左右外部黑边，保留完整高度、游戏边框及HUD，成图594×1072，不拉伸或放大；原始截图另行保留。NERDS原始活动图明确印有NYCC 2026日期。另有NERDS官方转发的30.677秒游戏视频，原上传者为第三方The Eminem Bible，不表述为品牌亲自拍摄。原始静态品牌宣传图不冒充游戏UI。未发现静态页面中的年龄验证，不据此断言无年龄政策。"
+    },
     {
       "id": "pasco-miraii-sandwich-race-2026",
       "title_zh": "Pasco × miraii「サンドイッチレース」：三明治配料就是上学赛跑的体力配置",
