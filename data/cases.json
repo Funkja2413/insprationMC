@@ -1,7 +1,139 @@
 {
-  "updated": "2026-11-10",
-  "count": 148,
+  "updated": "2026-11-11",
+  "count": 153,
   "cases": [
+    {
+      "id": "nisshin-oillio-delicious-magic-2026",
+      "title_zh": "日清オイリオ「オイルでデリシャスマジック」",
+      "brand": "日清オイリオ",
+      "agency": "KidsStar（ごっこランド）",
+      "region": "日本",
+      "format": "iOS / Android ごっこランド App 内品牌小游戏（非独立H5）",
+      "date": "2026-08-24",
+      "why_zh": "画线为油滴造路，油滴沿线滑向沙拉/披萨/拉面；16关逐渐加入传送门和跷跷板。 亚麻油/橄榄油/芝麻油分别对应适合菜品，油滴本身是玩家要输送的物体；产品使用动作就是关卡胜利条件。",
+      "style_zh": "亲子卡通，产品形状/动作进入玩法；官方实际游戏UI",
+      "live_url": "https://kidsstar.link/jp/nisshinoillio",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000294.000076174.html",
+      "image": "images/nisshin-oillio-delicious-magic-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "须安装iOS/AndroidごっこランドApp；官方手机游戏UI已核，未安装或开局试玩。无实体/现场要求。",
+      "tags": [
+        "App内",
+        "产品即玩法",
+        "益智",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://youtu.be/eMallHYJRko"
+      ],
+      "evidence_note": "已目视官方实际游戏截图，不以新闻稿插画或HTTP200冒充实机。"
+    },
+    {
+      "id": "kanefuku-mentaiko-tower-2026",
+      "title_zh": "かねふく「ぐらぐら！めんたいこタワー」",
+      "brand": "かねふく Kanefuku",
+      "agency": "KidsStar（ごっこランド）",
+      "region": "日本",
+      "format": "iOS / Android ごっこランド App 内品牌小游戏（非独立H5）",
+      "date": "2026-01-08",
+      "why_zh": "双方堆叠不规则明太子，重心偏移会摇晃倒塌，限时比高度；可触发fever或墨汁干扰对方屏幕。 明太子不同形状直接决定物理堆叠难度，产品就是积木；非纯Logo收金币。",
+      "style_zh": "亲子卡通，产品形状/动作进入玩法；官方实际游戏UI",
+      "live_url": "https://kidsstar.link/jp/kanefuku_open",
+      "source_url": "https://www.value-press.com/pressrelease/367643",
+      "image": "images/kanefuku-mentaiko-tower-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "须安装iOS/AndroidごっこランドApp；官方手机游戏UI已核，未安装或开局试玩。无实体/现场要求。",
+      "tags": [
+        "App内",
+        "产品即玩法",
+        "休闲游戏",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=k58FUs42k10"
+      ],
+      "evidence_note": "已目视官方实际游戏截图，不以新闻稿插画或HTTP200冒充实机。"
+    },
+    {
+      "id": "biore-petapon-uv-puzzle-2026",
+      "title_zh": "花王ビオレ「ぺたぽんででかけよう／ぺたぽんパズル」",
+      "brand": "花王 Biore",
+      "agency": "KidsStar（ごっこランド）",
+      "region": "日本",
+      "format": "iOS / Android ごっこランド App 内品牌小游戏（非独立H5）",
+      "date": "2026-03-09",
+      "why_zh": "摆放猫爪防晒积木保护人物，挡直射与地面反射紫外线；同时模拟按压猫爪防晒印章并涂匀手脚脸。 真实新品Kids Stamp UV的猫爪形状就是遮挡模块，防晒效能变为光路与遮挡解谜。",
+      "style_zh": "亲子卡通，产品形状/动作进入玩法；官方实际游戏UI",
+      "live_url": "https://kidsstar.link/jp/uV-75i",
+      "source_url": "https://www.value-press.com/pressrelease/370726",
+      "image": "images/biore-petapon-uv-puzzle-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "须安装iOS/AndroidごっこランドApp；官方手机游戏UI已核，未安装或开局试玩。无实体/现场要求。",
+      "tags": [
+        "App内",
+        "产品即玩法",
+        "益智",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=DhfK6sAAZPI"
+      ],
+      "evidence_note": "已目视官方实际游戏截图，不以新闻稿插画或HTTP200冒充实机。"
+    },
+    {
+      "id": "earth-pharma-care-adventure-2026",
+      "title_zh": "アース製薬「くらしかいてき！たんけんたい！」",
+      "brand": "アース製薬 Earth",
+      "agency": "KidsStar（ごっこランド）",
+      "region": "日本",
+      "format": "iOS / Android ごっこランド App 内品牌小游戏（非独立H5）",
+      "date": "2026-04-28",
+      "why_zh": "同一馆三个小游戏：拉弹把除螨喷雾变成球，打向家中尘螨，官方实机视频在打倒之后接上打扫；驱蚊喷雾涂上之后，视频里的角色变成虫子找不到的透明人，再进森林探险，KidsStar 介绍写这项探索使用陀螺仪和拍摄；浴泡用来画动物、载具并做装饰。",
+      "style_zh": "亲子卡通，产品形状/动作进入玩法；官方实际游戏UI",
+      "live_url": "https://kidsstar.link/jp/wLSLft",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000609.000023444.html",
+      "image": "images/earth-pharma-care-adventure-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "须安装iOS/AndroidごっこランドApp；官方手机游戏UI已核，未安装或开局试玩。无实体/现场要求。",
+      "tags": [
+        "App内",
+        "产品即玩法",
+        "休闲游戏",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=nGqErqF7As8"
+      ],
+      "evidence_note": "日期对照 PR TIMES 与 KidsStar 的 2026-04-28 发布。玩法对照上述稿件和官方 YouTube：拉弹喷雾、打倒后打扫、透明人探险、浴泡作画。包内图片是入浴泡游戏画面。未安装 App，未开局试玩。"
+    },
+    {
+      "id": "autodrop-de-losgeslagen-rit",
+      "title_zh": "Autodrop「De Losgeslagen Rit」：倾斜手机，保住狂飙副驾上的一袋软糖",
+      "brand": "Autodrop",
+      "agency": "livewall / United Playgrounds",
+      "region": "荷兰",
+      "format": "已归档：手机网页体感平衡游戏；体验链接指原始实机录像，不是现可玩链接",
+      "date": "2026-08-26",
+      "date_evidence": "首发日采用 Emerce Industry Wire 的发布日 2026-08-26（12:30），电头为 Tilburg, 25 augustus 2026；实机录屏文件名日期同为 2026-08-26。livewall 作品页没有日历日期。LinkedIn 作品帖的索引日期是 2026-08-28。",
+      "why_zh": "录屏复核确认这是真实竖屏游戏界面：方向盘与道路、糖果联动，软糖受惯性从包装开口甩出并扣减数量，画面上有倒计时。官方作品页记录的操作是倾斜手机，在 Route 69 上尽量把副驾糖袋里的软糖留住，剩余数量对应排行榜名次。录屏不能单独证明陀螺仪输入，倾斜控制只按该作品页记录，不写成亲自试玩。软糖不是路上的分数道具，包装开口、惯性和扣数量一起构成规则。",
+      "style_zh": "高饱和洋红双色漫画，第一人称副驾产品包装大特写；录屏中的路景、方向盘和糖球在运动。",
+      "live_url": "https://a.storyblok.com/f/287367263674443/4397d75213/screenrecording_08-26-2026-10-20-29_1.mp4",
+      "source_url": "https://www.livewall.agency/work/autodrop-losgeslagen-lading",
+      "image": "images/autodrop-de-losgeslagen-rit.webp",
+      "mobile": "historical",
+      "mobile_note": "官方作品页写明网页游戏接在 autodrop.nl，由社交链接进入，倾斜手机保持副驾糖袋平衡。录屏为竖屏实际界面，已复核方向盘、道路与糖果联动、开口甩出扣数量和倒计时。录屏不能独立证明陀螺仪。未在浏览器中试玩，当前可玩入口未定位。",
+      "tags": [
+        "产品即玩法",
+        "手机网页",
+        "荷兰"
+      ],
+      "evidence_urls": [
+        "https://a.storyblok.com/f/287367263674443/4397d75213/screenrecording_08-26-2026-10-20-29_1.mp4",
+        "https://www.livewall.agency/work/autodrop-losgeslagen-lading",
+        "https://drimble.nl/regio/noord-brabant/tilburg/107808498/autodrop-en-livewall-lanceren-gamifi-ed-campagne-voor-losgeslagen-lading-chews.html"
+      ],
+      "evidence_note": "2026-11-11 录屏复核：真实竖屏游戏 UI、方向盘与道路/糖果联动、糖果惯性甩出包装开口会扣数量、倒计时目标。倾斜控制引自 livewall 官方作品页。录屏未独立证明输入方式，不记为亲自试玩。archived_reference; exact current play route not located; not browser-playtested"
+    },
     {
       "id": "flamengo-6a1-copa",
       "title_zh": "Flamengo「6 a 1」：用队史偶像组梦之队，模拟征战 2026 世界杯",
