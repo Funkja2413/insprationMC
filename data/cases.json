@@ -1,7 +1,96 @@
 {
   "updated": "2026-11-11",
-  "count": 159,
+  "count": 162,
   "cases": [
+    {
+      "id": "coke-cny-ai-embroidered-greetings-2026",
+      "title_zh": "可口可乐「AI绣祝福」：上传亲友照片，生成手持可乐的马年祝福短片",
+      "brand": "可口可乐中国 / 可口可乐家族",
+      "agency": "上海互映网络科技有限公司 BRANDSH",
+      "region": "中国大陆",
+      "format": "微信小程序 / AIGC动态祝福生成器",
+      "date": "2026年春节档（具体上线日未公开）",
+      "why_zh": "上传亲友照片、选择祝福语，生成带个人形象与可口可乐罐的拜年作品；制作方另说明支持异地分别上传后合拍。定位为品牌视觉共创生成器，非强游戏；刺绣马和烟花是生成等待页的视觉演出，不把它说成最终人像的刺绣材质。",
+      "style_zh": "红金节日UI；等待页刺绣马/烟花与最终手持可乐罐人像明确分开",
+      "live_url": "",
+      "source_url": "https://www.adquan.com/article/363723",
+      "image": "images/coke-cny-ai-embroidered-greetings-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "案例录屏显示：0:00—0:27上传照片、选“马上有福”并确认；0:28—1:57生成等待（该录屏约89秒，不泛化所有人）；1:57后人物手持可乐罐结果页与下载/分享，随后抽奖。该录屏内未见登录或扫描瓶码，不据此推断任何用户或入口都没有门槛。作品页称可直接进入“可口可乐吧”小程序。未独立实测。",
+      "tags": [
+        "小程序",
+        "AIGC",
+        "生成器",
+        "春节",
+        "中国大陆"
+      ],
+      "evidence_urls": [
+        "https://www.brandsh.cn/",
+        "https://file.adquan.com/ccma_video/20260316/1773649403405638.mp4"
+      ],
+      "evidence_note": "制作方正文与官网均明确2026春节活动，确切上线日未公开，不拿报奖或线下烟花日期替代。案例录屏显示上传照片、选择祝福、生成等待和手持可乐罐的结果页。最终成片风格需结合实际结果图与作品文字，刺绣马和烟花属于等待页，不是最终人像的刺绣材质。“3—5秒”来自制作方功能说明，未独立量成片时长。输出后的抽奖不作为推荐理由。封面来自录屏静帧，未独立试玩。"
+    },
+    {
+      "id": "palace-volcengine-listen-to-treasures-2025",
+      "title_zh": "故宫×火山引擎「听宝贝说」：让文物用父母的声音讲故事",
+      "brand": "故宫博物院 × 火山引擎 / 豆包大模型",
+      "agency": "TOPic & Loong",
+      "region": "中国大陆",
+      "format": "微信小程序 / AI声音复刻与文物播客共创",
+      "date": "2025-12-29",
+      "why_zh": "从30件故宫文物中滑选“宝贝”，选择历史或科普叙事，跟读短句录入自己的音色，生成由父母声音演绎的文物故事。声音不只是按钮输入，而是最终内容；火山引擎的角色扮演与声音复刻能力就是体验产品，故宫纹样排版串起“听、宝、贝、说”四步。",
+      "style_zh": "高饱和蓝、紫、橙、红与故宫金线纹样；实际小程序文物选择页",
+      "live_url": "",
+      "source_url": "https://www.adquan.com/article/361493",
+      "image": "images/palace-volcengine-listen-to-treasures-2025.webp",
+      "mobile": "partial",
+      "mobile_note": "故宫官网明确用户可通过“故宫博物院”微信小程序体验，开放2025-12-29至2026-03-31，并写“听完还可以线下打卡”。线上可以独立使用，到馆打卡不是使用条件。央广页面中的小程序界面另有微信胶囊。案例视频在0:45—1:07及2:17—2:35显示录音、滑动文物和故事播放，未验证完整声音复刻链或清晰分享画面。未独立录音、生成或试听。",
+      "tags": [
+        "小程序",
+        "语音",
+        "AIGC",
+        "生成器",
+        "中国大陆"
+      ],
+      "evidence_urls": [
+        "https://www.dpm.org.cn/classify_detail/374349.html",
+        "https://mct.gov.cn/whzx/zsdw/ggbwy/202512/t20251230_963932.html",
+        "https://www.cnr.cn/bj/sijh/20251230/t20251230_527477061.shtml",
+        "https://oss.adquan.com/uploads_img/1782294312908995.mp4"
+      ],
+      "evidence_note": "故宫官网2025-12-29明确当天上线，文旅部与央广次日印证。父母音色复刻和角色叙事以故宫官方文字为据，案例视频没有验证完整声音复刻流程。视频大部分是广告和采访，只夹有少量界面，不能当作完整实机录屏。没有清晰的分享画面，不把分享写成已证实的机制。这是声音共创的文化体验，不是强游戏；选择叙事不等于人格测试。封面是真实小程序界面。未独立实测。"
+    },
+    {
+      "id": "furyu-puri30-heisei-photo-booth-2025",
+      "title_zh": "FURYU「めっちゃ★平成プリ」：往手机里的大头贴机投币，拍回平成青春",
+      "brand": "フリュー FURYU",
+      "agency": "博報堂アイ・スタジオ（企划，第三方企划报道归属）",
+      "region": "日本",
+      "format": "手机网页 / 复古大头贴共创生成器＋探索式纪念站",
+      "date": "2025-11-26",
+      "why_zh": "点虚拟投币口，把手机变成90年代/00年代大头贴机；选年代与手写涂鸦相框，调用手机前摄拍摄，保存带年代色彩与粗粒画质的照片及整版贴纸排版。品牌产品本身的操作仪式、低清质感和出片形式被搬进手机，而非贴Logo的通用海报生成。外围纪念站另藏30个青春回忆彩蛋。定位是视觉共创/产品模拟，不冒充强游戏。",
+      "style_zh": "Y2K日系大头贴，像素标题、荧光涂鸦、彩色实体按钮感、贴纸拼版",
+      "live_url": "https://www.puri30th.furyu.jp",
+      "source_url": "https://nonno.hpplus.jp/editors/entertainment/314314/",
+      "image": "images/furyu-puri30-heisei-photo-booth-2025.webp",
+      "mobile": "yes",
+      "mobile_note": "品牌2025-11-26明确可在学校或家中用本人手机直接拍摄保存，无须到店或真实大头贴机。non-no 2025-12-10与12-12的作者操作正文里，投币页截图可见 iPhone Safari 底栏和 puri30th.furyu.jp 域名，并附有作者拍出的玩偶单张及整版贴纸。这些图片已经目视核对，未启动摄像头，也未独立试玩。当前入口可用性未确认，不据此写成已经下线，也不把访问结果当成试玩。",
+      "tags": [
+        "手机H5",
+        "生成器",
+        "产品模拟",
+        "Y2K",
+        "日本"
+      ],
+      "evidence_urls": [
+        "https://www.furyu.jp/news/2025/11/puri30th/",
+        "https://www.advertimes.com/20251205/article527045/",
+        "https://img-nonno.hpplus.jp/wp-content/uploads/S__10502148-552x1024.jpg",
+        "https://img-nonno.hpplus.jp/wp-content/uploads/S__10502150-1-709x1024.jpg",
+        "https://img-nonno.hpplus.jp/wp-content/uploads/S__10502151-1024x841.jpg"
+      ],
+      "evidence_note": "官网正文明确“本日11月26日”上线特设站，不能用7月历史资料或12月线下机台复活日代替。画面来自作者的实际手机操作和拍摄结果，不是新闻稿宣传画；已目视 Safari 界面与真实出图。相框和色彩是预先做好的静态处理，不是空间定位或人脸追踪；未证实自由手绘，只见到已选相框上的涂鸦。另一项旧照片投稿评奖和2026线下展览独立于拍照工具，不作为本条推荐理由。未独立试玩。"
+    },
     {
       "id": "daisyknit-gzhel-garden-of-inspiration-2026",
       "title_zh": "DAISYKNIT × Gzhel「灵感花园」：找到瓷器，再采花把花瓶和瓷盘填满",
