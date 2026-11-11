@@ -1,7 +1,66 @@
 {
   "updated": "2026-11-11",
-  "count": 162,
+  "count": 164,
   "cases": [
+    {
+      "id": "yeos-tea-journey-single-leaf-2026",
+      "title_zh": "Yeo’s「一片茶叶的旅程」：倾手机采茶，卡氧化时机做出不同茶",
+      "brand": "Yeo’s 杨协成",
+      "agency": "Rampage Connect",
+      "region": "新加坡",
+      "format": "手机H5 / 动作传感器制茶轻游戏",
+      "date": "2026年5月（5月5日已有同期报道，确切首发日未公开）",
+      "why_zh": "倾斜手机收集嫩叶、向上抛动茶叶完成萎凋揉捻、点击停住氧化指针、长按灌瓶并在目标线松开，四段操作重现制茶工艺。氧化停止时机决定绿茶或乌龙等茶型，让“同一片叶子，因加工不同成为不同茶”的产品故事变成手上动作，而不是知识问答或通用接物换皮。",
+      "style_zh": "水彩手绘茶山、古地图式工艺路线、绿叶与品牌茶瓶；真实体验入口UI",
+      "live_url": "https://www.yeosteajourney.com/",
+      "source_url": "https://www.rampageconnect.com/work/yeos-tea-journey",
+      "image": "images/yeos-tea-journey-single-leaf-2026.webp",
+      "mobile": "yes",
+      "mobile_note": "制作方明确为手机网页，使用自带手机动作传感器，无需下载App；原站列明倾斜采5片叶、向上抛动、点停氧化与长按灌瓶。Alvinology2026-05-10明确无法现场参加的人也可直接访问线上体验，无须到展位。未本人实测动作传感器，也未见局内运行截图或完整游戏录屏；封面仅为制作方发布的真实入口UI，不把入口加载或公开代码视作实机试玩。",
+      "tags": [
+        "手机H5",
+        "动作传感器",
+        "产品工艺",
+        "轻游戏",
+        "新加坡"
+      ],
+      "evidence_urls": [
+        "https://marketech-apac.com/yeos-spotlights-tea-craft-with-heritagefest-activation-for-new-oolong-launch/",
+        "https://alvinology.com/2026/05/10/yeos-adds-new-unsweetened-oolong-tea-to-expanding-no-sugar-range-launches-tasting-experience-at-sg-heritagefest/",
+        "https://www.rampageconnect.com/images/337814ac-e824-4b55-b8fb-d6722080c4e0.webp",
+        "https://www.yeosteajourney.com/app.js"
+      ],
+      "evidence_note": "制作方明确HeritageFest2026；2026-05-05同期行业报道已介绍数字战役，不能把5月1日线下开幕直接当网页精确首发。真实入口UI已目视，包含Motion Sensors说明与BEGIN YOUR CRAFT按钮；四步机制以制作方说明、原站页面及公开前端为据，氧化时机分支另由onApplyHeat佐证，非运行测试。结尾展位兑饮与电商折扣不作为推荐理由；非AR、不要求实物。"
+    },
+    {
+      "id": "samokat-chistozemye-cleanliness-card-battles-2026",
+      "title_zh": "Samokat「清洁之境」：把清洁和个护商品变成卡牌英雄与攻防道具",
+      "brand": "Самокат（Samokat）及多品牌清洁/个护合作商",
+      "agency": "Samokat特殊项目团队；制作方未独立确认",
+      "region": "俄罗斯",
+      "format": "VK MiniApp内奇幻卡牌攻防；归档案例",
+      "date": "2026-08",
+      "date_note": "品牌团队2026-10-30案例明确活动发生于2026年8月，不以作品发布日冒充首发。",
+      "why_zh": "清洁与个护商品被转化为英雄和道具，在五场卡牌战斗中对抗污垢怪物。原UI完整展示四名英雄选择、双方血量、+18攻击卡、对手露出破绽时使用攻击卡的提示与战后收藏卡。价值在清洁类别功能与奇幻战斗视觉的统一，不宣称首创卡牌或已证明每个SKU有差异化克制。仅归档核心战斗设计；后续关卡需购买解锁，免费范围未经核实，抽奖和购买任务不作为推荐理由。",
+      "style_zh": "精细奇幻手绘、污垢哥布林与清洁精灵、完整英雄/战斗/奖励三屏UI",
+      "live_url": "",
+      "source_url": "https://www.sostav.ru/publication/kak-samokat-prevrashchal-pokupku-tovarov-v-fentezi-kvest-88184.html",
+      "image": "images/samokat-chistozemye-cleanliness-card-battles-2026.webp",
+      "mobile": "partial",
+      "mobile_note": "品牌团队明确VK MiniApp，供稿有三张竖版游戏界面；未找到精确游戏入口，未本人手机或桌面试玩。当前可用性未知。后续关卡需购买解锁；免费范围未经核实。",
+      "tags": [
+        "VK MiniApp",
+        "卡牌攻防",
+        "清洁个护",
+        "产品融入规则",
+        "俄罗斯"
+      ],
+      "evidence_urls": [
+        "https://www.sostav.ru/publication/kak-samokat-prevrashchal-pokupku-tovarov-v-fentezi-kvest-88184.html",
+        "https://cdn.sostav.ru/images/news/2026/10/30/ksvojj1g.png"
+      ],
+      "evidence_note": "封面是品牌团队在Sostav案例中提供的原始三屏游戏UI，1599×900，不是新闻封面海报，也不是本机截图。静态界面可以证明画面、控件和提示，不能当作运行实测。未逐一查明各合作SKU。"
+    },
     {
       "id": "coke-cny-ai-embroidered-greetings-2026",
       "title_zh": "可口可乐「AI绣祝福」：上传亲友照片，生成手持可乐的马年祝福短片",
